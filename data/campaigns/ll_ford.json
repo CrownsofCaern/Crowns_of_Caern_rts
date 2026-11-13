@@ -1,0 +1,942 @@
+{
+ "id": "ll_ford",
+ "title": "The Burning Ford",
+ "kind": "war",
+ "seed": 4808,
+ "max_tier": 7,
+ "ai": "normal",
+ "intro": [
+  "The Lockstone has broken. For the first time in a hundred years the Ashen Host walks under the sky: slag-spawn, skinless hounds and things with hooks for arms. Its vanguard has already crossed the river at Greyhold's eastern ford.",
+  "Tier 7 is open: the bastion colossus. The vanguard throws a wave at the ford every two minutes until the levies come up.",
+  "Hold the ford for ten minutes while the Concord's levies come up, then cross and break the vanguard's camp."
+ ],
+ "outro": [
+  {
+   "text": [
+    "The vanguard is broken, but it was only meant to bleed you. Behind it, the whole Host is coming out of the Wound."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "concord"
+  },
+  {
+   "faction": "ashen"
+  }
+ ],
+ "speakers": {
+  "edda": "Sister Edda Vey",
+  "maelis": "Maelis Thorne"
+ },
+ "hero": {
+  "at": [
+   0.12,
+   0.52
+  ]
+ },
+ "map": {
+  "name": "The Burning Ford",
+  "size": [
+   192,
+   128
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "meadow",
+  "border": "mountains",
+  "features": {
+   "rivers": [
+    {
+     "pts": [
+      [
+       0.55,
+       -0.03
+      ],
+      [
+       0.52,
+       0.25
+      ],
+      [
+       0.56,
+       0.5
+      ],
+      [
+       0.52,
+       0.75
+      ],
+      [
+       0.55,
+       1.03
+      ]
+     ],
+     "w": 7
+    }
+   ],
+   "woods": [
+    {
+     "at": [
+      0.24,
+      0.14
+     ],
+     "r": 0.07
+    },
+    {
+     "at": [
+      0.3,
+      0.88
+     ],
+     "r": 0.07
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.8,
+       0.0
+      ],
+      [
+       0.82,
+       0.16
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.8,
+       1.0
+      ],
+      [
+       0.82,
+       0.84
+      ]
+     ],
+     "w": 4
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "greyhold",
+    "at": [
+     0.07,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 0,
+    "name": "Greyhold"
+   },
+   {
+    "id": "hobbs_acre",
+    "at": [
+     0.24,
+     0.3
+    ],
+    "size": "farmstead",
+    "owner": 0,
+    "name": "Hobb's Acre"
+   },
+   {
+    "id": "waymeet",
+    "at": [
+     0.26,
+     0.7
+    ],
+    "size": "village",
+    "owner": 0,
+    "name": "Waymeet"
+   },
+   {
+    "id": "fordhead",
+    "at": [
+     0.44,
+     0.5
+    ],
+    "size": "hamlet",
+    "owner": 0,
+    "name": "Fordhead"
+   },
+   {
+    "id": "far_bank",
+    "at": [
+     0.66,
+     0.5
+    ],
+    "size": "waystone",
+    "name": "The Far Bank",
+    "biome": "ashland"
+   },
+   {
+    "id": "cinder_camp",
+    "at": [
+     0.9,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 1,
+    "name": "Vanguard Camp",
+    "biome": "ashland"
+   },
+   {
+    "id": "scorched_mill",
+    "at": [
+     0.72,
+     0.2
+    ],
+    "size": "hamlet",
+    "owner": 1,
+    "name": "Scorched Mill",
+    "biome": "ashland"
+   }
+  ],
+  "sites": [
+   {
+    "id": "chapel",
+    "at": [
+     0.12,
+     0.36
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "peddler",
+    "at": [
+     0.16,
+     0.64
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "slag_pit",
+    "at": [
+     0.72,
+     0.82
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "pyre_hold",
+    "keeper": 1,
+    "guards": [
+     [
+      "flayer",
+      2
+     ],
+     [
+      "brimstone_hurler",
+      3
+     ],
+     [
+      "scorchhound",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "north_bridge_ruin",
+    "at": [
+     0.4,
+     0.1
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "siege_wreck",
+    "guards": [
+     [
+      "cinder_wraith",
+      1
+     ],
+     [
+      "ashscale_basilisk",
+      1
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "greyhold",
+    "hobbs_acre",
+    "road"
+   ],
+   [
+    "greyhold",
+    "waymeet",
+    "road"
+   ],
+   [
+    "greyhold",
+    "chapel",
+    "trail"
+   ],
+   [
+    "greyhold",
+    "peddler",
+    "road"
+   ],
+   [
+    "hobbs_acre",
+    "fordhead",
+    "road"
+   ],
+   [
+    "waymeet",
+    "fordhead",
+    "road"
+   ],
+   [
+    "hobbs_acre",
+    "north_bridge_ruin",
+    "trail"
+   ],
+   [
+    "fordhead",
+    "far_bank",
+    "ford"
+   ],
+   [
+    "far_bank",
+    "cinder_camp",
+    "road"
+   ],
+   [
+    "far_bank",
+    "scorched_mill",
+    "road"
+   ],
+   [
+    "far_bank",
+    "slag_pit",
+    "trail"
+   ],
+   [
+    "scorched_mill",
+    "cinder_camp",
+    "road"
+   ],
+   [
+    "slag_pit",
+    "cinder_camp",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 5,
+   "rocks": 6,
+   "ponds": 1
+  }
+ },
+ "npcs": [
+  {
+   "id": "captain",
+   "name": "Captain Ysolde Marr",
+   "look": "lancer",
+   "at": [
+    0.41,
+    0.44
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "captain_decided"
+      }
+     },
+     "dialogue": "captain",
+     "mark": "!"
+    },
+    {
+     "dialogue": "captain_after"
+    }
+   ]
+  },
+  {
+   "id": "ferrier",
+   "name": "Ferrier Dunn",
+   "look": "worker_concord",
+   "at": [
+    0.13,
+    0.58
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "ferrier_decided"
+      }
+     },
+     "dialogue": "ferrier",
+     "mark": "!"
+    },
+    {
+     "dialogue": "ferrier_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "levy",
+   "owner": 0,
+   "at": [
+    0.4,
+    0.52
+   ],
+   "units": [
+    [
+     "pike_militia",
+     10
+    ],
+    [
+     "longbowman",
+     10
+    ],
+    [
+     "shieldwarden",
+     4
+    ],
+    [
+     "lancer",
+     3
+    ],
+    [
+     "lightbearer",
+     2
+    ],
+    [
+     "sunhawk_rider",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "far_guard",
+   "owner": 1,
+   "at": [
+    0.66,
+    0.46
+   ],
+   "units": [
+    [
+     "cinderling",
+     6
+    ],
+    [
+     "scorchhound",
+     3
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "vanguard_lord",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.5
+   ],
+   "hero": {
+    "class": "brandguard",
+    "name": "Brandmaster Ulk",
+    "level": 14
+   },
+   "guard": 12
+  },
+  {
+   "id": "vanguard_guard",
+   "owner": 1,
+   "at": [
+    0.87,
+    0.52
+   ],
+   "units": [
+    [
+     "flayer",
+     4
+    ],
+    [
+     "pyre_titan",
+     2
+    ],
+    [
+     "ash_witch",
+     2
+    ],
+    [
+     "brimstone_hurler",
+     4
+    ],
+    [
+     "cinderling",
+     8
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "wave",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.7,
+    0.5
+   ],
+   "units": [
+    [
+     "cinderling",
+     7
+    ],
+    [
+     "scorchhound",
+     3
+    ],
+    [
+     "flayer",
+     1
+    ],
+    [
+     "brimstone_hurler",
+     1
+    ]
+   ],
+   "attack": "fordhead"
+  },
+  {
+   "id": "big_wave",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.7,
+    0.5
+   ],
+   "units": [
+    [
+     "cinderling",
+     10
+    ],
+    [
+     "scorchhound",
+     4
+    ],
+    [
+     "flayer",
+     2
+    ],
+    [
+     "pyre_titan",
+     1
+    ]
+   ],
+   "attack": "fordhead"
+  },
+  {
+   "id": "reinforcements",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.1,
+    0.5
+   ],
+   "units": [
+    [
+     "pike_militia",
+     8
+    ],
+    [
+     "longbowman",
+     6
+    ],
+    [
+     "lancer",
+     4
+    ],
+    [
+     "bastion_colossus",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "captains_riders",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.4,
+    0.44
+   ],
+   "units": [
+    [
+     "lancer",
+     4
+    ],
+    [
+     "sunhawk_rider",
+     2
+    ]
+   ]
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "So that's what came out of the Wound. Hold the ford. Hold it!",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Sister Edda Vey"
+   },
+   "say": "Don't let them touch you, my lord. The burns don't close.",
+   "who": "edda"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "The Burning Ford",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Hold Fordhead until the levies arrive (ten minutes, less if a rider fetches them)",
+     "done": {
+      "any": [
+       {
+        "time": 600
+       },
+       {
+        "all": [
+         {
+          "flag": "captain_rode"
+         },
+         {
+          "time": 420
+         }
+        ]
+       }
+      ]
+     },
+     "do": [
+      {
+       "spawn": "reinforcements"
+      },
+      {
+       "xp": 600
+      },
+      {
+       "say": "Banners on the west road! The levies are here. Now we cross.",
+       "who": "hero"
+      }
+     ]
+    },
+    {
+     "text": "Cross the river and break the Vanguard Camp",
+     "done": {
+      "any": [
+       {
+        "held": "cinder_camp"
+       },
+       {
+        "not": {
+         "holds": [
+          1,
+          1
+         ]
+        }
+       },
+       {
+        "all": [
+         {
+          "dead": "vanguard_lord"
+         },
+         {
+          "dead": "vanguard_guard"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 1200
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "captain": {
+   "title": "The Captain's Riders",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Answer Captain Ysolde Marr at the ford",
+     "done": {
+      "flag": "captain_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 150
+    }
+   ]
+  },
+  "horses": {
+   "title": "Iron for the Ford",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Answer Ferrier Dunn in Greyhold",
+     "done": {
+      "flag": "ferrier_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 150
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "captain": {
+   "nodes": {
+    "start": {
+     "text": "My lord Wren. Ysolde Marr, the Highmere riders. Six of us left out of thirty. We were at the ford when it came across.",
+     "next": "b"
+    },
+    "b": {
+     "text": "Give me leave and I'll ride for the levies myself and bring them faster. Or keep us here, and we'll hold the ford beside you.",
+     "choices": [
+      {
+       "text": "Stay. I need every lance here.",
+       "do": [
+        {
+         "flag": "captain_decided"
+        },
+        {
+         "flag": "captain_stayed"
+        },
+        {
+         "spawn": "captains_riders"
+        },
+        {
+         "remove": "captain"
+        }
+       ],
+       "next": "stay"
+      },
+      {
+       "text": "Ride. Bring the levies before nightfall.",
+       "do": [
+        {
+         "flag": "captain_decided"
+        },
+        {
+         "flag": "captain_rode"
+        },
+        {
+         "leave": "captain",
+         "to": "greyhold"
+        }
+       ],
+       "next": "ride"
+      }
+     ]
+    },
+    "stay": {
+     "text": "Then we stay. Riders, dismount and form up. No, mount up. Gods, I don't know any more. Form on Sir Aldous!"
+    },
+    "ride": {
+     "text": "Before nightfall, my lord. Hold till then."
+    }
+   }
+  },
+  "captain_after": {
+   "nodes": {
+    "start": {
+     "text": "Hold, my lord."
+    }
+   }
+  },
+  "ferrier": {
+   "nodes": {
+    "start": {
+     "text": "My lord, the smiths are asking: do we shoe horses, or melt every shoe and pot in Greyhold for arrowheads?",
+     "choices": [
+      {
+       "text": "Arrowheads. Every pot.",
+       "do": [
+        {
+         "flag": "ferrier_decided"
+        },
+        {
+         "res": {
+          "gold": 300,
+          "ore": 150
+         }
+        }
+       ],
+       "next": "a"
+      },
+      {
+       "text": "Horses. The riders will need to cross.",
+       "do": [
+        {
+         "flag": "ferrier_decided"
+        },
+        {
+         "res": {
+          "gold": 150
+         }
+        },
+        {
+         "xp": 100
+        }
+       ],
+       "next": "b"
+      }
+     ]
+    },
+    "a": {
+     "text": "Every pot, my lord. My wife will kill me."
+    },
+    "b": {
+     "text": "Horses it is. I'll have them shod by the morning."
+    }
+   }
+  },
+  "ferrier_after": {
+   "nodes": {
+    "start": {
+     "text": "The forges haven't gone cold since dawn."
+    }
+   }
+  },
+  "ulk_parley": {
+   "nodes": {
+    "start": {
+     "who": "vanguard_lord",
+     "text": "Little sun-knight. You held the water. Good. The Host likes it when the meat fights.",
+     "next": "b"
+    },
+    "b": {
+     "who": "vanguard_lord",
+     "text": "We were only the first spark. Burn."
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "cinder_camp",
+      "r": 26
+     },
+     {
+      "alive": "vanguard_lord"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "ulk_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 45
+   },
+   "do": [
+    {
+     "say": "The bastion colossus is ours at tier 7. A stone wall that walks. Put one in the ford.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 300
+     },
+     {
+      "step": [
+       "main",
+       0
+      ]
+     }
+    ]
+   },
+   "do": [
+    {
+     "spawn": "big_wave"
+    },
+    {
+     "say": "A big one's coming across. Brace!",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 60
+     },
+     {
+      "step": [
+       "main",
+       0
+      ]
+     }
+    ]
+   },
+   "repeat": 110,
+   "do": [
+    {
+     "spawn": "wave"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "vanguard_lord"
+     },
+     {
+      "not": {
+       "alive": "vanguard_lord"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Their brandmaster is down.",
+     "who": "hero"
+    },
+    {
+     "xp": 400
+    }
+   ]
+  }
+ ]
+}

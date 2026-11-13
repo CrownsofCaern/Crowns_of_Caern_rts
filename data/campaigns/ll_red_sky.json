@@ -1,0 +1,993 @@
+{
+ "id": "ll_red_sky",
+ "title": "Raiders under a Red Sky",
+ "kind": "hero",
+ "seed": 4707,
+ "intro": [
+  "One morning the sky is red and stays red. Ash falls like snow. Word comes from the north: the Frostmarch clans are over the border under a reaver called Bjarr Coldhand, burning granaries. Their summer never came, and the Concord stopped sending grain long ago.",
+  "The army is far to the south. Aldous rides north with the few who are with him.",
+  "Save what granaries you can, find out what the clans want, and drive Bjarr Coldhand back over the border."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "hrodna_fed"
+   },
+   "text": [
+    "The last raider dies laughing. \"Your sky did this,\" he says. \"Your fire. We are only hungry.\"",
+    "Clan Grimfell goes home over the pass with Coldwater's grain on their sledges. To the south-east, beyond the ash, the horizon glows."
+   ]
+  },
+  {
+   "if": {
+    "flag": "hrodna_turned"
+   },
+   "text": [
+    "The last raider dies laughing. \"Your sky did this,\" he says. \"Your fire. We are only hungry.\"",
+    "Hrodna's clan lies in the snow beside him. Coldwater keeps its grain. To the south-east, beyond the ash, the horizon glows."
+   ]
+  },
+  {
+   "text": [
+    "The last raider dies laughing. \"Your sky did this,\" he says. \"Your fire. We are only hungry.\"",
+    "To the south-east, beyond the ash, the horizon glows."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "concord"
+  },
+  {
+   "faction": "frostmarch"
+  }
+ ],
+ "speakers": {
+  "edda": "Sister Edda Vey",
+  "maelis": "Maelis Thorne"
+ },
+ "hero": {
+  "at": [
+   0.07,
+   0.74
+  ]
+ },
+ "hero_boost": {
+  "hp": 500,
+  "damage_pct": 0.8
+ },
+ "checkpoint": "road_shrine",
+ "map": {
+  "name": "Raiders under a Red Sky",
+  "size": [
+   176,
+   112
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "meadow",
+  "border": "mountains",
+  "features": {
+   "woods": [
+    {
+     "at": [
+      0.18,
+      0.4
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.56,
+      0.92
+     ],
+     "r": 0.06
+    },
+    {
+     "at": [
+      0.36,
+      0.14
+     ],
+     "r": 0.07
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.38,
+      0.6
+     ],
+     "r": 0.06
+    },
+    {
+     "at": [
+      0.8,
+      0.62
+     ],
+     "r": 0.07
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.55,
+       0.0
+      ],
+      [
+       0.58,
+       0.22
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.78,
+       0.42
+      ],
+      [
+       1.0,
+       0.44
+      ]
+     ],
+     "w": 5
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "road",
+    "at": [
+     0.06,
+     0.7
+    ],
+    "size": "waystone",
+    "owner": 0,
+    "name": "Highmere Road"
+   },
+   {
+    "id": "hythe",
+    "at": [
+     0.27,
+     0.8
+    ],
+    "size": "hamlet",
+    "owner": 0,
+    "name": "Barley Hythe",
+    "nodes": 0
+   },
+   {
+    "id": "coldwater",
+    "at": [
+     0.44,
+     0.38
+    ],
+    "size": "village",
+    "owner": 0,
+    "name": "Coldwater",
+    "nodes": 0
+   },
+   {
+    "id": "ostler",
+    "at": [
+     0.62,
+     0.76
+    ],
+    "size": "farmstead",
+    "owner": 0,
+    "name": "Ostler's Rest",
+    "nodes": 0
+   },
+   {
+    "id": "grimfell",
+    "at": [
+     0.72,
+     0.28
+    ],
+    "size": "waystone",
+    "name": "Grimfell Camp",
+    "biome": "snowfield"
+   },
+   {
+    "id": "coldhand",
+    "at": [
+     0.9,
+     0.2
+    ],
+    "size": "hamlet",
+    "owner": 1,
+    "name": "Coldhand's Hold",
+    "biome": "snowfield"
+   }
+  ],
+  "sites": [
+   {
+    "id": "road_shrine",
+    "at": [
+     0.1,
+     0.58
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "coldwater_market",
+    "at": [
+     0.4,
+     0.46
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "frost_chapel",
+    "at": [
+     0.66,
+     0.5
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "rime_cave",
+    "at": [
+     0.46,
+     0.1
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "small_ruin",
+    "guards": [
+     [
+      "hill_troll",
+      1
+     ],
+     [
+      "rime_wight",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "wolf_rocks",
+    "at": [
+     0.2,
+     0.2
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "wolf_den",
+    "guards": [
+     [
+      "thornwolf",
+      3
+     ],
+     [
+      "rimefang_hound",
+      2
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "road",
+    "road_shrine",
+    "trail"
+   ],
+   [
+    "road",
+    "hythe",
+    "road"
+   ],
+   [
+    "road",
+    "coldwater",
+    "road"
+   ],
+   [
+    "hythe",
+    "ostler",
+    "road"
+   ],
+   [
+    "coldwater",
+    "coldwater_market",
+    "road"
+   ],
+   [
+    "coldwater",
+    "wolf_rocks",
+    "trail"
+   ],
+   [
+    "coldwater",
+    "rime_cave",
+    "trail"
+   ],
+   [
+    "coldwater",
+    "grimfell",
+    "road"
+   ],
+   [
+    "ostler",
+    "frost_chapel",
+    "road"
+   ],
+   [
+    "frost_chapel",
+    "grimfell",
+    "trail"
+   ],
+   [
+    "grimfell",
+    "coldhand",
+    "road"
+   ],
+   [
+    "frost_chapel",
+    "coldhand",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 5,
+   "rocks": 7,
+   "ponds": 2
+  }
+ },
+ "npcs": [
+  {
+   "id": "miller",
+   "name": "Agna the Miller",
+   "look": "npc_woman",
+   "at": [
+    0.29,
+    0.76
+   ],
+   "talk": [
+    {
+     "if": {
+      "dead": "raid_hythe"
+     },
+     "dialogue": "miller",
+     "mark": "?"
+    },
+    {
+     "dialogue": "miller_hiding"
+    }
+   ]
+  },
+  {
+   "id": "reeve",
+   "name": "Reeve Osric Hale",
+   "look": "pike_militia",
+   "at": [
+    0.46,
+    0.34
+   ],
+   "talk": [
+    {
+     "if": {
+      "all": [
+       {
+        "dead": "raid_coldwater"
+       },
+       {
+        "not": {
+         "flag": "reeve_spoke"
+        }
+       }
+      ]
+     },
+     "dialogue": "reeve",
+     "mark": "!"
+    },
+    {
+     "dialogue": "reeve_idle"
+    }
+   ]
+  },
+  {
+   "id": "ostler_npc",
+   "name": "Bel the Ostler",
+   "look": "worker_concord",
+   "at": [
+    0.6,
+    0.8
+   ],
+   "talk": [
+    {
+     "if": {
+      "all": [
+       {
+        "dead": "raid_ostler"
+       },
+       {
+        "not": {
+         "flag": "ostler_thanked"
+        }
+       }
+      ]
+     },
+     "dialogue": "ostler",
+     "mark": "?"
+    },
+    {
+     "dialogue": "ostler_idle"
+    }
+   ]
+  },
+  {
+   "id": "hrodna",
+   "name": "Hrodna Grimfell",
+   "look": "hero_thane",
+   "at": [
+    0.71,
+    0.24
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "hrodna_decided"
+      }
+     },
+     "dialogue": "hrodna",
+     "mark": "!"
+    },
+    {
+     "dialogue": "hrodna_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "raid_hythe",
+   "owner": 1,
+   "at": [
+    0.26,
+    0.84
+   ],
+   "units": [
+    [
+     "clan_raider",
+     5
+    ],
+    [
+     "rimefang_hound",
+     2
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "raid_coldwater",
+   "owner": 1,
+   "at": [
+    0.45,
+    0.42
+   ],
+   "units": [
+    [
+     "clan_raider",
+     6
+    ],
+    [
+     "oathless_berserker",
+     1
+    ],
+    [
+     "frost_shaman",
+     1
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "raid_ostler",
+   "owner": 1,
+   "at": [
+    0.63,
+    0.72
+   ],
+   "units": [
+    [
+     "tusk_rider",
+     2
+    ],
+    [
+     "clan_raider",
+     4
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "clan",
+   "owner": "wild",
+   "passive": true,
+   "at": [
+    0.73,
+    0.3
+   ],
+   "units": [
+    [
+     "clan_raider",
+     6
+    ],
+    [
+     "rimefang_hound",
+     3
+    ],
+    [
+     "rimeback_aurochs",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "bjarr",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.22
+   ],
+   "hero": {
+    "class": "reaver",
+    "name": "Bjarr Coldhand",
+    "level": 13
+   },
+   "guard": 12
+  },
+  {
+   "id": "bjarr_guard",
+   "owner": 1,
+   "at": [
+    0.87,
+    0.24
+   ],
+   "units": [
+    [
+     "oathless_berserker",
+     1
+    ],
+    [
+     "tusk_rider",
+     1
+    ],
+    [
+     "clan_raider",
+     4
+    ],
+    [
+     "frost_shaman",
+     1
+    ]
+   ],
+   "guard": 12
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "Ash in July. Somebody tell me this is only a fire somewhere.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Sister Edda Vey"
+   },
+   "say": "It isn't, my lord. The lamp hasn't stopped flickering since dawn.",
+   "who": "edda"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "Raiders under a Red Sky",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Drive the raiders out of Barley Hythe",
+     "done": {
+      "dead": "raid_hythe"
+     },
+     "do": [
+      {
+       "xp": 300
+      }
+     ]
+    },
+    {
+     "text": "Save Coldwater's granary",
+     "done": {
+      "dead": "raid_coldwater"
+     },
+     "do": [
+      {
+       "xp": 400
+      }
+     ]
+    },
+    {
+     "text": "Speak with the clan camped at Grimfell",
+     "done": {
+      "flag": "hrodna_decided"
+     },
+     "do": [
+      {
+       "xp": 300
+      }
+     ]
+    },
+    {
+     "text": "Drive Bjarr Coldhand back over the border",
+     "done": {
+      "all": [
+       {
+        "dead": "bjarr"
+       },
+       {
+        "dead": "bjarr_guard"
+       },
+       {
+        "any": [
+         {
+          "not": {
+           "flag": "hrodna_turned"
+          }
+         },
+         {
+          "dead": "clan"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 1200
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "ostler": {
+   "title": "The Ostler's Horses",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Chase the tusk riders from Ostler's Rest",
+     "done": {
+      "dead": "raid_ostler"
+     }
+    },
+    {
+     "text": "Talk to Bel the Ostler",
+     "done": {
+      "flag": "ostler_thanked"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 300
+    },
+    {
+     "item": {
+      "rarity": "rare",
+      "slot": "boots",
+      "level": 8
+     }
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "miller_hiding": {
+   "nodes": {
+    "start": {
+     "text": "Get down! They're still at the granary!"
+    }
+   }
+  },
+  "miller": {
+   "nodes": {
+    "start": {
+     "text": "They only wanted the grain, my lord. They didn't touch anyone who didn't fight. That's the strange part. They looked thinner than us."
+    }
+   }
+  },
+  "reeve": {
+   "nodes": {
+    "start": {
+     "who": "reeve",
+     "text": "My lord! Coldwater's granary still stands, thanks to you. But there's more of them camped up at Grimfell. Women, children, old ones. A whole clan.",
+     "next": "b"
+    },
+    "b": {
+     "who": "reeve",
+     "text": "Their chief wants to talk to whoever's in charge. I told her that was you. I hope that was right.",
+     "do": [
+      {
+       "flag": "reeve_spoke"
+      }
+     ]
+    }
+   }
+  },
+  "reeve_idle": {
+   "nodes": {
+    "start": {
+     "who": "reeve",
+     "text": "We'll hold the granary. Somehow."
+    }
+   }
+  },
+  "ostler": {
+   "nodes": {
+    "start": {
+     "text": "They wanted the horses for meat, my lord. Meat. Good Concord draught horses. Well, they've not got them now.",
+     "next": "b"
+    },
+    "b": {
+     "text": "Take these shoes. My father's best. A horse doesn't need them more than a knight does today.",
+     "do": [
+      {
+       "flag": "ostler_thanked"
+      }
+     ]
+    }
+   }
+  },
+  "ostler_idle": {
+   "nodes": {
+    "start": {
+     "text": "Easy now, easy. They're gone."
+    }
+   }
+  },
+  "hrodna": {
+   "nodes": {
+    "start": {
+     "text": "You're the Concord lord. Good. I am Hrodna, of Clan Grimfell. I'll be short, because my people are cold.",
+     "next": "b"
+    },
+    "b": {
+     "text": "Our summer did not come. Your sky, your fire, whatever it is down there, ate it. Bjarr burns your granaries because he is angry. I am not angry. I am only hungry.",
+     "next": "c"
+    },
+    "c": {
+     "text": "Give my clan Coldwater's grain, and we go home over the pass tonight. Refuse, and Bjarr gets fifty more axes.",
+     "choices": [
+      {
+       "text": "Take the grain. Go home, Hrodna.",
+       "do": [
+        {
+         "flag": "hrodna_decided"
+        },
+        {
+         "flag": "hrodna_fed"
+        },
+        {
+         "leave": "clan",
+         "to": [
+          0.98,
+          0.04
+         ]
+        },
+        {
+         "leave": "hrodna",
+         "to": [
+          0.98,
+          0.04
+         ]
+        }
+       ],
+       "next": "fed"
+      },
+      {
+       "text": "Coldwater will starve without it. I can't.",
+       "do": [
+        {
+         "flag": "hrodna_decided"
+        },
+        {
+         "flag": "hrodna_turned"
+        },
+        {
+         "hostile": "clan"
+        },
+        {
+         "hostile": "hrodna"
+        },
+        {
+         "attack": "clan",
+         "to": "hero"
+        }
+       ],
+       "next": "turned"
+      },
+      {
+       "text": "Half the grain. That's all I can give.",
+       "if": {
+        "hero_level": 18
+       },
+       "do": [
+        {
+         "flag": "hrodna_decided"
+        },
+        {
+         "flag": "hrodna_fed"
+        },
+        {
+         "flag": "grain_shared"
+        },
+        {
+         "leave": "clan",
+         "to": [
+          0.98,
+          0.04
+         ]
+        },
+        {
+         "leave": "hrodna",
+         "to": [
+          0.98,
+          0.04
+         ]
+        }
+       ],
+       "next": "half"
+      }
+     ]
+    },
+    "fed": {
+     "text": "Then the clans will remember one Concord lord who wasn't deaf. Kill Bjarr if you like. He won't be missed."
+    },
+    "half": {
+     "text": "Half. ...Half gets us to spring, if the spring comes. You bargain like a northman, Wren. We go."
+    },
+    "turned": {
+     "text": "Then you have chosen for my children. Grimfell! With Bjarr!"
+    }
+   }
+  },
+  "hrodna_after": {
+   "nodes": {
+    "start": {
+     "text": "Keep your fires small, Concord. The sky has had enough."
+    }
+   }
+  },
+  "bjarr_parley": {
+   "nodes": {
+    "start": {
+     "who": "bjarr",
+     "text": "The Concord knight. Look up, knight. See the colour of it? That's your doing. Your fire under the mountain.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Burning my farmers won't turn the sky blue, Coldhand.",
+     "next": "c"
+    },
+    "c": {
+     "who": "bjarr",
+     "text": "No. But it warms the hands. Axes!"
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "hrodna",
+      "r": 9
+     },
+     {
+      "not": {
+       "flag": "hrodna_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "hrodna",
+     "npc": "hrodna"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "coldhand",
+      "r": 24
+     },
+     {
+      "alive": "bjarr"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "bjarr_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "raid_hythe"
+   },
+   "do": [
+    {
+     "say": "Hythe is clear. They took half the sacks with them.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "raid_coldwater"
+   },
+   "do": [
+    {
+     "say": "Coldwater's granary stands. Find the reeve.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "companion": "Maelis Thorne"
+     },
+     {
+      "near": "grimfell",
+      "r": 14
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Look at them, my lord. Those aren't raiders. That's a village on the move.",
+     "who": "maelis"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "bjarr"
+     },
+     {
+      "not": {
+       "alive": "bjarr"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Coldhand is down.",
+     "who": "hero"
+    },
+    {
+     "xp": 400
+    }
+   ]
+  }
+ ]
+}

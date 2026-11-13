@@ -1,0 +1,1199 @@
+{
+ "id": "ph_pale_crown",
+ "title": "The Pale Crown",
+ "kind": "war",
+ "seed": 6010,
+ "max_tier": 8,
+ "ai": "normal",
+ "intro": [
+  "Two broods of the Host hold the burning tunnels: Skarn Ashborn's Burrow-Host in the north and the brood of Ithra Sootveil, his warlock, in the south. Between them and the Regent lies the Barrow Below and the Barrow Gate, which the Host has taken for its own.",
+  "Tier 8 is open: the rotwing leviathan. The broods do not trust each other and will fight each other as readily as you. Whoever you won over on the way may come to the crowning.",
+  "Take the Barrow Gate, then burn both broods out of the dead's country."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "hesk_knelt"
+   },
+   "text": [
+    "The last Ashen fire in the Barrow Below goes out. Ysmay Vane climbs her mound in Sallowmere and is crowned under the red sky by the dead of three hundred years. Lady Hesk sets the crown on her head, because somebody has to and Morrow would not.",
+    "The living of the south do not come to stop her. The southern marches are a kingdom of the dead now.",
+    "Orrin's debt to the Regent is paid. He takes his sword and walks north toward Greyhold, to find his great-grandson. He knows something about how the Lockstone was made, and the boy will need to hear it."
+   ]
+  },
+  {
+   "text": [
+    "The last Ashen fire in the Barrow Below goes out. Ysmay Vane climbs her mound in Sallowmere and is crowned under the red sky by the dead of three hundred years, and the living of the south do not come to stop her. The southern marches are a kingdom of the dead now.",
+    "Orrin's debt to the Regent is paid. He takes his sword and walks north toward Greyhold, to find his great-grandson. He knows something about how the Lockstone was made, and the boy will need to hear it."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "hollow"
+  },
+  {
+   "faction": "ashen"
+  },
+  {
+   "faction": "ashen"
+  }
+ ],
+ "speakers": {
+  "orrin": "Sir Orrin Wren",
+  "corvin": "Father Corvin Mire",
+  "rotwing": "The Rotwing",
+  "hesk": "Lady Hesk of the Howe",
+  "ossric": "Old King Ossric"
+ },
+ "hero": {
+  "at": [
+   0.1,
+   0.56
+  ]
+ },
+ "map": {
+  "name": "The Pale Crown",
+  "size": [
+   192,
+   128
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "gloomcrag",
+  "border": "mountains",
+  "features": {
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.36,
+       0.0
+      ],
+      [
+       0.37,
+       0.4
+      ]
+     ],
+     "w": 6
+    },
+    {
+     "pts": [
+      [
+       0.37,
+       0.6
+      ],
+      [
+       0.36,
+       1.0
+      ]
+     ],
+     "w": 6
+    },
+    {
+     "pts": [
+      [
+       0.72,
+       0.38
+      ],
+      [
+       0.74,
+       0.62
+      ]
+     ],
+     "w": 5
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.2,
+      0.2
+     ],
+     "r": 0.05
+    },
+    {
+     "at": [
+      0.2,
+      0.84
+     ],
+     "r": 0.05
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "sallow_mound",
+    "at": [
+     0.07,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 0,
+    "name": "Sallowmere",
+    "biome": "swamp"
+   },
+   {
+    "id": "mound_north",
+    "at": [
+     0.22,
+     0.32
+    ],
+    "size": "hamlet",
+    "name": "The Old Howes",
+    "biome": "swamp"
+   },
+   {
+    "id": "mound_south",
+    "at": [
+     0.22,
+     0.7
+    ],
+    "size": "farmstead",
+    "name": "Reed Barrows",
+    "biome": "swamp"
+   },
+   {
+    "id": "barrow_gate",
+    "at": [
+     0.4,
+     0.5
+    ],
+    "size": "waystone",
+    "name": "The Barrow Gate"
+   },
+   {
+    "id": "barrow_below",
+    "at": [
+     0.6,
+     0.5
+    ],
+    "size": "hamlet",
+    "name": "The Barrow Below"
+   },
+   {
+    "id": "ash_galleries",
+    "at": [
+     0.6,
+     0.16
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "The Ash Galleries",
+    "biome": "ashland"
+   },
+   {
+    "id": "soot_halls",
+    "at": [
+     0.6,
+     0.84
+    ],
+    "size": "village",
+    "owner": 2,
+    "name": "The Soot Halls",
+    "biome": "ashland"
+   },
+   {
+    "id": "skarn_burrow",
+    "at": [
+     0.88,
+     0.2
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 1,
+    "name": "The Burrow-Host",
+    "biome": "ashland"
+   },
+   {
+    "id": "ithra_kiln",
+    "at": [
+     0.88,
+     0.8
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 2,
+    "name": "Sootveil's Kiln",
+    "biome": "ashland"
+   }
+  ],
+  "sites": [
+   {
+    "id": "bone_trader",
+    "at": [
+     0.15,
+     0.64
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "mound_shrine",
+    "at": [
+     0.16,
+     0.4
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "crown_vault",
+    "at": [
+     0.84,
+     0.5
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "citadel_ruin",
+    "guards": [
+     [
+      "cinder_maw",
+      1
+     ],
+     [
+      "flayer",
+      2
+     ],
+     [
+      "brimstone_hurler",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "drake_hall",
+    "at": [
+     0.5,
+     0.06
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "echo_hall",
+    "guards": [
+     [
+      "cinder_wraith",
+      2
+     ],
+     [
+      "hill_giant",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "serpent_pool",
+    "at": [
+     0.5,
+     0.94
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "drowned_chapel",
+    "guards": [
+     [
+      "bog_serpent",
+      1
+     ],
+     [
+      "cave_stalker",
+      2
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "sallow_mound",
+    "mound_north",
+    "road"
+   ],
+   [
+    "sallow_mound",
+    "mound_south",
+    "road"
+   ],
+   [
+    "sallow_mound",
+    "bone_trader",
+    "road"
+   ],
+   [
+    "sallow_mound",
+    "mound_shrine",
+    "trail"
+   ],
+   [
+    "mound_north",
+    "barrow_gate",
+    "road"
+   ],
+   [
+    "mound_south",
+    "barrow_gate",
+    "road"
+   ],
+   [
+    "sallow_mound",
+    "barrow_gate",
+    "road"
+   ],
+   [
+    "barrow_gate",
+    "barrow_below",
+    "road"
+   ],
+   [
+    "barrow_below",
+    "ash_galleries",
+    "road"
+   ],
+   [
+    "barrow_below",
+    "soot_halls",
+    "road"
+   ],
+   [
+    "ash_galleries",
+    "drake_hall",
+    "trail"
+   ],
+   [
+    "soot_halls",
+    "serpent_pool",
+    "trail"
+   ],
+   [
+    "ash_galleries",
+    "skarn_burrow",
+    "road"
+   ],
+   [
+    "soot_halls",
+    "ithra_kiln",
+    "road"
+   ],
+   [
+    "barrow_below",
+    "crown_vault",
+    "trail"
+   ],
+   [
+    "crown_vault",
+    "skarn_burrow",
+    "trail"
+   ],
+   [
+    "crown_vault",
+    "ithra_kiln",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 0,
+   "rocks": 12,
+   "ponds": 2
+  }
+ },
+ "npcs": [
+  {
+   "id": "wick",
+   "name": "Old Wick the Bone-Reeve",
+   "look": "worker_hollow",
+   "at": [
+    0.12,
+    0.42
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "wick_crown_decided"
+      }
+     },
+     "dialogue": "wick",
+     "mark": "!"
+    },
+    {
+     "dialogue": "wick_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "levy",
+   "owner": 0,
+   "at": [
+    0.13,
+    0.54
+   ],
+   "units": [
+    [
+     "shambler",
+     12
+    ],
+    [
+     "marrow_archer",
+     10
+    ],
+    [
+     "gravecrawler",
+     4
+    ],
+    [
+     "wailing_shade",
+     4
+    ],
+    [
+     "corpse_weaver",
+     2
+    ],
+    [
+     "gibbet_knight",
+     3
+    ],
+    [
+     "charnel_hulk",
+     1
+    ],
+    [
+     "rotwing_leviathan",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "hesk_host",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.12,
+    0.36
+   ],
+   "units": [
+    [
+     "barrow_revenant",
+     2
+    ],
+    [
+     "shambler",
+     6
+    ],
+    [
+     "marrow_archer",
+     4
+    ]
+   ]
+  },
+  {
+   "id": "ossric_sleepers",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.12,
+    0.3
+   ],
+   "units": [
+    [
+     "barrow_revenant",
+     3
+    ],
+    [
+     "shambler",
+     4
+    ]
+   ]
+  },
+  {
+   "id": "tomb_kings",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.12,
+    0.64
+   ],
+   "units": [
+    [
+     "gibbet_knight",
+     3
+    ],
+    [
+     "charnel_hulk",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "choir",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.12,
+    0.7
+   ],
+   "units": [
+    [
+     "wailing_shade",
+     3
+    ],
+    [
+     "corpse_light",
+     3
+    ]
+   ]
+  },
+  {
+   "id": "gate_host",
+   "owner": 1,
+   "at": [
+    0.42,
+    0.5
+   ],
+   "units": [
+    [
+     "cinderling",
+     6
+    ],
+    [
+     "scorchhound",
+     4
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ],
+    [
+     "flayer",
+     2
+    ]
+   ],
+   "guard": 10
+  },
+  {
+   "id": "skarn",
+   "owner": 1,
+   "at": [
+    0.87,
+    0.16
+   ],
+   "hero": {
+    "class": "tormentor",
+    "name": "Skarn Ashborn",
+    "level": 22
+   },
+   "guard": 12
+  },
+  {
+   "id": "skarn_guard",
+   "owner": 1,
+   "at": [
+    0.86,
+    0.22
+   ],
+   "units": [
+    [
+     "cinderling",
+     8
+    ],
+    [
+     "scorchhound",
+     3
+    ],
+    [
+     "flayer",
+     3
+    ],
+    [
+     "brimstone_hurler",
+     3
+    ],
+    [
+     "pyre_titan",
+     1
+    ],
+    [
+     "gorgewing",
+     1
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "ithra",
+   "owner": 2,
+   "at": [
+    0.87,
+    0.84
+   ],
+   "hero": {
+    "class": "warlock",
+    "name": "Ithra Sootveil",
+    "level": 20
+   },
+   "guard": 12
+  },
+  {
+   "id": "ithra_guard",
+   "owner": 2,
+   "at": [
+    0.86,
+    0.78
+   ],
+   "units": [
+    [
+     "cinderling",
+     8
+    ],
+    [
+     "ash_witch",
+     2
+    ],
+    [
+     "brimstone_hurler",
+     3
+    ],
+    [
+     "flayer",
+     2
+    ],
+    [
+     "pyre_titan",
+     1
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "burrow_wave",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.7,
+    0.2
+   ],
+   "units": [
+    [
+     "cinderling",
+     8
+    ],
+    [
+     "scorchhound",
+     3
+    ],
+    [
+     "flayer",
+     2
+    ]
+   ],
+   "attack": "barrow_gate"
+  },
+  {
+   "id": "soot_wave",
+   "owner": 2,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.7,
+    0.8
+   ],
+   "units": [
+    [
+     "cinderling",
+     8
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ],
+    [
+     "ash_witch",
+     1
+    ]
+   ],
+   "attack": "sallow_mound"
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "Two broods, and they hate each other almost as much as they hate me. Good. Let them.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "hesk_knelt"
+   },
+   "spawn": "hesk_host"
+  },
+  {
+   "if": {
+    "flag": "hesk_knelt"
+   },
+   "say": "The Howe marches, Regent. All of it. I'd not miss a crowning.",
+   "who": "hesk"
+  },
+  {
+   "if": {
+    "flag": "ossric_woken"
+   },
+   "spawn": "ossric_sleepers"
+  },
+  {
+   "if": {
+    "flag": "ossric_woken"
+   },
+   "say": "Little regent! My sleepers have been looking forward to this.",
+   "who": "ossric"
+  },
+  {
+   "if": {
+    "flag": "tombs_kept"
+   },
+   "spawn": "tomb_kings"
+  },
+  {
+   "if": {
+    "flag": "tombs_kept"
+   },
+   "say": "The knights of the Tomb of Kings have come up. You kept their kings out of the fire, my lady. They remember.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "cantor_spared"
+   },
+   "spawn": "choir"
+  },
+  {
+   "if": {
+    "flag": "cantor_spared"
+   },
+   "say": "Singing, from the shore road. The Drowned Cantor sent his choir. He says it's for letting him keep his chapel.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "The Rotwing"
+   },
+   "say": "Ruvh is circling above the Gate. It can smell them.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Sir Orrin Wren"
+   },
+   "say": "One last fight under the ground, my lady. Then I'd like to see the sky.",
+   "who": "orrin"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "The Pale Crown",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Take the Barrow Gate back from the Host",
+     "done": {
+      "dead": "gate_host"
+     },
+     "do": [
+      {
+       "xp": 800
+      }
+     ]
+    },
+    {
+     "text": "Burn both broods out: Skarn's Burrow-Host (take it or break his guard) and Sootveil's Kiln (take it or kill Ithra and her guard)",
+     "done": {
+      "all": [
+       {
+        "any": [
+         {
+          "held": "skarn_burrow"
+         },
+         {
+          "not": {
+           "holds": [
+            1,
+            1
+           ]
+          }
+         },
+         {
+          "dead": "skarn_guard"
+         }
+        ]
+       },
+       {
+        "any": [
+         {
+          "held": "ithra_kiln"
+         },
+         {
+          "not": {
+           "holds": [
+            2,
+            1
+           ]
+          }
+         },
+         {
+          "all": [
+           {
+            "dead": "ithra"
+           },
+           {
+            "dead": "ithra_guard"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 2500
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "reeve": {
+   "title": "The Crown's Bones",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Answer Old Wick the bone-reeve",
+     "done": {
+      "flag": "wick_crown_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 200
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "wick": {
+   "nodes": {
+    "start": {
+     "text": "Regent. They're saying crown, in the pits. A real one. It wants making, and I've two ways to make it.",
+     "next": "b"
+    },
+    "b": {
+     "text": "Melt the grave-gold of the old howes into a crown fit for a queen, and the treasury feels it. Or carve it from the bones of the first barrow-lords, and the dwellings get the gold instead.",
+     "choices": [
+      {
+       "text": "Bone. The dead will crown me with their own.",
+       "do": [
+        {
+         "flag": "wick_crown_decided"
+        },
+        {
+         "flag": "bone_crown"
+        },
+        {
+         "res": {
+          "gold": 500,
+          "ore": 300
+         }
+        }
+       ],
+       "next": "bone"
+      },
+      {
+       "text": "Gold. Let the living see it glitter.",
+       "do": [
+        {
+         "flag": "wick_crown_decided"
+        },
+        {
+         "flag": "gold_crown"
+        },
+        {
+         "res": {
+          "wood": 300
+         }
+        },
+        {
+         "xp": 300
+        }
+       ],
+       "next": "gold"
+      }
+     ]
+    },
+    "bone": {
+     "text": "Bone it is. I know just the barrow-lords. They won't miss their jaws."
+    },
+    "gold": {
+     "text": "Gold. It'll shine nicely under that red sky."
+    }
+   }
+  },
+  "wick_after": {
+   "nodes": {
+    "start": {
+     "text": "The crown's coming along, Regent."
+    }
+   }
+  },
+  "skarn_parley": {
+   "nodes": {
+    "start": {
+     "who": "skarn",
+     "text": "The corpse-queen and her big dead bird. You've cost me a brood, a warren and a Kindler.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Get out of my country, Skarn. Go and burn the living. They're used to it.",
+     "next": "c"
+    },
+    "c": {
+     "who": "skarn",
+     "text": "Oh, I will. But not before I take your Gate back."
+    }
+   }
+  },
+  "ithra_parley": {
+   "nodes": {
+    "start": {
+     "who": "ithra",
+     "text": "Regent. Skarn would sell me to you for a single tunnel. I would sell him for less.",
+     "next": "b"
+    },
+    "b": {
+     "who": "ithra",
+     "text": "But I don't sell to the dead. Burn, bones."
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "wick",
+      "r": 8
+     },
+     {
+      "not": {
+       "flag": "wick_crown_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "start_quest": "reeve"
+    },
+    {
+     "dialogue": "wick",
+     "npc": "wick"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "skarn_burrow",
+      "r": 26
+     },
+     {
+      "alive": "skarn"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "skarn_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "ithra_kiln",
+      "r": 26
+     },
+     {
+      "alive": "ithra"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "ithra_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 40
+   },
+   "do": [
+    {
+     "say": "Leviathans at tier 8. The broods have nothing that flies as high.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "gate_host"
+   },
+   "do": [
+    {
+     "say": "The Gate is ours. Now down, both ways.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "dead": "skarn_guard"
+     },
+     {
+      "alive": "skarn"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Skarn's running for the deep tunnels. Let him go up and burn the Concord; it isn't my country.",
+     "who": "hero"
+    },
+    {
+     "leave": "skarn",
+     "to": [
+      0.99,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "when": {
+    "any": [
+     {
+      "held": "skarn_burrow"
+     },
+     {
+      "not": {
+       "holds": [
+        1,
+        1
+       ]
+      }
+     },
+     {
+      "dead": "skarn_guard"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "The Burrow-Host is broken.",
+     "who": "hero"
+    },
+    {
+     "xp": 800
+    }
+   ]
+  },
+  {
+   "when": {
+    "any": [
+     {
+      "held": "ithra_kiln"
+     },
+     {
+      "not": {
+       "holds": [
+        2,
+        1
+       ]
+      }
+     },
+     {
+      "all": [
+       {
+        "dead": "ithra"
+       },
+       {
+        "dead": "ithra_guard"
+       }
+      ]
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Sootveil's brood is ash.",
+     "who": "hero"
+    },
+    {
+     "xp": 800
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 200
+     },
+     {
+      "holds": [
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   "repeat": 140,
+   "do": [
+    {
+     "spawn": "burrow_wave"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 260
+     },
+     {
+      "holds": [
+       2,
+       2
+      ]
+     }
+    ]
+   },
+   "repeat": 140,
+   "do": [
+    {
+     "spawn": "soot_wave"
+    }
+   ]
+  }
+ ]
+}

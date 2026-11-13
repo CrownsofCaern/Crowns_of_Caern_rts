@@ -1,0 +1,1069 @@
+{
+ "id": "ll_knight",
+ "title": "The Knight Who Came Back",
+ "kind": "war",
+ "seed": 4404,
+ "max_tier": 4,
+ "ai": "easy",
+ "intro": [
+  "Scouts come back from the fens with a name no one wants to say. The dead are led by a knight on a gibbet-horse, in the faded colours of House Wren. Sir Orrin Wren died a hundred years ago holding the gate shut against the Ashen Host. His great-grandson now has to cut him down.",
+  "Orrin rides with gibbet knights, far stronger than anything Greyhold can raise yet (tier 4 is open: lancers). His riders come out of the drowned dikes as long as the dead hold the sluices there.",
+  "Retake Fenwick Ford, open the two dike sluices, and break Saint Orrin's Rest."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "orrin_told"
+   },
+   "text": [
+    "Orrin falls in the chapel yard. Before the light leaves his eyes he grips Aldous's wrist, and for a moment he knows him. \"Edric's blood. Good.\"",
+    "\"The stone is cracking, boy. They will not tell you. Go to the mountain.\""
+   ]
+  },
+  {
+   "text": [
+    "Orrin falls in the chapel yard. Before the light leaves his eyes he grips Aldous's wrist.",
+    "\"The stone is cracking, boy. They will not tell you. Go to the mountain.\""
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "concord"
+  },
+  {
+   "faction": "hollow"
+  }
+ ],
+ "speakers": {
+  "edda": "Sister Edda Vey",
+  "maelis": "Maelis Thorne"
+ },
+ "hero": {
+  "at": [
+   0.1,
+   0.56
+  ]
+ },
+ "map": {
+  "name": "The Knight Who Came Back",
+  "size": [
+   192,
+   128
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "meadow",
+  "border": "mountains",
+  "features": {
+   "woods": [
+    {
+     "at": [
+      0.2,
+      0.12
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.16,
+      0.88
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.78,
+      0.1
+     ],
+     "r": 0.07
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.62,
+      0.5
+     ],
+     "r": 0.09
+    },
+    {
+     "at": [
+      0.46,
+      0.9
+     ],
+     "r": 0.06
+    },
+    {
+     "at": [
+      0.8,
+      0.82
+     ],
+     "r": 0.07
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.5,
+       0.0
+      ],
+      [
+       0.52,
+       0.14
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.5,
+       1.0
+      ],
+      [
+       0.52,
+       0.88
+      ]
+     ],
+     "w": 4
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "greyhold",
+    "at": [
+     0.07,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 0,
+    "name": "Greyhold"
+   },
+   {
+    "id": "waymeet",
+    "at": [
+     0.24,
+     0.32
+    ],
+    "size": "village",
+    "owner": 0,
+    "name": "Waymeet"
+   },
+   {
+    "id": "fenwick",
+    "at": [
+     0.32,
+     0.68
+    ],
+    "size": "hamlet",
+    "owner": 1,
+    "name": "Fenwick Ford"
+   },
+   {
+    "id": "north_dike",
+    "at": [
+     0.56,
+     0.24
+    ],
+    "size": "waystone",
+    "name": "North Dike",
+    "biome": "swamp"
+   },
+   {
+    "id": "south_dike",
+    "at": [
+     0.56,
+     0.76
+    ],
+    "size": "waystone",
+    "name": "South Dike",
+    "biome": "swamp"
+   },
+   {
+    "id": "sallow_mere",
+    "at": [
+     0.44,
+     0.5
+    ],
+    "size": "village",
+    "name": "Sallow Mere"
+   },
+   {
+    "id": "rest",
+    "at": [
+     0.9,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 1,
+    "name": "Saint Orrin's Rest",
+    "biome": "swamp"
+   }
+  ],
+  "sites": [
+   {
+    "id": "chapel",
+    "at": [
+     0.12,
+     0.36
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "peddler",
+    "at": [
+     0.2,
+     0.6
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "old_barrow",
+    "at": [
+     0.38,
+     0.12
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "graveyard",
+    "guards": [
+     [
+      "barrow_revenant",
+      1
+     ],
+     [
+      "shambler",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "den",
+    "at": [
+     0.3,
+     0.9
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "small_ruin",
+    "guards": [
+     [
+      "bog_lurker",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "sluice_north",
+    "at": [
+     0.64,
+     0.2
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "siege_wreck",
+    "keeper": 1,
+    "guards": [
+     [
+      "gibbet_knight",
+      1
+     ],
+     [
+      "gravecrawler",
+      2
+     ],
+     [
+      "marrow_archer",
+      3
+     ],
+     [
+      "shambler",
+      4
+     ]
+    ]
+   },
+   {
+    "id": "sluice_south",
+    "at": [
+     0.64,
+     0.8
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "siege_wreck",
+    "keeper": 1,
+    "guards": [
+     [
+      "gibbet_knight",
+      1
+     ],
+     [
+      "gravecrawler",
+      2
+     ],
+     [
+      "marrow_archer",
+      3
+     ],
+     [
+      "shambler",
+      4
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "greyhold",
+    "waymeet",
+    "road"
+   ],
+   [
+    "greyhold",
+    "chapel",
+    "trail"
+   ],
+   [
+    "greyhold",
+    "peddler",
+    "road"
+   ],
+   [
+    "greyhold",
+    "fenwick",
+    "road"
+   ],
+   [
+    "peddler",
+    "fenwick",
+    "road"
+   ],
+   [
+    "waymeet",
+    "old_barrow",
+    "trail"
+   ],
+   [
+    "waymeet",
+    "sallow_mere",
+    "road"
+   ],
+   [
+    "fenwick",
+    "sallow_mere",
+    "road"
+   ],
+   [
+    "fenwick",
+    "den",
+    "trail"
+   ],
+   [
+    "waymeet",
+    "north_dike",
+    "road"
+   ],
+   [
+    "fenwick",
+    "south_dike",
+    "road"
+   ],
+   [
+    "north_dike",
+    "sluice_north",
+    "trail"
+   ],
+   [
+    "south_dike",
+    "sluice_south",
+    "trail"
+   ],
+   [
+    "north_dike",
+    "rest",
+    "road"
+   ],
+   [
+    "south_dike",
+    "rest",
+    "road"
+   ],
+   [
+    "sallow_mere",
+    "north_dike",
+    "trail"
+   ],
+   [
+    "sallow_mere",
+    "south_dike",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 8,
+   "rocks": 6,
+   "ponds": 3
+  }
+ },
+ "npcs": [
+  {
+   "id": "maud",
+   "name": "Abbess Maud Lorne",
+   "look": "lightbearer",
+   "at": [
+    0.13,
+    0.42
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "maud_decided"
+      }
+     },
+     "dialogue": "maud",
+     "mark": "!"
+    },
+    {
+     "dialogue": "maud_after"
+    }
+   ]
+  },
+  {
+   "id": "wat",
+   "name": "Wat the Dikereeve",
+   "look": "npc_elder",
+   "at": [
+    0.34,
+    0.63
+   ],
+   "if": {
+    "not": {
+     "flag": "wat_gone"
+    }
+   },
+   "talk": [
+    {
+     "if": {
+      "all": [
+       {
+        "held": "fenwick"
+       },
+       {
+        "not": {
+         "flag": "wat_decided"
+        }
+       }
+      ]
+     },
+     "dialogue": "wat",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "not": {
+       "held": "fenwick"
+      }
+     },
+     "dialogue": "wat_hiding"
+    },
+    {
+     "dialogue": "wat_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "levy",
+   "owner": 0,
+   "at": [
+    0.13,
+    0.54
+   ],
+   "units": [
+    [
+     "pike_militia",
+     10
+    ],
+    [
+     "longbowman",
+     8
+    ],
+    [
+     "shieldwarden",
+     3
+    ],
+    [
+     "lancer",
+     3
+    ]
+   ]
+  },
+  {
+   "id": "fenwick_dead",
+   "owner": 1,
+   "at": [
+    0.32,
+    0.7
+   ],
+   "units": [
+    [
+     "shambler",
+     6
+    ],
+    [
+     "marrow_archer",
+     2
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "orrin",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.5
+   ],
+   "hero": {
+    "class": "gravewarden",
+    "name": "Sir Orrin Wren",
+    "level": 8
+   },
+   "guard": 12
+  },
+  {
+   "id": "orrin_guard",
+   "owner": 1,
+   "at": [
+    0.87,
+    0.5
+   ],
+   "units": [
+    [
+     "gibbet_knight",
+     1
+    ],
+    [
+     "gravecrawler",
+     3
+    ],
+    [
+     "marrow_archer",
+     4
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "chapel_priests",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.12,
+    0.42
+   ],
+   "units": [
+    [
+     "lightbearer",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "dike_crew",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.33,
+    0.62
+   ],
+   "units": [
+    [
+     "worker_concord",
+     3
+    ]
+   ]
+  },
+  {
+   "id": "riders_north",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.62,
+    0.2
+   ],
+   "units": [
+    [
+     "gibbet_knight",
+     1
+    ],
+    [
+     "shambler",
+     4
+    ]
+   ],
+   "attack": "waymeet"
+  },
+  {
+   "id": "riders_south",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.62,
+    0.8
+   ],
+   "units": [
+    [
+     "gibbet_knight",
+     1
+    ],
+    [
+     "shambler",
+     4
+    ]
+   ],
+   "attack": "greyhold"
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "House Wren's colours. On a dead man. I'll not have it.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Sister Edda Vey"
+   },
+   "say": "The lamp burns blue all the way to the horizon, my lord. All of it is his.",
+   "who": "edda"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "The Knight Who Came Back",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Retake Fenwick Ford from the dead",
+     "done": {
+      "held": "fenwick"
+     },
+     "do": [
+      {
+       "xp": 250
+      }
+     ]
+    },
+    {
+     "text": "Open the north and south dike sluices",
+     "done": {
+      "all": [
+       {
+        "cleared": "sluice_north"
+       },
+       {
+        "cleared": "sluice_south"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 400
+      }
+     ]
+    },
+    {
+     "text": "Break Saint Orrin's Rest: cut down Sir Orrin and his knights, or take the town",
+     "done": {
+      "any": [
+       {
+        "held": "rest"
+       },
+       {
+        "not": {
+         "holds": [
+          1,
+          1
+         ]
+        }
+       },
+       {
+        "all": [
+         {
+          "dead": "orrin"
+         },
+         {
+          "dead": "orrin_guard"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 700
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "abbess": {
+   "title": "The Abbess's Gift",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Hear Abbess Maud Lorne at Greyhold's chapel",
+     "done": {
+      "flag": "maud_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 100
+    }
+   ]
+  },
+  "dikes": {
+   "title": "The Dikereeve",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Decide what to do about Fenwick's dikes",
+     "done": {
+      "flag": "wat_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 150
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "maud": {
+   "nodes": {
+    "start": {
+     "text": "Sir Aldous. The temple has kept your family's chapel for a hundred years. Now we hear Sir Orrin is riding again, and the people ask me whether the saint has turned against them.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "He's not a saint, Mother. He's my great-grandfather, and somebody has dug him up.",
+     "next": "c"
+    },
+    "c": {
+     "text": "Then the temple will help you put him back. Tell me what you need. We have a little silver, and a few priests who can still hold a lamp steady.",
+     "choices": [
+      {
+       "text": "The silver. I need lancers more than prayers.",
+       "do": [
+        {
+         "flag": "maud_decided"
+        },
+        {
+         "flag": "maud_silver"
+        },
+        {
+         "res": {
+          "gold": 400
+         }
+        }
+       ],
+       "next": "silver"
+      },
+      {
+       "text": "Send me your priests.",
+       "do": [
+        {
+         "flag": "maud_decided"
+        },
+        {
+         "flag": "maud_priests"
+        },
+        {
+         "spawn": "chapel_priests"
+        }
+       ],
+       "next": "priests"
+      }
+     ]
+    },
+    "silver": {
+     "text": "It was meant for the roof. The roof can wait. Go with the saint, whatever he is now."
+    },
+    "priests": {
+     "text": "Brother Anselm's best two. They'll keep your men standing longer than any silver would."
+    }
+   }
+  },
+  "maud_after": {
+   "nodes": {
+    "start": {
+     "text": "We pray for you at every bell, my lord. And for him."
+    }
+   }
+  },
+  "wat_hiding": {
+   "nodes": {
+    "start": {
+     "text": "...not yet, not yet, they're still in the village... get them out first, my lord..."
+    }
+   }
+  },
+  "wat": {
+   "nodes": {
+    "start": {
+     "text": "My lord! I'm Wat, dikereeve of Fenwick. Was. The dead closed the sluices on the north and south dikes and let the meres come up over the fields. They like it wet.",
+     "next": "b"
+    },
+    "b": {
+     "text": "Their riders come out of the drowned dikes. Open the sluices and the water goes down, and the riders have nowhere to hide. I know the old sluice gates, my lord. I could help, or I could take my people north where it's dry.",
+     "choices": [
+      {
+       "text": "Help Greyhold, Wat. Your people can work here.",
+       "do": [
+        {
+         "flag": "wat_decided"
+        },
+        {
+         "flag": "wat_helps"
+        },
+        {
+         "spawn": "dike_crew"
+        },
+        {
+         "remove": "wat"
+        }
+       ],
+       "next": "help"
+      },
+      {
+       "text": "Take your people north. This is soldiers' work.",
+       "do": [
+        {
+         "flag": "wat_decided"
+        },
+        {
+         "flag": "wat_gone"
+        },
+        {
+         "leave": "wat",
+         "to": "greyhold"
+        },
+        {
+         "marks": 30
+        }
+       ],
+       "next": "go"
+      }
+     ]
+    },
+    "help": {
+     "text": "Then my lads will dig for you. Mind the sluice gates: the dead have chained them, but chains rust."
+    },
+    "go": {
+     "text": "Gods keep you, my lord. Take this, it's what the village had put by. We won't need it in Greyhold."
+    }
+   }
+  },
+  "wat_after": {
+   "nodes": {
+    "start": {
+     "text": "The water's going down. You can smell the fields again."
+    }
+   }
+  },
+  "orrin_parley": {
+   "nodes": {
+    "start": {
+     "who": "orrin",
+     "text": "Who rides in my colours? Come closer. My eyes are... not what they were.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Aldous Wren, lord of Greyhold. Your great-grandson.",
+     "next": "c"
+    },
+    "c": {
+     "who": "orrin",
+     "text": "Greyhold. I held a gate once. I held it until the stone came down behind me. There was a boy. My son, Edric. He was in the keep when I rode out. Did he live?",
+     "choices": [
+      {
+       "text": "He lived. He held Greyhold after you, and his son after him.",
+       "do": [
+        {
+         "flag": "orrin_told"
+        }
+       ],
+       "next": "told"
+      },
+      {
+       "text": "You don't get to ask about the living any more.",
+       "next": "cold"
+      }
+     ]
+    },
+    "told": {
+     "who": "orrin",
+     "text": "Then it was worth it. ...It is hard to think, boy. Something is in my head that is not me. It says ride, and I ride. Cut me down quickly.",
+     "next": "end"
+    },
+    "cold": {
+     "who": "orrin",
+     "text": "No. No, I suppose I don't. Something speaks in my head now, and it says ride.",
+     "next": "end"
+    },
+    "end": {
+     "who": "orrin",
+     "text": "Knights of the Rest! To me!"
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "rest",
+      "r": 26
+     },
+     {
+      "alive": "orrin"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "orrin_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "held": "fenwick"
+   },
+   "do": [
+    {
+     "say": "Fenwick is ours again. Find out who's still alive in it.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "sluice_north"
+   },
+   "do": [
+    {
+     "say": "The north sluice is open. The water's running off the fields.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "sluice_south"
+   },
+   "do": [
+    {
+     "say": "The south sluice is open. No more riders from the south dike.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 40
+   },
+   "do": [
+    {
+     "say": "Lancers at tier 4, my lord, nothing heavier. His knights will ride through pikes. Meet them with numbers and bows.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "orrin"
+     },
+     {
+      "not": {
+       "alive": "orrin"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "He's down. Sir Orrin Wren is down.",
+     "who": "hero"
+    },
+    {
+     "xp": 300
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 150
+     },
+     {
+      "not": {
+       "cleared": "sluice_north"
+      }
+     }
+    ]
+   },
+   "repeat": 150,
+   "do": [
+    {
+     "spawn": "riders_north"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 200
+     },
+     {
+      "not": {
+       "cleared": "sluice_south"
+      }
+     }
+    ]
+   },
+   "repeat": 150,
+   "do": [
+    {
+     "spawn": "riders_south"
+    }
+   ]
+  }
+ ]
+}

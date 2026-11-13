@@ -1,0 +1,1050 @@
+{
+ "id": "ll_doors",
+ "title": "Doors of Stone",
+ "kind": "hero",
+ "seed": 4505,
+ "intro": [
+  "The Lockstone, the seal on the Wound, was cast by the Sunken Forge, and the Concord stopped paying for its upkeep forty years ago. Aldous rides to the mountain gates with Orrin's warning and a small escort.",
+  "Below the Stonevow Gate lives a smith the Forge threw out for talking to outsiders: Tobbin Greave. If anyone will speak for the Concord at the gate, it is him.",
+  "The border wardens of Ironmarshal Dask Vell guard the road. They call your people debtors, and they have been told what to do with debtors."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "learned_lockstone"
+   },
+   "text": [
+    "The wardens fall back behind the rock. Dask Vell's last words stay with Aldous on the road down: the runes on the Lockstone have not been recut in forty years, and the Forge has been begging the Concord for the silver to do it.",
+    "From the walls a runesmith shouts down: \"You owe us forty years. Pay it in your own blood.\" The gates do not open."
+   ]
+  },
+  {
+   "text": [
+    "The wardens fall back behind the rock. From the walls a runesmith shouts down: \"You owe us forty years. Pay it in your own blood.\"",
+    "The gates do not open."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "concord"
+  },
+  {
+   "faction": "forge"
+  }
+ ],
+ "speakers": {
+  "edda": "Sister Edda Vey",
+  "maelis": "Maelis Thorne"
+ },
+ "hero": {
+  "at": [
+   0.07,
+   0.62
+  ]
+ },
+ "hero_boost": {
+  "hp": 400,
+  "damage_pct": 0.7
+ },
+ "checkpoint": "camp_shrine",
+ "map": {
+  "name": "Doors of Stone",
+  "size": [
+   176,
+   112
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "gloomcrag",
+  "border": "mountains",
+  "features": {
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.2,
+       0.0
+      ],
+      [
+       0.24,
+       0.22
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.46,
+       0.32
+      ],
+      [
+       0.5,
+       0.4
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.7,
+       1.0
+      ],
+      [
+       0.72,
+       0.82
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.96,
+       0.62
+      ],
+      [
+       0.82,
+       0.66
+      ]
+     ],
+     "w": 5
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.18,
+      0.86
+     ],
+     "r": 0.07
+    },
+    {
+     "at": [
+      0.5,
+      0.88
+     ],
+     "r": 0.05
+    }
+   ],
+   "woods": [
+    {
+     "at": [
+      0.12,
+      0.3
+     ],
+     "r": 0.07
+    },
+    {
+     "at": [
+      0.38,
+      0.82
+     ],
+     "r": 0.06
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "camp",
+    "at": [
+     0.06,
+     0.58
+    ],
+    "size": "waystone",
+    "owner": 0,
+    "name": "Wren's Camp"
+   },
+   {
+    "id": "workshop",
+    "at": [
+     0.3,
+     0.4
+    ],
+    "size": "hamlet",
+    "name": "Greave's Workshop",
+    "nodes": 0
+   },
+   {
+    "id": "post",
+    "at": [
+     0.56,
+     0.66
+    ],
+    "size": "hamlet",
+    "owner": 1,
+    "name": "Warden Post",
+    "nodes": 0
+   },
+   {
+    "id": "gate_road",
+    "at": [
+     0.74,
+     0.42
+    ],
+    "size": "waystone",
+    "name": "The Gate Road"
+   },
+   {
+    "id": "stonevow",
+    "at": [
+     0.9,
+     0.38
+    ],
+    "size": "town",
+    "owner": 1,
+    "name": "Stonevow Gate"
+   }
+  ],
+  "sites": [
+   {
+    "id": "camp_shrine",
+    "at": [
+     0.1,
+     0.46
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "greave_stall",
+    "at": [
+     0.35,
+     0.48
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "rune_cairn",
+    "at": [
+     0.6,
+     0.5
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "old_mine",
+    "at": [
+     0.4,
+     0.14
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "small_ruin",
+    "guards": [
+     [
+      "cave_stalker",
+      2
+     ],
+     [
+      "crag_slinger",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "troll_bridge",
+    "at": [
+     0.62,
+     0.2
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "lone_tower",
+    "guards": [
+     [
+      "hill_troll",
+      1
+     ],
+     [
+      "crag_slinger",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "slag_heap",
+    "at": [
+     0.4,
+     0.78
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "siege_wreck",
+    "guards": [
+     [
+      "ashscale_basilisk",
+      1
+     ],
+     [
+      "cave_stalker",
+      1
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "camp",
+    "camp_shrine",
+    "trail"
+   ],
+   [
+    "camp",
+    "workshop",
+    "road"
+   ],
+   [
+    "workshop",
+    "greave_stall",
+    "road"
+   ],
+   [
+    "workshop",
+    "old_mine",
+    "trail"
+   ],
+   [
+    "greave_stall",
+    "post",
+    "road"
+   ],
+   [
+    "greave_stall",
+    "slag_heap",
+    "trail"
+   ],
+   [
+    "post",
+    "rune_cairn",
+    "road"
+   ],
+   [
+    "rune_cairn",
+    "gate_road",
+    "road"
+   ],
+   [
+    "old_mine",
+    "troll_bridge",
+    "trail"
+   ],
+   [
+    "troll_bridge",
+    "gate_road",
+    "trail"
+   ],
+   [
+    "gate_road",
+    "stonevow",
+    "road"
+   ],
+   [
+    "camp",
+    "slag_heap",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 4,
+   "rocks": 10,
+   "ponds": 2
+  }
+ },
+ "npcs": [
+  {
+   "id": "greave",
+   "name": "Tobbin Greave",
+   "look": "hero_artificer",
+   "at": [
+    0.31,
+    0.36
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "greave_met"
+      }
+     },
+     "dialogue": "greave",
+     "mark": "!"
+    },
+    {
+     "dialogue": "greave_idle"
+    }
+   ]
+  },
+  {
+   "id": "nim",
+   "name": "Nim",
+   "look": "worker_forge",
+   "at": [
+    0.42,
+    0.18
+   ],
+   "facing": 1.0,
+   "talk": [
+    {
+     "if": {
+      "all": [
+       {
+        "cleared": "old_mine"
+       },
+       {
+        "not": {
+         "flag": "nim_decided"
+        }
+       }
+      ]
+     },
+     "dialogue": "nim",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "not": {
+       "cleared": "old_mine"
+      }
+     },
+     "dialogue": "nim_trapped"
+    }
+   ]
+  },
+  {
+   "id": "hessa",
+   "name": "Runesmith Hessa Brand",
+   "look": "hero_runesmith",
+   "at": [
+    0.84,
+    0.36
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "asked_gate"
+      }
+     },
+     "dialogue": "hessa",
+     "mark": "!"
+    },
+    {
+     "dialogue": "hessa_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "patrol",
+   "owner": 1,
+   "at": [
+    0.46,
+    0.52
+   ],
+   "units": [
+    [
+     "forge_thrall",
+     4
+    ],
+    [
+     "rivet_crossbowman",
+     2
+    ]
+   ],
+   "guard": 8
+  },
+  {
+   "id": "warden_post",
+   "owner": 1,
+   "at": [
+    0.56,
+    0.7
+   ],
+   "units": [
+    [
+     "anvil_guard",
+     2
+    ],
+    [
+     "rivet_crossbowman",
+     3
+    ],
+    [
+     "forge_thrall",
+     3
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "workshop_raid",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.5,
+    0.42
+   ],
+   "units": [
+    [
+     "forge_thrall",
+     5
+    ],
+    [
+     "rivet_crossbowman",
+     2
+    ],
+    [
+     "slag_golem",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "vell",
+   "owner": 1,
+   "at": [
+    0.86,
+    0.42
+   ],
+   "hero": {
+    "class": "ironmarshal",
+    "name": "Ironmarshal Dask Vell",
+    "level": 10
+   },
+   "guard": 12
+  },
+  {
+   "id": "vell_guard",
+   "owner": 1,
+   "at": [
+    0.85,
+    0.44
+   ],
+   "units": [
+    [
+     "anvil_guard",
+     2
+    ],
+    [
+     "slag_golem",
+     1
+    ],
+    [
+     "rivet_crossbowman",
+     4
+    ],
+    [
+     "forge_thrall",
+     3
+    ]
+   ],
+   "guard": 12
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "Orrin said go to the mountain. Here's the mountain.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Maelis Thorne"
+   },
+   "say": "They've watched us since the last ridge, my lord. Crossbows on every ledge.",
+   "who": "maelis"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "Doors of Stone",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Find Tobbin Greave at his workshop below the pass",
+     "done": {
+      "flag": "greave_met"
+     },
+     "do": [
+      {
+       "xp": 150
+      }
+     ]
+    },
+    {
+     "text": "Ask for the Forge's help at the Stonevow Gate",
+     "done": {
+      "flag": "asked_gate"
+     },
+     "do": [
+      {
+       "xp": 200
+      }
+     ]
+    },
+    {
+     "text": "Drive the wardens away from Greave's workshop",
+     "done": {
+      "dead": "workshop_raid"
+     },
+     "do": [
+      {
+       "xp": 300
+      }
+     ]
+    },
+    {
+     "text": "Break the warden post on the gate road",
+     "done": {
+      "dead": "warden_post"
+     },
+     "do": [
+      {
+       "xp": 300
+      }
+     ]
+    },
+    {
+     "text": "Defeat Ironmarshal Dask Vell before the gate",
+     "done": {
+      "all": [
+       {
+        "dead": "vell"
+       },
+       {
+        "dead": "vell_guard"
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 900
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "apprentice": {
+   "title": "The Apprentice",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Find Greave's apprentice in the old mine",
+     "done": {
+      "cleared": "old_mine"
+     }
+    },
+    {
+     "text": "Talk to Nim",
+     "done": {
+      "flag": "nim_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 300
+    },
+    {
+     "if": {
+      "flag": "nim_home"
+     },
+     "item": {
+      "rarity": "rare",
+      "slot": "weapon",
+      "level": 6
+     }
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "greave": {
+   "nodes": {
+    "start": {
+     "who": "greave",
+     "text": "A Concord knight at my door. They'll be cutting a new rune for that up at the gate: the day the debtors came back.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "The Lockstone is cracking, master Greave. My great-grandfather said so with his last breath.",
+     "next": "c"
+    },
+    "c": {
+     "who": "greave",
+     "text": "Your great-grandfather was right, and the Forge has known for ten years. Ask at the gate if you like. They'll tell you what they told me when I said we should help: debts first.",
+     "next": "d"
+    },
+    "d": {
+     "who": "greave",
+     "text": "And when you've asked, the wardens will come down here to clear the debtors off their road. Me included. Stand with me when they do, and I'll owe you.",
+     "do": [
+      {
+       "flag": "greave_met"
+      }
+     ],
+     "next": "e"
+    },
+    "e": {
+     "who": "greave",
+     "text": "One more thing. My apprentice, Nim, went up to the old mine for ore four days ago. Something lives up there now.",
+     "choices": [
+      {
+       "text": "I'll look for Nim.",
+       "do": [
+        {
+         "start_quest": "apprentice"
+        }
+       ]
+      },
+      {
+       "text": "The gate first."
+      }
+     ]
+    }
+   }
+  },
+  "greave_idle": {
+   "nodes": {
+    "start": {
+     "who": "greave",
+     "text": "Mind the crossbows on the ledges. Wardens don't miss."
+    }
+   }
+  },
+  "nim_trapped": {
+   "nodes": {
+    "start": {
+     "text": "Is someone there? Don't come in, there's things in the dark! Big ones!"
+    }
+   }
+  },
+  "nim": {
+   "nodes": {
+    "start": {
+     "text": "You killed them? All of them? Master Greave said Concord folk were soft. He was wrong. Or you're not Concord.",
+     "next": "b"
+    },
+    "b": {
+     "text": "I've been hiding in the ore cart for four days. I'm not going back to sweeping his floor, my lord. Take me with you. I can shoot a rivet-bow.",
+     "choices": [
+      {
+       "text": "Then shoot for us, Nim.",
+       "do": [
+        {
+         "flag": "nim_decided"
+        },
+        {
+         "flag": "nim_joined"
+        },
+        {
+         "join": "nim"
+        }
+       ],
+       "next": "join"
+      },
+      {
+       "text": "Your master is sick with worry. Go home.",
+       "do": [
+        {
+         "flag": "nim_decided"
+        },
+        {
+         "flag": "nim_home"
+        },
+        {
+         "leave": "nim",
+         "to": "workshop"
+        }
+       ],
+       "next": "home"
+      }
+     ]
+    },
+    "join": {
+     "text": "Ha! Wait till he hears. Don't tell him I said that."
+    },
+    "home": {
+     "text": "...Fine. He'll make me sweep for a month. Here, he'll want you to have something for it. He always does."
+    }
+   }
+  },
+  "hessa": {
+   "nodes": {
+    "start": {
+     "text": "That's far enough, Concord. Say your piece from there.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "The Lockstone is failing. The dead walk in the south and a dead knight told me to come here. I'm asking the Forge for help.",
+     "next": "c"
+    },
+    "c": {
+     "text": "Asking. Forty years ago the Concord stopped asking and stopped paying. We kept the runes cut on our own silver until there was no more silver. You owe us forty years.",
+     "choices": [
+      {
+       "text": "Take what I have, as a start. (150 marks)",
+       "if": {
+        "marks": 150
+       },
+       "do": [
+        {
+         "flag": "asked_gate"
+        },
+        {
+         "flag": "paid_debt"
+        },
+        {
+         "marks": -150
+        },
+        {
+         "spawn": "workshop_raid"
+        },
+        {
+         "attack": "workshop_raid",
+         "to": "workshop"
+        }
+       ],
+       "next": "paid"
+      },
+      {
+       "text": "The Concord will pay once the stone holds.",
+       "do": [
+        {
+         "flag": "asked_gate"
+        },
+        {
+         "spawn": "workshop_raid"
+        },
+        {
+         "attack": "workshop_raid",
+         "to": "workshop"
+        }
+       ],
+       "next": "promise"
+      },
+      {
+       "text": "Then I'll talk to whoever holds your leash.",
+       "do": [
+        {
+         "flag": "asked_gate"
+        },
+        {
+         "spawn": "workshop_raid"
+        },
+        {
+         "attack": "workshop_raid",
+         "to": "workshop"
+        }
+       ],
+       "next": "rude"
+      }
+     ]
+    },
+    "paid": {
+     "text": "...A knight who pays from his own purse. That's new. It changes nothing at the gate, but take this; my rune, not the Forge's. Now go. The wardens are already marching.",
+     "do": [
+      {
+       "item": {
+        "rarity": "rare",
+        "slot": "charm",
+        "level": 6
+       }
+      }
+     ]
+    },
+    "promise": {
+     "text": "We've heard that one. The wardens are marching for Greave's workshop. Go and stand with your friend, debtor."
+    },
+    "rude": {
+     "text": "Dask Vell holds the leash, and he's already loosed it. Listen. That's the wardens marching on Greave's workshop."
+    }
+   }
+  },
+  "hessa_after": {
+   "nodes": {
+    "start": {
+     "text": "The gate stays shut, Concord."
+    }
+   }
+  },
+  "vell_parley": {
+   "nodes": {
+    "start": {
+     "who": "vell",
+     "text": "Wren. You broke my post and you killed my wardens on our own road. Debtors don't usually fight back.",
+     "next": "b"
+    },
+    "b": {
+     "who": "vell",
+     "text": "Say what you came to say. I'll still drive you off, but I'll hear it.",
+     "choices": [
+      {
+       "text": "What is wrong with the Lockstone, Vell?",
+       "do": [
+        {
+         "flag": "learned_lockstone"
+        }
+       ],
+       "next": "stone"
+      },
+      {
+       "text": "Open the gate, or I open it.",
+       "next": "end"
+      }
+     ]
+    },
+    "stone": {
+     "who": "vell",
+     "text": "Wrong? It's old. Runes wear. The Forge cut them fresh every ten years, on Concord silver, until the silver stopped. The last cutting was forty years ago. Do you understand? We told you. Every year, we told you.",
+     "next": "end"
+    },
+    "end": {
+     "who": "vell",
+     "text": "Wardens! Shields up!"
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "greave",
+      "r": 7
+     },
+     {
+      "not": {
+       "flag": "greave_met"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "greave",
+     "npc": "greave"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "hessa",
+      "r": 10
+     },
+     {
+      "not": {
+       "flag": "asked_gate"
+      }
+     },
+     {
+      "flag": "greave_met"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "hessa",
+     "npc": "hessa"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "vell",
+      "r": 12
+     },
+     {
+      "alive": "vell"
+     },
+     {
+      "flag": "asked_gate"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "vell_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "flag": "asked_gate"
+   },
+   "do": [
+    {
+     "say": "The wardens are going for Greave's workshop. Back down the road!",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "workshop_raid"
+   },
+   "do": [
+    {
+     "say": "The workshop stands. Now their post, then Vell.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "companion": "Sister Edda Vey"
+     },
+     {
+      "dead": "warden_post"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "They fight like people defending their homes, my lord. I hope we're right about this.",
+     "who": "edda"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "vell"
+     },
+     {
+      "not": {
+       "alive": "vell"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Vell is down. The gate road is ours.",
+     "who": "hero"
+    },
+    {
+     "xp": 300
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,15411 @@
+{
+ "_doc": "Made by tools/sync_unit_anims.py from the main game's assets/animations.json. Do not edit.",
+ "units": {
+  "anvil_guard": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    73,
+    189
+   ],
+   "size": [
+    235,
+    211
+   ]
+  },
+  "anvil_sworn": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    68,
+    175
+   ],
+   "size": [
+    221,
+    178
+   ]
+  },
+  "asc_anvil_sworn": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    59,
+    115
+   ],
+   "size": [
+    134,
+    117
+   ]
+  },
+  "asc_ash_matriarch": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    54,
+    115
+   ],
+   "size": [
+    135,
+    118
+   ]
+  },
+  "asc_barkhide_sentinel": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    79,
+    118
+   ],
+   "size": [
+    147,
+    121
+   ]
+  },
+  "asc_blooded_raider": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    72,
+    124
+   ],
+   "size": [
+    123,
+    126
+   ]
+  },
+  "asc_bloodfrenzy_berserker": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    65,
+    124
+   ],
+   "size": [
+    140,
+    126
+   ]
+  },
+  "asc_briar_deadshot": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    59,
+    120
+   ],
+   "size": [
+    138,
+    122
+   ]
+  },
+  "asc_brimstone_bombardier": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    57,
+    116
+   ],
+   "size": [
+    152,
+    118
+   ]
+  },
+  "asc_bulwark_sworn": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    73,
+    115
+   ],
+   "size": [
+    137,
+    119
+   ]
+  },
+  "asc_cairn_warlord": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    61,
+    116
+   ],
+   "size": [
+    147,
+    118
+   ]
+  },
+  "asc_charnel_behemoth": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    71,
+    113
+   ],
+   "size": [
+    136,
+    117
+   ]
+  },
+  "asc_charnel_weaver": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    60,
+    115
+   ],
+   "size": [
+    129,
+    117
+   ]
+  },
+  "asc_citadel_colossus": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    58,
+    116
+   ],
+   "size": [
+    137,
+    119
+   ]
+  },
+  "asc_dawn_confessor": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    54,
+    116
+   ],
+   "size": [
+    115,
+    119
+   ]
+  },
+  "asc_de_blood_scythe": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    67,
+    115
+   ],
+   "size": [
+    171,
+    119
+   ]
+  },
+  "asc_de_dread_rider": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    71,
+    98
+   ],
+   "size": [
+    149,
+    100
+   ]
+  },
+  "asc_de_dusk_sentinel": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    60,
+    115
+   ],
+   "size": [
+    147,
+    117
+   ]
+  },
+  "asc_de_eclipse_dragon": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    61,
+    112
+   ],
+   "size": [
+    144,
+    116
+   ]
+  },
+  "asc_de_mirror_witch": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    53,
+    116
+   ],
+   "size": [
+    129,
+    118
+   ]
+  },
+  "asc_de_onyx_executioner": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    97,
+    135
+   ],
+   "size": [
+    164,
+    137
+   ]
+  },
+  "asc_de_venom_arbalist": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    65,
+    106
+   ],
+   "size": [
+    145,
+    108
+   ]
+  },
+  "asc_de_widow_matriarch": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    76,
+    89
+   ],
+   "size": [
+    140,
+    91
+   ]
+  },
+  "asc_dirge_shade": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    58,
+    108
+   ],
+   "size": [
+    127,
+    111
+   ]
+  },
+  "asc_doom_bombard": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    61,
+    110
+   ],
+   "size": [
+    144,
+    112
+   ]
+  },
+  "asc_flayer_exalted": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    59,
+    117
+   ],
+   "size": [
+    138,
+    119
+   ]
+  },
+  "asc_fm_abyss_harpooner": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    59,
+    99
+   ],
+   "size": [
+    136,
+    101
+   ]
+  },
+  "asc_fm_abyss_sovereign": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    58,
+    112
+   ],
+   "size": [
+    134,
+    114
+   ]
+  },
+  "asc_fm_barnacle_bulwark": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    62,
+    115
+   ],
+   "size": [
+    125,
+    117
+   ]
+  },
+  "asc_fm_drowned_oracle": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    61,
+    119
+   ],
+   "size": [
+    143,
+    122
+   ]
+  },
+  "asc_fm_reef_guard": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    63,
+    109
+   ],
+   "size": [
+    146,
+    111
+   ]
+  },
+  "asc_fm_siege_carapace": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    58,
+    94
+   ],
+   "size": [
+    146,
+    96
+   ]
+  },
+  "asc_fm_storm_leviathan": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    75,
+    124
+   ],
+   "size": [
+    185,
+    126
+   ]
+  },
+  "asc_fm_trench_reaver": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    71,
+    109
+   ],
+   "size": [
+    138,
+    113
+   ]
+  },
+  "asc_furnace_golem": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    58,
+    117
+   ],
+   "size": [
+    150,
+    119
+   ]
+  },
+  "asc_gibbet_lord": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    69,
+    120
+   ],
+   "size": [
+    147,
+    122
+   ]
+  },
+  "asc_gloomwing_shrike": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    64,
+    116
+   ],
+   "size": [
+    144,
+    126
+   ]
+  },
+  "asc_gorgewing_matron": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    71,
+    96
+   ],
+   "size": [
+    133,
+    101
+   ]
+  },
+  "asc_gravecrawler_brood": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    58,
+    102
+   ],
+   "size": [
+    131,
+    104
+   ]
+  },
+  "asc_hellmaw_hound": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    70,
+    89
+   ],
+   "size": [
+    135,
+    91
+   ]
+  },
+  "asc_iron_sovereign": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    63,
+    118
+   ],
+   "size": [
+    157,
+    120
+   ]
+  },
+  "asc_ironclad_thrall": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    53,
+    115
+   ],
+   "size": [
+    124,
+    117
+   ]
+  },
+  "asc_ironhoof_warboar": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    58,
+    102
+   ],
+   "size": [
+    143,
+    104
+   ]
+  },
+  "asc_marrow_deadeye": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    63,
+    115
+   ],
+   "size": [
+    137,
+    118
+   ]
+  },
+  "asc_master_engineer": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    52,
+    115
+   ],
+   "size": [
+    130,
+    117
+   ]
+  },
+  "asc_maw_of_ruin": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    66,
+    95
+   ],
+   "size": [
+    140,
+    100
+   ]
+  },
+  "asc_oathbound_lancer": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    57,
+    115
+   ],
+   "size": [
+    153,
+    117
+   ]
+  },
+  "asc_pike_veteran": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    50,
+    115
+   ],
+   "size": [
+    120,
+    117
+   ]
+  },
+  "asc_plague_lobber": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    60,
+    115
+   ],
+   "size": [
+    134,
+    117
+   ]
+  },
+  "asc_pyre_sovereign": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    52,
+    115
+   ],
+   "size": [
+    126,
+    118
+   ]
+  },
+  "asc_rimeback_stampede": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    69,
+    105
+   ],
+   "size": [
+    134,
+    107
+   ]
+  },
+  "asc_rimefang_packleader": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    73,
+    90
+   ],
+   "size": [
+    139,
+    92
+   ]
+  },
+  "asc_rivet_arbalist": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    69,
+    108
+   ],
+   "size": [
+    161,
+    111
+   ]
+  },
+  "asc_rootbinder_elder": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    63,
+    118
+   ],
+   "size": [
+    145,
+    121
+   ]
+  },
+  "asc_rootbound_patriarch": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    62,
+    118
+   ],
+   "size": [
+    147,
+    121
+   ]
+  },
+  "asc_rotting_shambler": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    69,
+    117
+   ],
+   "size": [
+    137,
+    119
+   ]
+  },
+  "asc_rotwing_sovereign": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    72,
+    106
+   ],
+   "size": [
+    134,
+    113
+   ]
+  },
+  "asc_seared_cinderling": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    100,
+    120
+   ],
+   "size": [
+    168,
+    125
+   ]
+  },
+  "asc_storm_shaman": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    67,
+    116
+   ],
+   "size": [
+    123,
+    118
+   ]
+  },
+  "asc_sunhawk_paladin": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    66,
+    112
+   ],
+   "size": [
+    137,
+    116
+   ]
+  },
+  "asc_thorn_stalker": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    64,
+    115
+   ],
+   "size": [
+    143,
+    118
+   ]
+  },
+  "asc_tusk_chieftain": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    58,
+    115
+   ],
+   "size": [
+    140,
+    118
+   ]
+  },
+  "asc_warbow_sergeant": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    62,
+    115
+   ],
+   "size": [
+    140,
+    118
+   ]
+  },
+  "asc_winter_wyrm_ancient": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    61,
+    102
+   ],
+   "size": [
+    132,
+    104
+   ]
+  },
+  "asc_worldforge_engine": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    71,
+    114
+   ],
+   "size": [
+    129,
+    117
+   ]
+  },
+  "asc_wyrdthorn_matriarch": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    58,
+    109
+   ],
+   "size": [
+    129,
+    111
+   ]
+  },
+  "ash_matriarch": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    90,
+    117
+   ],
+   "size": [
+    168,
+    141
+   ]
+  },
+  "ash_witch": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    118,
+    143
+   ],
+   "size": [
+    182,
+    151
+   ]
+  },
+  "ashscale_basilisk": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    87,
+    110
+   ],
+   "size": [
+    171,
+    113
+   ]
+  },
+  "barkhide_sentinel": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    59,
+    156
+   ],
+   "size": [
+    218,
+    173
+   ]
+  },
+  "barkhide_warden": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    97,
+    141
+   ],
+   "size": [
+    213,
+    161
+   ]
+  },
+  "barrow_revenant": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    75,
+    140
+   ],
+   "size": [
+    229,
+    169
+   ]
+  },
+  "bastion_colossus": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    99,
+    139
+   ],
+   "size": [
+    195,
+    146
+   ]
+  },
+  "blooded_raider": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    61,
+    181
+   ],
+   "size": [
+    168,
+    199
+   ]
+  },
+  "bloodfrenzy_berserker": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    54,
+    151
+   ],
+   "size": [
+    208,
+    174
+   ]
+  },
+  "bog_lurker": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    101,
+    132
+   ],
+   "size": [
+    181,
+    135
+   ]
+  },
+  "bog_serpent": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 450,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    144,
+    72
+   ],
+   "size": [
+    287,
+    87
+   ]
+  },
+  "briar_deadshot": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    44,
+    132
+   ],
+   "size": [
+    156,
+    155
+   ]
+  },
+  "briar_huntress": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    44,
+    137
+   ],
+   "size": [
+    157,
+    153
+   ]
+  },
+  "brimstone_bombardier": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 540,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    117,
+    131
+   ],
+   "size": [
+    242,
+    138
+   ]
+  },
+  "brimstone_hurler": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 540,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    101,
+    131
+   ],
+   "size": [
+    237,
+    134
+   ]
+  },
+  "bulwark_sworn": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    93,
+    139
+   ],
+   "size": [
+    189,
+    172
+   ]
+  },
+  "cairn_giant": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    107,
+    137
+   ],
+   "size": [
+    191,
+    145
+   ]
+  },
+  "cairn_warlord": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    129,
+    137
+   ],
+   "size": [
+    236,
+    148
+   ]
+  },
+  "carrion_flock": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    67,
+    114
+   ],
+   "size": [
+    136,
+    117
+   ]
+  },
+  "cave_stalker": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    100,
+    121
+   ],
+   "size": [
+    191,
+    124
+   ]
+  },
+  "charnel_behemoth": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    114,
+    141
+   ],
+   "size": [
+    214,
+    149
+   ]
+  },
+  "charnel_hulk": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    107,
+    133
+   ],
+   "size": [
+    195,
+    136
+   ]
+  },
+  "charnel_weaver": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    69,
+    138
+   ],
+   "size": [
+    196,
+    149
+   ]
+  },
+  "cinder_engineer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    89,
+    132
+   ],
+   "size": [
+    160,
+    150
+   ]
+  },
+  "cinder_maw": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      420,
+      300,
+      380,
+      300
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    79,
+    128
+   ],
+   "size": [
+    207,
+    131
+   ]
+  },
+  "cinder_wraith": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    121,
+    127
+   ],
+   "size": [
+    195,
+    136
+   ]
+  },
+  "cinderling": {
+   "actions": {
+    "attack": {
+     "frames": 7,
+     "impact_ms": 290,
+     "loop": false,
+     "ms": [
+      140,
+      150,
+      120,
+      120,
+      130,
+      140,
+      140
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      420,
+      300,
+      380,
+      300
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    94,
+    87
+   ],
+   "size": [
+    183,
+    92
+   ]
+  },
+  "citadel_colossus": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    112,
+    138
+   ],
+   "size": [
+    257,
+    174
+   ]
+  },
+  "clan_raider": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    62,
+    207
+   ],
+   "size": [
+    173,
+    226
+   ]
+  },
+  "corpse_light": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    67,
+    118
+   ],
+   "size": [
+    178,
+    127
+   ]
+  },
+  "corpse_weaver": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    60,
+    141
+   ],
+   "size": [
+    157,
+    160
+   ]
+  },
+  "crag_slinger": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 540,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    96,
+    119
+   ],
+   "size": [
+    149,
+    126
+   ]
+  },
+  "dawn_confessor": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    71,
+    165
+   ],
+   "size": [
+    182,
+    208
+   ]
+  },
+  "de_blood_scythe": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    52,
+    165
+   ],
+   "size": [
+    168,
+    193
+   ]
+  },
+  "de_cave_lancer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    131,
+    118
+   ],
+   "size": [
+    229,
+    121
+   ]
+  },
+  "de_dread_rider": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    96,
+    120
+   ],
+   "size": [
+    222,
+    123
+   ]
+  },
+  "de_dusk_sentinel": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    72,
+    157
+   ],
+   "size": [
+    200,
+    177
+   ]
+  },
+  "de_eclipse_dragon": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    77,
+    129
+   ],
+   "size": [
+    171,
+    143
+   ]
+  },
+  "de_gloam_drake": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    89,
+    150
+   ],
+   "size": [
+    193,
+    166
+   ]
+  },
+  "de_gloam_spear": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    44,
+    179
+   ],
+   "size": [
+    159,
+    197
+   ]
+  },
+  "de_knifedancer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    53,
+    150
+   ],
+   "size": [
+    160,
+    168
+   ]
+  },
+  "de_mirror_witch": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    58,
+    136
+   ],
+   "size": [
+    176,
+    161
+   ]
+  },
+  "de_obsidian_guard": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    76,
+    162
+   ],
+   "size": [
+    220,
+    183
+   ]
+  },
+  "de_onyx_executioner": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    77,
+    156
+   ],
+   "size": [
+    225,
+    176
+   ]
+  },
+  "de_shardbow": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    44,
+    131
+   ],
+   "size": [
+    151,
+    141
+   ]
+  },
+  "de_silk_stalker": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    72,
+    100
+   ],
+   "size": [
+    151,
+    105
+   ]
+  },
+  "de_veil_adept": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    58,
+    137
+   ],
+   "size": [
+    178,
+    164
+   ]
+  },
+  "de_venom_arbalist": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    72,
+    125
+   ],
+   "size": [
+    177,
+    142
+   ]
+  },
+  "de_widow_matriarch": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    66,
+    102
+   ],
+   "size": [
+    141,
+    108
+   ]
+  },
+  "deserter_crossbows": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    67,
+    103
+   ],
+   "size": [
+    133,
+    107
+   ]
+  },
+  "dirge_shade": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    106,
+    128
+   ],
+   "size": [
+    170,
+    132
+   ]
+  },
+  "doom_bombard": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    76,
+    107
+   ],
+   "size": [
+    157,
+    112
+   ]
+  },
+  "dune_scuttler": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    74,
+    90
+   ],
+   "size": [
+    189,
+    97
+   ]
+  },
+  "dune_wurm": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 450,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    107,
+    81
+   ],
+   "size": [
+    218,
+    98
+   ]
+  },
+  "flayer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    103,
+    131
+   ],
+   "size": [
+    191,
+    137
+   ]
+  },
+  "flayer_exalted": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    91,
+    105
+   ],
+   "size": [
+    160,
+    115
+   ]
+  },
+  "fm_abyss_harpooner": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    91,
+    127
+   ],
+   "size": [
+    158,
+    146
+   ]
+  },
+  "fm_abyss_sovereign": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    90,
+    130
+   ],
+   "size": [
+    156,
+    133
+   ]
+  },
+  "fm_barnacle_bulwark": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    80,
+    157
+   ],
+   "size": [
+    178,
+    180
+   ]
+  },
+  "fm_brine_spear": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    62,
+    133
+   ],
+   "size": [
+    171,
+    137
+   ]
+  },
+  "fm_coil_serpent": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 450,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    160,
+    172
+   ],
+   "size": [
+    322,
+    183
+   ]
+  },
+  "fm_drowned_oracle": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    116,
+    146
+   ],
+   "size": [
+    236,
+    171
+   ]
+  },
+  "fm_hookcaster": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    78,
+    172
+   ],
+   "size": [
+    212,
+    182
+   ]
+  },
+  "fm_lantern_acolyte": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    58,
+    138
+   ],
+   "size": [
+    170,
+    159
+   ]
+  },
+  "fm_mire_crab": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    71,
+    99
+   ],
+   "size": [
+    201,
+    103
+   ]
+  },
+  "fm_reef_guard": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    98,
+    168
+   ],
+   "size": [
+    210,
+    176
+   ]
+  },
+  "fm_shellback": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    76,
+    188
+   ],
+   "size": [
+    179,
+    199
+   ]
+  },
+  "fm_siege_carapace": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    66,
+    110
+   ],
+   "size": [
+    147,
+    115
+   ]
+  },
+  "fm_storm_leviathan": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 450,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    160,
+    139
+   ],
+   "size": [
+    322,
+    142
+   ]
+  },
+  "fm_tide_mauler": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    76,
+    143
+   ],
+   "size": [
+    185,
+    158
+   ]
+  },
+  "fm_trench_reaver": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    75,
+    141
+   ],
+   "size": [
+    190,
+    148
+   ]
+  },
+  "fm_trench_titan": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    103,
+    143
+   ],
+   "size": [
+    198,
+    159
+   ]
+  },
+  "forge_thrall": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    49,
+    131
+   ],
+   "size": [
+    129,
+    135
+   ]
+  },
+  "frost_drake": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    75,
+    140
+   ],
+   "size": [
+    151,
+    143
+   ]
+  },
+  "frost_shaman": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    66,
+    156
+   ],
+   "size": [
+    203,
+    182
+   ]
+  },
+  "furnace_golem": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    114,
+    123
+   ],
+   "size": [
+    187,
+    127
+   ]
+  },
+  "gibbet_knight": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    77,
+    181
+   ],
+   "size": [
+    180,
+    207
+   ]
+  },
+  "gibbet_lord": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    74,
+    182
+   ],
+   "size": [
+    174,
+    212
+   ]
+  },
+  "gloom_panther": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    79,
+    97
+   ],
+   "size": [
+    203,
+    100
+   ]
+  },
+  "gloomwing_shrike": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    74,
+    128
+   ],
+   "size": [
+    161,
+    135
+   ]
+  },
+  "gloomwing_strix": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    101,
+    163
+   ],
+   "size": [
+    209,
+    174
+   ]
+  },
+  "gorgewing": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    65,
+    122
+   ],
+   "size": [
+    137,
+    138
+   ]
+  },
+  "gorgewing_matron": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    62,
+    101
+   ],
+   "size": [
+    123,
+    113
+   ]
+  },
+  "gravecrawler": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    75,
+    92
+   ],
+   "size": [
+    148,
+    95
+   ]
+  },
+  "gravecrawler_brood": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    97,
+    114
+   ],
+   "size": [
+    236,
+    117
+   ]
+  },
+  "hellmaw_hound": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      420,
+      300,
+      380,
+      300
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    92,
+    110
+   ],
+   "size": [
+    226,
+    113
+   ]
+  },
+  "hero_anvilbreaker": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    70,
+    150
+   ],
+   "size": [
+    229,
+    181
+   ]
+  },
+  "hero_artificer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    104,
+    135
+   ],
+   "size": [
+    264,
+    159
+   ]
+  },
+  "hero_barrow_lord": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    90,
+    156
+   ],
+   "size": [
+    250,
+    184
+   ]
+  },
+  "hero_beastcaller": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    63,
+    157
+   ],
+   "size": [
+    186,
+    179
+   ]
+  },
+  "hero_blightcaller": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    157,
+    161
+   ],
+   "size": [
+    277,
+    190
+   ]
+  },
+  "hero_brandguard": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    75,
+    162
+   ],
+   "size": [
+    208,
+    207
+   ]
+  },
+  "hero_brine_champion": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    112,
+    197
+   ],
+   "size": [
+    272,
+    241
+   ]
+  },
+  "hero_broodbinder": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    64,
+    147
+   ],
+   "size": [
+    177,
+    173
+   ]
+  },
+  "hero_deep_oracle": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    108,
+    169
+   ],
+   "size": [
+    239,
+    218
+   ]
+  },
+  "hero_dreadmarshal": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    85,
+    146
+   ],
+   "size": [
+    245,
+    175
+   ]
+  },
+  "hero_frostcaller": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    136,
+    178
+   ],
+   "size": [
+    250,
+    193
+   ]
+  },
+  "hero_gravewarden": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    71,
+    137
+   ],
+   "size": [
+    188,
+    184
+   ]
+  },
+  "hero_grovewarden": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    73,
+    159
+   ],
+   "size": [
+    194,
+    192
+   ]
+  },
+  "hero_hearthkeeper": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    130,
+    151
+   ],
+   "size": [
+    290,
+    182
+   ]
+  },
+  "hero_huntmaster": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    64,
+    153
+   ],
+   "size": [
+    195,
+    171
+   ]
+  },
+  "hero_ironmarshal": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    62,
+    142
+   ],
+   "size": [
+    174,
+    166
+   ]
+  },
+  "hero_knight": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    71,
+    171
+   ],
+   "size": [
+    206,
+    198
+   ]
+  },
+  "hero_necromancer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    145,
+    171
+   ],
+   "size": [
+    261,
+    199
+   ]
+  },
+  "hero_nightstalker": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    57,
+    145
+   ],
+   "size": [
+    187,
+    165
+   ]
+  },
+  "hero_oracle": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    85,
+    144
+   ],
+   "size": [
+    201,
+    193
+   ]
+  },
+  "hero_ranger": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    71,
+    143
+   ],
+   "size": [
+    190,
+    165
+   ]
+  },
+  "hero_reaver": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    124,
+    141
+   ],
+   "size": [
+    208,
+    146
+   ]
+  },
+  "hero_reef_hunter": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    124,
+    149
+   ],
+   "size": [
+    208,
+    154
+   ]
+  },
+  "hero_runesmith": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    113,
+    165
+   ],
+   "size": [
+    224,
+    186
+   ]
+  },
+  "hero_templar": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    76,
+    171
+   ],
+   "size": [
+    235,
+    197
+   ]
+  },
+  "hero_thane": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    130,
+    151
+   ],
+   "size": [
+    290,
+    180
+   ]
+  },
+  "hero_thornspeaker": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    101,
+    136
+   ],
+   "size": [
+    247,
+    185
+   ]
+  },
+  "hero_tidemarshal": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    90,
+    205
+   ],
+   "size": [
+    237,
+    251
+   ]
+  },
+  "hero_tormentor": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    121,
+    146
+   ],
+   "size": [
+    281,
+    174
+   ]
+  },
+  "hero_veilseer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    150,
+    168
+   ],
+   "size": [
+    259,
+    185
+   ]
+  },
+  "hero_warlock": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    120,
+    180
+   ],
+   "size": [
+    230,
+    201
+   ]
+  },
+  "hero_warlord": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    118,
+    141
+   ],
+   "size": [
+    278,
+    169
+   ]
+  },
+  "hill_giant": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    105,
+    163
+   ],
+   "size": [
+    252,
+    193
+   ]
+  },
+  "hill_troll": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    117,
+    135
+   ],
+   "size": [
+    212,
+    151
+   ]
+  },
+  "iron_margrave": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    160,
+    144
+   ],
+   "size": [
+    264,
+    154
+   ]
+  },
+  "iron_sovereign": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    147,
+    150
+   ],
+   "size": [
+    229,
+    153
+   ]
+  },
+  "ironclad_thrall": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    61,
+    153
+   ],
+   "size": [
+    206,
+    163
+   ]
+  },
+  "ironhoof_charger": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    122,
+    131
+   ],
+   "size": [
+    184,
+    134
+   ]
+  },
+  "ironhoof_warboar": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    97,
+    112
+   ],
+   "size": [
+    162,
+    115
+   ]
+  },
+  "lancer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    102,
+    146
+   ],
+   "size": [
+    264,
+    149
+   ]
+  },
+  "lightbearer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    64,
+    149
+   ],
+   "size": [
+    169,
+    171
+   ]
+  },
+  "longbowman": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    72,
+    137
+   ],
+   "size": [
+    167,
+    162
+   ]
+  },
+  "lost_pilgrims": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    66,
+    119
+   ],
+   "size": [
+    166,
+    123
+   ]
+  },
+  "marrow_archer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    54,
+    143
+   ],
+   "size": [
+    153,
+    166
+   ]
+  },
+  "marrow_deadeye": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    61,
+    142
+   ],
+   "size": [
+    174,
+    161
+   ]
+  },
+  "marsh_hag": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    78,
+    134
+   ],
+   "size": [
+    177,
+    160
+   ]
+  },
+  "master_engineer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    129,
+    134
+   ],
+   "size": [
+    206,
+    155
+   ]
+  },
+  "maw_of_ruin": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      420,
+      300,
+      380,
+      300
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    105,
+    121
+   ],
+   "size": [
+    265,
+    124
+   ]
+  },
+  "molten_engine": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    66,
+    137
+   ],
+   "size": [
+    169,
+    140
+   ]
+  },
+  "moss_creeper": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 450,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    124,
+    97
+   ],
+   "size": [
+    244,
+    103
+   ]
+  },
+  "npc_child": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    97,
+    99
+   ],
+   "size": [
+    143,
+    106
+   ]
+  },
+  "npc_elder": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    125,
+    126
+   ],
+   "size": [
+    191,
+    134
+   ]
+  },
+  "npc_noble": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    132,
+    129
+   ],
+   "size": [
+    200,
+    136
+   ]
+  },
+  "npc_peddler": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    127,
+    142
+   ],
+   "size": [
+    187,
+    151
+   ]
+  },
+  "npc_priest": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    116,
+    120
+   ],
+   "size": [
+    172,
+    130
+   ]
+  },
+  "npc_risen": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    112,
+    113
+   ],
+   "size": [
+    164,
+    120
+   ]
+  },
+  "npc_woman": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    114,
+    115
+   ],
+   "size": [
+    164,
+    125
+   ]
+  },
+  "oathbound_lancer": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    106,
+    145
+   ],
+   "size": [
+    254,
+    148
+   ]
+  },
+  "oathless_berserker": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    58,
+    146
+   ],
+   "size": [
+    211,
+    170
+   ]
+  },
+  "ogre_mauler": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    125,
+    146
+   ],
+   "size": [
+    194,
+    150
+   ]
+  },
+  "pike_militia": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    108,
+    144
+   ],
+   "size": [
+    178,
+    156
+   ]
+  },
+  "pike_veteran": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    114,
+    146
+   ],
+   "size": [
+    211,
+    163
+   ]
+  },
+  "plague_lobber": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    84,
+    141
+   ],
+   "size": [
+    167,
+    159
+   ]
+  },
+  "plague_rats": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    74,
+    94
+   ],
+   "size": [
+    156,
+    98
+   ]
+  },
+  "primordial_wyrm": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 450,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    100,
+    159
+   ],
+   "size": [
+    206,
+    163
+   ]
+  },
+  "pyre_sovereign": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    133,
+    157
+   ],
+   "size": [
+    285,
+    191
+   ]
+  },
+  "pyre_titan": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    120,
+    131
+   ],
+   "size": [
+    202,
+    137
+   ]
+  },
+  "rime_wight": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    114,
+    132
+   ],
+   "size": [
+    176,
+    140
+   ]
+  },
+  "rimeback_aurochs": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    79,
+    117
+   ],
+   "size": [
+    140,
+    120
+   ]
+  },
+  "rimeback_stampede": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    70,
+    133
+   ],
+   "size": [
+    156,
+    144
+   ]
+  },
+  "rimefang_hound": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    96,
+    120
+   ],
+   "size": [
+    208,
+    123
+   ]
+  },
+  "rimefang_packleader": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    107,
+    120
+   ],
+   "size": [
+    269,
+    123
+   ]
+  },
+  "rivet_arbalist": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    58,
+    117
+   ],
+   "size": [
+    167,
+    132
+   ]
+  },
+  "rivet_crossbowman": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    58,
+    128
+   ],
+   "size": [
+    167,
+    147
+   ]
+  },
+  "road_cutthroat": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    49,
+    173
+   ],
+   "size": [
+    148,
+    196
+   ]
+  },
+  "rootbinder": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    98,
+    145
+   ],
+   "size": [
+    200,
+    161
+   ]
+  },
+  "rootbinder_elder": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    110,
+    148
+   ],
+   "size": [
+    197,
+    157
+   ]
+  },
+  "rootbound_ancient": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    93,
+    129
+   ],
+   "size": [
+    164,
+    133
+   ]
+  },
+  "rootbound_patriarch": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    119,
+    135
+   ],
+   "size": [
+    209,
+    144
+   ]
+  },
+  "rotting_shambler": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    126,
+    136
+   ],
+   "size": [
+    241,
+    148
+   ]
+  },
+  "rotwing_leviathan": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    112,
+    207
+   ],
+   "size": [
+    256,
+    237
+   ]
+  },
+  "rotwing_sovereign": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    80,
+    128
+   ],
+   "size": [
+    178,
+    140
+   ]
+  },
+  "ruin_sentinel": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    132,
+    131
+   ],
+   "size": [
+    227,
+    138
+   ]
+  },
+  "salt_witch": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    116,
+    147
+   ],
+   "size": [
+    232,
+    166
+   ]
+  },
+  "sand_reaver": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    80,
+    142
+   ],
+   "size": [
+    196,
+    145
+   ]
+  },
+  "scorchhound": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      420,
+      300,
+      380,
+      300
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    78,
+    97
+   ],
+   "size": [
+    189,
+    100
+   ]
+  },
+  "seared_cinderling": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      420,
+      300,
+      380,
+      300
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    76,
+    107
+   ],
+   "size": [
+    154,
+    110
+   ]
+  },
+  "shambler": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    118,
+    131
+   ],
+   "size": [
+    201,
+    134
+   ]
+  },
+  "shieldwarden": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    68,
+    177
+   ],
+   "size": [
+    175,
+    188
+   ]
+  },
+  "shrieking_harpy": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    96,
+    163
+   ],
+   "size": [
+    222,
+    174
+   ]
+  },
+  "slag_golem": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    146,
+    138
+   ],
+   "size": [
+    256,
+    148
+   ]
+  },
+  "spore_lobber": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    84,
+    134
+   ],
+   "size": [
+    165,
+    137
+   ]
+  },
+  "steppe_centaur": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    105,
+    153
+   ],
+   "size": [
+    267,
+    156
+   ]
+  },
+  "storm_shaman": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    95,
+    159
+   ],
+   "size": [
+    205,
+    190
+   ]
+  },
+  "sunhawk_paladin": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    53,
+    152
+   ],
+   "size": [
+    113,
+    160
+   ]
+  },
+  "sunhawk_rider": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    71,
+    172
+   ],
+   "size": [
+    171,
+    194
+   ]
+  },
+  "thorn_skulker": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    67,
+    131
+   ],
+   "size": [
+    135,
+    135
+   ]
+  },
+  "thorn_stalker": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    72,
+    130
+   ],
+   "size": [
+    134,
+    134
+   ]
+  },
+  "thornwolf": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    121,
+    111
+   ],
+   "size": [
+    210,
+    114
+   ]
+  },
+  "thunder_bombard": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    73,
+    96
+   ],
+   "size": [
+    144,
+    99
+   ]
+  },
+  "tomb_scarabs": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    98,
+    83
+   ],
+   "size": [
+    164,
+    86
+   ]
+  },
+  "tusk_chieftain": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    68,
+    148
+   ],
+   "size": [
+    187,
+    152
+   ]
+  },
+  "tusk_rider": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    53,
+    136
+   ],
+   "size": [
+    128,
+    139
+   ]
+  },
+  "venom_wyvern": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "idle": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    80,
+    159
+   ],
+   "size": [
+    155,
+    168
+   ]
+  },
+  "wailing_shade": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    119,
+    130
+   ],
+   "size": [
+    189,
+    135
+   ]
+  },
+  "warbow_sergeant": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    83,
+    138
+   ],
+   "size": [
+    185,
+    165
+   ]
+  },
+  "winter_wyrm": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 450,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    150,
+    99
+   ],
+   "size": [
+    300,
+    128
+   ]
+  },
+  "winter_wyrm_ancient": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 450,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    112,
+    126
+   ],
+   "size": [
+    225,
+    138
+   ]
+  },
+  "worker_ashen": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    81,
+    100
+   ],
+   "size": [
+    196,
+    119
+   ]
+  },
+  "worker_concord": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    108,
+    109
+   ],
+   "size": [
+    245,
+    131
+   ]
+  },
+  "worker_darkelf": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    95,
+    128
+   ],
+   "size": [
+    235,
+    151
+   ]
+  },
+  "worker_fishmen": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    87,
+    115
+   ],
+   "size": [
+    221,
+    135
+   ]
+  },
+  "worker_forge": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    97,
+    109
+   ],
+   "size": [
+    220,
+    128
+   ]
+  },
+  "worker_frostmarch": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    102,
+    125
+   ],
+   "size": [
+    247,
+    147
+   ]
+  },
+  "worker_hollow": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    94,
+    146
+   ],
+   "size": [
+    245,
+    178
+   ]
+  },
+  "worker_thornwood": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    99,
+    109
+   ],
+   "size": [
+    245,
+    133
+   ]
+  },
+  "worldforge_engine": {
+   "actions": {
+    "attack": {
+     "frames": 4,
+     "impact_ms": 180,
+     "loop": false,
+     "ms": [
+      180,
+      120,
+      180,
+      120
+     ],
+     "row": 1
+    },
+    "move": {
+     "frames": 4,
+     "loop": true,
+     "ms": [
+      150,
+      150,
+      150,
+      150
+     ],
+     "row": 0
+    }
+   },
+   "anchor": [
+    66,
+    114
+   ],
+   "size": [
+    143,
+    118
+   ]
+  },
+  "wyrdthorn_matriarch": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    64,
+    130
+   ],
+   "size": [
+    149,
+    151
+   ]
+  },
+  "wyrdthorn_mother": {
+   "actions": {
+    "attack": {
+     "frames": 8,
+     "impact_ms": 360,
+     "loop": false,
+     "ms": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+     ],
+     "row": 2
+    },
+    "death": {
+     "frames": 8,
+     "loop": false,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 3
+    },
+    "idle": {
+     "frames": 6,
+     "loop": true,
+     "ms": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+     ],
+     "row": 0
+    },
+    "move": {
+     "frames": 8,
+     "loop": true,
+     "ms": [
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110,
+      110
+     ],
+     "row": 1
+    }
+   },
+   "anchor": [
+    72,
+    131
+   ],
+   "size": [
+    198,
+    164
+   ]
+  }
+ }
+}

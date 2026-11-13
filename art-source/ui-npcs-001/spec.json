@@ -1,0 +1,780 @@
+{
+  "batch": "warbound-ui-npcs-001",
+  "manifest": "assets/source/batches/warbound-ui-npcs-001/manifest.json",
+  "provider": "built-in image_gen",
+  "purpose": "Warbound UI source artwork and full-body civilian NPC model references",
+  "runtime_integrated": false,
+  "generated_palette": "preserve",
+  "assets": [
+    {
+      "id": "skills_1",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/skills_1.png",
+      "size": [
+        1536,
+        1536
+      ],
+      "prompt": "3 x 3 grid, left to right top to bottom: Cleave heavy axe full-circle red arc; Leap armoured boot slamming cracked earth shock rings dust; Red Harvest blood-red crescent blade crimson sky dripping drops; Shield Bash kite shield rim smashing impact sparks; Defend Aura faint golden dome cluster small shields; Last Stand lone banner rubble gold light behind; Power Shot single heavy arrow wind streaks glowing iron head; Volley fan falling arrows dark sky; Arrow Storm dozens arrows raining vortex blood-red sky. Dark gothic fantasy painted slightly pixelated strong dark outlines, muted dirty colours strong accent per icon, top-left rim light. No text letters frames or borders. Transparent spacing. Square1536 or larger.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "skills_2",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/skills_2.png",
+      "size": [
+        1536,
+        1536
+      ],
+      "prompt": "A 3 x 3 grid of nine separate square game skill icons on one square image, 1536 x 1536 or larger. Evenly spaced equal cells, icons centred with clear transparent gaps and padding, nothing crossing cells. Dark gothic fantasy game icons, painted slightly pixelated finish and strong dark outlines matching the reference item's art style only. Muted dirty colours, one strong accent per icon, dramatic top-left rim light. No text, letters, frames, borders or labels. Transparent background. Order left to right, top to bottom: 1. Binding: glowing violet runic chains wrapping a dark shape\n2. Arcane Bolt: jagged pale violet energy bolt\n3. Cataclysm: burning sigil cracking ground with lifting rocks and fire crater\n4. Mend: two open hands cupping warm golden light\n5. Blessing: soft halo of golden feathers\n6. Revival: phoenix-like white-gold light burst rising from embers\n7. Summon: summoning rune ring with three small rising soldiers\n8. Drain: red life ribbon from skull into open hand\n9. Legion: wall of soldier silhouettes and spears under banners, gold rim light",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "skills_3",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/skills_3.png",
+      "size": [
+        1536,
+        1536
+      ],
+      "prompt": "A 3 x 3 grid of nine separate square game skill icons on one square image, 1536 x 1536 or larger. Evenly spaced equal cells, icons centred with clear transparent gaps and padding, nothing crossing cells. Dark gothic fantasy game icons, painted slightly pixelated finish and strong dark outlines matching the reference item's art style only. Muted dirty colours, one strong accent per icon, dramatic top-left rim light. No text, letters, frames, borders or labels. Transparent background. Order left to right, top to bottom: 1. Rallying Oath: raised gauntlet holding sword hilt-up, oath light\n2. Pinning Shafts: arrow pinning cloak to ground\n3. Lantern of Mending: brass lantern with warm healing light\n4. Judgement: two-handed greatsword falling straight down in light beam\n5. Warcry: open-mouthed helmeted face shouting, sound rings\n6. Cinderfall: glowing molten slag drops falling\n7. Brand of Agony: red-hot branding iron with jagged sigil\n8. Slag Shield: shield coated cooling black-orange slag\n9. Knit the Fallen: bone needle and pale thread stitching wound, sickly green glow\nCRITICAL final correction: NO square backplates, NO borders, NO frame, NO rectangular background behind any icon. Nine isolated emblems with irregular silhouettes and transparent surroundings in each cell. Keep each subject well inside its equal 3x3 cell. Reference sheet is the target icon format, spacing, style and alpha handling ONLY. Draw the newly specified subjects.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "skills_4",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/skills_4.png",
+      "size": [
+        1536,
+        1536
+      ],
+      "prompt": "A 3 x 3 grid of nine separate square game skill icons on one square image, 1536 x 1536 or larger. Evenly spaced equal cells, icons centred with clear transparent gaps and padding, nothing crossing cells. Dark gothic fantasy game icons, painted slightly pixelated finish and strong dark outlines matching the reference item's art style only. Muted dirty colours, one strong accent per icon, dramatic top-left rim light. No text, letters, frames, borders or labels. Transparent background. Order left to right, top to bottom: 1. Bone Bulwark: wall of ribcages and bones forming shield\n2. Rot Cloud: green-brown poison cloud with skull shape inside\n3. Grave Cleave: rusted grave axe with green ghost light\n4. Bramble Wall: erupting thorny brambles\n5. Called Shot: arrow through red target mark on dark eye\n6. Sap of Renewal: softly glowing amber sap dripping bark\n7. Feral Howl: howling wolf head with red frenzy lines\n8. Anvil Blow: war hammer striking anvil with sparks\n9. Bombard: black iron cannonball trailing fire\nCRITICAL final correction: NO square backplates, NO borders, NO frame, NO rectangular background behind any icon. Nine isolated emblems with irregular silhouettes and transparent surroundings in each cell. Keep each subject well inside its equal 3x3 cell. Reference sheet is the target icon format, spacing, style and alpha handling ONLY. Draw the newly specified subjects.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "skills_5",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/skills_5.png",
+      "size": [
+        1536,
+        1536
+      ],
+      "prompt": "A 3 x 3 grid of nine separate square game skill icons on one square image, 1536 x 1536 or larger. Evenly spaced equal cells, icons centred with clear transparent gaps and padding, nothing crossing cells. Dark gothic fantasy game icons, painted slightly pixelated finish and strong dark outlines matching the reference item's art style only. Muted dirty colours, one strong accent per icon, dramatic top-left rim light. No text, letters, frames, borders or labels. Transparent background. Order left to right, top to bottom: 1. Spark Lattice: net of glowing blue runic sparks\n2. Riveted Aegis: riveted iron breastplate bright rim\n3. Undertow: trident sweeping dark water swirl\n4. Tidal Rally: sea-green wave around raised conch\n5. Called Harpoon: flying barbed harpoon and rope\n6. Pearl of Mending: luminous pearl in open shell healing glow\n7. Whirlwind of Steel: spinning blade tornado\n8. Unbroken Line: overlapping tower shield row glowing gold\n9. Hail of Shafts: dense diagonal arrow wall with frost-blue trails",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "skills_6",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/skills_6.png",
+      "size": [
+        1536,
+        1536
+      ],
+      "prompt": "A 3 x 3 grid of nine separate square game skill icons on one square image, 1536 x 1536 or larger. Evenly spaced equal cells, icons centred with clear transparent gaps and padding, nothing crossing cells. Dark gothic fantasy game icons, painted slightly pixelated finish and strong dark outlines matching the reference item's art style only. Muted dirty colours, one strong accent per icon, dramatic top-left rim light. No text, letters, frames, borders or labels. Transparent background. Order left to right, top to bottom: 1. Unmaking: figure dissolving black-violet fragments\n2. Sanctuary: chapel arch of white light over kneeling silhouettes\n3. Soul Harvest: scythe pulling pale ghost wisps from ground\n4. Shield Wall: three shields locked edge to edge front view\n5. Dawn Charge: rearing horse silhouette against rising golden sun\n6. Ember Burst: outward orange ember explosion\n7. Firestorm: swirling fire column under red sky\n8. Grasp of the Dead: skeletal hands clawing black soil\n9. Raise the Barrow: stone barrow split open green light and rising dead",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "skills_7",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/skills_7.png",
+      "size": [
+        1536,
+        1536
+      ],
+      "prompt": "A 3 x 3 grid of nine separate square game skill icons on one square image, 1536 x 1536 or larger. Evenly spaced equal cells, icons centred with clear transparent gaps and padding, nothing crossing cells. Dark gothic fantasy game icons, painted slightly pixelated finish and strong dark outlines matching the reference item's art style only. Muted dirty colours, one strong accent per icon, dramatic top-left rim light. No text, letters, frames, borders or labels. Transparent background. Order left to right, top to bottom: 1. Entangle: roots binding leg\n2. Wrath of the Grove: angry tree bark face with lashing branches\n3. Overcharge: glowing forge gear and orange lightning\n4. Iron Tide: giant iron construct fist rising molten metal\n5. Brine Spray: salty green water jet and bubbles\n6. Drowning Tide: huge crashing dark wave and foam\n7. Veiled Strike: dagger emerging black smoke\n8. Venom Shot: crossbow bolt dripping green venom\n9. Veil of Shadows: black smoke veil with faint purple eyes",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "skills_8",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/skills_8.png",
+      "size": [
+        1536,
+        1536
+      ],
+      "prompt": "A 3 x 3 grid of nine separate square game skill icons on one square image, 1536 x 1536 or larger. Evenly spaced equal cells, icons centred with clear transparent gaps and padding, nothing crossing cells. Dark gothic fantasy game icons, painted slightly pixelated finish and strong dark outlines matching the reference item's art style only. Muted dirty colours, one strong accent per icon, dramatic top-left rim light. No text, letters, frames, borders or labels. Transparent background. Order left to right, top to bottom: 1. Silk Snare: spider web and glistening silk thread\n2. Horn of the Hold: curved iron-bound war horn with frost breath\n3. Hail of Axes: spinning throwing axes\n4. Frostbite: biting icy fang frost crystals\n5. Feast Fire: roaring hearth fire and roasting spit\n6. Shadowstep: shadow footprint violet smoke\n7. Night Without End: eclipsing black moon violet sky\n8. Glacial Shards: ice shards bursting outward ring\n9. Call of the Giants: colossal frost giant silhouette above tiny mountains",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "passives_1",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/passives_1.png",
+      "size": [
+        1536,
+        1536
+      ],
+      "prompt": "A 3 x 3 grid of nine separate square game skill icons on one square image, 1536 x 1536 or larger. Evenly spaced equal cells, icons centred with clear transparent gaps and padding, nothing crossing cells. Dark gothic fantasy game icons, painted slightly pixelated finish and strong dark outlines matching the reference item's art style only. Muted dirty colours, one strong accent per icon, dramatic top-left rim light. No text, letters, frames, borders or labels. Transparent background. Order left to right, top to bottom: 1. red heart sealed in iron\n2. battered round shield\n3. open spellbook glowing rune\n4. red droplet small green leaf\n5. sword with red edge glow\n6. jagged broken blade\n7. violet flame in open palm\n8. red light ring around raised fist\n9. deep blue crystal\nThese passive emblems are simpler and darker than active skill icons, as if engraved in metal.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "passives_2",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/passives_2.png",
+      "size": [
+        1536,
+        1536
+      ],
+      "prompt": "A 3 x 3 grid of nine separate square game skill icons on one square image, 1536 x 1536 or larger. Evenly spaced equal cells, icons centred with clear transparent gaps and padding, nothing crossing cells. Dark gothic fantasy game icons, painted slightly pixelated finish and strong dark outlines matching the reference item's art style only. Muted dirty colours, one strong accent per icon, dramatic top-left rim light. No text, letters, frames, borders or labels. Transparent background. Order left to right, top to bottom: 1. hourglass sand running fast\n2. blue droplet falling into bowl\n3. two crossed blades speed streaks\n4. closed tome brass clasp\n5. golden light ring around shield\n6. single upright sword\n7. winged boot\n8. pale wind ring around running boot\n9. old silver coins stacked stamped with crown\nThese passive emblems are simpler and darker than active skill icons, as if engraved in metal.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "bar_frame",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/bar_frame.png",
+      "size": [
+        2172,
+        724
+      ],
+      "prompt": "Use case: stylized-concept. Production game UI asset bar_frame.png, 1536 x 256 or larger with same aspect ratio. Empty long horizontal health bar frame: blackened iron, worn brass trim, small rivets, simple skull-less gothic end caps. Inside empty dark recessed channel. Transparent exterior. Dark gothic fantasy painted slightly pixelated, strong dark outlines. No text or labels.\nBlackened iron and worn brass are SOLID COOL METAL. Simple functional UI trim, no fire, no molten cracks, no orange glow, no vents, no blades. Use reference only for painted style. For the horizontal bar use simple small end caps, channel should be very long and narrow.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "bar_fills",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/bar_fills.png",
+      "size": [
+        1774,
+        887
+      ],
+      "prompt": "Edit this game UI fill strip sheet. Preserve its three separate red blood, blue mana, and dull gold XP strips, same positions, gap widths, painterly gothic style and black background. Make each strip strictly seamless when repeated horizontally. Both left and right edges must have identical heights, hues, brightness, wave contour and texture so two copies join without a visible seam. Use a periodic repeat pattern, no distinct end caps. No text or borders. Wide 2:1 sheet, at least1536x768.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "potions",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/potions.png",
+      "size": [
+        1774,
+        887
+      ],
+      "prompt": "Use case: stylized-concept. Production game UI asset potions.png, 1024 x 512 or larger with same aspect ratio. Two separate item icons side by side clear gap. Left small round glass dark-red healing draught flask cork and wax seal. Right identical flask filled deep glowing blue mana. Transparent background. Dark gothic fantasy painted slightly pixelated, strong dark outlines. No text or labels.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "skill_slot",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/skill_slot.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Production game UI asset skill_slot.png, 512 x 512 or larger with same aspect ratio. Empty square skill button frame of blackened iron with brass corners and small rivets. Centre fully empty and transparent, transparent exterior. Dark gothic fantasy painted slightly pixelated, strong dark outlines. No text or labels.\nBlackened iron and worn brass are SOLID COOL METAL. Simple functional UI trim, no fire, no molten cracks, no orange glow, no vents, no blades. Use reference only for painted style. For the horizontal bar use simple small end caps, channel should be very long and narrow.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "tree_nodes",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/tree_nodes.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Production game UI asset tree_nodes.png, 1024 x 1024 or larger with same aspect ratio. 2 x 2 grid four empty skill node frames, equal cells and clear gaps, transparent empty centres and exterior. Top left square blackened iron brass corners active. Top right round dark iron thin brass ring passive. Bottom left large ornate square small iron spike crown and red gem ultimate. Bottom right round wrapped black iron leaf laurel signature. Dark gothic fantasy painted slightly pixelated, strong dark outlines. No text or labels.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "tree_backdrop",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/tree_backdrop.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "prompt": "Use case: stylized-concept. Production game UI asset tree_backdrop.png, 1536 x 1024 or larger with same aspect ratio. Very dark old carved stone wall in deep shadow, faint worn branching line and rune engravings, dim red ember glow from below, heavy vignette. Mostly near-black for overlay legibility. Nothing bright middle. No characters. Dark gothic fantasy painted slightly pixelated, strong dark outlines. No text or labels.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "tree_connector",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/tree_connector.png",
+      "size": [
+        2172,
+        724
+      ],
+      "prompt": "Edit this horizontal chain strip into a strictly seamless horizontal repeating game UI connector. Preserve the blackened iron chain with brass links, straight frontal alignment, painted style, same thin scale, transparent background. At left and right crop at exactly the same phase of the repeating link pattern, identical pixels at the join in appearance; repeated copies should connect into one continuous chain without a gap or double joint. No end caps, no text, no extra objects. At least1024x128 wide strip.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "paper_doll",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/paper_doll.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "prompt": "Use case: stylized-concept. Production game UI asset paper_doll.png, 1024 x 1536 or larger with same aspect ratio. Dark stone alcove, faint carved relief of armoured warrior standing straight front view arms slightly away from body, grey stone barely lit for equipment screen. Dim brass candle light from sides, heavy vignette, mostly dark. Dark gothic fantasy painted slightly pixelated, strong dark outlines. No text or labels.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "portrait_frame",
+      "category": "ui",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/portrait_frame.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "prompt": "Use case: stylized-concept. Production game UI asset portrait_frame.png, 768 x 1024 or larger with same aspect ratio. Empty ornate portrait frame blackened iron worn brass trim small top corner spikes, empty shield-shaped bottom cartouche. Interior fully empty transparent, exterior transparent. Dark gothic fantasy painted slightly pixelated, strong dark outlines. No text or labels.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "portrait_templar",
+      "category": "class_portrait",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/portrait_templar.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "A head-and-shoulders portrait of this hero (second image) in exactly the painted style of the first image: dark gothic fantasy, dramatic side light, dark smoky background, three-quarter view. Keep the armour, colours and helmet of the second image, same identity and design. No text. Square image 1024 x 1024 or larger.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "portrait_brandguard",
+      "category": "class_portrait",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/portrait_brandguard.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "A head-and-shoulders portrait of this hero (second image) in exactly the painted style of the first image: dark gothic fantasy, dramatic side light, dark smoky background, three-quarter view. Keep the armour, colours and helmet of the second image, same identity and design. No text. Square image 1024 x 1024 or larger.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "portrait_barrow_lord",
+      "category": "class_portrait",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/portrait_barrow_lord.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "A head-and-shoulders portrait of this hero (second image) in exactly the painted style of the first image: dark gothic fantasy, dramatic side light, dark smoky background, three-quarter view. Keep the armour, colours and helmet of the second image, same identity and design. No text. Square image 1024 x 1024 or larger.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "portrait_beastcaller",
+      "category": "class_portrait",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/portrait_beastcaller.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "A head-and-shoulders portrait of this hero (second image) in exactly the painted style of the first image: dark gothic fantasy, dramatic side light, dark smoky background, three-quarter view. Keep the armour, colours and helmet of the second image, same identity and design. No text. Square image 1024 x 1024 or larger.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "portrait_anvilbreaker",
+      "category": "class_portrait",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/portrait_anvilbreaker.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "A head-and-shoulders portrait of this hero (second image) in exactly the painted style of the first image: dark gothic fantasy, dramatic side light, dark smoky background, three-quarter view. Keep the armour, colours and helmet of the second image, same identity and design. No text. Square image 1024 x 1024 or larger.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "portrait_hearthkeeper",
+      "category": "class_portrait",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/portrait_hearthkeeper.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "A head-and-shoulders portrait of this hero (second image) in exactly the painted style of the first image: dark gothic fantasy, dramatic side light, dark smoky background, three-quarter view. Keep the armour, colours and helmet of the second image, same identity and design. No text. Square image 1024 x 1024 or larger.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "portrait_broodbinder",
+      "category": "class_portrait",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/portrait_broodbinder.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "A head-and-shoulders portrait of this hero (second image) in exactly the painted style of the first image: dark gothic fantasy, dramatic side light, dark smoky background, three-quarter view. Keep the armour, colours and helmet of the second image, same identity and design. No text. Square image 1024 x 1024 or larger.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "portrait_brine_champion",
+      "category": "class_portrait",
+      "faction": null,
+      "source": "assets/source/batches/warbound-ui-npcs-001/ui/portrait_brine_champion.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "A head-and-shoulders portrait of this hero (second image) in exactly the painted style of the first image: dark gothic fantasy, dramatic side light, dark smoky background, three-quarter view. Keep the armour, colours and helmet of the second image, same identity and design. No text. Square image 1024 x 1024 or larger.",
+      "anchor": "center",
+      "outline": "painted dark outlines",
+      "pose": null
+    },
+    {
+      "id": "npc_peddler",
+      "category": "npc_reference",
+      "faction": "generic",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_peddler.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Clean 3D-model reference image for a dark fantasy game character. One character only, full body head to feet with small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no particles. Even soft lighting, matte painted look, clean readable shapes, grim grounded proportions. Square 1024 x 1024. Three-quarter front view facing slightly right, standing upright feet shoulder width apart, straight separated legs, arms down about 35 degrees away from torso with clear gaps. Empty hands. Travelling peddler, wiry middle-aged man, crooked grin, hooked nose, battered wide-brimmed hat. Long patched faded red-brown coat, bandolier of small pouches and potion bottles, tall wooden backpack frame packed with bundles lantern and rope coil all fitted close to body. Faded red, brown leather, glass green, brass.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_priest",
+      "category": "npc_reference",
+      "faction": "generic",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_priest.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Clean 3D-model reference image for a dark fantasy game character. One character only, full body head to feet with small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no particles. Even soft lighting, matte painted look, clean readable shapes, grim grounded proportions. Square 1024 x 1024. Three-quarter front view facing slightly right, standing upright feet shoulder width apart, straight separated legs, arms down about 35 degrees away from torso with clear gaps. Legs clearly separated under robe. Right hand holds iron hand-lantern on short chain clear of leg, warm candle inside. Elderly village chapel monk: thin kind deeply lined face, white tonsure ring of hair and short white beard. Undyed wool habit ending above ankles, rope belt with saint medallion and prayer cord, short grey shoulder cape, sandals. Undyed wool, ash grey, candle orange.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_elder",
+      "category": "npc_reference",
+      "faction": "generic",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_elder.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Clean 3D-model reference image for a dark fantasy game character. One character only, full body head to feet with small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no particles. Even soft lighting, matte painted look, clean readable shapes, grim grounded proportions. Square 1024 x 1024. Three-quarter front view facing slightly right, standing upright feet shoulder width apart, straight separated legs, arms down about 35 degrees away from torso with clear gaps. Right hand holds short wooden tally staff pointing down clear of leg. Village elder and headman of poor frontier farming town. Stocky balding man in fifties tired anxious face grey stubble beard. Long brown wool coat, faded navy waistcoat, brass office chain across chest, ledger book hanging from belt on cord, muddy boots. Earth brown faded navy tarnished brass.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_woman",
+      "category": "npc_reference",
+      "faction": "generic",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_woman.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Clean 3D-model reference image for a dark fantasy game character. One character only, full body head to feet with small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no particles. Even soft lighting, matte painted look, clean readable shapes, grim grounded proportions. Square 1024 x 1024. Three-quarter front view facing slightly right, standing upright feet shoulder width apart, straight separated legs, arms down about 35 degrees away from torso with clear gaps. Legs clearly separated under skirt. Left hand holds small wicker basket of turnips. Plain frontier farm woman twenties round tired face braided hair under cream kerchief. Brown wool dress ending ankles, faded navy bodice, stained apron, wooden clogs. Brown faded navy cream.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_child",
+      "category": "npc_reference",
+      "faction": "generic",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_child.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Clean 3D-model reference image for a dark fantasy game character. One character only, full body head to feet with small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no particles. Even soft lighting, matte painted look, clean readable shapes, grim grounded proportions. Square 1024 x 1024. Three-quarter front view facing slightly right, standing upright feet shoulder width apart, straight separated legs, arms down about 35 degrees away from torso with clear gaps. Left hand holds small cloth herb sack. Skinny twelve-year-old farm boy, clearly child with age-appropriate proportions, not small adult. Messy brown hair, scratched face, oversized patched faded green tunic rope belt, short trousers, bare muddy shins, worn shoes. Faded moss green brown mud.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_risen",
+      "category": "npc_reference",
+      "faction": "generic",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_risen.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Clean 3D-model reference image for a dark fantasy game character. One character only, full body head to feet with small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no particles. Even soft lighting, matte painted look, clean readable shapes, grim grounded proportions. Square 1024 x 1024. Three-quarter front view facing slightly right, standing upright feet shoulder width apart, straight separated legs, arms down about 35 degrees away from torso with clear gaps. Slightly stooped but NOT hunched, legs clearly separated, empty hands. Old village woman risen from grave, only wants home, recently dead still clearly person. Grey waxy skin sunken cheeks cloudy pale eyes with faint sickly green glow, sparse white hair. Burial shroud over old blue Sunday dress, grave dirt hem and hands, wilted flower crown, bare feet. Sad not monstrous. Bone ivory faded blue grave brown faint green.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_noble",
+      "category": "npc_reference",
+      "faction": "generic",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_noble.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Clean 3D-model reference image for a dark fantasy game character. One character only, full body head to feet with small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no particles. Even soft lighting, matte painted look, clean readable shapes, grim grounded proportions. Square 1024 x 1024. Three-quarter front view facing slightly right, standing upright feet shoulder width apart, straight separated legs, arms down about 35 degrees away from torso with clear gaps. Right hand holds sealed scroll case clear of leg. Noble envoy court official, lean proud man forties trimmed dark beard cold tired face. Long deep navy coat tarnished gold trim over dark doublet, short fur-lined shoulder cape, heavy office chain, sword left hip, polished travel-stained riding boots. Deep navy black tarnished gold.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_ashen_slag_broker",
+      "category": "npc_reference",
+      "faction": "ashen",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_ashen_slag_broker.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A female demon market trader, mature wiry build, distinctly inhuman charcoal-black leathery skin with sparse dim ember seams, angular heavy jaw, two short swept-back asymmetric horns, small dull amber eyes. Patched russet leather knee-length split coat over black wraps and fitted trousers, iron-ring belt with closed sulfur jars, a small balance scale folded into a belt pouch and bronze tokens. Hooflike clawed feet fully visible. Shrewd wary expression. Charcoal, dirty rust red, tarnished bronze, restrained ember orange.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_ashen_pit_steward",
+      "category": "npc_reference",
+      "faction": "ashen",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_ashen_pit_steward.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A male demon ration steward, older broad heavyset build, coal-grey rough skin, pronounced brow ridges, blunt tusks, one broken horn and one curved horn, thick clawed hands. Soot-stained short ochre apron over heavy oxblood quilted jerkin and black trousers, ledger slate in waist holster, ring of black iron keys and short ration tally sticks at belt, heavy worn boots shaped to clawed feet. Exhausted stern face. Charcoal, dried blood red, dirty ochre, iron. No glowing fire effects.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_ashen_ash_shrine_keeper",
+      "category": "npc_reference",
+      "faction": "ashen",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_ashen_ash_shrine_keeper.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: An elderly female demon shrine keeper, tall thin upright silhouette, ashen cracked skin, long pointed ears, small hooked horns swept close to skull, deep-set sulfur-yellow eyes, severe lined inhuman face. Short ragged layered charcoal vestments with split skirts above knees over fitted smoke-grey leggings, faded crimson sash, tiny bone prayer beads and an unlit iron incense capsule on belt. Bare clawed feet. Restrained sorrowful dignity. Soot black, ash grey, faded red and old iron; no flames, no smoke.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_hollow_bone_factor",
+      "category": "npc_reference",
+      "faction": "hollow",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_hollow_bone_factor.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A skeletal male merchant of the dead, upright bony frame, bare weathered ivory skull with faint green pinpoints deep in sockets, exposed bony hands and ankles. Faded plum short merchant coat with split tails, patched leather waistcoat, narrow black trousers, heavy old boots. Bone counting tokens, small closed coin purse and brass scale weights secured on belt. No scythe, crown or military armour. Patient businesslike posture, recognisably a civilian. Bone ivory, bruise purple, grave brown, tarnished brass.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_hollow_shroud_mender",
+      "category": "npc_reference",
+      "faction": "hollow",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_hollow_shroud_mender.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A female undead seamstress, lean middle-aged body, wax-grey skin, hollow cheeks, clouded pale eyes, thin dark hair tied back, tightly closed neat old stitches across one cheek, no open wound. Faded blue-grey knee-length split work smock, off-white stained apron tied close, charcoal trousers and worn shoes. Bone needles, folded burial cloth and thread spools in closed belt pockets. Sad attentive expression. Ash grey, faded blue, bone linen, faint sickly green only in eyes.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_hollow_tomb_archivist",
+      "category": "npc_reference",
+      "faction": "hollow",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_hollow_tomb_archivist.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: An elderly mummified archivist, tall gaunt upright build, dry parchment-brown skin tightly drawn over face, long thin grey hair, one cloudy eye and one faintly green eye. Dusty purple sleeveless short split scholar's robe over dark fitted tunic and trousers, finger wrappings, worn leather slippers. Small sealed scroll tubes and bronze seal attached to belt, no readable writing. Thoughtful severe expression, no crown, no staff. Bone ivory, dusty violet, grave brown, oxidised bronze.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_thornwood_resin_trader",
+      "category": "npc_reference",
+      "faction": "thornwood",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_thornwood_resin_trader.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A female forest-folk resin trader, sturdy adult build, visibly bark-textured warm brown skin, pointed leaflike ears, hazel-green eyes, dark hair in practical braids with a few seed beads. Moss-dyed short woven coat over brown leather tunic and fitted leggings, flat wrapped boots. Small tightly closed amber-resin bottles and folded leaf packets at belt, small wicker back basket fitted close. Calm shrewd face, civilian not huntress. Bark brown, moss green, amber, muted berry red.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_thornwood_coppice_elder",
+      "category": "npc_reference",
+      "faction": "thornwood",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_thornwood_coppice_elder.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A male forest-folk village elder, elderly tall lean build, deeply ridged bark-brown skin with lichen flecks, long grey-brown beard braided with twine, broad weathered face, small pointed ears. Patched olive knee-length split wool-and-barkcloth coat, simple leather vest, brown trousers, root-fibre leg wraps and soft boots. Small wooden council seal and a closed ledger of thin bark leaves strapped at waist. Kind but guarded expression. Weathered bark brown, dull olive, lichen grey, faded burgundy. No huge antlers or armour.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_thornwood_herb_keeper",
+      "category": "npc_reference",
+      "faction": "thornwood",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_thornwood_herb_keeper.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A young adult female forest-folk apothecary, slender build, bark-textured ash-brown skin, short tightly bound auburn hair, leaf-shaped ears, grey-green eyes and subtle leaf tattoos at temples. Short off-white flax work apron over muted green tunic, dark fitted trousers, reed-wrapped shoes. Dried herb bundles tied tightly at belt, small wooden medicine cases, no loose long vines. Alert serious expression, no weapons. Moss green, flax cream, bark brown and small dull red berries.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_forge_tool_broker",
+      "category": "npc_reference",
+      "faction": "forge",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_forge_tool_broker.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A male deep-folk tool merchant, short broad dwarf-like adult with thick arms and stocky legs, soot-brown weathered face, broad nose, copper-brown beard in two short braids with iron rings. Charcoal wool shirt, worn brown leather short smith apron over trousers, steel-toed boots, plain soft cap. Small folded measuring calipers, closed tool roll and brass coin purse at belt. Wry smile, civilian with no armour plates or weapon. Soot black, leather brown, dark iron, tarnished brass.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_forge_gem_assayer",
+      "category": "npc_reference",
+      "faction": "forge",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_forge_gem_assayer.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A female deep-folk gem assayer, short powerfully built dwarf-like middle-aged woman, square lined soot-smudged face, thick eyebrows, dark hair braided in a close bun, no beard. Work goggles pushed above brow, dark teal short work coat, heavy leather belt, grey trousers, sturdy riveted boots. Small sealed crystal sample tubes and brass loupe in secure belt holders, no large pack. Concentrated sceptical expression. Dark teal, soot grey, brown leather, muted bronze and tiny dull blue crystal accents.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_forge_clan_recordkeeper",
+      "category": "npc_reference",
+      "faction": "forge",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_forge_clan_recordkeeper.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: An elderly male deep-folk clan clerk, very short broad build with thick legs, long iron-grey beard tied into a compact single braid, deep wrinkles, broad hands with soot-stained nails. Worn burgundy waistcoat over ash-grey tunic, short fur-lined shoulder cape leaving arm gaps clear, dark trousers, old heavy boots. Brass chain of office and closed riveted ledger clipped securely to waist. Weary authoritative expression, no hero armour or gun. Iron grey, soot black, faded burgundy and bronze.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_frostmarch_fur_trader",
+      "category": "npc_reference",
+      "faction": "frostmarch",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_frostmarch_fur_trader.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: An adult female northern clan fur trader, tall broad-shouldered human, wind-burned freckled face, tawny braided hair tied close, practical guarded expression. Patched short grey fur vest over faded indigo wool tunic, thick brown trousers, fur-wrapped boots, leather gloves with visible separate fingers. Compact folded pelts strapped tightly to upper back, short closed pouch of bone trade tokens at belt. No axe, shield or helmet. Grey fur, dirty indigo, hide brown, bone ivory.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_frostmarch_hall_steward",
+      "category": "npc_reference",
+      "faction": "frostmarch",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_frostmarch_hall_steward.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: An elderly male northern clan hall steward, stocky human with broad ruddy lined face, white moustache and short braided beard, receding white hair. Knee-length split dark red wool coat with simple worn geometric stitching, short sheepskin collar, leather belt, charcoal trousers, snow-stained stout boots. Iron key ring, small sealed provision ledger and drinking cup at belt. Tired hospitable face. Faded madder red, charcoal, cream fleece, tarnished iron. No crown or battle armour.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_frostmarch_hearth_healer",
+      "category": "npc_reference",
+      "faction": "frostmarch",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_frostmarch_hearth_healer.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A middle-aged female northern clan healer, wiry human build, weathered pale skin, dark hair tightly braided with a little grey, steady kind eyes. Short moss-grey quilted coat, narrow fur shoulder wrap, muted brown short apron over dark wool trousers, hide boots. Dried root packets, bone medicine tubes and compact bandage pouch at belt. No staff, magic, ice particles, huge cloak or weapons. Ash grey, moss brown, cream fleece, small old bronze charm.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_darkelf_silk_factor",
+      "category": "npc_reference",
+      "faction": "darkelf",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_darkelf_silk_factor.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A male dark-elf silk merchant, tall lean adult with cool slate-lilac skin, sharply pointed long ears, narrow pale violet eyes, silver hair bound into a short neat knot, angular tired face. Fitted charcoal knee-length split silk coat with faded plum lining, restrained tarnished silver clasps, dark trousers and soft high boots. Small folded silk swatch roll and closed coin purse securely fastened at belt. Sly reserved expression, no assassin mask or weapon. Charcoal, muted plum, slate violet, worn silver.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_darkelf_cavern_apothecary",
+      "category": "npc_reference",
+      "faction": "darkelf",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_darkelf_cavern_apothecary.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A female dark-elf cavern apothecary, young adult slender build, pale lavender-grey skin, long pointed ears, pale grey eyes, short white hair in compact braids. Plain dark violet short leather work apron over slate fitted tunic and trousers, practical calf boots, snug sleeves. Several tightly stoppered mushroom tincture bottles and tiny herb boxes secured at belt, no glowing spell effects. Quiet focused face. Dusty violet, black leather, grey linen, small muted green glass accents.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_darkelf_house_steward",
+      "category": "npc_reference",
+      "faction": "darkelf",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_darkelf_house_steward.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: An elderly female dark-elf house steward, upright tall thin build, silver-grey skin, long pointed ears, strongly lined aristocratic face, pale violet eyes, white hair pulled into tight crown braids. High-collared deep plum knee-length split coat with discreet silver spiderweb stitching, fitted charcoal trousers, plain black boots. Tarnished silver office chain, small sealed scroll case and key ring at belt. Cold patient authority, no battle armour, no revealing outfit. Deep plum, charcoal, old silver, faded lavender.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_fishmen_shell_trader",
+      "category": "npc_reference",
+      "faction": "fishmen",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_fishmen_shell_trader.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A squat broad amphibious fish-person shell trader with grey-teal scaled skin, wide grouper-like fish head, fleshy lips closed, side gills and deep-set amber eyes, small rounded dorsal fin. Fully humanoid two arms and two separate sturdy legs, webbed hands and webbed feet. Short coarse seaweed-fibre rust-brown tunic over dark split knee breeches, rope belt with closed shell purses and compact corked brine jars, simple close shell shoulder guard on one side. Wary amicable face. Grey teal, weathered coral brown, shell cream, old bronze. Civilian, no trident.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_fishmen_net_mender",
+      "category": "npc_reference",
+      "faction": "fishmen",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_fishmen_net_mender.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: A lean tall fish-person net mender, olive-blue small scales, narrow eel-like fish head, side gills, short soft fin crest, amber eyes and closed mouth. Humanoid two arms and clearly separated legs with webbed hands and webbed feet. Short faded teal canvas work jerkin, patched ochre knee breeches secured at waist. A compact neatly folded fishing net tied close to lower back, bone net shuttle and small rope coil secured in belt loops, nothing hanging between legs or arms. Patient tired expression. Muted teal, algae olive, ochre, bone ivory. No harpoon or armour.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    },
+    {
+      "id": "npc_fishmen_tide_shrine_keeper",
+      "category": "npc_reference",
+      "faction": "fishmen",
+      "source": "assets/source/batches/warbound-ui-npcs-001/npc_ref/npc_fishmen_tide_shrine_keeper.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "prompt": "Use case: stylized-concept. Clean 3D-model reference image for a dark gothic fantasy game NPC. One character only, full body from head to feet, centred with small safe margin, square image at least 1024 x 1024. Plain flat light grey background; no ground plane, cast shadow, scenery, text, labels, frame, particles or floating effects. Even soft lighting, matte painted materials, weathered detailed surfaces and clean readable silhouettes, grim grounded proportions. Pose: three-quarter front view facing slightly right, standing upright, feet shoulder-width apart, both legs straight and clearly separated; both arms down about 35 degrees away from torso with a clear visible grey gap between each arm and body. Empty relaxed hands, fingers slightly curled; no hands touching clothing or belt. Tunics and split garments end above knees so legs remain distinct. Civilian NPC, no battle pose, no large weapons, no massive hero armour. Image1 is supporting faction-anatomy/palette reference ONLY; image2 is the target rendering, pose and presentation reference ONLY. Create a distinct new person with the role and look below, do not copy either reference character's identity or gear. All small equipment attached securely close to waist or back, never bridging limb gaps. \nSubject: An old anglerfish-like fish-person tide shrine keeper, upright medium stocky build, mottled sea-grey scales, deeply lined broad fish face with closed toothy lips, side gills, small close-folded dorsal fins, a short natural brow lure curled close to head with a dim pale teal tip and no aura. Humanoid two arms and separate legs, webbed hands and bare webbed feet. Short split faded purple sea-fibre vestments over dark green leggings, compact shell-bead necklace and bone votive tokens attached to belt. Solemn gentle expression, no massive coral crown, no armour or staff. Sea grey, faded bruise purple, kelp green, shell ivory.",
+      "anchor": "center",
+      "outline": "matte painted shapes",
+      "pose": "three-quarter front facing slightly right, relaxed A-pose, separated limbs"
+    }
+  ]
+}

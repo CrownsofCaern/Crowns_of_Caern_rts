@@ -1,0 +1,994 @@
+{
+ "id": "ll_ashes",
+ "title": "Ashes Return",
+ "kind": "hero",
+ "seed": 4909,
+ "intro": [
+  "The Host comes back across the wastes in force, and the Concord's capital sends its last reserve: the Iron Margraves, warlord-knights on barded destriers, who have not ridden to war since the Sealing.",
+  "The armies will meet on the river. Before they do, someone has to cut the Host's head off. Two war-leaders hold the wastes beyond the river: Gorrath Kiln at Ashfall and the witch-mother Sesk at Slagmoor.",
+  "Aldous crosses with a handful. Find the Margraves' muster, then break both war-leaders' camps."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "witch_bargain"
+   },
+   "text": [
+    "The Host breaks and falls back to its pit. Cindermaw, the fortress on the lip of the Wound, is the last thing between the Concord and the gate.",
+    "Somewhere behind the army, a witch who kept her word is walking free across the ash. Edda does not ask about it, and Aldous does not tell her."
+   ]
+  },
+  {
+   "text": [
+    "The Host breaks and falls back to its pit. Cindermaw, the fortress on the lip of the Wound, is the last thing between the Concord and the gate."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "concord"
+  },
+  {
+   "faction": "ashen"
+  }
+ ],
+ "speakers": {
+  "edda": "Sister Edda Vey",
+  "maelis": "Maelis Thorne"
+ },
+ "hero": {
+  "at": [
+   0.07,
+   0.54
+  ]
+ },
+ "hero_boost": {
+  "hp": 600,
+  "damage_pct": 0.9
+ },
+ "checkpoint": "river_shrine",
+ "map": {
+  "name": "Ashes Return",
+  "size": [
+   176,
+   112
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "ashland",
+  "border": "mountains",
+  "features": {
+   "rivers": [
+    {
+     "pts": [
+      [
+       0.14,
+       -0.03
+      ],
+      [
+       0.12,
+       0.3
+      ],
+      [
+       0.15,
+       0.62
+      ],
+      [
+       0.12,
+       1.03
+      ]
+     ],
+     "w": 6
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.44,
+       0.0
+      ],
+      [
+       0.46,
+       0.18
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.46,
+       1.0
+      ],
+      [
+       0.48,
+       0.84
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.78,
+       0.44
+      ],
+      [
+       0.84,
+       0.56
+      ]
+     ],
+     "w": 4
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.36,
+      0.36
+     ],
+     "r": 0.05
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "river_camp",
+    "at": [
+     0.05,
+     0.5
+    ],
+    "size": "waystone",
+    "owner": 0,
+    "name": "River Camp",
+    "biome": "meadow"
+   },
+   {
+    "id": "muster",
+    "at": [
+     0.26,
+     0.24
+    ],
+    "size": "hamlet",
+    "owner": 0,
+    "name": "Margraves' Muster",
+    "nodes": 0
+   },
+   {
+    "id": "abbey",
+    "at": [
+     0.38,
+     0.64
+    ],
+    "size": "waystone",
+    "name": "The Burnt Abbey"
+   },
+   {
+    "id": "ashfall",
+    "at": [
+     0.66,
+     0.26
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Ashfall",
+    "nodes": 0
+   },
+   {
+    "id": "slagmoor",
+    "at": [
+     0.66,
+     0.76
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Slagmoor",
+    "nodes": 0
+   },
+   {
+    "id": "rim",
+    "at": [
+     0.92,
+     0.5
+    ],
+    "size": "waystone",
+    "owner": 1,
+    "name": "The Rim Road"
+   }
+  ],
+  "sites": [
+   {
+    "id": "river_shrine",
+    "at": [
+     0.08,
+     0.34
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "sutler",
+    "at": [
+     0.24,
+     0.5
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "abbey_altar",
+    "at": [
+     0.42,
+     0.56
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "cinder_pit",
+    "at": [
+     0.5,
+     0.42
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "pyre_hold",
+    "guards": [
+     [
+      "hill_giant",
+      1
+     ],
+     [
+      "ashscale_basilisk",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "ogre_den",
+    "at": [
+     0.3,
+     0.86
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "small_ruin",
+    "guards": [
+     [
+      "ogre_mauler",
+      2
+     ],
+     [
+      "crag_slinger",
+      2
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "river_camp",
+    "river_shrine",
+    "trail"
+   ],
+   [
+    "river_camp",
+    "muster",
+    "road"
+   ],
+   [
+    "river_camp",
+    "sutler",
+    "road"
+   ],
+   [
+    "sutler",
+    "abbey",
+    "road"
+   ],
+   [
+    "muster",
+    "cinder_pit",
+    "trail"
+   ],
+   [
+    "abbey",
+    "abbey_altar",
+    "trail"
+   ],
+   [
+    "abbey",
+    "ogre_den",
+    "trail"
+   ],
+   [
+    "abbey",
+    "cinder_pit",
+    "trail"
+   ],
+   [
+    "muster",
+    "ashfall",
+    "road"
+   ],
+   [
+    "abbey",
+    "slagmoor",
+    "road"
+   ],
+   [
+    "cinder_pit",
+    "ashfall",
+    "trail"
+   ],
+   [
+    "cinder_pit",
+    "slagmoor",
+    "trail"
+   ],
+   [
+    "ashfall",
+    "rim",
+    "road"
+   ],
+   [
+    "slagmoor",
+    "rim",
+    "road"
+   ]
+  ],
+  "scatter": {
+   "woods": 2,
+   "rocks": 9,
+   "ponds": 1
+  }
+ },
+ "npcs": [
+  {
+   "id": "sabine",
+   "name": "Margravine Sabine Ost",
+   "look": "iron_margrave",
+   "at": [
+    0.27,
+    0.2
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "sabine_decided"
+      }
+     },
+     "dialogue": "sabine",
+     "mark": "!"
+    },
+    {
+     "dialogue": "sabine_after"
+    }
+   ]
+  },
+  {
+   "id": "vessa",
+   "name": "Vessa of the Ash",
+   "look": "ash_witch",
+   "at": [
+    0.39,
+    0.68
+   ],
+   "facing": 1.0,
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "vessa_decided"
+      }
+     },
+     "dialogue": "vessa",
+     "mark": "!"
+    },
+    {
+     "dialogue": "vessa_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "margraves",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.27,
+    0.24
+   ],
+   "units": [
+    [
+     "iron_margrave",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "abbey_raiders",
+   "owner": 1,
+   "at": [
+    0.4,
+    0.6
+   ],
+   "units": [
+    [
+     "flayer",
+     1
+    ],
+    [
+     "cinderling",
+     5
+    ],
+    [
+     "brimstone_hurler",
+     1
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "gorrath",
+   "owner": 1,
+   "at": [
+    0.66,
+    0.22
+   ],
+   "hero": {
+    "class": "warlord",
+    "name": "Gorrath Kiln",
+    "level": 16
+   },
+   "guard": 12
+  },
+  {
+   "id": "gorrath_guard",
+   "owner": 1,
+   "at": [
+    0.65,
+    0.26
+   ],
+   "units": [
+    [
+     "flayer",
+     1
+    ],
+    [
+     "scorchhound",
+     4
+    ],
+    [
+     "cinderling",
+     6
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "sesk",
+   "owner": 1,
+   "at": [
+    0.66,
+    0.8
+   ],
+   "hero": {
+    "class": "warlock",
+    "name": "Witch-mother Sesk",
+    "level": 15
+   },
+   "guard": 12
+  },
+  {
+   "id": "sesk_guard",
+   "owner": 1,
+   "at": [
+    0.65,
+    0.76
+   ],
+   "units": [
+    [
+     "brimstone_hurler",
+     2
+    ],
+    [
+     "flayer",
+     1
+    ],
+    [
+     "cinderling",
+     5
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "sesk_wards",
+   "owner": 1,
+   "at": [
+    0.68,
+    0.74
+   ],
+   "units": [
+    [
+     "ash_witch",
+     2
+    ],
+    [
+     "scorchhound",
+     2
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "rim_watch",
+   "owner": 1,
+   "at": [
+    0.9,
+    0.5
+   ],
+   "units": [
+    [
+     "scorchhound",
+     4
+    ],
+    [
+     "flayer",
+     2
+    ]
+   ],
+   "guard": 9
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "Ash to the knees and the river behind us. Let's find these Margraves.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Maelis Thorne"
+   },
+   "say": "Tracks everywhere, my lord. Nothing out here walks on feet.",
+   "who": "maelis"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "Ashes Return",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Find the Iron Margraves' muster",
+     "done": {
+      "flag": "sabine_decided"
+     },
+     "do": [
+      {
+       "xp": 300
+      }
+     ]
+    },
+    {
+     "text": "Break Gorrath Kiln's camp at Ashfall",
+     "done": {
+      "all": [
+       {
+        "dead": "gorrath"
+       },
+       {
+        "dead": "gorrath_guard"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 800
+      }
+     ]
+    },
+    {
+     "text": "Break Witch-mother Sesk's camp at Slagmoor",
+     "done": {
+      "all": [
+       {
+        "dead": "sesk"
+       },
+       {
+        "dead": "sesk_guard"
+       },
+       {
+        "dead": "sesk_wards"
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 1500
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "abbey": {
+   "title": "The Witch at the Abbey",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Clear the Host's raiders from the Burnt Abbey",
+     "done": {
+      "dead": "abbey_raiders"
+     }
+    },
+    {
+     "text": "Decide what to do with the ash-witch",
+     "done": {
+      "flag": "vessa_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 400
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "sabine": {
+   "nodes": {
+    "start": {
+     "text": "Wren of Greyhold. Sabine Ost, Margravine of the Iron Reserve. We last rode a hundred years ago. My great-grandmother rode beside your Orrin.",
+     "next": "b"
+    },
+    "b": {
+     "text": "The capital sends us to stand on the river. I would rather put two of my knights where they'd do some good. Tell me where.",
+     "choices": [
+      {
+       "text": "With me. We go for the war-leaders.",
+       "do": [
+        {
+         "flag": "sabine_decided"
+        },
+        {
+         "flag": "margraves_ride"
+        },
+        {
+         "spawn": "margraves"
+        },
+        {
+         "join": "margraves"
+        }
+       ],
+       "next": "ride"
+      },
+      {
+       "text": "Hold the river. If we fail, you're all that's left.",
+       "do": [
+        {
+         "flag": "sabine_decided"
+        },
+        {
+         "flag": "margraves_hold"
+        },
+        {
+         "item": {
+          "rarity": "rare",
+          "slot": "armor",
+          "level": 12
+         }
+        }
+       ],
+       "next": "hold"
+      }
+     ]
+    },
+    "ride": {
+     "text": "Then the Margraves ride again. Try to keep up, Wren."
+    },
+    "hold": {
+     "text": "Sensible. Your Orrin would have said the same. Take my mail, then. It was made for a bigger fool than either of us."
+    }
+   }
+  },
+  "sabine_after": {
+   "nodes": {
+    "start": {
+     "text": "Iron holds."
+    }
+   }
+  },
+  "vessa": {
+   "nodes": {
+    "start": {
+     "text": "Don't. I'm not one of theirs. Not any more. I was a Concord hedge-witch before the ash came up and swallowed my village. Now I'm whatever this is.",
+     "next": "b"
+    },
+    "b": {
+     "text": "Sesk keeps wards around her: two of my sisters and their hounds. I can break them from here. Let me walk away when it's done, Concord, and Sesk stands naked.",
+     "choices": [
+      {
+       "text": "Break the wards, and walk away.",
+       "do": [
+        {
+         "flag": "vessa_decided"
+        },
+        {
+         "flag": "witch_bargain"
+        },
+        {
+         "remove": "sesk_wards"
+        },
+        {
+         "leave": "vessa",
+         "to": [
+          0.02,
+          0.98
+         ]
+        }
+       ],
+       "next": "deal"
+      },
+      {
+       "text": "You're Host now. I'm sorry.",
+       "do": [
+        {
+         "flag": "vessa_decided"
+        },
+        {
+         "flag": "witch_slain"
+        },
+        {
+         "hostile": "vessa"
+        }
+       ],
+       "next": "fight"
+      },
+      {
+       "text": "Edda, can she be helped?",
+       "if": {
+        "companion": "Sister Edda Vey"
+       },
+       "next": "edda"
+      }
+     ]
+    },
+    "edda": {
+     "who": "edda",
+     "text": "No, my lord. The ash is in her. But she can choose what she does with the time she has left. Let her.",
+     "choices": [
+      {
+       "text": "Break the wards, and walk away.",
+       "do": [
+        {
+         "flag": "vessa_decided"
+        },
+        {
+         "flag": "witch_bargain"
+        },
+        {
+         "remove": "sesk_wards"
+        },
+        {
+         "leave": "vessa",
+         "to": [
+          0.02,
+          0.98
+         ]
+        }
+       ],
+       "next": "deal"
+      },
+      {
+       "text": "No. I can't trust anything from the Wound.",
+       "do": [
+        {
+         "flag": "vessa_decided"
+        },
+        {
+         "flag": "witch_slain"
+        },
+        {
+         "hostile": "vessa"
+        }
+       ],
+       "next": "fight"
+      }
+     ]
+    },
+    "deal": {
+     "text": "It's done. You'll hear Sesk scream from here. Goodbye, Concord."
+    },
+    "fight": {
+     "text": "Then I'll take one of you with me."
+    }
+   }
+  },
+  "vessa_after": {
+   "nodes": {
+    "start": {
+     "text": "..."
+    }
+   }
+  },
+  "gorrath_parley": {
+   "nodes": {
+    "start": {
+     "who": "gorrath",
+     "text": "The gate's open, little knight. There is nothing on the other side of it you can kill. Come and die on this side, then."
+    }
+   }
+  },
+  "sesk_parley": {
+   "nodes": {
+    "start": {
+     "who": "sesk",
+     "text": "I smell lamp-oil. One of the lantern-priests walks with you. We ate a lantern-priest once. He told us everything about the stone."
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "sabine",
+      "r": 8
+     },
+     {
+      "not": {
+       "flag": "sabine_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "sabine",
+     "npc": "sabine"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "dead": "abbey_raiders"
+     },
+     {
+      "near": "vessa",
+      "r": 8
+     },
+     {
+      "not": {
+       "flag": "vessa_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "start_quest": "abbey"
+    },
+    {
+     "dialogue": "vessa",
+     "npc": "vessa"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "ashfall",
+      "r": 18
+     },
+     {
+      "alive": "gorrath"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "gorrath_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "slagmoor",
+      "r": 18
+     },
+     {
+      "alive": "sesk"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "sesk_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "gorrath"
+     },
+     {
+      "not": {
+       "alive": "gorrath"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Kiln is down. One war-leader left.",
+     "who": "hero"
+    },
+    {
+     "xp": 400
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "sesk"
+     },
+     {
+      "not": {
+       "alive": "sesk"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "The witch-mother is dead.",
+     "who": "hero"
+    },
+    {
+     "xp": 400
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "companion": "Sister Edda Vey"
+     },
+     {
+      "near": "abbey",
+      "r": 10
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "This was a lantern abbey. Ours. They burned it from the inside.",
+     "who": "edda"
+    }
+   ]
+  }
+ ]
+}

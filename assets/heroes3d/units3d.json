@@ -1,0 +1,322 @@
+{
+	"anvilbreaker": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.6,
+		"move_speed": 3.59
+	},
+	"artificer": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.6,
+		"move_speed": 1.59
+	},
+	"barrow_lord": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.95,
+		"move_speed": 3.92
+	},
+	"beastcaller": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.99
+	},
+	"blightcaller": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.04
+	},
+	"brandguard": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.93
+	},
+	"brine_champion": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.95,
+		"move_speed": 3.84
+	},
+	"broodbinder": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.0
+	},
+	"deep_oracle": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.25
+	},
+	"dreadmarshal": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.79
+	},
+	"frostcaller": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.01
+	},
+	"gravewarden": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.86
+	},
+	"grovewarden": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.68
+	},
+	"hearthkeeper": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 1.91
+	},
+	"huntmaster": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.73
+	},
+	"ironmarshal": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.6,
+		"move_speed": 2.98
+	},
+	"knight": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.87
+	},
+	"necromancer": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.12
+	},
+	"nightstalker": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.82
+	},
+	"oracle": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.27
+	},
+	"ranger": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.81
+	},
+	"reaver": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.83
+	},
+	"reef_hunter": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.79
+	},
+	"runesmith": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.6,
+		"move_speed": 2.95
+	},
+	"templar": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.9,
+		"move_speed": 3.93
+	},
+	"thane": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 1.79
+	},
+	"thornspeaker": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.97
+	},
+	"tidemarshal": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.07
+	},
+	"tormentor": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 1.7
+	},
+	"veilseer": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.17
+	},
+	"warlock": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.48
+	},
+	"warlord": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 1.74
+	}
+}

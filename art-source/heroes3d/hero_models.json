@@ -1,0 +1,1342 @@
+{
+  "units": [
+    {
+      "id": "knight",
+      "model": "assets/source/heroes3d/knight/knight_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/knight/knight_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Sword And Shield Idle",
+          "start": 0.0,
+          "end": 0.12
+        },
+        "move": {
+          "model": "assets/source/heroes3d/knight/knight_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Sword And Shield Run"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/knight/knight_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Sword And Shield Slash",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/knight/knight_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "sword_shield"
+    },
+    {
+      "id": "ranger",
+      "model": "assets/source/heroes3d/ranger/ranger_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/ranger/ranger_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/ranger/ranger_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/ranger/ranger_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing Draw Arrow",
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/ranger/ranger_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "bow"
+    },
+    {
+      "id": "oracle",
+      "model": "assets/source/heroes3d/oracle/oracle_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/oracle/oracle_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/oracle/oracle_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/oracle/oracle_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing 1H Magic Attack 01",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/oracle/oracle_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "caster"
+    },
+    {
+      "id": "templar",
+      "model": "assets/source/heroes3d/templar/templar_rigged.glb",
+      "height": 1.9,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/templar/templar_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Standing Idle 04",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/heroes3d/templar/templar_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/templar/templar_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Great Sword Jump Attack",
+          "start": 0.15,
+          "end": 0.55,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/templar/templar_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "heavy"
+    },
+    {
+      "id": "warlord",
+      "model": "assets/source/heroes3d/warlord/warlord_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/warlord/warlord_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/heroes3d/warlord/warlord_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Standing Walk Forward"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/warlord/warlord_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/warlord/warlord_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "club"
+    },
+    {
+      "id": "warlock",
+      "model": "assets/source/heroes3d/warlock/warlock_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/warlock/warlock_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/warlock/warlock_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/warlock/warlock_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing 2H Magic Attack 02",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/warlock/warlock_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "caster_2h"
+    },
+    {
+      "id": "tormentor",
+      "model": "assets/source/heroes3d/tormentor/tormentor_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/tormentor/tormentor_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/heroes3d/tormentor/tormentor_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Standing Walk Forward"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/tormentor/tormentor_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/tormentor/tormentor_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "club"
+    },
+    {
+      "id": "brandguard",
+      "model": "assets/source/heroes3d/brandguard/brandguard_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/brandguard/brandguard_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Sword And Shield Idle",
+          "start": 0.0,
+          "end": 0.12
+        },
+        "move": {
+          "model": "assets/source/heroes3d/brandguard/brandguard_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Sword And Shield Run"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/brandguard/brandguard_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Sword And Shield Slash",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/brandguard/brandguard_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "sword_shield"
+    },
+    {
+      "id": "necromancer",
+      "model": "assets/source/heroes3d/necromancer/necromancer_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/necromancer/necromancer_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/necromancer/necromancer_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/necromancer/necromancer_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing 2H Magic Attack 02",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/necromancer/necromancer_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "caster_2h"
+    },
+    {
+      "id": "gravewarden",
+      "model": "assets/source/heroes3d/gravewarden/gravewarden_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/gravewarden/gravewarden_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Sword And Shield Idle",
+          "start": 0.0,
+          "end": 0.12
+        },
+        "move": {
+          "model": "assets/source/heroes3d/gravewarden/gravewarden_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Sword And Shield Run"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/gravewarden/gravewarden_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Sword And Shield Slash",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/gravewarden/gravewarden_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "sword_shield"
+    },
+    {
+      "id": "blightcaller",
+      "model": "assets/source/heroes3d/blightcaller/blightcaller_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/blightcaller/blightcaller_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/blightcaller/blightcaller_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/blightcaller/blightcaller_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing 2H Magic Attack 02",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/blightcaller/blightcaller_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "caster_2h"
+    },
+    {
+      "id": "barrow_lord",
+      "model": "assets/source/heroes3d/barrow_lord/barrow_lord_rigged.glb",
+      "height": 1.95,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/barrow_lord/barrow_lord_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Standing Idle 04",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/heroes3d/barrow_lord/barrow_lord_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/barrow_lord/barrow_lord_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Great Sword Jump Attack",
+          "start": 0.15,
+          "end": 0.55,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/barrow_lord/barrow_lord_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "heavy"
+    },
+    {
+      "id": "grovewarden",
+      "model": "assets/source/heroes3d/grovewarden/grovewarden_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/grovewarden/grovewarden_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Sword And Shield Idle",
+          "start": 0.0,
+          "end": 0.12
+        },
+        "move": {
+          "model": "assets/source/heroes3d/grovewarden/grovewarden_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Sword And Shield Run"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/grovewarden/grovewarden_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Sword And Shield Slash",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/grovewarden/grovewarden_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "sword_shield"
+    },
+    {
+      "id": "huntmaster",
+      "model": "assets/source/heroes3d/huntmaster/huntmaster_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/huntmaster/huntmaster_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/huntmaster/huntmaster_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/huntmaster/huntmaster_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing Draw Arrow",
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/huntmaster/huntmaster_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "bow"
+    },
+    {
+      "id": "thornspeaker",
+      "model": "assets/source/heroes3d/thornspeaker/thornspeaker_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/thornspeaker/thornspeaker_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/thornspeaker/thornspeaker_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/thornspeaker/thornspeaker_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing 1H Magic Attack 01",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/thornspeaker/thornspeaker_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "caster"
+    },
+    {
+      "id": "beastcaller",
+      "model": "assets/source/heroes3d/beastcaller/beastcaller_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/beastcaller/beastcaller_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/beastcaller/beastcaller_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/beastcaller/beastcaller_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing 1H Magic Attack 01",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/beastcaller/beastcaller_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "caster"
+    },
+    {
+      "id": "artificer",
+      "model": "assets/source/heroes3d/artificer/artificer_rigged.glb",
+      "height": 1.6,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/artificer/artificer_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/heroes3d/artificer/artificer_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Standing Walk Forward"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/artificer/artificer_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/artificer/artificer_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "club"
+    },
+    {
+      "id": "ironmarshal",
+      "model": "assets/source/heroes3d/ironmarshal/ironmarshal_rigged.glb",
+      "height": 1.6,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/ironmarshal/ironmarshal_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Sword And Shield Idle",
+          "start": 0.0,
+          "end": 0.12
+        },
+        "move": {
+          "model": "assets/source/heroes3d/ironmarshal/ironmarshal_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Sword And Shield Run"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/ironmarshal/ironmarshal_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Sword And Shield Slash",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/ironmarshal/ironmarshal_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "sword_shield"
+    },
+    {
+      "id": "runesmith",
+      "model": "assets/source/heroes3d/runesmith/runesmith_rigged.glb",
+      "height": 1.6,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/runesmith/runesmith_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/runesmith/runesmith_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/runesmith/runesmith_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing 2H Magic Attack 02",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/runesmith/runesmith_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "caster_2h"
+    },
+    {
+      "id": "anvilbreaker",
+      "model": "assets/source/heroes3d/anvilbreaker/anvilbreaker_rigged.glb",
+      "height": 1.6,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/anvilbreaker/anvilbreaker_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Standing Idle 04",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/heroes3d/anvilbreaker/anvilbreaker_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/anvilbreaker/anvilbreaker_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Great Sword Jump Attack",
+          "start": 0.15,
+          "end": 0.55,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/anvilbreaker/anvilbreaker_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "heavy"
+    },
+    {
+      "id": "thane",
+      "model": "assets/source/heroes3d/thane/thane_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/thane/thane_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/heroes3d/thane/thane_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Standing Walk Forward"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/thane/thane_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/thane/thane_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "club"
+    },
+    {
+      "id": "reaver",
+      "model": "assets/source/heroes3d/reaver/reaver_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/reaver/reaver_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/reaver/reaver_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/reaver/reaver_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Goalkeeper Overhand Throw",
+          "start": 0.15,
+          "end": 0.85,
+          "impact_frame": 6
+        },
+        "death": {
+          "model": "assets/source/heroes3d/reaver/reaver_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "thrower"
+    },
+    {
+      "id": "frostcaller",
+      "model": "assets/source/heroes3d/frostcaller/frostcaller_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/frostcaller/frostcaller_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/frostcaller/frostcaller_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/frostcaller/frostcaller_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing 2H Magic Attack 02",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/frostcaller/frostcaller_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "caster_2h"
+    },
+    {
+      "id": "hearthkeeper",
+      "model": "assets/source/heroes3d/hearthkeeper/hearthkeeper_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/hearthkeeper/hearthkeeper_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/heroes3d/hearthkeeper/hearthkeeper_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Standing Walk Forward"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/hearthkeeper/hearthkeeper_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/hearthkeeper/hearthkeeper_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "club"
+    },
+    {
+      "id": "dreadmarshal",
+      "model": "assets/source/heroes3d/de_dreadmarshal/de_dreadmarshal_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/de_dreadmarshal/dreadmarshal_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Standing Idle 04",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/heroes3d/de_dreadmarshal/dreadmarshal_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/de_dreadmarshal/dreadmarshal_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Great Sword Jump Attack",
+          "start": 0.15,
+          "end": 0.55,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/de_dreadmarshal/dreadmarshal_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "heavy"
+    },
+    {
+      "id": "veilseer",
+      "model": "assets/source/heroes3d/de_veilseer/de_veilseer_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/de_veilseer/veilseer_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/de_veilseer/veilseer_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/de_veilseer/veilseer_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing 2H Magic Attack 02",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/de_veilseer/veilseer_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "caster_2h"
+    },
+    {
+      "id": "nightstalker",
+      "model": "assets/source/heroes3d/de_nightstalker/de_nightstalker_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/de_nightstalker/nightstalker_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/de_nightstalker/nightstalker_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/de_nightstalker/nightstalker_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing Draw Arrow",
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/de_nightstalker/nightstalker_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "bow"
+    },
+    {
+      "id": "broodbinder",
+      "model": "assets/source/heroes3d/broodbinder/broodbinder_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/broodbinder/broodbinder_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/broodbinder/broodbinder_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/broodbinder/broodbinder_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing 1H Magic Attack 01",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/broodbinder/broodbinder_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "caster"
+    },
+    {
+      "id": "tidemarshal",
+      "model": "assets/source/heroes3d/fm_tidemarshal/fm_tidemarshal_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/fm_tidemarshal/tidemarshal_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Sword And Shield Idle",
+          "start": 0.0,
+          "end": 0.12
+        },
+        "move": {
+          "model": "assets/source/heroes3d/fm_tidemarshal/tidemarshal_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Sword And Shield Run"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/fm_tidemarshal/tidemarshal_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Sword And Shield Slash",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/fm_tidemarshal/tidemarshal_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "sword_shield"
+    },
+    {
+      "id": "deep_oracle",
+      "model": "assets/source/heroes3d/fm_deep_oracle/fm_deep_oracle_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/fm_deep_oracle/deep_oracle_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/fm_deep_oracle/deep_oracle_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/fm_deep_oracle/deep_oracle_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Standing 1H Magic Attack 01",
+          "start": 0.1,
+          "end": 0.8,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/fm_deep_oracle/deep_oracle_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "caster"
+    },
+    {
+      "id": "reef_hunter",
+      "model": "assets/source/heroes3d/fm_reef_hunter/fm_reef_hunter_rigged.glb",
+      "height": 1.85,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/fm_reef_hunter/reef_hunter_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Idle",
+          "start": 0.0,
+          "end": 0.6
+        },
+        "move": {
+          "model": "assets/source/heroes3d/fm_reef_hunter/reef_hunter_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/fm_reef_hunter/reef_hunter_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Goalkeeper Overhand Throw",
+          "start": 0.15,
+          "end": 0.85,
+          "impact_frame": 6
+        },
+        "death": {
+          "model": "assets/source/heroes3d/fm_reef_hunter/reef_hunter_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "thrower"
+    },
+    {
+      "id": "brine_champion",
+      "model": "assets/source/heroes3d/brine_champion/brine_champion_rigged.glb",
+      "height": 1.95,
+      "clips": {
+        "idle": {
+          "model": "assets/source/heroes3d/brine_champion/brine_champion_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Standing Idle 04",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/heroes3d/brine_champion/brine_champion_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running"
+        },
+        "attack": {
+          "model": "assets/source/heroes3d/brine_champion/brine_champion_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "Great Sword Jump Attack",
+          "start": 0.15,
+          "end": 0.55,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/heroes3d/brine_champion/brine_champion_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Sword And Shield Death",
+          "start": 0.0,
+          "end": 0.85
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "heavy"
+    }
+  ]
+}

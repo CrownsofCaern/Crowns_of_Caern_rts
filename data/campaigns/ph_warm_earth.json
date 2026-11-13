@@ -1,0 +1,1123 @@
+{
+ "id": "ph_warm_earth",
+ "title": "The Warm Earth",
+ "kind": "hero",
+ "seed": 5101,
+ "intro": [
+  "For three hundred years Ysmay Vane has ruled the fens of Sallowmere from a throne no one else wanted: a dwindling court of the dead, too few to matter. This autumn the ground is warm, and the dead are waking by the thousand. They crawl up out of the mud as if something below were chasing them.",
+  "A court that grows can be a kingdom. Ysmay sends her champion, Sir Orrin Wren, a hundred years in his grave, to tell the barrow-lords of the fen. Vathek of Cairnholt answers that he kneels to no one.",
+  "How to play: right click to walk and fight, right click someone to talk. A gold ! means they want something, a ? means you can report back. Q, W, E and R use Ysmay's skills; K opens her skill trees. If she falls she wakes at the last shrine she touched.",
+  "Go down to the Weeping Mere and see the risen for yourself. Then take Vathek's word back from Cairnholt."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "vathek_bound"
+   },
+   "text": [
+    "Vathek's hill falls and his dead turn to the Regent without a word. They were never his; they were only near him. His skull rides at Ysmay's belt now, and mutters at night about the heat.",
+    "Ysmay counts what she has gained and finds the number is still rising. Every night more of the dead climb out of the fen, and none of them can say what woke them."
+   ]
+  },
+  {
+   "text": [
+    "Vathek's hill falls and his dead turn to the Regent without a word. They were never his; they were only near him.",
+    "Ysmay counts what she has gained and finds the number is still rising. Every night more of the dead climb out of the fen, and none of them can say what woke them."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "hollow"
+  },
+  {
+   "faction": "hollow"
+  }
+ ],
+ "hero": {
+  "at": [
+   0.09,
+   0.54
+  ]
+ },
+ "hero_boost": {
+  "hp": 250,
+  "damage_pct": 0.5
+ },
+ "checkpoint": "court_shrine",
+ "map": {
+  "name": "The Warm Earth",
+  "size": [
+   176,
+   112
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "swamp",
+  "border": "mountains",
+  "features": {
+   "lakes": [
+    {
+     "at": [
+      0.24,
+      0.4
+     ],
+     "r": 0.06
+    },
+    {
+     "at": [
+      0.6,
+      0.86
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.62,
+      0.12
+     ],
+     "r": 0.06
+    }
+   ],
+   "woods": [
+    {
+     "at": [
+      0.18,
+      0.86
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.44,
+      0.3
+     ],
+     "r": 0.06
+    },
+    {
+     "at": [
+      0.8,
+      0.16
+     ],
+     "r": 0.07
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.76,
+       0.32
+      ],
+      [
+       0.8,
+       0.4
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.76,
+       0.68
+      ],
+      [
+       0.8,
+       0.6
+      ]
+     ],
+     "w": 4
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "court",
+    "at": [
+     0.06,
+     0.5
+    ],
+    "size": "town",
+    "owner": 0,
+    "name": "Sallowmere Court"
+   },
+   {
+    "id": "mere",
+    "at": [
+     0.26,
+     0.52
+    ],
+    "size": "waystone",
+    "name": "The Weeping Mere"
+   },
+   {
+    "id": "mossgate",
+    "at": [
+     0.32,
+     0.2
+    ],
+    "size": "hamlet",
+    "name": "Mossgate",
+    "biome": "meadow",
+    "nodes": 0
+   },
+   {
+    "id": "causeway",
+    "at": [
+     0.5,
+     0.54
+    ],
+    "size": "waystone",
+    "name": "The Old Causeway"
+   },
+   {
+    "id": "cairnholt",
+    "at": [
+     0.88,
+     0.5
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Cairnholt",
+    "biome": "gloomcrag",
+    "nodes": 0
+   }
+  ],
+  "sites": [
+   {
+    "id": "court_shrine",
+    "at": [
+     0.1,
+     0.36
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "bone_trader",
+    "at": [
+     0.2,
+     0.68
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "causeway_shrine",
+    "at": [
+     0.54,
+     0.42
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "drowned_chapel",
+    "at": [
+     0.44,
+     0.12
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "drowned_chapel",
+    "guards": [
+     [
+      "marsh_hag",
+      1
+     ],
+     [
+      "plague_rats",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "reed_den",
+    "at": [
+     0.38,
+     0.84
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "small_ruin",
+    "guards": [
+     [
+      "bog_lurker",
+      1
+     ],
+     [
+      "plague_rats",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "cairn_west",
+    "at": [
+     0.7,
+     0.26
+    ],
+    "kind": "lair",
+    "tier": 1,
+    "set": "small_graves",
+    "keeper": 1,
+    "guards": [
+     [
+      "shambler",
+      3
+     ],
+     [
+      "marrow_archer",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "cairn_east",
+    "at": [
+     0.7,
+     0.76
+    ],
+    "kind": "lair",
+    "tier": 1,
+    "set": "small_graves",
+    "keeper": 1,
+    "guards": [
+     [
+      "shambler",
+      3
+     ],
+     [
+      "marrow_archer",
+      1
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "court",
+    "court_shrine",
+    "trail"
+   ],
+   [
+    "court",
+    "mere",
+    "road"
+   ],
+   [
+    "court",
+    "bone_trader",
+    "road"
+   ],
+   [
+    "mere",
+    "mossgate",
+    "trail"
+   ],
+   [
+    "mossgate",
+    "drowned_chapel",
+    "trail"
+   ],
+   [
+    "bone_trader",
+    "reed_den",
+    "trail"
+   ],
+   [
+    "mere",
+    "causeway",
+    "road"
+   ],
+   [
+    "causeway",
+    "causeway_shrine",
+    "trail"
+   ],
+   [
+    "causeway",
+    "cairn_west",
+    "trail"
+   ],
+   [
+    "causeway",
+    "cairn_east",
+    "trail"
+   ],
+   [
+    "causeway",
+    "cairnholt",
+    "road"
+   ],
+   [
+    "cairn_west",
+    "cairnholt",
+    "trail"
+   ],
+   [
+    "cairn_east",
+    "cairnholt",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 5,
+   "rocks": 5,
+   "ponds": 4
+  }
+ },
+ "npcs": [
+  {
+   "id": "orrin",
+   "name": "Sir Orrin Wren",
+   "look": "hero_gravewarden",
+   "at": [
+    0.11,
+    0.5
+   ],
+   "talk": [
+    {
+     "dialogue": "orrin_idle"
+    }
+   ]
+  },
+  {
+   "id": "hob",
+   "name": "Hob Nettle",
+   "look": "shambler",
+   "at": [
+    0.27,
+    0.56
+   ],
+   "facing": 1.0,
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "hob_decided"
+      }
+     },
+     "dialogue": "hob",
+     "mark": "!"
+    },
+    {
+     "dialogue": "hob_after"
+    }
+   ]
+  },
+  {
+   "id": "brisa",
+   "name": "Headwoman Brisa Fenn",
+   "look": "npc_woman",
+   "at": [
+    0.31,
+    0.24
+   ],
+   "talk": [
+    {
+     "if": {
+      "quest": "mossgate",
+      "is": "new"
+     },
+     "dialogue": "brisa_ask",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "all": [
+       {
+        "step": [
+         "mossgate",
+         1
+        ]
+       },
+       {
+        "flag": "hob_home"
+       }
+      ]
+     },
+     "dialogue": "brisa_back_hob",
+     "mark": "?"
+    },
+    {
+     "if": {
+      "step": [
+       "mossgate",
+       1
+      ]
+     },
+     "dialogue": "brisa_back",
+     "mark": "?"
+    },
+    {
+     "dialogue": "brisa_idle"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "risen",
+   "owner": "wild",
+   "passive": true,
+   "at": [
+    0.28,
+    0.6
+   ],
+   "units": [
+    [
+     "shambler",
+     3
+    ]
+   ]
+  },
+  {
+   "id": "lights",
+   "owner": "wild",
+   "at": [
+    0.47,
+    0.56
+   ],
+   "units": [
+    [
+     "corpse_light",
+     3
+    ]
+   ],
+   "guard": 7
+  },
+  {
+   "id": "vathek",
+   "owner": 1,
+   "at": [
+    0.89,
+    0.46
+   ],
+   "hero": {
+    "class": "barrow_lord",
+    "name": "Vathek of Cairnholt",
+    "level": 3
+   },
+   "guard": 12
+  },
+  {
+   "id": "vathek_guard",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.53
+   ],
+   "units": [
+    [
+     "shambler",
+     4
+    ],
+    [
+     "marrow_archer",
+     2
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "tithe_dead",
+   "owner": "wild",
+   "passive": true,
+   "spawn": false,
+   "at": [
+    0.32,
+    0.26
+   ],
+   "units": [
+    [
+     "shambler",
+     2
+    ],
+    [
+     "marrow_archer",
+     1
+    ]
+   ]
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "join": "orrin"
+  },
+  {
+   "say": "The ground is warm, Orrin. In autumn. Something is cooking under my fen.",
+   "who": "hero"
+  },
+  {
+   "say": "Then let's go and look at what it's cooking, my lady.",
+   "who": "orrin"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "The Warm Earth",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Go down to the Weeping Mere, where the dead are waking",
+     "done": {
+      "near": "mere",
+      "r": 10
+     },
+     "do": [
+      {
+       "xp": 100
+      }
+     ]
+    },
+    {
+     "text": "Hear what the newly risen have to say",
+     "done": {
+      "flag": "hob_decided"
+     },
+     "do": [
+      {
+       "xp": 100
+      }
+     ]
+    },
+    {
+     "text": "Clear the corpse-lights off the Old Causeway",
+     "done": {
+      "dead": "lights"
+     },
+     "do": [
+      {
+       "xp": 150
+      }
+     ]
+    },
+    {
+     "text": "Bring the Regent's word to Vathek at Cairnholt",
+     "done": {
+      "flag": "vathek_refused"
+     },
+     "do": [
+      {
+       "xp": 100
+      }
+     ]
+    },
+    {
+     "text": "Break the two barrow-cairns that keep Vathek's dead awake",
+     "done": {
+      "all": [
+       {
+        "cleared": "cairn_west"
+       },
+       {
+        "cleared": "cairn_east"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 250
+      }
+     ]
+    },
+    {
+     "text": "Bring down Vathek of Cairnholt",
+     "done": {
+      "flag": "vathek_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 500
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "mossgate": {
+   "title": "The Living of Mossgate",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Kill the marsh hag in the drowned chapel north of Mossgate",
+     "done": {
+      "cleared": "drowned_chapel"
+     }
+    },
+    {
+     "text": "Return to Headwoman Brisa Fenn",
+     "done": {
+      "flag": "brisa_back"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 300
+    },
+    {
+     "item": {
+      "rarity": "magic",
+      "level": 2
+     }
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "orrin_idle": {
+   "nodes": {
+    "start": {
+     "who": "orrin",
+     "text": "I'm at your back, my lady. Where I've been for a hundred years."
+    }
+   }
+  },
+  "hob": {
+   "nodes": {
+    "start": {
+     "text": "Lady? Are you the Regent? They said a lady ruled the dead out here. I didn't believe it. I didn't believe in any of it, a week ago.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Who are you, and why did you leave your grave?",
+     "next": "c"
+    },
+    "c": {
+     "text": "Hob Nettle. Peat-cutter. Buried two winters back. And I didn't leave it, lady, it pushed me out. Hot, under the mud. Like lying on a stove. We all came up at once, and we all came the same way: away from the heat.",
+     "next": "d"
+    },
+    "d": {
+     "text": "There's three of us here would serve you, if you'll have us. Only... my girl lives in Mossgate, up the north trail. Can I see her first? Just to see her.",
+     "choices": [
+      {
+       "text": "Go and see her, Hob. Then come back to the court.",
+       "do": [
+        {
+         "flag": "hob_decided"
+        },
+        {
+         "flag": "hob_home"
+        },
+        {
+         "join": "risen"
+        },
+        {
+         "leave": "hob",
+         "to": "mossgate"
+        }
+       ],
+       "next": "home"
+      },
+      {
+       "text": "She buried you, Hob. Let her keep it that way. Your place is my court now.",
+       "do": [
+        {
+         "flag": "hob_decided"
+        },
+        {
+         "flag": "hob_kept"
+        },
+        {
+         "join": "risen"
+        },
+        {
+         "leave": "hob",
+         "to": "court"
+        }
+       ],
+       "next": "kept"
+      }
+     ]
+    },
+    "home": {
+     "text": "Thank you, lady. Thank you. The others will go with you."
+    },
+    "kept": {
+     "text": "...Yes, lady. You're right. I suppose you are."
+    }
+   }
+  },
+  "hob_after": {
+   "nodes": {
+    "start": {
+     "text": "Still warm, lady. The ground. It's still warm."
+    }
+   }
+  },
+  "brisa_ask": {
+   "nodes": {
+    "start": {
+     "text": "Stop there, dead lady. This is a living village. We've had enough of your kind walking through our peat-beds this month.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "They aren't my kind yet. I came to see what wakes them.",
+     "next": "c"
+    },
+    "c": {
+     "text": "Hm. Well, a hag has moved into the drowned chapel up the mere, and she's worse than any of your dead. She calls the children out at night. Two gone so far. You want Mossgate to look kindly on the Regent? Start there.",
+     "choices": [
+      {
+       "text": "I'll deal with your hag.",
+       "do": [
+        {
+         "start_quest": "mossgate"
+        }
+       ],
+       "next": "yes"
+      },
+      {
+       "text": "Living troubles are not mine.",
+       "next": "no"
+      }
+     ]
+    },
+    "yes": {
+     "text": "We'll see."
+    },
+    "no": {
+     "text": "Then don't walk through my village again."
+    }
+   }
+  },
+  "brisa_back": {
+   "nodes": {
+    "start": {
+     "text": "The children came home this morning, all of them, crying and cold and alive. I never thought I'd owe the dead anything.",
+     "next": "c"
+    },
+    "c": {
+     "text": "So. What does the Regent want from Mossgate?",
+     "choices": [
+      {
+       "text": "Nothing. Mossgate is under my hand now. No dead walk your peat-beds.",
+       "do": [
+        {
+         "flag": "brisa_back"
+        },
+        {
+         "flag": "living_protected"
+        }
+       ],
+       "next": "protected"
+      },
+      {
+       "text": "Your dead. Every grave in Mossgate empties into my court.",
+       "do": [
+        {
+         "flag": "brisa_back"
+        },
+        {
+         "flag": "living_tithed"
+        },
+        {
+         "spawn": "tithe_dead"
+        },
+        {
+         "join": "tithe_dead"
+        }
+       ],
+       "next": "tithed"
+      }
+     ]
+    },
+    "protected": {
+     "text": "Nothing. The Regent asks for nothing. Well. I'll tell them. They won't believe it either."
+    },
+    "tithed": {
+     "text": "Take them, then. They were ours once. It's a cold bargain, Regent."
+    }
+   }
+  },
+  "brisa_back_hob": {
+   "nodes": {
+    "start": {
+     "text": "The children came home this morning, all of them, crying and cold and alive. I never thought I'd owe the dead anything.",
+     "next": "b"
+    },
+    "b": {
+     "text": "And Hob Nettle came to his girl's door last night. She screamed the whole street awake. Then she let him in. I don't know if that was kind of you or cruel.",
+     "next": "c"
+    },
+    "c": {
+     "text": "So. What does the Regent want from Mossgate?",
+     "choices": [
+      {
+       "text": "Nothing. Mossgate is under my hand now. No dead walk your peat-beds.",
+       "do": [
+        {
+         "flag": "brisa_back"
+        },
+        {
+         "flag": "living_protected"
+        }
+       ],
+       "next": "protected"
+      },
+      {
+       "text": "Your dead. Every grave in Mossgate empties into my court.",
+       "do": [
+        {
+         "flag": "brisa_back"
+        },
+        {
+         "flag": "living_tithed"
+        },
+        {
+         "spawn": "tithe_dead"
+        },
+        {
+         "join": "tithe_dead"
+        }
+       ],
+       "next": "tithed"
+      }
+     ]
+    },
+    "protected": {
+     "text": "Nothing. The Regent asks for nothing. Well. I'll tell them. They won't believe it either."
+    },
+    "tithed": {
+     "text": "Take them, then. They were ours once. It's a cold bargain, Regent."
+    }
+   }
+  },
+  "brisa_idle": {
+   "nodes": {
+    "start": {
+     "text": "Mind the peat-beds, Regent. They burn if you look at them wrong this year."
+    }
+   }
+  },
+  "vathek_parley": {
+   "nodes": {
+    "start": {
+     "who": "orrin",
+     "text": "Vathek of Cairnholt! Ysmay Vane, Regent of Sallowmere, calls the barrow-lords to her court. The dead are waking by the thousand. They need one hand over them, not twenty.",
+     "next": "b"
+    },
+    "b": {
+     "who": "vathek",
+     "text": "I kneel to no one, knight. I slept under this hill before your Regent was born, and I will sleep here after she rots.",
+     "next": "c"
+    },
+    "c": {
+     "who": "hero",
+     "text": "Your hill is warm, Vathek. Nobody is going to sleep under it again.",
+     "next": "d"
+    },
+    "d": {
+     "who": "vathek",
+     "text": "Then come up and take it.",
+     "do": [
+      {
+       "flag": "vathek_refused"
+      }
+     ]
+    }
+   }
+  },
+  "vathek_end": {
+   "nodes": {
+    "start": {
+     "who": "vathek",
+     "text": "Regent. Wait. I am not done. I can still... the heat, under the hill. It came from the east. I felt it walk past my bones.",
+     "next": "b"
+    },
+    "b": {
+     "who": "orrin",
+     "text": "He's coming apart, my lady. What do you want done with him?",
+     "choices": [
+      {
+       "text": "Bind his skull to my staff. He can tell me more about the heat.",
+       "do": [
+        {
+         "flag": "vathek_decided"
+        },
+        {
+         "flag": "vathek_bound"
+        },
+        {
+         "item": {
+          "rarity": "rare",
+          "slot": "charm",
+          "level": 2
+         }
+        }
+       ],
+       "next": "bound"
+      },
+      {
+       "text": "Let him sleep. He's earned that much.",
+       "do": [
+        {
+         "flag": "vathek_decided"
+        },
+        {
+         "flag": "vathek_rests"
+        },
+        {
+         "xp": 150
+        }
+       ],
+       "next": "rest"
+      }
+     ]
+    },
+    "bound": {
+     "who": "vathek",
+     "text": "A skull on a stick. After three hundred years. Well, Regent. At least it's warm in your hand."
+    },
+    "rest": {
+     "who": "orrin",
+     "text": "Sleep, old lord. If the ground lets you."
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "near": "mere",
+    "r": 10
+   },
+   "do": [
+    {
+     "say": "Look at them, Orrin. Crawling uphill, all of them, like rats off a burning barge.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "hob",
+      "r": 7
+     },
+     {
+      "not": {
+       "flag": "hob_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "hob",
+     "npc": "hob"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "brisa",
+      "r": 7
+     },
+     {
+      "quest": "mossgate",
+      "is": "new"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "brisa_ask",
+     "npc": "brisa"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "lights"
+   },
+   "do": [
+    {
+     "say": "The causeway's clear. Cairnholt is at the end of it.",
+     "who": "orrin"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "cairnholt",
+      "r": 24
+     },
+     {
+      "alive": "vathek"
+     },
+     {
+      "not": {
+       "flag": "vathek_refused"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "vathek_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "cleared": "cairn_west"
+     },
+     {
+      "cleared": "cairn_east"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Both cairns are cold. Vathek's hill is bare now.",
+     "who": "orrin"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "vathek"
+     },
+     {
+      "not": {
+       "alive": "vathek"
+      }
+     },
+     {
+      "dead": "vathek_guard"
+     },
+     {
+      "not": {
+       "flag": "vathek_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "flag": "vathek_refused"
+    },
+    {
+     "dialogue": "vathek_end"
+    }
+   ]
+  }
+ ]
+}

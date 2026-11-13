@@ -1,0 +1,569 @@
+{
+ "_doc": "Warbound campaigns: the main game's campaigns (data/campaigns.json of Crowns of Caern), one per house, chapter by chapter. kind: hero (one hero and companions, quests, no base) or war (the RTS). A chapter with a file is playable: its mission is data/campaigns/<file> (StoryMission, checked by CampaignCatalog.validate). hero: the campaign's own hero (class from data/heroes.json, name).",
+ "campaigns": {
+  "last_light": {
+   "name": "The Last Light",
+   "faction": "concord",
+   "text": "The dead rise in the south, the sky turns red and a hundred-year-old seal is breaking. Sir Aldous Wren of Greyhold learns why no one comes when the Concord calls.",
+   "chapters": [
+    {
+     "id": "ll_harvest",
+     "title": "Greyhold Harvest",
+     "kind": "hero",
+     "text": "The dead are crawling out of the barrow fields at harvest. Clear them from Greyhold's land.",
+     "file": "ll_harvest.json"
+    },
+    {
+     "id": "ll_barrow_roads",
+     "title": "The Barrow Roads",
+     "kind": "war",
+     "text": "The dead march up the old roads in columns. Burn the barrows that send them.",
+     "file": "ll_barrow_roads.json"
+    },
+    {
+     "id": "ll_lanterns",
+     "title": "Lanterns in the Fen",
+     "kind": "hero",
+     "text": "A lantern-priest joins the march and says the ground itself is warm.",
+     "file": "ll_lanterns.json"
+    },
+    {
+     "id": "ll_knight",
+     "title": "The Knight Who Came Back",
+     "kind": "war",
+     "text": "The dead are led by a knight in the colours of House Wren.",
+     "file": "ll_knight.json"
+    },
+    {
+     "id": "ll_doors",
+     "title": "Doors of Stone",
+     "kind": "hero",
+     "text": "The Forge cast the Lockstone. Wren rides to its gates for help.",
+     "file": "ll_doors.json"
+    },
+    {
+     "id": "ll_stumps",
+     "title": "The Stumps of Elderwold",
+     "kind": "war",
+     "text": "The road to the Wound runs through the forest the Concord cut down.",
+     "file": "ll_stumps.json"
+    },
+    {
+     "id": "ll_red_sky",
+     "title": "Raiders under a Red Sky",
+     "kind": "hero",
+     "text": "The sky turns red. Starving clans raid the north while the army is away.",
+     "file": "ll_red_sky.json"
+    },
+    {
+     "id": "ll_ford",
+     "title": "The Burning Ford",
+     "kind": "war",
+     "text": "The Lockstone breaks. The first Ashen army in a hundred years crosses the river.",
+     "file": "ll_ford.json"
+    },
+    {
+     "id": "ll_ashes",
+     "title": "Ashes Return",
+     "kind": "hero",
+     "text": "The Host comes back in force. The Iron Margrave rides out of the last reserve.",
+     "file": "ll_ashes.json"
+    },
+    {
+     "id": "ll_embers",
+     "title": "Into the Embers",
+     "kind": "war",
+     "text": "Carry the war to Cindermaw and hold the gate as Orrin did.",
+     "file": "ll_embers.json"
+    }
+   ],
+   "hero": {
+    "class": "knight",
+    "name": "Aldous Wren"
+   }
+  },
+  "pale_inheritance": {
+   "name": "The Pale Inheritance",
+   "faction": "hollow",
+   "text": "The dead are not rising to serve the demons. They are fleeing them. Ysmay Vane, the Unburied Regent of Sallowmere, turns their terror into a kingdom.",
+   "hero": {
+    "class": "necromancer",
+    "name": "Ysmay Vane"
+   },
+   "chapters": [
+    {
+     "id": "ph_warm_earth",
+     "title": "The Warm Earth",
+     "kind": "hero",
+     "text": "The dead wake by the thousand in Sallowmere. A barrow-lord will not kneel to the Regent.",
+     "file": "ph_warm_earth.json"
+    },
+    {
+     "id": "ph_barrow_lords",
+     "title": "Barrow-Lords",
+     "kind": "war",
+     "text": "Ysmay unites the fens by force, one barrow-lord at a time.",
+     "file": "ph_barrow_lords.json"
+    },
+    {
+     "id": "ph_living_shore",
+     "title": "The Living Shore",
+     "kind": "hero",
+     "text": "The first raids on the Concord marches. Father Corvin Mire joins the Regent.",
+     "file": "ph_living_shore.json"
+    },
+    {
+     "id": "ph_rot",
+     "title": "Rot in the Roots",
+     "kind": "war",
+     "text": "Thornwood druids burn the edge of the fen to keep the rot from their forest.",
+     "file": "ph_rot.json"
+    },
+    {
+     "id": "ph_twice_dead",
+     "title": "Twice Dead",
+     "kind": "hero",
+     "text": "Orrin falls to his own great-grandson. Break through Greyhold and bring his body home.",
+     "file": "ph_twice_dead.json"
+    },
+    {
+     "id": "ph_lantern_siege",
+     "title": "The Lantern Siege",
+     "kind": "war",
+     "text": "A lantern temple-fortress burns the dead with holy light. It must fall.",
+     "file": "ph_lantern_siege.json"
+    },
+    {
+     "id": "ph_deep_barrows",
+     "title": "Down the Deep Barrows",
+     "kind": "hero",
+     "text": "Ysmay goes below and finds why the dead woke: Ashen burrowers in the grave-realm.",
+     "file": "ph_deep_barrows.json"
+    },
+    {
+     "id": "ph_hungry_fire",
+     "title": "The Hungry Fire",
+     "kind": "war",
+     "text": "The fire eats the old tombs. The dead fight for their own graves.",
+     "file": "ph_hungry_fire.json"
+    },
+    {
+     "id": "ph_leviathan",
+     "title": "The Leviathan Stirs",
+     "kind": "hero",
+     "text": "A drowned colossus is raised from the deepest fen: the rotwing leviathan.",
+     "file": "ph_leviathan.json"
+    },
+    {
+     "id": "ph_pale_crown",
+     "title": "The Pale Crown",
+     "kind": "war",
+     "text": "One against two: drive both Ashen broods out of the Barrow Below and be crowned in the open air.",
+     "file": "ph_pale_crown.json"
+    }
+   ]
+  },
+  "unsealing": {
+   "name": "The Unsealing",
+   "faction": "ashen",
+   "text": "A hundred years in the Wound starved the Host and broke it into broods. Skarn Ashborn, a pit-chief with nothing, climbs out to lead it, and to burn everyone who shut it in.",
+   "chapters": [
+    {
+     "id": "un_pit",
+     "title": "The Pit Below",
+     "kind": "hero",
+     "text": "Skarn Ashborn takes his first pit inside the Wound."
+    },
+    {
+     "id": "un_brood_war",
+     "title": "Brood War",
+     "kind": "war",
+     "text": "The broods kneel or burn. Ithra Sootveil joins and shows Skarn the cracks."
+    },
+    {
+     "id": "un_wardens_keep",
+     "title": "The Wardens' Keep",
+     "kind": "hero",
+     "text": "The Forge's old watch-keep on the Lockstone is half empty. Storm it."
+    },
+    {
+     "id": "un_under_barrows",
+     "title": "Under the Barrows",
+     "kind": "war",
+     "text": "Burrowers dig around the seal through the land of the dead."
+    },
+    {
+     "id": "un_lockstone",
+     "title": "Breaking the Lockstone",
+     "kind": "hero",
+     "text": "Lantern-priests try to reconsecrate the stone. Morvath feeds the cracks with their fire, and the Lockstone shatters."
+    },
+    {
+     "id": "un_kindling",
+     "title": "Kindling the Elderwold",
+     "kind": "war",
+     "text": "The Host burns the stumps and the last groves of the felled forest."
+    },
+    {
+     "id": "un_ford",
+     "title": "The Ford",
+     "kind": "hero",
+     "text": "The Burning Ford from the Ashen side. A vanguard is only meant to bleed the enemy."
+    },
+    {
+     "id": "un_ash_snow",
+     "title": "Ash on the Snow",
+     "kind": "war",
+     "text": "The Host's flank meets the clans on snow. A hard detour."
+    },
+    {
+     "id": "un_maw",
+     "title": "The Maw Wakes",
+     "kind": "hero",
+     "text": "The cinder maw crawls up from the deepest pit."
+    },
+    {
+     "id": "un_throne",
+     "title": "The Red Sky Throne",
+     "kind": "war",
+     "text": "One against three: Highmere, the Thornwood Covenant and the Sunken Forge. Skarn takes Highmere and is crowned on its walls."
+    }
+   ]
+  },
+  "briar_oath": {
+   "name": "The Briar Oath",
+   "faction": "thornwood",
+   "text": "The Covenant has watched the Concord fell its forest for forty years. Cerrid Ashbark goes to war for the last grove, and learns what his own druids kept quiet.",
+   "chapters": [
+    {
+     "id": "tw_axe_line",
+     "title": "The Axe Line",
+     "kind": "hero",
+     "text": "Logging camps press into the last grove. Drive them out."
+    },
+    {
+     "id": "tw_smoke",
+     "title": "Smoke over Elderwold",
+     "kind": "war",
+     "text": "The Concord answers with soldiers and fire."
+    },
+    {
+     "id": "tw_ambush",
+     "title": "Ambush at the Stumps",
+     "kind": "hero",
+     "text": "The Concord's ranger captain rides into the felled forest. Cerrid knows her face."
+    },
+    {
+     "id": "tw_hunters",
+     "title": "Hunters in the Snow",
+     "kind": "war",
+     "text": "Starving clans hunt the forest and burn its trees for warmth."
+    },
+    {
+     "id": "tw_fens_edge",
+     "title": "The Fen's Edge",
+     "kind": "hero",
+     "text": "Rot creeps north out of the fens. Burn the edge. Old Mother Brakka joins."
+    },
+    {
+     "id": "tw_roots",
+     "title": "What the Roots Remember",
+     "kind": "war",
+     "text": "Brakka reads the dead Heartroots and admits what the druids knew. The first Ashen scouts reach the forest."
+    },
+    {
+     "id": "tw_kindling",
+     "title": "Kindling",
+     "kind": "hero",
+     "text": "The Host burns the stumps and the last groves."
+    },
+    {
+     "id": "tw_last_grove",
+     "title": "The Last Grove",
+     "kind": "war",
+     "text": "Defend the heart of the remaining forest."
+    },
+    {
+     "id": "tw_seed",
+     "title": "Seed of the Mother",
+     "kind": "hero",
+     "text": "A single seed carried out of the fire wakes the wyrdthorn mother."
+    },
+    {
+     "id": "tw_briar_seal",
+     "title": "The Briar Seal",
+     "kind": "war",
+     "text": "One against two: plant the wyrdthorn at the lip of the Wound while two Ashen broods hold it."
+    }
+   ]
+  },
+  "shuttered_halls": {
+   "name": "The Shuttered Halls",
+   "faction": "forge",
+   "text": "The Forge cast the Lockstone and was never paid for it, so it shut its gates. Gunnra Sootmantle is the only one who believes the rock will not keep the fire out.",
+   "chapters": [
+    {
+     "id": "fg_deep_shift",
+     "title": "Deep Shift",
+     "kind": "hero",
+     "text": "The lowest mines grow warm and the dead climb the shafts."
+    },
+    {
+     "id": "fg_bones",
+     "title": "Bones in the Seams",
+     "kind": "war",
+     "text": "Seal the old tunnels before the dead reach the halls."
+    },
+    {
+     "id": "fg_debtors",
+     "title": "The Debtors' Road",
+     "kind": "hero",
+     "text": "Concord envoys ask for help at the gates. The council says no, and the envoys try to force the pass."
+    },
+    {
+     "id": "fg_iron_bread",
+     "title": "Iron for Bread",
+     "kind": "war",
+     "text": "The clans demand trade, then raid the high passes."
+    },
+    {
+     "id": "fg_heat",
+     "title": "Heat from Below",
+     "kind": "hero",
+     "text": "Ashen tunnels break into the deepest halls. Hiding has failed."
+    },
+    {
+     "id": "fg_fallen_hold",
+     "title": "The Fallen Hold",
+     "kind": "war",
+     "text": "Kharrak Hold has fallen. Take it back. Master Tobbin Greave joins."
+    },
+    {
+     "id": "fg_wardens_keep",
+     "title": "The Wardens' Keep",
+     "kind": "hero",
+     "text": "Retake the Forge's watch-keep on the broken Lockstone."
+    },
+    {
+     "id": "fg_ore_ember",
+     "title": "Ore and Ember",
+     "kind": "war",
+     "text": "Hold the ore roads while the forges are relit."
+    },
+    {
+     "id": "fg_engine",
+     "title": "The Molten Engine",
+     "kind": "hero",
+     "text": "Tobbin finishes the great engine the council forbade."
+    },
+    {
+     "id": "fg_second_lockstone",
+     "title": "The Second Lockstone",
+     "kind": "war",
+     "text": "One against two: cast a new seal in the Worldforge while the Host and the dead besiege the mountain."
+    }
+   ]
+  },
+  "ashwinter": {
+   "name": "The Ashwinter",
+   "faction": "frostmarch",
+   "text": "Ash blots out the northern sun and the summer never comes. Ulvra Kettleborn unites the clans by the axe and leads them south for bread, and finds an old promise waiting.",
+   "chapters": [
+    {
+     "id": "fm_sun_out",
+     "title": "The Sun Goes Out",
+     "kind": "hero",
+     "text": "Red snow falls. The clans fight over the last herds."
+    },
+    {
+     "id": "fm_one_hall",
+     "title": "One Hall",
+     "kind": "war",
+     "text": "Ulvra breaks the last clan that refuses her."
+    },
+    {
+     "id": "fm_south",
+     "title": "South for Bread",
+     "kind": "hero",
+     "text": "Raid the northern granaries. Seer Iska Rime joins."
+    },
+    {
+     "id": "fm_iron_pass",
+     "title": "The Iron Pass",
+     "kind": "war",
+     "text": "The Forge shuts the mountain passes."
+    },
+    {
+     "id": "fm_highmere",
+     "title": "The Granary of Highmere",
+     "kind": "hero",
+     "text": "A great raid on the Concord's richest store-city."
+    },
+    {
+     "id": "fm_deer",
+     "title": "Deer of the Old Wood",
+     "kind": "war",
+     "text": "Hunting in the Covenant's forest means war with it."
+    },
+    {
+     "id": "fm_cold_bones",
+     "title": "Cold Bones",
+     "kind": "hero",
+     "text": "The dead walk across the frozen fens."
+    },
+    {
+     "id": "fm_source",
+     "title": "The Source of Winter",
+     "kind": "war",
+     "text": "Iska follows the ash to the Wound. The Host is the reason the sun went out."
+    },
+    {
+     "id": "fm_wyrm",
+     "title": "Wyrm-Wake",
+     "kind": "hero",
+     "text": "Wake the winter wyrm from its glacier."
+    },
+    {
+     "id": "fm_bring_winter",
+     "title": "Bring the Winter",
+     "kind": "war",
+     "text": "One against two: march the Ashwinter into the Wound and freeze its fires."
+    }
+   ]
+  },
+  "six_eyes": {
+   "name": "The Six Eyes",
+   "faction": "darkelf",
+   "text": "Expansion. The Umbral Court comes up from the deep to free the surface peoples from the six stones that turned them cruel, and carries the stones home. That was always the plan.",
+   "chapters": [
+    {
+     "id": "se_below",
+     "title": "Below the Sky",
+     "kind": "hero",
+     "text": "Serane Nhalvor retakes the Wardens' tithe-caverns from House Draal."
+    },
+    {
+     "id": "se_stair",
+     "title": "The Stair Goes Up",
+     "kind": "war",
+     "text": "Forge miners gone mad break into the deep; the Wardens follow the breach up."
+    },
+    {
+     "id": "se_under_sky",
+     "title": "Under the Sky",
+     "kind": "hero",
+     "text": "Townless under the sky, the Wardens take the Forge steadings and then Kharrak Hold for the first Eye."
+    },
+    {
+     "id": "se_saints_eye",
+     "title": "The Saint's Eye",
+     "kind": "war",
+     "text": "The Wardens take Greyhold's chapel and the Eye of the Saint from Aldous Wren."
+    },
+    {
+     "id": "se_thorn_mirror",
+     "title": "Thorn and Mirror",
+     "kind": "hero",
+     "text": "The freed Concord marches with the Court against the Thornwood, then turns at the Heartroots."
+    },
+    {
+     "id": "se_regents_price",
+     "title": "The Regent's Price",
+     "kind": "war",
+     "text": "Two against two: the Court and Ysmay's Hollow break the last Ashen broods for the Eye of the Regent."
+    },
+    {
+     "id": "se_red_sky",
+     "title": "Red Sky, Black Teeth",
+     "kind": "hero",
+     "text": "The Wardens take Cindermaw and the Eye of Embers from Skarn Ashborn."
+    },
+    {
+     "id": "se_winters_eye",
+     "title": "The Winter's Eye",
+     "kind": "war",
+     "text": "The Wardens break Kettlehall and take the sixth Eye from the winter wyrm's cairn."
+    },
+    {
+     "id": "se_long_stair",
+     "title": "The Long Stair Down",
+     "kind": "hero",
+     "text": "Survival: the Wardens hold the Stair-Hold against three freed peoples until Ulmarra opens the way down."
+    },
+    {
+     "id": "se_nightgate",
+     "title": "The Nightgate",
+     "kind": "war",
+     "text": "Hero-only finale: Ulmarra is Vexmire; Serane and Rhuvel fight the gate-hold and then the ancient dragon."
+    }
+   ]
+  },
+  "drowned_oath": {
+   "name": "The Drowned Oath",
+   "faction": "fishmen",
+   "text": "Expansion. The fish-folk of the drowned coast learn what they were and who made them what they are, and march north for revenge on a dead man, in borrowed iron, through a land that does not remember them.",
+   "chapters": [
+    {
+     "id": "do_tablets",
+     "title": "The Tablets of Sarranth",
+     "kind": "hero",
+     "text": "Ilo reads the tablets of Sarranth; Chief Gorrok forbids it; the Shoal splits and Ilo's side takes Gorrok's reef."
+    },
+    {
+     "id": "do_one_shoal",
+     "title": "One Shoal",
+     "kind": "war",
+     "text": "The last shoal refuses Ilo; Sael Hookhand joins; the Shoal becomes one."
+    },
+    {
+     "id": "do_landfall",
+     "title": "Landfall",
+     "kind": "hero",
+     "text": "The Shoal makes landfall on the Living Shore and clears the Ashen stragglers from the coast."
+    },
+    {
+     "id": "do_last_brood",
+     "title": "The Last Brood",
+     "kind": "war",
+     "text": "Two against two: the Shoal and Aldous Wren break the last Ashen broods on the Barrow Roads."
+    },
+    {
+     "id": "do_price_of_iron",
+     "title": "The Price of Iron",
+     "kind": "hero",
+     "text": "The Forge refuses the Shoal furnace-mail; the Shoal takes Kharrak's outer forges."
+    },
+    {
+     "id": "do_three_weeks",
+     "title": "Three Weeks of Fire",
+     "kind": "war",
+     "text": "Survival: hold the Forge's furnaces for three weeks while the Forgewarm Harness is made."
+    },
+    {
+     "id": "do_cold_road",
+     "title": "The Cold Road",
+     "kind": "hero",
+     "text": "The Shoal takes the Iron Pass and the first clan hall in the snow."
+    },
+    {
+     "id": "do_who_pays",
+     "title": "Who Pays the Clans",
+     "kind": "war",
+     "text": "The Concord marches with the Shoal against the clans, then Aldous Wren pays the Concord's old debt and turns."
+    },
+    {
+     "id": "do_cairn",
+     "title": "The Whaleroad Cairn",
+     "kind": "hero",
+     "text": "Townless on the glacier, the Shoal fights up to Skadric Whalebone's cairn."
+    },
+    {
+     "id": "do_cold_first",
+     "title": "Who Was Cold First",
+     "kind": "war",
+     "text": "One against two: the Shoal against the clans and the Concord, for the way home."
+    }
+   ]
+  }
+ }
+}

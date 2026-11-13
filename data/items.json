@@ -1,0 +1,2171 @@
+{
+ "_doc": "Warbound hero gear (skirmish loot). A classic rarity ladder on the main game's 7 slots. Common items have only their base stats; magic items roll 1-2 affixes (at most one prefix and one suffix); rare items roll 3-4 (at most two of each). Affix values grow by grow_per_level per item level above 1. Base items are the minor and major designs of the equipment artwork library (assets/source/equipment-002 in the main game). Uniques and set pieces are the main game's artifacts with their effects rewritten for real time, the library's relics, and its elemental legendaries (void, sunlight and blood uniques; poison, fire, frost and lightning sets). Every base and unique has an icon in assets/items/<id>.png (tools/sync_item_icons.py). Stats: attack, defense, power, knowledge (attribute points), damage (flat), damage_pct, attack_speed, hp, hp_regen (per s), mana, mana_regen (per s), move_pct, cooldown_pct, skill_pct, xp_pct, and army auras aura_might, aura_ward, aura_haste (own units within aura_radius). See src/sim/item_catalog.gd and src/sim/hero_gear.gd.",
+ "rules": {
+  "bag_size": 6,
+  "pickup_radius": 48,
+  "ground_max": 40,
+  "potion_max": 5,
+  "potion_heal_pct": 0.4,
+  "potion_mana_pct": 0.5,
+  "potion_cooldown": 5.0,
+  "aura_radius": 320,
+  "grow_per_level": 0.12,
+  "max_item_level": 10,
+  "cooldown_cap": 0.4,
+  "aura_cap": 0.25,
+  "minutes_per_item_level": 4,
+  "two_handed": [
+   "great_weapon",
+   "bow",
+   "staff"
+  ],
+  "archetype_kinds": {
+   "warrior": [
+    "great_weapon",
+    "polearm",
+    "axe",
+    "sword"
+   ],
+   "guardian": [
+    "sword",
+    "axe",
+    "club",
+    "polearm",
+    "shield"
+   ],
+   "ranger": [
+    "bow",
+    "thrown",
+    "dagger"
+   ],
+   "mystic": [
+    "staff",
+    "dagger",
+    "focus"
+   ],
+   "mender": [
+    "staff",
+    "club",
+    "focus"
+   ],
+   "summoner": [
+    "staff",
+    "dagger",
+    "club",
+    "focus"
+   ]
+  }
+ },
+ "rarities": {
+  "common": {
+   "name": "Common",
+   "color": "#9d9d9d",
+   "affixes": [
+    0,
+    0
+   ],
+   "rank": 0
+  },
+  "magic": {
+   "name": "Magic",
+   "color": "#6a8dff",
+   "affixes": [
+    1,
+    2
+   ],
+   "rank": 1
+  },
+  "rare": {
+   "name": "Rare",
+   "color": "#ffd84a",
+   "affixes": [
+    3,
+    4
+   ],
+   "rank": 2
+  },
+  "set": {
+   "name": "Set",
+   "color": "#3fbf4f",
+   "affixes": [
+    0,
+    0
+   ],
+   "rank": 3
+  },
+  "unique": {
+   "name": "Unique",
+   "color": "#e8892c",
+   "affixes": [
+    0,
+    0
+   ],
+   "rank": 4
+  }
+ },
+ "drops": {
+  "capture": {
+   "rarity": {
+    "common": 25,
+    "magic": 50,
+    "rare": 20,
+    "set": 2,
+    "unique": 3
+   },
+   "potions": 1
+  },
+  "lair_1": {
+   "rarity": {
+    "common": 30,
+    "magic": 55,
+    "rare": 13,
+    "set": 1,
+    "unique": 1
+   }
+  },
+  "lair_2": {
+   "rarity": {
+    "common": 10,
+    "magic": 50,
+    "rare": 32,
+    "set": 4,
+    "unique": 4
+   }
+  },
+  "lair_3": {
+   "rarity": {
+    "magic": 25,
+    "rare": 50,
+    "set": 12,
+    "unique": 13
+   }
+  },
+  "merchant": {
+   "rarity": {
+    "common": 40,
+    "magic": 45,
+    "rare": 15
+   }
+  },
+  "settlement_level": {
+   "waystone": 1,
+   "farmstead": 1,
+   "hamlet": 2,
+   "village": 3,
+   "town": 5,
+   "city": 7
+  }
+ },
+ "rare_names": {
+  "first": [
+   "Gloom",
+   "Ash",
+   "Grave",
+   "Blood",
+   "Rime",
+   "Cinder",
+   "Bone",
+   "Thorn",
+   "Dread",
+   "Ember",
+   "Storm",
+   "Hollow",
+   "Iron",
+   "Rust",
+   "Doom"
+  ],
+  "second": [
+   "bite",
+   "ward",
+   "song",
+   "mark",
+   "fang",
+   "grasp",
+   "veil",
+   "brand",
+   "crown",
+   "oath",
+   "wake",
+   "shroud",
+   "heart",
+   "spire"
+  ]
+ },
+ "bases": {
+  "pitted_estoc": {
+   "name": "Pitted Estoc",
+   "slot": "weapon",
+   "kind": "sword",
+   "level": 1,
+   "mods": {
+    "damage": 3,
+    "attack_speed": 0.03
+   }
+  },
+  "duelists_basketblade": {
+   "name": "Duelist's Basketblade",
+   "slot": "weapon",
+   "kind": "sword",
+   "level": 5,
+   "mods": {
+    "damage": 6,
+    "attack_speed": 0.05
+   }
+  },
+  "sappers_hatchet": {
+   "name": "Sapper's Hatchet",
+   "slot": "weapon",
+   "kind": "axe",
+   "level": 1,
+   "mods": {
+    "damage": 4
+   }
+  },
+  "rookbeak_warpick": {
+   "name": "Rookbeak Warpick",
+   "slot": "weapon",
+   "kind": "axe",
+   "level": 5,
+   "mods": {
+    "damage": 7
+   }
+  },
+  "tollkeepers_cudgel": {
+   "name": "Tollkeeper's Cudgel",
+   "slot": "weapon",
+   "kind": "club",
+   "level": 1,
+   "mods": {
+    "damage": 3
+   }
+  },
+  "belltower_mace": {
+   "name": "Belltower Mace",
+   "slot": "weapon",
+   "kind": "club",
+   "level": 5,
+   "mods": {
+    "damage": 6,
+    "power": 1
+   }
+  },
+  "quarry_pick": {
+   "name": "Quarry Pick",
+   "slot": "weapon",
+   "kind": "great_weapon",
+   "level": 1,
+   "mods": {
+    "damage": 7
+   }
+  },
+  "chainward_flail": {
+   "name": "Chainward Flail",
+   "slot": "weapon",
+   "kind": "great_weapon",
+   "level": 6,
+   "mods": {
+    "damage": 13
+   }
+  },
+  "ferryman_hook": {
+   "name": "Ferryman Hook",
+   "slot": "weapon",
+   "kind": "polearm",
+   "level": 1,
+   "mods": {
+    "damage": 4
+   }
+  },
+  "reedcutting_bill": {
+   "name": "Reedcutting Bill",
+   "slot": "weapon",
+   "kind": "polearm",
+   "level": 3,
+   "mods": {
+    "damage": 5
+   }
+  },
+  "heroncrest_partisan": {
+   "name": "Heroncrest Partisan",
+   "slot": "weapon",
+   "kind": "polearm",
+   "level": 6,
+   "mods": {
+    "damage": 8
+   }
+  },
+  "border_crossbow": {
+   "name": "Border Crossbow",
+   "slot": "weapon",
+   "kind": "bow",
+   "level": 1,
+   "mods": {
+    "damage": 3
+   }
+  },
+  "antler_recurve": {
+   "name": "Antler Recurve",
+   "slot": "weapon",
+   "kind": "bow",
+   "level": 4,
+   "mods": {
+    "damage": 5,
+    "attack_speed": 0.05
+   }
+  },
+  "gloamwheel_arbalest": {
+   "name": "Gloamwheel Arbalest",
+   "slot": "weapon",
+   "kind": "bow",
+   "level": 7,
+   "mods": {
+    "damage": 8
+   }
+  },
+  "rivermans_sling": {
+   "name": "Riverman's Sling",
+   "slot": "weapon",
+   "kind": "thrown",
+   "level": 1,
+   "mods": {
+    "damage": 3
+   }
+  },
+  "briarhook_sickle": {
+   "name": "Briarhook Sickle",
+   "slot": "weapon",
+   "kind": "dagger",
+   "level": 2,
+   "mods": {
+    "damage": 3,
+    "attack_speed": 0.05
+   }
+  },
+  "cinderbrand_rod": {
+   "name": "Cinderbrand Rod",
+   "slot": "weapon",
+   "kind": "staff",
+   "level": 1,
+   "mods": {
+    "power": 1
+   }
+  },
+  "saltstained_jack": {
+   "name": "Saltstained Jack",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 1,
+   "mods": {
+    "defense": 1
+   }
+  },
+  "reedwoven_mantle": {
+   "name": "Reedwoven Mantle",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 1,
+   "mods": {
+    "mana": 15
+   }
+  },
+  "tanners_apron": {
+   "name": "Tanner's Apron",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 2,
+   "mods": {
+    "defense": 1,
+    "hp": 15
+   }
+  },
+  "lamellar_vest": {
+   "name": "Lamellar Vest",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 3,
+   "mods": {
+    "defense": 2
+   }
+  },
+  "staghide_greatcoat": {
+   "name": "Staghide Greatcoat",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 4,
+   "mods": {
+    "defense": 1,
+    "hp": 40
+   }
+  },
+  "mourning_scale": {
+   "name": "Mourning Scale",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 5,
+   "mods": {
+    "mana": 25,
+    "defense": 1
+   }
+  },
+  "coppervein_harness": {
+   "name": "Coppervein Harness",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 5,
+   "mods": {
+    "defense": 2,
+    "power": 1
+   }
+  },
+  "siegewrights_corselet": {
+   "name": "Siegewright's Corselet",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 7,
+   "mods": {
+    "defense": 3
+   }
+  },
+  "miners_leather_cap": {
+   "name": "Miner's Leather Cap",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 1,
+   "mods": {
+    "hp": 20
+   }
+  },
+  "boarhide_hood": {
+   "name": "Boarhide Hood",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 1,
+   "mods": {
+    "mana": 10
+   }
+  },
+  "watchmans_kettle": {
+   "name": "Watchman's Kettle",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 2,
+   "mods": {
+    "defense": 1
+   }
+  },
+  "thornridge_barbute": {
+   "name": "Thornridge Barbute",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 4,
+   "mods": {
+    "defense": 1,
+    "attack": 1
+   }
+  },
+  "mothwing_hood": {
+   "name": "Mothwing Hood",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 5,
+   "mods": {
+    "mana": 20,
+    "knowledge": 1
+   }
+  },
+  "owlface_bascinet": {
+   "name": "Owlface Bascinet",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 6,
+   "mods": {
+    "defense": 2
+   }
+  },
+  "wicker_ward": {
+   "name": "Wicker Ward",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 1,
+   "mods": {
+    "defense": 1
+   }
+  },
+  "doorplank_guard": {
+   "name": "Doorplank Guard",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 2,
+   "mods": {
+    "defense": 1,
+    "hp": 20
+   }
+  },
+  "split_kite": {
+   "name": "Split Kite",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 3,
+   "mods": {
+    "defense": 2
+   }
+  },
+  "hammerfall_rondache": {
+   "name": "Hammerfall Rondache",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 5,
+   "mods": {
+    "defense": 2,
+    "attack": 1
+   }
+  },
+  "lanternward_shield": {
+   "name": "Lanternward Shield",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 5,
+   "mods": {
+    "defense": 2,
+    "mana_regen": 0.2
+   }
+  },
+  "blackthorn_heater": {
+   "name": "Blackthorn Heater",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 7,
+   "mods": {
+    "defense": 3
+   }
+  },
+  "tin_pilgrim_bell": {
+   "name": "Tin Pilgrim Bell",
+   "slot": "shield",
+   "kind": "focus",
+   "level": 1,
+   "mods": {
+    "power": 1
+   }
+  },
+  "astrolabe_of_low_stars": {
+   "name": "Astrolabe of Low Stars",
+   "slot": "shield",
+   "kind": "focus",
+   "level": 5,
+   "mods": {
+    "power": 1,
+    "mana": 15
+   }
+  },
+  "ropebound_sandals": {
+   "name": "Ropebound Sandals",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 1,
+   "mods": {
+    "move_pct": 0.03
+   }
+  },
+  "cliffwalk_crampons": {
+   "name": "Cliffwalk Crampons",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 1,
+   "mods": {
+    "move_pct": 0.02,
+    "defense": 1
+   }
+  },
+  "siltwalk_pattens": {
+   "name": "Siltwalk Pattens",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 2,
+   "mods": {
+    "move_pct": 0.03,
+    "hp": 15
+   }
+  },
+  "fenstalker_moccasins": {
+   "name": "Fenstalker Moccasins",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 4,
+   "mods": {
+    "move_pct": 0.06
+   }
+  },
+  "duskcourier_jackboots": {
+   "name": "Duskcourier Jackboots",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 5,
+   "mods": {
+    "move_pct": 0.05,
+    "attack": 1
+   }
+  },
+  "stonebind_greaves": {
+   "name": "Stonebind Greaves",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 5,
+   "mods": {
+    "move_pct": 0.03,
+    "defense": 1
+   }
+  },
+  "lead_prayer_weight": {
+   "name": "Lead Prayer Weight",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 1,
+   "mods": {
+    "hp": 15
+   }
+  },
+  "amber_button": {
+   "name": "Amber Button",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 1,
+   "mods": {
+    "mana": 15
+   }
+  },
+  "ratcatchers_whistle": {
+   "name": "Ratcatcher's Whistle",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 2,
+   "mods": {
+    "hp": 10,
+    "move_pct": 0.02
+   }
+  },
+  "silver_cicada_brooch": {
+   "name": "Silver Cicada Brooch",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 4,
+   "mods": {
+    "mana": 15,
+    "mana_regen": 0.2
+   }
+  },
+  "waxsealed_reliquary": {
+   "name": "Waxsealed Reliquary",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 5,
+   "mods": {
+    "hp": 30
+   }
+  },
+  "obsidian_spindle": {
+   "name": "Obsidian Spindle",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 6,
+   "mods": {
+    "power": 1,
+    "mana": 10
+   }
+  },
+  "ditchward_windsock": {
+   "name": "Ditchward Windsock",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 1,
+   "mods": {
+    "aura_haste": 0.03
+   }
+  },
+  "masons_rally_mark": {
+   "name": "Mason's Rally Mark",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 1,
+   "mods": {
+    "aura_ward": 0.03
+   }
+  },
+  "moorland_streamer": {
+   "name": "Moorland Streamer",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 2,
+   "mods": {
+    "aura_might": 0.03
+   }
+  },
+  "bronze_ram_gonfalon": {
+   "name": "Bronze Ram Gonfalon",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 5,
+   "mods": {
+    "aura_might": 0.05
+   }
+  },
+  "blueglass_processional": {
+   "name": "Blueglass Processional",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 5,
+   "mods": {
+    "aura_ward": 0.05
+   }
+  },
+  "widows_knot_standard": {
+   "name": "Widow's Knot Standard",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 6,
+   "mods": {
+    "aura_might": 0.04,
+    "aura_haste": 0.03
+   }
+  }
+ },
+ "affixes": {
+  "keen": {
+   "name": "Keen",
+   "kind": "prefix",
+   "stat": "damage_pct",
+   "min": 0.05,
+   "max": 0.1,
+   "slots": [
+    "weapon"
+   ]
+  },
+  "brutal": {
+   "name": "Brutal",
+   "kind": "prefix",
+   "stat": "damage",
+   "min": 2,
+   "max": 4,
+   "slots": [
+    "weapon"
+   ]
+  },
+  "sturdy": {
+   "name": "Sturdy",
+   "kind": "prefix",
+   "stat": "defense",
+   "min": 1,
+   "max": 2,
+   "slots": [
+    "armor",
+    "helm",
+    "shield",
+    "boots"
+   ]
+  },
+  "stout": {
+   "name": "Stout",
+   "kind": "prefix",
+   "stat": "hp",
+   "min": 20,
+   "max": 40,
+   "slots": [
+    "armor",
+    "helm",
+    "shield",
+    "charm",
+    "boots"
+   ]
+  },
+  "arcane": {
+   "name": "Arcane",
+   "kind": "prefix",
+   "stat": "mana",
+   "min": 15,
+   "max": 30,
+   "slots": [
+    "armor",
+    "helm",
+    "shield",
+    "charm"
+   ]
+  },
+  "mighty": {
+   "name": "Mighty",
+   "kind": "prefix",
+   "stat": "attack",
+   "min": 1,
+   "max": 2,
+   "slots": [
+    "weapon",
+    "charm",
+    "helm"
+   ]
+  },
+  "wise": {
+   "name": "Wise",
+   "kind": "prefix",
+   "stat": "knowledge",
+   "min": 1,
+   "max": 2,
+   "slots": [
+    "armor",
+    "helm",
+    "charm"
+   ]
+  },
+  "potent": {
+   "name": "Potent",
+   "kind": "prefix",
+   "stat": "power",
+   "min": 1,
+   "max": 2,
+   "slots": [
+    "weapon",
+    "charm",
+    "helm",
+    "shield"
+   ]
+  },
+  "swift": {
+   "name": "Swift",
+   "kind": "prefix",
+   "stat": "move_pct",
+   "min": 0.04,
+   "max": 0.08,
+   "slots": [
+    "boots"
+   ]
+  },
+  "runed": {
+   "name": "Runed",
+   "kind": "prefix",
+   "stat": "skill_pct",
+   "min": 0.05,
+   "max": 0.1,
+   "slots": [
+    "weapon",
+    "charm",
+    "helm"
+   ]
+  },
+  "warlords": {
+   "name": "Warlord's",
+   "kind": "prefix",
+   "stat": "aura_might",
+   "min": 0.03,
+   "max": 0.05,
+   "slots": [
+    "banner"
+   ]
+  },
+  "bulwark": {
+   "name": "Bulwark",
+   "kind": "prefix",
+   "stat": "aura_ward",
+   "min": 0.03,
+   "max": 0.06,
+   "slots": [
+    "banner"
+   ]
+  },
+  "drummers": {
+   "name": "Drummer's",
+   "kind": "prefix",
+   "stat": "aura_haste",
+   "min": 0.03,
+   "max": 0.05,
+   "slots": [
+    "banner"
+   ]
+  },
+  "of_haste": {
+   "name": "of Haste",
+   "kind": "suffix",
+   "stat": "attack_speed",
+   "min": 0.05,
+   "max": 0.1,
+   "slots": [
+    "weapon",
+    "charm"
+   ]
+  },
+  "of_the_bear": {
+   "name": "of the Bear",
+   "kind": "suffix",
+   "stat": "hp",
+   "min": 30,
+   "max": 50,
+   "slots": [
+    "armor",
+    "charm",
+    "banner",
+    "boots"
+   ]
+  },
+  "of_mending": {
+   "name": "of Mending",
+   "kind": "suffix",
+   "stat": "hp_regen",
+   "min": 0.5,
+   "max": 1.5,
+   "slots": [
+    "armor",
+    "helm",
+    "charm",
+    "banner"
+   ]
+  },
+  "of_the_well": {
+   "name": "of the Well",
+   "kind": "suffix",
+   "stat": "mana_regen",
+   "min": 0.2,
+   "max": 0.5,
+   "slots": [
+    "helm",
+    "charm",
+    "weapon",
+    "shield"
+   ]
+  },
+  "of_quickness": {
+   "name": "of Quickness",
+   "kind": "suffix",
+   "stat": "move_pct",
+   "min": 0.03,
+   "max": 0.06,
+   "slots": [
+    "boots",
+    "charm"
+   ]
+  },
+  "of_focus": {
+   "name": "of Focus",
+   "kind": "suffix",
+   "stat": "cooldown_pct",
+   "min": 0.04,
+   "max": 0.08,
+   "slots": [
+    "helm",
+    "charm",
+    "weapon"
+   ]
+  },
+  "of_learning": {
+   "name": "of Learning",
+   "kind": "suffix",
+   "stat": "xp_pct",
+   "min": 0.05,
+   "max": 0.1,
+   "slots": [
+    "charm",
+    "helm"
+   ]
+  },
+  "of_iron": {
+   "name": "of Iron",
+   "kind": "suffix",
+   "stat": "defense",
+   "min": 1,
+   "max": 2,
+   "slots": [
+    "armor",
+    "shield",
+    "banner"
+   ]
+  },
+  "of_the_fox": {
+   "name": "of the Fox",
+   "kind": "suffix",
+   "stat": "attack",
+   "min": 1,
+   "max": 1,
+   "slots": [
+    "boots",
+    "armor",
+    "shield"
+   ]
+  },
+  "of_command": {
+   "name": "of Command",
+   "kind": "suffix",
+   "stat": "aura_might",
+   "min": 0.02,
+   "max": 0.04,
+   "slots": [
+    "banner",
+    "helm"
+   ]
+  },
+  "of_valour": {
+   "name": "of Valour",
+   "kind": "suffix",
+   "stat": "aura_haste",
+   "min": 0.02,
+   "max": 0.04,
+   "slots": [
+    "banner"
+   ]
+  },
+  "of_warding": {
+   "name": "of Warding",
+   "kind": "suffix",
+   "stat": "aura_ward",
+   "min": 0.02,
+   "max": 0.04,
+   "slots": [
+    "banner",
+    "shield"
+   ]
+  }
+ },
+ "uniques": {
+  "bleeding_glaive": {
+   "name": "Bleeding Glaive",
+   "slot": "weapon",
+   "kind": "polearm",
+   "level": 4,
+   "mods": {
+    "damage": 8,
+    "attack": 2,
+    "damage_pct": 0.1
+   },
+   "text": "A glaive that never stops weeping."
+  },
+  "longwatch_bow": {
+   "name": "Longwatch Bow",
+   "slot": "weapon",
+   "kind": "bow",
+   "level": 4,
+   "mods": {
+    "damage": 7,
+    "damage_pct": 0.15,
+    "attack_speed": 0.05
+   },
+   "text": "Strung for the long watch on the walls."
+  },
+  "sceptre_of_the_pyre": {
+   "name": "Sceptre of the Pyre",
+   "slot": "weapon",
+   "kind": "staff",
+   "level": 7,
+   "mods": {
+    "power": 3,
+    "skill_pct": 0.25
+   },
+   "text": "Its head still smoulders."
+  },
+  "headsmans_maul": {
+   "name": "Headsman's Maul",
+   "slot": "weapon",
+   "kind": "great_weapon",
+   "level": 7,
+   "mods": {
+    "damage": 14,
+    "attack": 3,
+    "aura_might": 0.04
+   },
+   "text": "Heavy troops fight harder in its shadow."
+  },
+  "scarred_plate": {
+   "name": "Scarred Plate",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 4,
+   "mods": {
+    "defense": 3,
+    "hp": 60
+   },
+   "text": "Every dent a survived blow."
+  },
+  "shroud_of_ash": {
+   "name": "Shroud of Ash",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 4,
+   "mods": {
+    "knowledge": 2,
+    "defense": 1,
+    "mana_regen": 0.4
+   },
+   "text": "Woven from pyre smoke."
+  },
+  "wardstone_mail": {
+   "name": "Wardstone Mail",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 7,
+   "mods": {
+    "defense": 4,
+    "aura_ward": 0.05
+   },
+   "text": "Its stones shield the whole line."
+  },
+  "bonewright_coif": {
+   "name": "Bonewright Coif",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 4,
+   "mods": {
+    "power": 1,
+    "knowledge": 2,
+    "cooldown_pct": 0.08
+   },
+   "text": "Stitched by the bonewrights of the barrows."
+  },
+  "gatewardens_tower": {
+   "name": "Gatewarden's Tower",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 4,
+   "mods": {
+    "defense": 3,
+    "aura_ward": 0.04
+   },
+   "text": "A gate you carry."
+  },
+  "sabatons_of_the_long_road": {
+   "name": "Sabatons of the Long Road",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 7,
+   "mods": {
+    "move_pct": 0.15,
+    "defense": 1,
+    "attack_speed": 0.05
+   },
+   "text": "They have walked every road twice."
+  },
+  "hourglass_of_marrow": {
+   "name": "Hourglass of Marrow",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 7,
+   "mods": {
+    "cooldown_pct": 0.15
+   },
+   "text": "Its sand is ground bone."
+  },
+  "scholars_quill": {
+   "name": "Scholar's Quill",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 4,
+   "mods": {
+    "xp_pct": 0.2,
+    "knowledge": 1
+   },
+   "text": "Writes down what you learn before you forget it."
+  },
+  "crown_of_thorns": {
+   "name": "Crown of Thorns",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 7,
+   "mods": {
+    "power": 1,
+    "knowledge": 1,
+    "aura_might": 0.03
+   },
+   "text": "It draws blood, and gives strength for it."
+  },
+  "saints_knucklebone": {
+   "name": "Saint's Knucklebone",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 4,
+   "mods": {
+    "hp_regen": 3
+   },
+   "text": "A relic that knits flesh."
+  },
+  "standard_of_the_hold": {
+   "name": "Standard of the Hold",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 4,
+   "mods": {
+    "aura_haste": 0.06,
+    "aura_might": 0.03
+   },
+   "text": "The hold marches to its drum."
+  },
+  "flayed_banner": {
+   "name": "Flayed Banner",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 4,
+   "mods": {
+    "aura_might": 0.07
+   },
+   "text": "Nobody asks what it is made of."
+  },
+  "warhost_oriflamme": {
+   "name": "Warhost Oriflamme",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 7,
+   "mods": {
+    "aura_might": 0.05,
+    "aura_ward": 0.05,
+    "attack": 1,
+    "defense": 1
+   },
+   "text": "The flag of a host that never broke."
+  },
+  "gravewatch_visor": {
+   "name": "Gravewatch Visor",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 3,
+   "mods": {
+    "defense": 1,
+    "hp": 30
+   },
+   "text": "Part of the Gravewatch Kit.",
+   "set": "gravewatch"
+  },
+  "ossuary_brigandine": {
+   "name": "Ossuary Brigandine",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 3,
+   "mods": {
+    "defense": 2,
+    "hp_regen": 1
+   },
+   "text": "Part of the Gravewatch Kit.",
+   "set": "gravewatch"
+  },
+  "hobnailed_boots": {
+   "name": "Hobnailed Boots",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 3,
+   "mods": {
+    "move_pct": 0.05
+   },
+   "text": "Part of the Gravewatch Kit.",
+   "set": "gravewatch"
+  },
+  "crowcrest_helm": {
+   "name": "Crowcrest Helm",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 3,
+   "mods": {
+    "defense": 1,
+    "mana": 20
+   },
+   "text": "Part of the Long Road Harness.",
+   "set": "long_road"
+  },
+  "vigil_pavise": {
+   "name": "Vigil Pavise",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 3,
+   "mods": {
+    "defense": 2
+   },
+   "text": "Part of the Long Road Harness.",
+   "set": "long_road"
+  },
+  "outriders_greaves": {
+   "name": "Outrider's Greaves",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 3,
+   "mods": {
+    "move_pct": 0.08,
+    "defense": 1
+   },
+   "text": "Part of the Long Road Harness.",
+   "set": "long_road"
+  },
+  "greathelm_of_dread": {
+   "name": "Greathelm of Dread",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 5,
+   "mods": {
+    "defense": 2
+   },
+   "text": "Part of the Ashwall Panoply.",
+   "set": "ashwall"
+  },
+  "emberforged_cuirass": {
+   "name": "Emberforged Cuirass",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 5,
+   "mods": {
+    "defense": 3,
+    "attack": 1
+   },
+   "text": "Part of the Ashwall Panoply.",
+   "set": "ashwall"
+  },
+  "aegis_of_cinders": {
+   "name": "Aegis of Cinders",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 5,
+   "mods": {
+    "defense": 2,
+    "hp": 40
+   },
+   "text": "Part of the Ashwall Panoply.",
+   "set": "ashwall"
+  },
+  "emberglass_visor": {
+   "name": "Emberglass Visor",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 5,
+   "mods": {
+    "defense": 1,
+    "knowledge": 1
+   },
+   "text": "Part of the Forgewarm Harness.",
+   "set": "forgewarm"
+  },
+  "furnace_mail": {
+   "name": "Furnace Mail",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 5,
+   "mods": {
+    "defense": 2,
+    "hp": 40
+   },
+   "text": "Part of the Forgewarm Harness.",
+   "set": "forgewarm"
+  },
+  "hearthstride_greaves": {
+   "name": "Hearthstride Greaves",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 5,
+   "mods": {
+    "move_pct": 0.05
+   },
+   "text": "Part of the Forgewarm Harness.",
+   "set": "forgewarm"
+  },
+  "mooncleft_bardiche": {
+   "name": "Mooncleft Bardiche",
+   "slot": "weapon",
+   "kind": "great_weapon",
+   "level": 6,
+   "mods": {
+    "damage": 13,
+    "attack": 2,
+    "hp_regen": 1
+   },
+   "text": "Moonlight runs down its edge and closes the wielder's wounds."
+  },
+  "sepulchral_tuning_fork": {
+   "name": "Sepulchral Tuning Fork",
+   "slot": "weapon",
+   "kind": "staff",
+   "level": 5,
+   "mods": {
+    "power": 2,
+    "mana": 20,
+    "cooldown_pct": 0.1
+   },
+   "text": "Struck once, it hums until the dead answer."
+  },
+  "sunken_court_trident": {
+   "name": "Sunken Court Trident",
+   "slot": "weapon",
+   "kind": "polearm",
+   "level": 5,
+   "mods": {
+    "damage": 8,
+    "attack": 1,
+    "mana_regen": 0.3
+   },
+   "text": "Carried up from a drowned throne room."
+  },
+  "ashroot_longbow": {
+   "name": "Ashroot Longbow",
+   "slot": "weapon",
+   "kind": "bow",
+   "level": 6,
+   "mods": {
+    "damage": 8,
+    "damage_pct": 0.12
+   },
+   "text": "An ember still burns in the heart of the root."
+  },
+  "oathring_greatsword": {
+   "name": "Oathring Greatsword",
+   "slot": "weapon",
+   "kind": "great_weapon",
+   "level": 5,
+   "mods": {
+    "damage": 12,
+    "aura_might": 0.03
+   },
+   "text": "Every notch is an oath that was kept."
+  },
+  "wyrmjaw_cleaver": {
+   "name": "Wyrmjaw Cleaver",
+   "slot": "weapon",
+   "kind": "axe",
+   "level": 6,
+   "mods": {
+    "damage": 9,
+    "damage_pct": 0.1,
+    "hp": 30
+   },
+   "text": "The jaw still bites."
+  },
+  "glasswake_rapier": {
+   "name": "Glasswake Rapier",
+   "slot": "weapon",
+   "kind": "sword",
+   "level": 5,
+   "mods": {
+    "damage": 7,
+    "attack_speed": 0.1,
+    "move_pct": 0.03
+   },
+   "text": "Smoke-glass that never shatters."
+  },
+  "thunderstone_sledge": {
+   "name": "Thunderstone Sledge",
+   "slot": "weapon",
+   "kind": "club",
+   "level": 7,
+   "mods": {
+    "damage": 9,
+    "attack": 2,
+    "attack_speed": 0.05
+   },
+   "text": "The storm is trapped in the stone."
+  },
+  "gravemoth_vestments": {
+   "name": "Gravemoth Vestments",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 5,
+   "mods": {
+    "mana": 40,
+    "knowledge": 2,
+    "mana_regen": 0.3
+   },
+   "text": "Moths gather where its wearer walks."
+  },
+  "basalt_carapace": {
+   "name": "Basalt Carapace",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 7,
+   "mods": {
+    "defense": 4,
+    "hp": 40
+   },
+   "text": "Still warm from the mountain."
+  },
+  "pearlwarden_coat": {
+   "name": "Pearlwarden Coat",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 5,
+   "mods": {
+    "defense": 3,
+    "mana_regen": 0.3
+   },
+   "text": "Worn by the wardens of the shoal."
+  },
+  "rootbound_aketon": {
+   "name": "Rootbound Aketon",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 6,
+   "mods": {
+    "defense": 2,
+    "hp_regen": 2
+   },
+   "text": "The roots knit what the blades cut."
+  },
+  "veil_of_the_blind_regent": {
+   "name": "Veil of the Blind Regent",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 7,
+   "mods": {
+    "power": 2,
+    "skill_pct": 0.12
+   },
+   "text": "The regent saw more without eyes."
+  },
+  "antlered_cairn_crown": {
+   "name": "Antlered Cairn Crown",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 5,
+   "mods": {
+    "defense": 2,
+    "aura_ward": 0.04
+   },
+   "text": "The cairns guard who wears it."
+  },
+  "gilded_leech_mask": {
+   "name": "Gilded Leech Mask",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 5,
+   "mods": {
+    "attack": 2,
+    "hp_regen": 1
+   },
+   "text": "It drinks, and shares."
+  },
+  "ossified_spiral": {
+   "name": "Ossified Spiral",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 5,
+   "mods": {
+    "defense": 3,
+    "hp": 40
+   },
+   "text": "A shell older than the sea."
+  },
+  "mirror_of_the_last_vigil": {
+   "name": "Mirror of the Last Vigil",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 7,
+   "mods": {
+    "defense": 3,
+    "cooldown_pct": 0.08
+   },
+   "text": "It shows the next blow before it lands."
+  },
+  "cairn_door_ward": {
+   "name": "Cairn Door Ward",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 6,
+   "mods": {
+    "defense": 4
+   },
+   "text": "A door from a tomb that stayed shut."
+  },
+  "gravequiet_footwraps": {
+   "name": "Gravequiet Footwraps",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 5,
+   "mods": {
+    "move_pct": 0.08,
+    "cooldown_pct": 0.05
+   },
+   "text": "The burial bells never ring."
+  },
+  "tideworn_sabatons": {
+   "name": "Tideworn Sabatons",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 6,
+   "mods": {
+    "move_pct": 0.05,
+    "defense": 2,
+    "hp": 20
+   },
+   "text": "Walked up from the deep."
+  },
+  "ashstep_spurs": {
+   "name": "Ashstep Spurs",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 7,
+   "mods": {
+    "move_pct": 0.12,
+    "attack": 1
+   },
+   "text": "They leave burning prints."
+  },
+  "ninefold_orrery": {
+   "name": "Ninefold Orrery",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 7,
+   "mods": {
+    "knowledge": 2,
+    "cooldown_pct": 0.1
+   },
+   "text": "Nine rings, one dull star."
+  },
+  "hollow_kings_tooth": {
+   "name": "Hollow King's Tooth",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 6,
+   "mods": {
+    "attack": 2,
+    "damage_pct": 0.08
+   },
+   "text": "The king wants it back."
+  },
+  "seed_of_the_first_pyre": {
+   "name": "Seed of the First Pyre",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 5,
+   "mods": {
+    "power": 1,
+    "hp_regen": 1.5
+   },
+   "text": "It will not stop smouldering."
+  },
+  "drowned_saints_locket": {
+   "name": "Drowned Saint's Locket",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 5,
+   "mods": {
+    "mana": 30,
+    "mana_regen": 0.4
+   },
+   "text": "Sea mist still fogs the glass."
+  },
+  "pall_of_the_unremembered": {
+   "name": "Pall of the Unremembered",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 6,
+   "mods": {
+    "aura_ward": 0.07
+   },
+   "text": "For the dead with no names."
+  },
+  "iron_orchard_standard": {
+   "name": "Iron Orchard Standard",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 7,
+   "mods": {
+    "aura_might": 0.05,
+    "aura_haste": 0.04
+   },
+   "text": "An orchard of iron that bears blades."
+  },
+  "last_harbour_vexillum": {
+   "name": "Last Harbour Vexillum",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 5,
+   "mods": {
+    "aura_haste": 0.07
+   },
+   "text": "The last ships sailed under it."
+  },
+  "viperwake_kris": {
+   "name": "Viperwake Kris",
+   "slot": "weapon",
+   "kind": "dagger",
+   "level": 8,
+   "mods": {
+    "damage": 8,
+    "attack_speed": 0.12,
+    "damage_pct": 0.08
+   },
+   "set": "emerald_blight",
+   "text": "Poison. Part of the Regalia of the Emerald Blight."
+  },
+  "venomglass_panoply": {
+   "name": "Venomglass Panoply",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 8,
+   "mods": {
+    "defense": 4,
+    "hp": 40
+   },
+   "set": "emerald_blight",
+   "text": "Poison. Part of the Regalia of the Emerald Blight."
+  },
+  "crown_of_the_plague_moon": {
+   "name": "Crown of the Plague Moon",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 8,
+   "mods": {
+    "defense": 2,
+    "attack": 2
+   },
+   "set": "emerald_blight",
+   "text": "Poison. Part of the Regalia of the Emerald Blight."
+  },
+  "basilisks_last_eye": {
+   "name": "Basilisk's Last Eye",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 8,
+   "mods": {
+    "defense": 4,
+    "aura_ward": 0.04
+   },
+   "set": "emerald_blight",
+   "text": "Poison. Part of the Regalia of the Emerald Blight."
+  },
+  "mistfang_treads": {
+   "name": "Mistfang Treads",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 8,
+   "mods": {
+    "move_pct": 0.1,
+    "attack_speed": 0.05
+   },
+   "set": "emerald_blight",
+   "text": "Poison. Part of the Regalia of the Emerald Blight."
+  },
+  "witchseed_reliquary": {
+   "name": "Witchseed Reliquary",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 8,
+   "mods": {
+    "damage": 3,
+    "hp_regen": 2
+   },
+   "set": "emerald_blight",
+   "text": "Poison. Part of the Regalia of the Emerald Blight."
+  },
+  "standard_of_the_emerald_blight": {
+   "name": "Standard of the Emerald Blight",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 8,
+   "mods": {
+    "aura_might": 0.06
+   },
+   "set": "emerald_blight",
+   "text": "Poison. Part of the Regalia of the Emerald Blight."
+  },
+  "kilnheart_executioner": {
+   "name": "Kilnheart Executioner",
+   "slot": "weapon",
+   "kind": "great_weapon",
+   "level": 9,
+   "mods": {
+    "damage": 18,
+    "damage_pct": 0.1
+   },
+   "set": "living_furnace",
+   "text": "Fire. Part of the Panoply of the Living Furnace."
+  },
+  "heart_of_the_caldera": {
+   "name": "Heart of the Caldera",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 9,
+   "mods": {
+    "defense": 4,
+    "hp": 60
+   },
+   "set": "living_furnace",
+   "text": "Fire. Part of the Panoply of the Living Furnace."
+  },
+  "worldspark_striders": {
+   "name": "Worldspark Striders",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 9,
+   "mods": {
+    "move_pct": 0.1,
+    "damage": 3
+   },
+   "set": "living_furnace",
+   "text": "Fire. Part of the Panoply of the Living Furnace."
+  },
+  "emberphoenix_brooch": {
+   "name": "Emberphoenix Brooch",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 9,
+   "mods": {
+    "hp_regen": 3,
+    "power": 1
+   },
+   "set": "living_furnace",
+   "text": "Fire. Part of the Panoply of the Living Furnace."
+  },
+  "oriflamme_of_the_living_furnace": {
+   "name": "Oriflamme of the Living Furnace",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 9,
+   "mods": {
+    "aura_might": 0.07,
+    "aura_haste": 0.03
+   },
+   "set": "living_furnace",
+   "text": "Fire. Part of the Panoply of the Living Furnace."
+  },
+  "winterglass_harpoon": {
+   "name": "Winterglass Harpoon",
+   "slot": "weapon",
+   "kind": "polearm",
+   "level": 8,
+   "mods": {
+    "damage": 10,
+    "attack": 2
+   },
+   "set": "silent_host",
+   "text": "Frost. Part of the Rime of the Silent Host."
+  },
+  "rime_cathedral_vestment": {
+   "name": "Rime Cathedral Vestment",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 8,
+   "mods": {
+    "defense": 2,
+    "mana": 40,
+    "knowledge": 2
+   },
+   "set": "silent_host",
+   "text": "Frost. Part of the Rime of the Silent Host."
+  },
+  "glacierbreak_bulwark": {
+   "name": "Glacierbreak Bulwark",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 8,
+   "mods": {
+    "defense": 5
+   },
+   "set": "silent_host",
+   "text": "Frost. Part of the Rime of the Silent Host."
+  },
+  "tear_of_the_frozen_deep": {
+   "name": "Tear of the Frozen Deep",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 8,
+   "mods": {
+    "mana": 30,
+    "cooldown_pct": 0.08
+   },
+   "set": "silent_host",
+   "text": "Frost. Part of the Rime of the Silent Host."
+  },
+  "aurora_of_the_silent_host": {
+   "name": "Aurora of the Silent Host",
+   "slot": "banner",
+   "kind": "banner",
+   "level": 8,
+   "mods": {
+    "aura_ward": 0.08
+   },
+   "set": "silent_host",
+   "text": "Frost. Part of the Rime of the Silent Host."
+  },
+  "stormsplitter_fork": {
+   "name": "Stormsplitter Fork",
+   "slot": "weapon",
+   "kind": "sword",
+   "level": 9,
+   "mods": {
+    "damage": 10,
+    "attack_speed": 0.12
+   },
+   "set": "bound_tempest",
+   "text": "Lightning. Part of the Harness of the Bound Tempest."
+  },
+  "tempestwing_harness": {
+   "name": "Tempestwing Harness",
+   "slot": "armor",
+   "kind": "armor",
+   "level": 9,
+   "mods": {
+    "defense": 3,
+    "move_pct": 0.05
+   },
+   "set": "bound_tempest",
+   "text": "Lightning. Part of the Harness of the Bound Tempest."
+  },
+  "thundercoil_aegis": {
+   "name": "Thundercoil Aegis",
+   "slot": "shield",
+   "kind": "shield",
+   "level": 9,
+   "mods": {
+    "defense": 4,
+    "attack": 1
+   },
+   "set": "bound_tempest",
+   "text": "Lightning. Part of the Harness of the Bound Tempest."
+  },
+  "prism_of_the_bound_tempest": {
+   "name": "Prism of the Bound Tempest",
+   "slot": "charm",
+   "kind": "charm",
+   "level": 9,
+   "mods": {
+    "skill_pct": 0.15,
+    "mana_regen": 0.3
+   },
+   "set": "bound_tempest",
+   "text": "Lightning. Part of the Harness of the Bound Tempest."
+  },
+  "eclipsed_suns_chakram": {
+   "name": "Eclipsed Sun's Chakram",
+   "slot": "weapon",
+   "kind": "thrown",
+   "level": 9,
+   "mods": {
+    "damage": 11,
+    "damage_pct": 0.15,
+    "attack_speed": 0.08
+   },
+   "text": "Void. It comes back from the dark, and never empty."
+  },
+  "starless_needle": {
+   "name": "Starless Needle",
+   "slot": "weapon",
+   "kind": "sword",
+   "level": 10,
+   "mods": {
+    "damage": 12,
+    "attack_speed": 0.1,
+    "cooldown_pct": 0.1
+   },
+   "text": "Void. The blade is in three places at once."
+  },
+  "diadem_of_falling_stars": {
+   "name": "Diadem of Falling Stars",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 9,
+   "mods": {
+    "power": 3,
+    "skill_pct": 0.18,
+    "mana": 30
+   },
+   "text": "Void. Stars fall upward around it."
+  },
+  "voidwalk_greaves": {
+   "name": "Voidwalk Greaves",
+   "slot": "boots",
+   "kind": "boots",
+   "level": 9,
+   "mods": {
+    "move_pct": 0.18,
+    "cooldown_pct": 0.08
+   },
+   "text": "Void. Each step skips a little of the road."
+  },
+  "helm_of_the_first_sunrise": {
+   "name": "Helm of the First Sunrise",
+   "slot": "helm",
+   "kind": "helm",
+   "level": 9,
+   "mods": {
+    "defense": 3,
+    "hp_regen": 3,
+    "aura_ward": 0.05
+   },
+   "text": "Sunlight. Its wearer's army fights as if at dawn."
+  },
+  "dawnroot_crozier": {
+   "name": "Dawnroot Crozier",
+   "slot": "weapon",
+   "kind": "staff",
+   "level": 9,
+   "mods": {
+    "power": 3,
+    "knowledge": 2,
+    "hp_regen": 3,
+    "skill_pct": 0.12
+   },
+   "text": "Sunlight. Golden sap heals what it touches."
+  },
+  "bloodtithe_scourge": {
+   "name": "Bloodtithe Scourge",
+   "slot": "weapon",
+   "kind": "club",
+   "level": 10,
+   "mods": {
+    "damage": 11,
+    "damage_pct": 0.12,
+    "hp_regen": 4
+   },
+   "text": "Blood. It takes a tithe from every wound, and gives it to you."
+  }
+ },
+ "sets": {
+  "gravewatch": {
+   "name": "Gravewatch Kit",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "mods": {
+      "hp_regen": 2
+     }
+    },
+    {
+     "pieces": 3,
+     "mods": {
+      "defense": 2,
+      "aura_ward": 0.05
+     }
+    }
+   ]
+  },
+  "long_road": {
+   "name": "Long Road Harness",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "mods": {
+      "move_pct": 0.05
+     }
+    },
+    {
+     "pieces": 3,
+     "mods": {
+      "aura_haste": 0.05,
+      "attack_speed": 0.05
+     }
+    }
+   ]
+  },
+  "ashwall": {
+   "name": "Ashwall Panoply",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "mods": {
+      "defense": 1
+     }
+    },
+    {
+     "pieces": 3,
+     "mods": {
+      "attack": 2,
+      "aura_might": 0.05
+     }
+    }
+   ]
+  },
+  "forgewarm": {
+   "name": "Forgewarm Harness",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "mods": {
+      "hp_regen": 1.5
+     }
+    },
+    {
+     "pieces": 3,
+     "mods": {
+      "defense": 2,
+      "damage_pct": 0.05
+     }
+    }
+   ]
+  },
+  "emerald_blight": {
+   "name": "Regalia of the Emerald Blight",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "mods": {
+      "damage_pct": 0.08
+     }
+    },
+    {
+     "pieces": 4,
+     "mods": {
+      "attack_speed": 0.08,
+      "hp_regen": 2
+     }
+    },
+    {
+     "pieces": 6,
+     "mods": {
+      "damage": 6,
+      "aura_might": 0.06
+     }
+    }
+   ]
+  },
+  "living_furnace": {
+   "name": "Panoply of the Living Furnace",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "mods": {
+      "damage_pct": 0.1
+     }
+    },
+    {
+     "pieces": 3,
+     "mods": {
+      "hp": 60
+     }
+    },
+    {
+     "pieces": 5,
+     "mods": {
+      "attack": 2,
+      "aura_might": 0.06
+     }
+    }
+   ]
+  },
+  "silent_host": {
+   "name": "Rime of the Silent Host",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "mods": {
+      "defense": 2
+     }
+    },
+    {
+     "pieces": 3,
+     "mods": {
+      "aura_ward": 0.06
+     }
+    },
+    {
+     "pieces": 5,
+     "mods": {
+      "hp": 100,
+      "hp_regen": 2
+     }
+    }
+   ]
+  },
+  "bound_tempest": {
+   "name": "Harness of the Bound Tempest",
+   "bonuses": [
+    {
+     "pieces": 2,
+     "mods": {
+      "attack_speed": 0.08
+     }
+    },
+    {
+     "pieces": 4,
+     "mods": {
+      "move_pct": 0.08,
+      "aura_haste": 0.06
+     }
+    }
+   ]
+  }
+ }
+}

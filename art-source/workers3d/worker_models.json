@@ -1,0 +1,348 @@
+{
+  "units": [
+    {
+      "id": "worker_concord",
+      "model": "assets/source/workers3d/worker_concord/worker_concord_rigged.glb",
+      "height": 1.45,
+      "clips": {
+        "idle": {
+          "model": "assets/source/workers3d/worker_concord/worker_concord_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/workers3d/worker_concord/worker_concord_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running",
+          "hold": "idle,0.3"
+        },
+        "attack": {
+          "model": "assets/source/workers3d/worker_concord/worker_concord_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/workers3d/worker_concord/worker_concord_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "worker"
+    },
+    {
+      "id": "worker_hollow",
+      "model": "assets/source/workers3d/worker_hollow/worker_hollow_rigged.glb",
+      "height": 1.45,
+      "clips": {
+        "idle": {
+          "model": "assets/source/workers3d/worker_hollow/worker_hollow_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/workers3d/worker_hollow/worker_hollow_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running",
+          "hold": "idle,0.3"
+        },
+        "attack": {
+          "model": "assets/source/workers3d/worker_hollow/worker_hollow_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/workers3d/worker_hollow/worker_hollow_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "worker"
+    },
+    {
+      "id": "worker_ashen",
+      "model": "assets/source/workers3d/worker_ashen/worker_ashen_rigged.glb",
+      "height": 1.2,
+      "clips": {
+        "idle": {
+          "model": "assets/source/workers3d/worker_ashen/worker_ashen_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/workers3d/worker_ashen/worker_ashen_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running",
+          "hold": "idle,0.3"
+        },
+        "attack": {
+          "model": "assets/source/workers3d/worker_ashen/worker_ashen_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/workers3d/worker_ashen/worker_ashen_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "worker"
+    },
+    {
+      "id": "worker_thornwood",
+      "model": "assets/source/workers3d/worker_thornwood/worker_thornwood_rigged.glb",
+      "height": 1.45,
+      "clips": {
+        "idle": {
+          "model": "assets/source/workers3d/worker_thornwood/worker_thornwood_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/workers3d/worker_thornwood/worker_thornwood_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running",
+          "hold": "idle,0.3"
+        },
+        "attack": {
+          "model": "assets/source/workers3d/worker_thornwood/worker_thornwood_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/workers3d/worker_thornwood/worker_thornwood_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "worker"
+    },
+    {
+      "id": "worker_forge",
+      "model": "assets/source/workers3d/worker_forge/worker_forge_rigged.glb",
+      "height": 1.3,
+      "clips": {
+        "idle": {
+          "model": "assets/source/workers3d/worker_forge/worker_forge_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/workers3d/worker_forge/worker_forge_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running",
+          "hold": "idle,0.3"
+        },
+        "attack": {
+          "model": "assets/source/workers3d/worker_forge/worker_forge_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/workers3d/worker_forge/worker_forge_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "worker"
+    },
+    {
+      "id": "worker_fishmen",
+      "model": "assets/source/workers3d/worker_fishmen/worker_fishmen_rigged.glb",
+      "height": 1.4,
+      "clips": {
+        "idle": {
+          "model": "assets/source/workers3d/worker_fishmen/worker_fishmen_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/workers3d/worker_fishmen/worker_fishmen_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running",
+          "hold": "idle,0.3"
+        },
+        "attack": {
+          "model": "assets/source/workers3d/worker_fishmen/worker_fishmen_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/workers3d/worker_fishmen/worker_fishmen_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "worker"
+    },
+    {
+      "id": "worker_darkelf",
+      "model": "assets/source/workers3d/worker_darkelf/worker_darkelf_rigged.glb",
+      "height": 1.45,
+      "clips": {
+        "idle": {
+          "model": "assets/source/workers3d/worker_darkelf/worker_darkelf_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/workers3d/worker_darkelf/worker_darkelf_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running",
+          "hold": "idle,0.3"
+        },
+        "attack": {
+          "model": "assets/source/workers3d/worker_darkelf/worker_darkelf_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/workers3d/worker_darkelf/worker_darkelf_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "worker"
+    },
+    {
+      "id": "worker_frostmarch",
+      "model": "assets/source/workers3d/worker_frostmarch/worker_frostmarch_rigged.glb",
+      "height": 1.45,
+      "clips": {
+        "idle": {
+          "model": "assets/source/workers3d/worker_frostmarch/worker_frostmarch_mx_idle.glb",
+          "clip": "idle",
+          "frames": 6,
+          "mixamo": "Dwarf Idle",
+          "start": 0.0,
+          "end": 0.3
+        },
+        "move": {
+          "model": "assets/source/workers3d/worker_frostmarch/worker_frostmarch_mx_move.glb",
+          "clip": "move",
+          "frames": 8,
+          "mixamo": "Running",
+          "hold": "idle,0.3"
+        },
+        "attack": {
+          "model": "assets/source/workers3d/worker_frostmarch/worker_frostmarch_mx_attack.glb",
+          "clip": "attack",
+          "frames": 8,
+          "mixamo": "One Hand Club Combo",
+          "start": 0.35,
+          "end": 0.7,
+          "impact_frame": 4
+        },
+        "death": {
+          "model": "assets/source/workers3d/worker_frostmarch/worker_frostmarch_mx_death.glb",
+          "clip": "death",
+          "frames": 8,
+          "mixamo": "Mutant Dying",
+          "start": 0.0,
+          "end": 0.8
+        }
+      },
+      "view": {
+        "yaw_degrees": 45
+      },
+      "class": "worker"
+    }
+  ]
+}

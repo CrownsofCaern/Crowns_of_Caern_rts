@@ -1,0 +1,2079 @@
+{
+ "_doc": "Warbound story skill trees (campaign heroes, slow persistent levelling to 40). Each class learns from three trees: its archetype's two trees and its faction's tree. Every tree has 8 nodes in 4 rows: 3 actives (row 1, row 2 and the ultimate in row 3) and 5 passives. A row opens once enough points are spent in that tree (row_points). A passive is a talent (talent.type from StoryTrees.TALENTS, one value per rank: a share, an amount, seconds, or 'every Nth') and/or an army aura (mods: ItemCatalog stats per rank); 'icon' names its passive icon. Active nodes teach a skill from heroes.json (3 ranks, ultimates 1). The class signature is known from level 1 and can be ranked up too. A story hero slots 3 basic skills (Q W E) and 1 ultimate (R). See src/sim/story_trees.gd and src/sim/story_hero.gd.",
+ "rules": {
+  "max_level": 40,
+  "xp_base": 300,
+  "xp_per_level": 75,
+  "start_points": 1,
+  "points_per_level": 1,
+  "row_points": [
+   0,
+   2,
+   5,
+   8
+  ],
+  "ultimate_level": 10,
+  "respec_gold_per_level": 25
+ },
+ "trees": {
+  "slaughter": {
+   "name": "Slaughter",
+   "archetype": "warrior",
+   "text": "Bloodletting: the more blood is spilled, the harder the hero hits.",
+   "nodes": [
+    {
+     "id": "honed_edge",
+     "name": "Honed Edge",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "execute",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "damage_pct",
+     "row": 0
+    },
+    {
+     "id": "bloodlust",
+     "name": "Bloodlust",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "lifesteal",
+      "value": [
+       0.04,
+       0.07,
+       0.1
+      ]
+     },
+     "icon": "hp_regen",
+     "row": 0
+    },
+    {
+     "id": "cleave",
+     "kind": "active",
+     "skill": "cleave",
+     "row": 1
+    },
+    {
+     "id": "heavy_hand",
+     "name": "Heavy Hand",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "cleave_attacks",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "damage",
+     "row": 1
+    },
+    {
+     "id": "reaping_blow",
+     "kind": "active",
+     "skill": "reaping_blow",
+     "row": 2
+    },
+    {
+     "id": "thick_hide",
+     "name": "Wounded Beast",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "berserk",
+      "value": [
+       0.1,
+       0.18,
+       0.25
+      ]
+     },
+     "icon": "hp",
+     "row": 2
+    },
+    {
+     "id": "frenzy",
+     "name": "Frenzy",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "kill_haste",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "attack_speed",
+     "row": 3
+    },
+    {
+     "id": "red_harvest",
+     "kind": "active",
+     "skill": "red_harvest",
+     "row": 3
+    }
+   ]
+  },
+  "onslaught": {
+   "name": "Onslaught",
+   "archetype": "warrior",
+   "text": "Charge in, break the line, keep moving.",
+   "nodes": [
+    {
+     "id": "charger",
+     "name": "Charger",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "first_strike",
+      "value": [
+       0.2,
+       0.35,
+       0.5
+      ]
+     },
+     "icon": "move_pct",
+     "row": 0
+    },
+    {
+     "id": "iron_will",
+     "name": "Iron Will",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "fortress",
+      "value": [
+       0.1,
+       0.17,
+       0.25
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "leap",
+     "kind": "active",
+     "skill": "leap",
+     "row": 1
+    },
+    {
+     "id": "vanguard",
+     "name": "Bonebreaker",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "heavy_blow",
+      "value": [
+       5,
+       4,
+       3
+      ]
+     },
+     "icon": "attack",
+     "row": 1
+    },
+    {
+     "id": "sunder",
+     "kind": "active",
+     "skill": "sunder",
+     "row": 2
+    },
+    {
+     "id": "war_drums",
+     "name": "War Drums",
+     "kind": "passive",
+     "max_rank": 3,
+     "mods": {
+      "aura_might": 0.03
+     },
+     "icon": "aura_might",
+     "row": 2
+    },
+    {
+     "id": "battle_trance",
+     "name": "Momentum",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "kill_cooldown",
+      "value": [
+       0.5,
+       1.0,
+       1.5
+      ]
+     },
+     "icon": "cooldown_pct",
+     "row": 3
+    },
+    {
+     "id": "whirlwind_of_steel",
+     "kind": "active",
+     "skill": "whirlwind_of_steel",
+     "row": 3
+    }
+   ]
+  },
+  "bulwark": {
+   "name": "Bulwark",
+   "archetype": "guardian",
+   "text": "The wall the enemy breaks on: thorns, stubbornness, refusing to fall.",
+   "nodes": [
+    {
+     "id": "plated",
+     "name": "Spiked Plate",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "thorns",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "broad_back",
+     "name": "Broad Back",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "ranged_ward",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "aura_ward",
+     "row": 0
+    },
+    {
+     "id": "shield_bash",
+     "kind": "active",
+     "skill": "shield_bash",
+     "row": 1
+    },
+    {
+     "id": "shield_arm",
+     "name": "Shield Arm",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "status_pct",
+      "value": [
+       0.2,
+       0.35,
+       0.5
+      ]
+     },
+     "icon": "attack",
+     "row": 1
+    },
+    {
+     "id": "challenge",
+     "kind": "active",
+     "skill": "challenge",
+     "row": 2
+    },
+    {
+     "id": "second_wind",
+     "name": "Second Wind",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "low_regen",
+      "value": [
+       0.01,
+       0.015,
+       0.02
+      ]
+     },
+     "icon": "hp_regen",
+     "row": 2
+    },
+    {
+     "id": "immovable",
+     "name": "Unyielding",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "undying",
+      "value": [
+       90,
+       70,
+       50
+      ]
+     },
+     "icon": "hp",
+     "row": 3
+    },
+    {
+     "id": "last_stand",
+     "kind": "active",
+     "skill": "last_stand",
+     "row": 3
+    }
+   ]
+  },
+  "vigil": {
+   "name": "Vigil",
+   "archetype": "guardian",
+   "text": "A commander's presence: the ranks hold, heal and stand firm around the hero.",
+   "nodes": [
+    {
+     "id": "steady",
+     "name": "Steady Ranks",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "cleanse_pulse",
+      "value": [
+       6,
+       4,
+       2
+      ]
+     },
+     "icon": "aura_ward",
+     "row": 0
+    },
+    {
+     "id": "watchful",
+     "name": "Watchful",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "aura_radius",
+      "value": [
+       0.15,
+       0.3,
+       0.45
+      ]
+     },
+     "icon": "aura_haste",
+     "row": 0
+    },
+    {
+     "id": "defend_aura",
+     "kind": "active",
+     "skill": "defend_aura",
+     "row": 1
+    },
+    {
+     "id": "rallying_voice",
+     "name": "Field Dressings",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "army_regen",
+      "value": [
+       1.0,
+       2.0,
+       3.0
+      ]
+     },
+     "icon": "hp_regen",
+     "row": 1
+    },
+    {
+     "id": "call_to_arms",
+     "kind": "active",
+     "skill": "call_to_arms",
+     "row": 2
+    },
+    {
+     "id": "drillmaster",
+     "name": "Drillmaster",
+     "kind": "passive",
+     "max_rank": 3,
+     "mods": {
+      "aura_haste": 0.03
+     },
+     "icon": "aura_haste",
+     "row": 2
+    },
+    {
+     "id": "oathkeeper",
+     "name": "Seasoned Levies",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "summon_might",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "aura_might",
+     "row": 3
+    },
+    {
+     "id": "unbroken_line",
+     "kind": "active",
+     "skill": "unbroken_line",
+     "row": 3
+    }
+   ]
+  },
+  "marksman": {
+   "name": "Marksman",
+   "archetype": "ranger",
+   "text": "One shot, one kill: opening shots, marked prey and finishing blows.",
+   "nodes": [
+    {
+     "id": "steady_aim",
+     "name": "Steady Aim",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "first_strike",
+      "value": [
+       0.25,
+       0.4,
+       0.6
+      ]
+     },
+     "icon": "damage_pct",
+     "row": 0
+    },
+    {
+     "id": "keen_eye",
+     "name": "Keen Eye",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "crit_every",
+      "value": [
+       5,
+       4,
+       3
+      ]
+     },
+     "icon": "attack",
+     "row": 0
+    },
+    {
+     "id": "power_shot",
+     "kind": "active",
+     "skill": "power_shot",
+     "row": 1
+    },
+    {
+     "id": "draw_weight",
+     "name": "Killer's Instinct",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "execute",
+      "value": [
+       0.2,
+       0.3,
+       0.4
+      ]
+     },
+     "icon": "damage",
+     "row": 1
+    },
+    {
+     "id": "hunters_mark",
+     "kind": "active",
+     "skill": "hunters_mark",
+     "row": 2
+    },
+    {
+     "id": "killers_focus",
+     "name": "Killer's Focus",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "kill_mana",
+      "value": [
+       5,
+       8,
+       12
+      ]
+     },
+     "icon": "mana",
+     "row": 2
+    },
+    {
+     "id": "deadeye",
+     "name": "Deadeye",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "debuff_bonus",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "damage_pct",
+     "row": 3
+    },
+    {
+     "id": "arrow_storm",
+     "kind": "active",
+     "skill": "arrow_storm",
+     "row": 3
+    }
+   ]
+  },
+  "skirmisher": {
+   "name": "Skirmisher",
+   "archetype": "ranger",
+   "text": "Harry, pin and slip away: slowing shots, traps and blows that miss.",
+   "nodes": [
+    {
+     "id": "light_feet",
+     "name": "Pinning Shots",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "chill",
+      "value": [
+       0.15,
+       0.22,
+       0.3
+      ]
+     },
+     "icon": "move_pct",
+     "row": 0
+    },
+    {
+     "id": "hardy",
+     "name": "Elusive",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "evade_every",
+      "value": [
+       6,
+       5,
+       4
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "volley",
+     "kind": "active",
+     "skill": "volley",
+     "row": 1
+    },
+    {
+     "id": "full_quiver",
+     "name": "Full Quiver",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "echo",
+      "value": [
+       6,
+       5,
+       4
+      ]
+     },
+     "icon": "mana",
+     "row": 1
+    },
+    {
+     "id": "caltrops",
+     "kind": "active",
+     "skill": "caltrops",
+     "row": 2
+    },
+    {
+     "id": "fieldcraft",
+     "name": "Fieldcraft",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "status_pct",
+      "value": [
+       0.2,
+       0.35,
+       0.5
+      ]
+     },
+     "icon": "cooldown_pct",
+     "row": 2
+    },
+    {
+     "id": "huntsmans_call",
+     "name": "Huntsman's Call",
+     "kind": "passive",
+     "max_rank": 3,
+     "mods": {
+      "aura_haste": 0.03
+     },
+     "icon": "aura_haste",
+     "row": 3
+    },
+    {
+     "id": "hail_of_shafts",
+     "kind": "active",
+     "skill": "hail_of_shafts",
+     "row": 3
+    }
+   ]
+  },
+  "ruin": {
+   "name": "Ruin",
+   "archetype": "mystic",
+   "text": "Raw spellcraft: lingering fire, free casts and souls turned into mana.",
+   "nodes": [
+    {
+     "id": "kindling",
+     "name": "Kindling",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "dot_pct",
+      "value": [
+       0.2,
+       0.35,
+       0.5
+      ]
+     },
+     "icon": "power",
+     "row": 0
+    },
+    {
+     "id": "deep_reserves",
+     "name": "Soul Siphon",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "kill_mana",
+      "value": [
+       4,
+       7,
+       10
+      ]
+     },
+     "icon": "mana",
+     "row": 0
+    },
+    {
+     "id": "arcane_bolt",
+     "kind": "active",
+     "skill": "arcane_bolt",
+     "row": 1
+    },
+    {
+     "id": "focused_will",
+     "name": "Resonance",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "echo",
+      "value": [
+       5,
+       4,
+       3
+      ]
+     },
+     "icon": "skill_pct",
+     "row": 1
+    },
+    {
+     "id": "chain_lightning",
+     "kind": "active",
+     "skill": "chain_lightning",
+     "row": 2
+    },
+    {
+     "id": "annihilation",
+     "name": "Annihilation",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "execute",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "power",
+     "row": 2
+    },
+    {
+     "id": "quickened_mind",
+     "name": "Quickened Mind",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "kill_cooldown",
+      "value": [
+       0.5,
+       1.0,
+       1.5
+      ]
+     },
+     "icon": "cooldown_pct",
+     "row": 3
+    },
+    {
+     "id": "cataclysm",
+     "kind": "active",
+     "skill": "cataclysm",
+     "row": 3
+    }
+   ]
+  },
+  "hexcraft": {
+   "name": "Hexcraft",
+   "archetype": "mystic",
+   "text": "Curses that linger, spread from the dead and feed the hexer.",
+   "nodes": [
+    {
+     "id": "hexers_mark",
+     "name": "Hexer's Mark",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "debuff_bonus",
+      "value": [
+       0.1,
+       0.17,
+       0.25
+      ]
+     },
+     "icon": "skill_pct",
+     "row": 0
+    },
+    {
+     "id": "warded_robes",
+     "name": "Hex Ward",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "attacker_weak",
+      "value": [
+       0.1,
+       0.15,
+       0.2
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "binding",
+     "kind": "active",
+     "skill": "binding",
+     "row": 1
+    },
+    {
+     "id": "binding_lore",
+     "name": "Binding Lore",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "status_pct",
+      "value": [
+       0.2,
+       0.35,
+       0.5
+      ]
+     },
+     "icon": "cooldown_pct",
+     "row": 1
+    },
+    {
+     "id": "withering_hex",
+     "kind": "active",
+     "skill": "withering_hex",
+     "row": 2
+    },
+    {
+     "id": "spite",
+     "name": "Contagion",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "contagion",
+      "value": [
+       60,
+       90,
+       120
+      ]
+     },
+     "icon": "skill_pct",
+     "row": 2
+    },
+    {
+     "id": "unravel",
+     "name": "Unravel",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "spell_vamp",
+      "value": [
+       0.1,
+       0.15,
+       0.2
+      ]
+     },
+     "icon": "power",
+     "row": 3
+    },
+    {
+     "id": "unmaking",
+     "kind": "active",
+     "skill": "unmaking",
+     "row": 3
+    }
+   ]
+  },
+  "grace": {
+   "name": "Grace",
+   "archetype": "mender",
+   "text": "Healing, warding and calling the fallen back.",
+   "nodes": [
+    {
+     "id": "gentle_hands",
+     "name": "Gentle Hands",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "heal_pct",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "skill_pct",
+     "row": 0
+    },
+    {
+     "id": "prayerful",
+     "name": "Last Rites",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "last_rites",
+      "value": [
+       6,
+       10,
+       14
+      ]
+     },
+     "icon": "mana",
+     "row": 0
+    },
+    {
+     "id": "mend",
+     "kind": "active",
+     "skill": "mend",
+     "row": 1
+    },
+    {
+     "id": "devotion",
+     "name": "Aegis of Mercy",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "heal_ward",
+      "value": [
+       0.1,
+       0.15,
+       0.2
+      ]
+     },
+     "icon": "aura_ward",
+     "row": 1
+    },
+    {
+     "id": "resurrection",
+     "kind": "active",
+     "skill": "resurrection",
+     "row": 2
+    },
+    {
+     "id": "mercy",
+     "name": "Mercy",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "ally_undying",
+      "value": [
+       60,
+       45,
+       30
+      ]
+     },
+     "icon": "hp",
+     "row": 2
+    },
+    {
+     "id": "swift_grace",
+     "name": "Swift Grace",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "echo",
+      "value": [
+       5,
+       4,
+       3
+      ]
+     },
+     "icon": "cooldown_pct",
+     "row": 3
+    },
+    {
+     "id": "revival",
+     "kind": "active",
+     "skill": "revival",
+     "row": 3
+    }
+   ]
+  },
+  "sanctuary_tree": {
+   "name": "Sanctuary",
+   "archetype": "mender",
+   "text": "Blessings that keep the army standing: lasting boons and healing ground.",
+   "nodes": [
+    {
+     "id": "blessed",
+     "name": "Blessed Ground",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "army_regen",
+      "value": [
+       1.0,
+       1.5,
+       2.0
+      ]
+     },
+     "icon": "hp_regen",
+     "row": 0
+    },
+    {
+     "id": "hymn",
+     "name": "Hymn",
+     "kind": "passive",
+     "max_rank": 3,
+     "mods": {
+      "aura_haste": 0.03
+     },
+     "icon": "aura_haste",
+     "row": 0
+    },
+    {
+     "id": "blessing_aura",
+     "kind": "active",
+     "skill": "blessing_aura",
+     "row": 1
+    },
+    {
+     "id": "consecration",
+     "name": "Consecration",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "aura_radius",
+      "value": [
+       0.15,
+       0.3,
+       0.45
+      ]
+     },
+     "icon": "aura_ward",
+     "row": 1
+    },
+    {
+     "id": "purify",
+     "kind": "active",
+     "skill": "purify",
+     "row": 2
+    },
+    {
+     "id": "lasting_light",
+     "name": "Lasting Light",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "status_pct",
+      "value": [
+       0.2,
+       0.35,
+       0.5
+      ]
+     },
+     "icon": "cooldown_pct",
+     "row": 2
+    },
+    {
+     "id": "halo",
+     "name": "Halo",
+     "kind": "passive",
+     "max_rank": 3,
+     "mods": {
+      "aura_might": 0.03
+     },
+     "icon": "aura_might",
+     "row": 3
+    },
+    {
+     "id": "sanctuary",
+     "kind": "active",
+     "skill": "sanctuary",
+     "row": 3
+    }
+   ]
+  },
+  "legions": {
+   "name": "Legions",
+   "archetype": "summoner",
+   "text": "More servants, stronger and longer, and they feed their master.",
+   "nodes": [
+    {
+     "id": "binder",
+     "name": "Binder",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "summon_might",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "power",
+     "row": 0
+    },
+    {
+     "id": "call_reserves",
+     "name": "Call Reserves",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "summon_time",
+      "value": [
+       0.25,
+       0.5,
+       0.75
+      ]
+     },
+     "icon": "cooldown_pct",
+     "row": 0
+    },
+    {
+     "id": "summon_minions",
+     "kind": "active",
+     "skill": "summon_minions",
+     "row": 1
+    },
+    {
+     "id": "dominion",
+     "name": "Dominion",
+     "kind": "passive",
+     "max_rank": 2,
+     "talent": {
+      "type": "summon_count",
+      "value": [
+       1,
+       2
+      ]
+     },
+     "icon": "aura_might",
+     "row": 1
+    },
+    {
+     "id": "bind_champion",
+     "kind": "active",
+     "skill": "bind_champion",
+     "row": 2
+    },
+    {
+     "id": "swift_summons",
+     "name": "Blood Bond",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "summon_bond",
+      "value": [
+       20,
+       35,
+       50
+      ]
+     },
+     "icon": "hp_regen",
+     "row": 2
+    },
+    {
+     "id": "warbanner",
+     "name": "Warbanner",
+     "kind": "passive",
+     "max_rank": 3,
+     "mods": {
+      "aura_might": 0.03
+     },
+     "icon": "aura_might",
+     "row": 3
+    },
+    {
+     "id": "legion",
+     "kind": "active",
+     "skill": "legion",
+     "row": 3
+    }
+   ]
+  },
+  "siphon": {
+   "name": "Siphon",
+   "archetype": "summoner",
+   "text": "Feeding on the enemy: on their life, and on their dead.",
+   "nodes": [
+    {
+     "id": "thirst",
+     "name": "Thirst",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "spell_vamp",
+      "value": [
+       0.1,
+       0.17,
+       0.25
+      ]
+     },
+     "icon": "hp_regen",
+     "row": 0
+    },
+    {
+     "id": "dark_well",
+     "name": "Dark Well",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "kill_mana",
+      "value": [
+       4,
+       7,
+       10
+      ]
+     },
+     "icon": "mana",
+     "row": 0
+    },
+    {
+     "id": "drain",
+     "kind": "active",
+     "skill": "drain",
+     "row": 1
+    },
+    {
+     "id": "leech",
+     "name": "Leech",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "lifesteal",
+      "value": [
+       0.05,
+       0.08,
+       0.12
+      ]
+     },
+     "icon": "hp",
+     "row": 1
+    },
+    {
+     "id": "raise_dead",
+     "kind": "active",
+     "skill": "raise_dead",
+     "row": 2
+    },
+    {
+     "id": "unholy_vigour",
+     "name": "Unholy Vigour",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "kill_heal",
+      "value": [
+       0.03,
+       0.05,
+       0.07
+      ]
+     },
+     "icon": "hp_regen",
+     "row": 2
+    },
+    {
+     "id": "gluttony",
+     "name": "Harvest of the Fallen",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "fallen_rise",
+      "value": [
+       6,
+       5,
+       4
+      ]
+     },
+     "icon": "power",
+     "row": 3
+    },
+    {
+     "id": "soul_harvest",
+     "kind": "active",
+     "skill": "soul_harvest",
+     "row": 3
+    }
+   ]
+  },
+  "oath": {
+   "name": "The Oath",
+   "faction": "concord",
+   "text": "Discipline and brotherhood: the hero fights best among soldiers, and they avenge each other.",
+   "nodes": [
+    {
+     "id": "drilled",
+     "name": "Shoulder to Shoulder",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "phalanx",
+      "value": [
+       0.02,
+       0.03,
+       0.04
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "sworn",
+     "name": "Sworn Vengeance",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "avenge",
+      "value": [
+       0.1,
+       0.15,
+       0.2
+      ]
+     },
+     "icon": "aura_might",
+     "row": 0
+    },
+    {
+     "id": "shield_wall",
+     "kind": "active",
+     "skill": "shield_wall",
+     "row": 1
+    },
+    {
+     "id": "banner_bearer",
+     "name": "Banner Bearer",
+     "kind": "passive",
+     "max_rank": 3,
+     "mods": {
+      "aura_might": 0.03
+     },
+     "icon": "aura_might",
+     "row": 1
+    },
+    {
+     "id": "dawnbreak",
+     "kind": "active",
+     "skill": "dawnbreak",
+     "row": 2
+    },
+    {
+     "id": "chaplain",
+     "name": "Chaplain",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "ally_undying",
+      "value": [
+       60,
+       45,
+       30
+      ]
+     },
+     "icon": "hp",
+     "row": 2
+    },
+    {
+     "id": "crown_and_oath",
+     "name": "For the Crown!",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "kill_rally",
+      "value": [
+       0.1,
+       0.15,
+       0.2
+      ]
+     },
+     "icon": "aura_might",
+     "row": 3
+    },
+    {
+     "id": "dawn_charge",
+     "kind": "active",
+     "skill": "dawn_charge",
+     "row": 3
+    }
+   ]
+  },
+  "pyre": {
+   "name": "The Pyre",
+   "faction": "ashen",
+   "text": "Fire and fury, paid in blood: burning blows, burning skin, burning dead.",
+   "nodes": [
+    {
+     "id": "cinderblood",
+     "name": "Cinderblood",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "ignite",
+      "value": [
+       0.25,
+       0.4,
+       0.55
+      ]
+     },
+     "icon": "damage_pct",
+     "row": 0
+    },
+    {
+     "id": "ashskin",
+     "name": "Ashskin",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "thorns",
+      "value": [
+       0.1,
+       0.17,
+       0.25
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "ember_burst",
+     "kind": "active",
+     "skill": "ember_burst",
+     "row": 1
+    },
+    {
+     "id": "stoke",
+     "name": "Stoke",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "dot_pct",
+      "value": [
+       0.2,
+       0.35,
+       0.5
+      ]
+     },
+     "icon": "skill_pct",
+     "row": 1
+    },
+    {
+     "id": "blood_price",
+     "kind": "active",
+     "skill": "blood_price",
+     "row": 2
+    },
+    {
+     "id": "burning_haste",
+     "name": "Burning Blood",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "berserk",
+      "value": [
+       0.1,
+       0.18,
+       0.25
+      ]
+     },
+     "icon": "attack_speed",
+     "row": 2
+    },
+    {
+     "id": "pyre_lord",
+     "name": "Pyre Lord",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "kill_burst",
+      "value": [
+       20,
+       35,
+       50
+      ]
+     },
+     "icon": "power",
+     "row": 3
+    },
+    {
+     "id": "firestorm",
+     "kind": "active",
+     "skill": "firestorm",
+     "row": 3
+    }
+   ]
+  },
+  "grave": {
+   "name": "The Grave",
+   "faction": "hollow",
+   "text": "The dead do not tire, and do not stay down.",
+   "nodes": [
+    {
+     "id": "deathless",
+     "name": "Deathless",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "undying",
+      "value": [
+       120,
+       90,
+       60
+      ]
+     },
+     "icon": "hp",
+     "row": 0
+    },
+    {
+     "id": "cold_flesh",
+     "name": "Cold Flesh",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "melee_ward",
+      "value": [
+       0.1,
+       0.15,
+       0.2
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "grasp_of_the_dead",
+     "kind": "active",
+     "skill": "grasp_of_the_dead",
+     "row": 1
+    },
+    {
+     "id": "barrow_lore",
+     "name": "Barrow Lore",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "summon_time",
+      "value": [
+       0.25,
+       0.5,
+       0.75
+      ]
+     },
+     "icon": "cooldown_pct",
+     "row": 1
+    },
+    {
+     "id": "bone_burst",
+     "kind": "active",
+     "skill": "bone_burst",
+     "row": 2
+    },
+    {
+     "id": "grave_chill",
+     "name": "Grave Chill",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "chill",
+      "value": [
+       0.15,
+       0.22,
+       0.3
+      ]
+     },
+     "icon": "move_pct",
+     "row": 2
+    },
+    {
+     "id": "lord_of_bones",
+     "name": "Lord of Bones",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "summon_might",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "power",
+     "row": 3
+    },
+    {
+     "id": "raise_the_barrow",
+     "kind": "active",
+     "skill": "raise_the_barrow",
+     "row": 3
+    }
+   ]
+  },
+  "wild": {
+   "name": "The Wild",
+   "faction": "thornwood",
+   "text": "The forest and the pack fight with you.",
+   "nodes": [
+    {
+     "id": "barkskin",
+     "name": "Barkskin",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "thorns",
+      "value": [
+       0.1,
+       0.17,
+       0.25
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "green_blood",
+     "name": "Green Blood",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "army_regen",
+      "value": [
+       1.0,
+       1.5,
+       2.0
+      ]
+     },
+     "icon": "hp_regen",
+     "row": 0
+    },
+    {
+     "id": "entangle",
+     "kind": "active",
+     "skill": "entangle",
+     "row": 1
+    },
+    {
+     "id": "old_paths",
+     "name": "Pack Leader",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "summon_might",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "aura_might",
+     "row": 1
+    },
+    {
+     "id": "call_the_pack",
+     "kind": "active",
+     "skill": "call_the_pack",
+     "row": 2
+    },
+    {
+     "id": "pack_hunter",
+     "name": "Pack Hunter",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "pack",
+      "value": [
+       0.02,
+       0.03,
+       0.04
+      ]
+     },
+     "icon": "aura_haste",
+     "row": 2
+    },
+    {
+     "id": "voice_of_the_grove",
+     "name": "Voice of the Grove",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "summon_time",
+      "value": [
+       0.3,
+       0.6,
+       0.9
+      ]
+     },
+     "icon": "power",
+     "row": 3
+    },
+    {
+     "id": "wrath_of_the_grove",
+     "kind": "active",
+     "skill": "wrath_of_the_grove",
+     "row": 3
+    }
+   ]
+  },
+  "anvil": {
+   "name": "The Anvil",
+   "faction": "forge",
+   "text": "Iron, steam and patience: hammer blows that stun, plate that shrugs off arrows.",
+   "nodes": [
+    {
+     "id": "riveted",
+     "name": "Riveted",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "ranged_ward",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "steam_lungs",
+     "name": "Hammerfall",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "heavy_blow",
+      "value": [
+       5,
+       4,
+       3
+      ]
+     },
+     "icon": "attack",
+     "row": 0
+    },
+    {
+     "id": "overcharge",
+     "kind": "active",
+     "skill": "overcharge",
+     "row": 1
+    },
+    {
+     "id": "gearwright",
+     "name": "Gearwright",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "echo",
+      "value": [
+       6,
+       5,
+       4
+      ]
+     },
+     "icon": "cooldown_pct",
+     "row": 1
+    },
+    {
+     "id": "steam_blast",
+     "kind": "active",
+     "skill": "steam_blast",
+     "row": 2
+    },
+    {
+     "id": "tempered",
+     "name": "Tempered",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "fortress",
+      "value": [
+       0.1,
+       0.17,
+       0.25
+      ]
+     },
+     "icon": "hp",
+     "row": 2
+    },
+    {
+     "id": "master_smith",
+     "name": "Master Smith",
+     "kind": "passive",
+     "max_rank": 3,
+     "mods": {
+      "aura_ward": 0.03
+     },
+     "icon": "aura_ward",
+     "row": 3
+    },
+    {
+     "id": "iron_tide",
+     "kind": "active",
+     "skill": "iron_tide",
+     "row": 3
+    }
+   ]
+  },
+  "deep": {
+   "name": "The Deep",
+   "faction": "fishmen",
+   "text": "The pull of the tide: drag the enemy down and drink their strength.",
+   "nodes": [
+    {
+     "id": "gills",
+     "name": "Gills",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "low_regen",
+      "value": [
+       0.01,
+       0.015,
+       0.02
+      ]
+     },
+     "icon": "hp_regen",
+     "row": 0
+    },
+    {
+     "id": "scaled",
+     "name": "Scaled",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "melee_ward",
+      "value": [
+       0.1,
+       0.15,
+       0.2
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "brine_spray",
+     "kind": "active",
+     "skill": "brine_spray",
+     "row": 1
+    },
+    {
+     "id": "tidecaller",
+     "name": "Crushing Depths",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "debuff_bonus",
+      "value": [
+       0.1,
+       0.17,
+       0.25
+      ]
+     },
+     "icon": "damage_pct",
+     "row": 1
+    },
+    {
+     "id": "riptide",
+     "kind": "active",
+     "skill": "riptide",
+     "row": 2
+    },
+    {
+     "id": "crushing_depths",
+     "name": "Undertow Grip",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "chill",
+      "value": [
+       0.15,
+       0.22,
+       0.3
+      ]
+     },
+     "icon": "move_pct",
+     "row": 2
+    },
+    {
+     "id": "abyssal_pact",
+     "name": "Abyssal Pact",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "spell_vamp",
+      "value": [
+       0.1,
+       0.17,
+       0.25
+      ]
+     },
+     "icon": "skill_pct",
+     "row": 3
+    },
+    {
+     "id": "drowning_tide",
+     "kind": "active",
+     "skill": "drowning_tide",
+     "row": 3
+    }
+   ]
+  },
+  "veil": {
+   "name": "The Veil",
+   "faction": "darkelf",
+   "text": "Shadows, venom and the unseen blow.",
+   "nodes": [
+    {
+     "id": "gloomsight",
+     "name": "Ambush",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "first_strike",
+      "value": [
+       0.25,
+       0.4,
+       0.6
+      ]
+     },
+     "icon": "damage_pct",
+     "row": 0
+    },
+    {
+     "id": "silk_mail",
+     "name": "Silk Mail",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "evade_every",
+      "value": [
+       6,
+       5,
+       4
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "shadowstep",
+     "kind": "active",
+     "skill": "shadowstep",
+     "row": 1
+    },
+    {
+     "id": "venom_lore",
+     "name": "Venom Lore",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "dot_pct",
+      "value": [
+       0.2,
+       0.35,
+       0.5
+      ]
+     },
+     "icon": "skill_pct",
+     "row": 1
+    },
+    {
+     "id": "venom_blades",
+     "kind": "active",
+     "skill": "venom_blades",
+     "row": 2
+    },
+    {
+     "id": "whisper_web",
+     "name": "Cruelty",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "debuff_bonus",
+      "value": [
+       0.1,
+       0.17,
+       0.25
+      ]
+     },
+     "icon": "damage",
+     "row": 2
+    },
+    {
+     "id": "matriarchs_favour",
+     "name": "Matriarch's Favour",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "execute",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "power",
+     "row": 3
+    },
+    {
+     "id": "night_without_end",
+     "kind": "active",
+     "skill": "night_without_end",
+     "row": 3
+    }
+   ]
+  },
+  "winter": {
+   "name": "The Winter",
+   "faction": "frostmarch",
+   "text": "Cold, feasts and giants: freezing blows, berserk blood, a feast after every kill.",
+   "nodes": [
+    {
+     "id": "hardy_stock",
+     "name": "Rimeblade",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "chill",
+      "value": [
+       0.15,
+       0.22,
+       0.3
+      ]
+     },
+     "icon": "move_pct",
+     "row": 0
+    },
+    {
+     "id": "rimehide",
+     "name": "Rimehide",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "thorns",
+      "value": [
+       0.1,
+       0.17,
+       0.25
+      ]
+     },
+     "icon": "defense",
+     "row": 0
+    },
+    {
+     "id": "glacial_shards",
+     "kind": "active",
+     "skill": "glacial_shards",
+     "row": 1
+    },
+    {
+     "id": "mead_hall",
+     "name": "Feast of Victory",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "kill_heal",
+      "value": [
+       0.03,
+       0.05,
+       0.07
+      ]
+     },
+     "icon": "hp_regen",
+     "row": 1
+    },
+    {
+     "id": "rime_shell",
+     "kind": "active",
+     "skill": "rime_shell",
+     "row": 2
+    },
+    {
+     "id": "berserk_blood",
+     "name": "Berserk Blood",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "berserk",
+      "value": [
+       0.1,
+       0.18,
+       0.25
+      ]
+     },
+     "icon": "attack_speed",
+     "row": 2
+    },
+    {
+     "id": "giant_kin",
+     "name": "Giant-Kin",
+     "kind": "passive",
+     "max_rank": 3,
+     "talent": {
+      "type": "cleave_attacks",
+      "value": [
+       0.15,
+       0.25,
+       0.35
+      ]
+     },
+     "icon": "hp",
+     "row": 3
+    },
+    {
+     "id": "call_of_the_giants",
+     "kind": "active",
+     "skill": "call_of_the_giants",
+     "row": 3
+    }
+   ]
+  }
+ }
+}

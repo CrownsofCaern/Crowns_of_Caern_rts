@@ -1,0 +1,1724 @@
+{
+ "id": "ll_harvest",
+ "title": "Greyhold Harvest",
+ "kind": "hero",
+ "seed": 4101,
+ "intro": [
+  "Harvest in the southern marches, and the barrow fields are moving. Shamblers have dug themselves out of the old graves east of Greyhold and made a camp in the fen. Sir Aldous Wren, the town's lord, has no army to send. He walks out through his own fields to see for himself.",
+  "How to play: right click to walk and fight. Right click a villager to talk; a gold ! means they want something from you, a ? means you can report back. Your quests are listed on the left. Q, W, E and R use Aldous's skills, K opens his skill trees when he gains a level. If he falls he wakes at the last shrine he touched, a little poorer.",
+  "Find Reeve Hamlin Dace at Hobb's Acre. The dead here will not come to you. Take your time."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "grue_spared"
+   },
+   "text": [
+    "The barrow camp burns. The dead it held were fresh: farmers buried this summer, and others that no one in Greyhold remembers burying at all. The ground in the barrow fields is warm to the touch.",
+    "Sexton Grue is gone from his fields. A carter saw a lantern going south along the old roads, and the dead walking behind it in good order."
+   ]
+  },
+  {
+   "if": {
+    "flag": "grue_chained"
+   },
+   "text": [
+    "The barrow camp burns. The dead it held were fresh: farmers buried this summer, and others that no one in Greyhold remembers burying at all. The ground in the barrow fields is warm to the touch.",
+    "The cart that carried Sexton Grue reached Greyhold empty. His chains were unlocked, not broken."
+   ]
+  },
+  {
+   "text": [
+    "The barrow camp burns. The dead it held were fresh: farmers buried this summer, and others that no one in Greyhold remembers burying at all. The ground in the barrow fields is warm to the touch.",
+    "They buried Sexton Grue at the edge of his own barrow field. By morning the grave stood open."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "concord"
+  },
+  {
+   "faction": "hollow"
+  }
+ ],
+ "hero": {
+  "at": [
+   0.1,
+   0.56
+  ]
+ },
+ "hero_boost": {
+  "hp": 250,
+  "damage_pct": 0.5
+ },
+ "checkpoint": "greyhold_chapel",
+ "map": {
+  "name": "Greyhold Harvest",
+  "size": [
+   176,
+   112
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "meadow",
+  "border": "mountains",
+  "features": {
+   "woods": [
+    {
+     "at": [
+      0.24,
+      0.86
+     ],
+     "r": 0.11
+    },
+    {
+     "at": [
+      0.36,
+      0.88
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.18,
+      0.14
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.62,
+      0.12
+     ],
+     "r": 0.09
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.8,
+      0.78
+     ],
+     "r": 0.1
+    },
+    {
+     "at": [
+      0.94,
+      0.22
+     ],
+     "r": 0.08
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.42,
+       0.0
+      ],
+      [
+       0.45,
+       0.1
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.5,
+       1.0
+      ],
+      [
+       0.52,
+       0.86
+      ]
+     ],
+     "w": 5
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "greyhold",
+    "at": [
+     0.06,
+     0.48
+    ],
+    "size": "town",
+    "owner": 0,
+    "name": "Greyhold"
+   },
+   {
+    "id": "hobbs_acre",
+    "at": [
+     0.3,
+     0.56
+    ],
+    "size": "farmstead",
+    "owner": 0,
+    "name": "Hobb's Acre"
+   },
+   {
+    "id": "mill",
+    "at": [
+     0.28,
+     0.2
+    ],
+    "size": "farmstead",
+    "name": "Holt's Mill",
+    "nodes": 0
+   },
+   {
+    "id": "barrowfield",
+    "at": [
+     0.6,
+     0.5
+    ],
+    "size": "waystone",
+    "name": "Barrow Fields",
+    "biome": "swamp"
+   },
+   {
+    "id": "barrow_camp",
+    "at": [
+     0.88,
+     0.5
+    ],
+    "size": "hamlet",
+    "owner": 1,
+    "name": "Barrow Camp",
+    "biome": "swamp"
+   }
+  ],
+  "sites": [
+   {
+    "id": "greyhold_chapel",
+    "at": [
+     0.11,
+     0.36
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "peddler",
+    "at": [
+     0.36,
+     0.66
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "bell_tower",
+    "at": [
+     0.47,
+     0.26
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "lone_tower",
+    "guards": [
+     [
+      "road_cutthroat",
+      2
+     ],
+     [
+      "crag_slinger",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "wayside_chapel",
+    "at": [
+     0.52,
+     0.3
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "den",
+    "at": [
+     0.27,
+     0.8
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "small_ruin",
+    "guards": [
+     [
+      "thornwolf",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "open_graves",
+    "at": [
+     0.64,
+     0.72
+    ],
+    "kind": "lair",
+    "tier": 1,
+    "set": "graveyard",
+    "guards": [
+     [
+      "shambler",
+      3
+     ],
+     [
+      "marrow_archer",
+      1
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "greyhold",
+    "hobbs_acre",
+    "road"
+   ],
+   [
+    "greyhold",
+    "greyhold_chapel",
+    "road"
+   ],
+   [
+    "hobbs_acre",
+    "barrowfield",
+    "road"
+   ],
+   [
+    "hobbs_acre",
+    "mill",
+    "trail"
+   ],
+   [
+    "hobbs_acre",
+    "peddler",
+    "road"
+   ],
+   [
+    "hobbs_acre",
+    "den",
+    "trail"
+   ],
+   [
+    "mill",
+    "bell_tower",
+    "trail"
+   ],
+   [
+    "bell_tower",
+    "wayside_chapel",
+    "trail"
+   ],
+   [
+    "wayside_chapel",
+    "barrowfield",
+    "trail"
+   ],
+   [
+    "barrowfield",
+    "open_graves",
+    "trail"
+   ],
+   [
+    "barrowfield",
+    "barrow_camp",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 8,
+   "rocks": 6,
+   "ponds": 2
+  }
+ },
+ "npcs": [
+  {
+   "id": "reeve",
+   "name": "Reeve Hamlin Dace",
+   "look": "npc_elder",
+   "at": [
+    0.31,
+    0.52
+   ],
+   "talk": [
+    {
+     "if": {
+      "step": [
+       "main",
+       0
+      ]
+     },
+     "dialogue": "reeve_first",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "step": [
+       "main",
+       2
+      ]
+     },
+     "dialogue": "reeve_rats",
+     "mark": "?"
+    },
+    {
+     "if": {
+      "all": [
+       {
+        "step": [
+         "mill",
+         1
+        ]
+       },
+       {
+        "flag": "deserters_hanged"
+       }
+      ]
+     },
+     "dialogue": "reeve_mill_hanged",
+     "mark": "?"
+    },
+    {
+     "if": {
+      "all": [
+       {
+        "step": [
+         "mill",
+         1
+        ]
+       },
+       {
+        "flag": "deserters_joined"
+       }
+      ]
+     },
+     "dialogue": "reeve_mill_joined",
+     "mark": "?"
+    },
+    {
+     "if": {
+      "all": [
+       {
+        "step": [
+         "mill",
+         1
+        ]
+       },
+       {
+        "flag": "deserters_freed"
+       }
+      ]
+     },
+     "dialogue": "reeve_mill_freed",
+     "mark": "?"
+    },
+    {
+     "dialogue": "reeve_idle"
+    }
+   ]
+  },
+  {
+   "id": "marta",
+   "name": "Widow Marta Fell",
+   "look": "npc_woman",
+   "at": [
+    0.27,
+    0.6
+   ],
+   "talk": [
+    {
+     "if": {
+      "quest": "boy",
+      "is": "new"
+     },
+     "dialogue": "marta_ask",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "all": [
+       {
+        "step": [
+         "boy",
+         3
+        ]
+       },
+       {
+        "flag": "helped_marta"
+       }
+      ]
+     },
+     "dialogue": "marta_back_silver",
+     "mark": "?"
+    },
+    {
+     "if": {
+      "step": [
+       "boy",
+       3
+      ]
+     },
+     "dialogue": "marta_back",
+     "mark": "?"
+    },
+    {
+     "dialogue": "marta_idle"
+    }
+   ]
+  },
+  {
+   "id": "tobin",
+   "name": "Tobin Fell",
+   "look": "npc_child",
+   "at": [
+    0.25,
+    0.78
+   ],
+   "talk": [
+    {
+     "if": {
+      "step": [
+       "boy",
+       2
+      ]
+     },
+     "dialogue": "tobin_found",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "quest": "boy",
+      "is": "active"
+     },
+     "dialogue": "tobin_wolves"
+    },
+    {
+     "dialogue": "tobin_idle"
+    }
+   ]
+  },
+  {
+   "id": "bram",
+   "name": "Sergeant Bram Holt",
+   "look": "pike_militia",
+   "at": [
+    0.3,
+    0.17
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "bram_decided"
+      }
+     },
+     "dialogue": "bram",
+     "mark": "!"
+    },
+    {
+     "dialogue": "bram_after"
+    }
+   ]
+  },
+  {
+   "id": "anselm",
+   "name": "Brother Anselm",
+   "look": "npc_priest",
+   "at": [
+    0.51,
+    0.33
+   ],
+   "talk": [
+    {
+     "if": {
+      "quest": "bell",
+      "is": "new"
+     },
+     "dialogue": "anselm_ask",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "step": [
+       "bell",
+       1
+      ]
+     },
+     "dialogue": "anselm_back",
+     "mark": "?"
+    },
+    {
+     "dialogue": "anselm_idle"
+    }
+   ]
+  },
+  {
+   "id": "wenna",
+   "name": "Old Wenna",
+   "look": "npc_risen",
+   "at": [
+    0.5,
+    0.47
+   ],
+   "facing": 1.0,
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "wenna_decided"
+      }
+     },
+     "dialogue": "wenna",
+     "mark": "!"
+    }
+   ]
+  },
+  {
+   "id": "grue",
+   "name": "Sexton Grue",
+   "look": "hero_gravewarden",
+   "at": [
+    0.62,
+    0.55
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "grue_decided"
+      }
+     },
+     "dialogue": "grue",
+     "mark": "!"
+    }
+   ]
+  },
+  {
+   "id": "maelis",
+   "name": "Maelis Thorne",
+   "look": "hero_ranger",
+   "at": [
+    0.73,
+    0.62
+   ],
+   "talk": [
+    {
+     "dialogue": "maelis_meet",
+     "mark": "!"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "rats",
+   "owner": "wild",
+   "at": [
+    0.37,
+    0.44
+   ],
+   "units": [
+    [
+     "plague_rats",
+     4
+    ]
+   ],
+   "guard": 7
+  },
+  {
+   "id": "deserters",
+   "passive": true,
+   "owner": 1,
+   "at": [
+    0.27,
+    0.16
+   ],
+   "units": [
+    [
+     "deserter_crossbows",
+     2
+    ],
+    [
+     "road_cutthroat",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "road_dead",
+   "owner": 1,
+   "at": [
+    0.68,
+    0.4
+   ],
+   "units": [
+    [
+     "shambler",
+     3
+    ],
+    [
+     "marrow_archer",
+     1
+    ]
+   ],
+   "guard": 7
+  },
+  {
+   "id": "grue_dead",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.63,
+    0.6
+   ],
+   "units": [
+    [
+     "shambler",
+     3
+    ]
+   ]
+  },
+  {
+   "id": "wenna_kin",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.52,
+    0.5
+   ],
+   "units": [
+    [
+     "shambler",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "fen_ambush",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.8,
+    0.62
+   ],
+   "units": [
+    [
+     "shambler",
+     4
+    ],
+    [
+     "marrow_archer",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "camp",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.5
+   ],
+   "units": [
+    [
+     "barrow_revenant",
+     1
+    ],
+    [
+     "shambler",
+     4
+    ],
+    [
+     "marrow_archer",
+     2
+    ]
+   ],
+   "guard": 9
+  }
+ ],
+ "start": [
+  {
+   "marks": 40
+  },
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "The fields should be loud at harvest. Listen to them.",
+   "who": "hero"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "The Harvest Dead",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Find Reeve Hamlin Dace at Hobb's Acre",
+     "done": {
+      "flag": "met_reeve"
+     }
+    },
+    {
+     "text": "Drive the plague rats out of the grain",
+     "done": {
+      "dead": "rats"
+     },
+     "do": [
+      {
+       "xp": 150
+      }
+     ]
+    },
+    {
+     "text": "Tell the reeve the grain is clear",
+     "done": {
+      "flag": "reeve_rats"
+     },
+     "do": [
+      {
+       "xp": 100
+      }
+     ]
+    },
+    {
+     "text": "Follow the tracks of the dead to the barrow fields",
+     "done": {
+      "near": "barrowfield",
+      "r": 12
+     },
+     "do": [
+      {
+       "xp": 100
+      }
+     ]
+    },
+    {
+     "text": "Find out who tends the open barrows",
+     "done": {
+      "any": [
+       {
+        "flag": "grue_spared"
+       },
+       {
+        "flag": "grue_chained"
+       },
+       {
+        "flag": "grue_slain"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 300
+      }
+     ]
+    },
+    {
+     "text": "Burn Barrow Camp in the fen",
+     "done": {
+      "dead": "camp"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 600
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "mill": {
+   "title": "Bread and Iron",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Deal with the men holding Holt's Mill",
+     "done": {
+      "any": [
+       {
+        "flag": "deserters_joined"
+       },
+       {
+        "flag": "deserters_freed"
+       },
+       {
+        "all": [
+         {
+          "flag": "deserters_hanged"
+         },
+         {
+          "dead": "deserters"
+         },
+         {
+          "not": {
+           "alive": "bram"
+          }
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "text": "Tell the reeve what became of the mill",
+     "done": {
+      "flag": "reeve_mill"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 350
+    }
+   ]
+  },
+  "boy": {
+   "title": "Marta's Boy",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Look for Tobin in the Fellwood, south of Hobb's Acre",
+     "done": {
+      "near": "tobin",
+      "r": 8
+     }
+    },
+    {
+     "text": "Kill the wolves at the den",
+     "done": {
+      "cleared": "den"
+     }
+    },
+    {
+     "text": "Talk to Tobin",
+     "done": {
+      "flag": "tobin_decided"
+     }
+    },
+    {
+     "text": "Tell Marta her boy is safe",
+     "done": {
+      "flag": "marta_told"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 300
+    },
+    {
+     "if": {
+      "flag": "helped_marta"
+     },
+     "potion": "health",
+     "n": 2
+    },
+    {
+     "if": {
+      "flag": "helped_marta"
+     },
+     "xp": 150
+    },
+    {
+     "if": {
+      "flag": "reliquary_kept"
+     },
+     "item": {
+      "rarity": "rare",
+      "slot": "charm",
+      "level": 3
+     }
+    }
+   ]
+  },
+  "bell": {
+   "title": "The Chapel Bell",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Drive the cutthroats out of the old bell tower",
+     "done": {
+      "cleared": "bell_tower"
+     }
+    },
+    {
+     "text": "Return to Brother Anselm",
+     "done": {
+      "flag": "anselm_done"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 250
+    },
+    {
+     "item": {
+      "rarity": "magic",
+      "level": 3
+     }
+    },
+    {
+     "flag": "chapel_cleansed"
+    },
+    {
+     "checkpoint": "wayside_chapel"
+    }
+   ]
+  },
+  "wenna": {
+   "title": "The Walking Dead Woman",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Decide what to do with Old Wenna",
+     "done": {
+      "any": [
+       {
+        "flag": "mercy_to_the_dead"
+       },
+       {
+        "all": [
+         {
+          "flag": "wenna_fight"
+         },
+         {
+          "not": {
+           "alive": "wenna"
+          }
+         },
+         {
+          "dead": "wenna_kin"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 150
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "reeve_first": {
+   "nodes": {
+    "start": {
+     "text": "My lord! You came yourself. There's no one else, is there. The levy went east in spring and never wrote.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Tell me what's happening in my fields, Hamlin.",
+     "next": "c"
+    },
+    "c": {
+     "text": "Rats first, a plague of them in the barley, bold as dogs. They came up out of the ground by the barrows. And behind the rats, my lord... the dead. Walking. Folk we buried this summer.",
+     "choices": [
+      {
+       "text": "I'll clear the rats. Then we'll talk about the dead.",
+       "do": [
+        {
+         "flag": "met_reeve"
+        }
+       ]
+      },
+      {
+       "text": "The dead first. Where are they?",
+       "next": "d"
+      }
+     ]
+    },
+    "d": {
+     "text": "East, past the barrow fields, in the fen. But you'll not get there through rats, my lord. Clear the grain, and I'll show you their tracks.",
+     "do": [
+      {
+       "flag": "met_reeve"
+      }
+     ]
+    }
+   }
+  },
+  "reeve_rats": {
+   "nodes": {
+    "start": {
+     "text": "The barley's clear. Bless you, my lord. Now look here: the tracks. Bare feet, in rows, going east to the barrow fields. Walking like soldiers.",
+     "next": "b"
+    },
+    "b": {
+     "text": "And there's one more thing I'm ashamed to say. Men in levy coats took Holt's Mill a week ago, and the grain with it. Greyhold men. Ours.",
+     "choices": [
+      {
+       "text": "I'll go to the mill.",
+       "do": [
+        {
+         "flag": "reeve_rats"
+        },
+        {
+         "start_quest": "mill"
+        }
+       ]
+      },
+      {
+       "text": "The dead come first. The mill can wait.",
+       "do": [
+        {
+         "flag": "reeve_rats"
+        },
+        {
+         "start_quest": "mill"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "reeve_mill_hanged": {
+   "nodes": {
+    "start": {
+     "text": "Hanged? Well. That's the law, and they knew it. The grain will feed the village till spring. Here, my lord, the mill's tithe. It's yours by right.",
+     "do": [
+      {
+       "flag": "reeve_mill"
+      },
+      {
+       "marks": 150
+      }
+     ]
+    }
+   }
+  },
+  "reeve_mill_joined": {
+   "nodes": {
+    "start": {
+     "text": "You took them in? Men who ran? I'll say nothing, my lord, but the village will. Here's what tithe there is.",
+     "do": [
+      {
+       "flag": "reeve_mill"
+      },
+      {
+       "marks": 50
+      }
+     ]
+    }
+   }
+  },
+  "reeve_mill_freed": {
+   "nodes": {
+    "start": {
+     "text": "Gone, and the grain left behind? That's more mercy than they earned, my lord, but I'll take the grain. Here's the mill's tithe.",
+     "do": [
+      {
+       "flag": "reeve_mill"
+      },
+      {
+       "marks": 100
+      }
+     ]
+    }
+   }
+  },
+  "reeve_idle": {
+   "nodes": {
+    "start": {
+     "text": "The barrow fields are east, my lord. Mind the fen; the ground there's warm, they say. Warm in autumn."
+    }
+   }
+  },
+  "marta_ask": {
+   "nodes": {
+    "start": {
+     "text": "My lord, please. My Tobin went into the Fellwood for herbs two days ago. The wolves have been bold since the sky went strange. He's only twelve.",
+     "choices": [
+      {
+       "text": "I'll find him.",
+       "do": [
+        {
+         "start_quest": "boy"
+        }
+       ]
+      },
+      {
+       "text": "I have the dead to deal with. Later.",
+       "next": "b"
+      }
+     ]
+    },
+    "b": {
+     "text": "Later. Yes, my lord. Everyone says later."
+    }
+   }
+  },
+  "marta_back": {
+   "nodes": {
+    "start": {
+     "text": "He's home! He came in muddy and grinning like nothing happened. Thank you, my lord. Thank you.",
+     "do": [
+      {
+       "flag": "marta_told"
+      }
+     ]
+    }
+   }
+  },
+  "marta_back_silver": {
+   "nodes": {
+    "start": {
+     "text": "He's home! He came in muddy and grinning like nothing happened. Thank you, my lord. Thank you.",
+     "next": "b"
+    },
+    "b": {
+     "text": "And the silver he brought... it will see us through the winter. Take these, they were my husband's. He won't need them now.",
+     "do": [
+      {
+       "flag": "marta_told"
+      }
+     ]
+    }
+   }
+  },
+  "marta_idle": {
+   "nodes": {
+    "start": {
+     "text": "Tobin's out in the yard chopping wood. First time he's done it without being told."
+    }
+   }
+  },
+  "tobin_wolves": {
+   "nodes": {
+    "start": {
+     "text": "There's wolves at the den, my lord! Big ones! I'm staying up here."
+    }
+   }
+  },
+  "tobin_idle": {
+   "nodes": {
+    "start": {
+     "text": "I'm going home now. Don't tell Mum I was scared."
+    }
+   }
+  },
+  "tobin_found": {
+   "nodes": {
+    "start": {
+     "text": "You killed them all! Look what I found in the den, my lord. A dead knight's bones and this, all silver, with a saint on it.",
+     "next": "b"
+    },
+    "b": {
+     "text": "It's worth something, isn't it? Mum says we'll be short this winter, with the harvest half eaten.",
+     "choices": [
+      {
+       "text": "Take it home to your mother. It will feed you both.",
+       "do": [
+        {
+         "flag": "helped_marta"
+        },
+        {
+         "flag": "tobin_decided"
+        },
+        {
+         "leave": "tobin",
+         "to": "hobbs_acre"
+        }
+       ]
+      },
+      {
+       "text": "A knight's relic belongs with a knight. I'll keep it.",
+       "do": [
+        {
+         "flag": "reliquary_kept"
+        },
+        {
+         "flag": "tobin_decided"
+        },
+        {
+         "leave": "tobin",
+         "to": "hobbs_acre"
+        }
+       ],
+       "next": "c"
+      }
+     ]
+    },
+    "c": {
+     "text": "Oh. Yes, my lord. Of course, my lord."
+    }
+   }
+  },
+  "bram": {
+   "nodes": {
+    "start": {
+     "who": "bram",
+     "text": "That's far enough, my lord. Yes, I know you. I stood in your levy at the spring muster.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Then you know what happens to deserters, Bram Holt.",
+     "next": "c"
+    },
+    "c": {
+     "text": "We didn't run from the war. Captain sent us to the barrow fields to dig the dead back in. The dead dug us out instead. Half the company. We ran, we ate, we took the grain. I'll not say sorry for living.",
+     "choices": [
+      {
+       "text": "Then live under my banner. The dead are where I'm going.",
+       "do": [
+        {
+         "flag": "bram_decided"
+        },
+        {
+         "flag": "deserters_joined"
+        },
+        {
+         "join": "deserters"
+        },
+        {
+         "join": "bram"
+        }
+       ],
+       "next": "join"
+      },
+      {
+       "text": "Leave the grain and go. If I see you again, you hang.",
+       "do": [
+        {
+         "flag": "bram_decided"
+        },
+        {
+         "flag": "deserters_freed"
+        },
+        {
+         "leave": "deserters",
+         "to": [
+          0.03,
+          0.08
+         ]
+        },
+        {
+         "leave": "bram",
+         "to": [
+          0.03,
+          0.08
+         ]
+        }
+       ],
+       "next": "free"
+      },
+      {
+       "text": "The law is the law. Draw steel.",
+       "do": [
+        {
+         "flag": "bram_decided"
+        },
+        {
+         "flag": "deserters_hanged"
+        },
+        {
+         "hostile": "deserters"
+        },
+        {
+         "hostile": "bram"
+        },
+        {
+         "say": "Then come and take us, my lord!",
+         "who": "bram"
+        }
+       ]
+      }
+     ]
+    },
+    "join": {
+     "text": "...Aye, my lord. We'll follow. Better your banner than their teeth."
+    },
+    "free": {
+     "text": "You're a fair man, my lord. Fairer than the captain. We'll not trouble Greyhold again."
+    }
+   }
+  },
+  "bram_after": {
+   "nodes": {
+    "start": {
+     "text": "Where you lead, my lord."
+    }
+   }
+  },
+  "anselm_ask": {
+   "nodes": {
+    "start": {
+     "text": "My lord Wren. Cutthroats have taken the old bell tower by my chapel. They ring the bell at dusk, and travellers come to see who is in need. Nobody comes back. I cannot ring for the dead while they hold it.",
+     "choices": [
+      {
+       "text": "I'll clear the tower.",
+       "do": [
+        {
+         "start_quest": "bell"
+        }
+       ]
+      },
+      {
+       "text": "Not now, brother."
+      }
+     ]
+    }
+   }
+  },
+  "anselm_back": {
+   "nodes": {
+    "start": {
+     "text": "I heard the bell from here, on its own, when the last of them fell. Kneel at my shrine whenever you pass, my lord. The saint keeps her own.",
+     "do": [
+      {
+       "flag": "anselm_done"
+      }
+     ]
+    }
+   }
+  },
+  "anselm_idle": {
+   "nodes": {
+    "start": {
+     "text": "The saint keeps her own, my lord. Even now."
+    }
+   }
+  },
+  "wenna": {
+   "nodes": {
+    "start": {
+     "text": "Don't... don't strike. I'm Wenna. Wenna from the Acre. I only want to go home.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Your home is a grave, Wenna.",
+     "next": "c"
+    },
+    "c": {
+     "text": "Yes. That's the one. It was cool there. Now it's hot, so hot, and everyone's walking. I want to lie down again.",
+     "choices": [
+      {
+       "text": "Then go, and rest.",
+       "do": [
+        {
+         "flag": "wenna_decided"
+        },
+        {
+         "flag": "mercy_to_the_dead"
+        },
+        {
+         "leave": "wenna",
+         "to": "open_graves"
+        }
+       ],
+       "next": "go"
+      },
+      {
+       "text": "I'm sorry, Wenna. I'll put you to rest myself.",
+       "do": [
+        {
+         "flag": "wenna_decided"
+        },
+        {
+         "flag": "wenna_fight"
+        },
+        {
+         "hostile": "wenna"
+        },
+        {
+         "spawn": "wenna_kin"
+        },
+        {
+         "attack": "wenna_kin",
+         "to": "hero"
+        },
+        {
+         "say": "No... no...",
+         "who": "wenna"
+        }
+       ]
+      }
+     ]
+    },
+    "go": {
+     "text": "Thank you, my lord. You're a kind boy. You always were."
+    }
+   }
+  },
+  "grue": {
+   "nodes": {
+    "start": {
+     "text": "Mind the edges, my lord, they crumble. I'm Grue, the sexton. I've buried Greyhold's dead for thirty years. These are my neighbours.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Your neighbours are walking into my fen, sexton.",
+     "next": "c"
+    },
+    "c": {
+     "text": "The ground's too hot for them. Something underneath. They come to me because I'm the one who put them down, and I'm the only one who'll talk to them. Someone ought to keep them in good order.",
+     "choices": [
+      {
+       "text": "Then keep them. Away from my villages.",
+       "do": [
+        {
+         "flag": "grue_decided"
+        },
+        {
+         "flag": "grue_spared"
+        },
+        {
+         "leave": "grue",
+         "to": [
+          0.98,
+          0.92
+         ]
+        }
+       ],
+       "next": "spare"
+      },
+      {
+       "text": "You're coming to Greyhold in chains. The abbess will want to hear this.",
+       "do": [
+        {
+         "flag": "grue_decided"
+        },
+        {
+         "flag": "grue_chained"
+        },
+        {
+         "leave": "grue",
+         "to": "greyhold"
+        }
+       ],
+       "next": "chain"
+      },
+      {
+       "text": "You command the dead. That ends here.",
+       "do": [
+        {
+         "flag": "grue_decided"
+        },
+        {
+         "flag": "grue_fight"
+        },
+        {
+         "hostile": "grue"
+        },
+        {
+         "spawn": "grue_dead"
+        },
+        {
+         "attack": "grue_dead",
+         "to": "hero"
+        },
+        {
+         "say": "Up, neighbours. Up!",
+         "who": "grue"
+        }
+       ]
+      }
+     ]
+    },
+    "spare": {
+     "text": "Thank you, my lord. I'll take them south, where it's cool. Mind the camp in the fen. Those ones aren't mine."
+    },
+    "chain": {
+     "text": "As you like, my lord. I'll walk. The dead don't need me to hold their hands any more."
+    }
+   }
+  },
+  "maelis_meet": {
+   "nodes": {
+    "start": {
+     "text": "My lord. I wondered when you'd come. I've been in the reeds two days, counting them.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Maelis. How many?",
+     "next": "c"
+    },
+    "c": {
+     "text": "Too many to be the summer's dead. And they're camped, my lord, with watch fires that don't give heat. I'll come with you. Somebody has to keep your back.",
+     "do": [
+      {
+       "join": "maelis"
+      }
+     ]
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "grue",
+      "r": 7
+     },
+     {
+      "alive": "grue"
+     },
+     {
+      "not": {
+       "flag": "grue_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "grue",
+     "npc": "grue"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "maelis",
+      "r": 7
+     },
+     {
+      "alive": "maelis"
+     },
+     {
+      "quest": "main",
+      "is": "active"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "maelis_meet",
+     "npc": "maelis"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "wenna",
+      "r": 6
+     },
+     {
+      "not": {
+       "flag": "wenna_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "start_quest": "wenna"
+    },
+    {
+     "dialogue": "wenna",
+     "npc": "wenna"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "bram",
+      "r": 8
+     },
+     {
+      "not": {
+       "flag": "bram_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "start_quest": "mill"
+    },
+    {
+     "dialogue": "bram",
+     "npc": "bram"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "flag": "grue_fight"
+     },
+     {
+      "not": {
+       "alive": "grue"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "flag": "grue_slain"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "step": [
+       "main",
+       5
+      ]
+     },
+     {
+      "near": [
+       0.76,
+       0.56
+      ],
+      "r": 10
+     }
+    ]
+   },
+   "do": [
+    {
+     "spawn": "fen_ambush"
+    },
+    {
+     "attack": "fen_ambush",
+     "to": "hero"
+    },
+    {
+     "say": "Out of the reeds! To me!",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "rats"
+   },
+   "do": [
+    {
+     "say": "The grain's clear. The reeve will want to hear it.",
+     "who": "hero"
+    }
+   ]
+  }
+ ]
+}

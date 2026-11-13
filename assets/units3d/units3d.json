@@ -1,0 +1,1700 @@
+{
+	"ancient_dragon": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 5.0,
+		"move_speed": 0.05
+	},
+	"anvil_guard": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 3.63
+	},
+	"anvil_sworn": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.85,
+		"impact": 0.56,
+		"move_speed": 2.62
+	},
+	"ash_matriarch": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 2.1,
+		"impact": 0.55,
+		"move_speed": 2.72
+	},
+	"ash_witch": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.0,
+		"move_speed": 3.9
+	},
+	"ashscale_basilisk": {
+		"clips": [
+			"move"
+		],
+		"height": 1.5,
+		"move_speed": 0.93
+	},
+	"barkhide_sentinel": {
+		"clips": [
+			"attack",
+			"attack_alt",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.55,
+		"impact_alt": 0.21,
+		"move_speed": 3.77
+	},
+	"barkhide_warden": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 1.82
+	},
+	"barrow_revenant": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.0,
+		"move_speed": 4.62
+	},
+	"bastion_colossus": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 4.5,
+		"move_speed": 4.38
+	},
+	"blooded_raider": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.56,
+		"move_speed": 3.58
+	},
+	"bloodfrenzy_berserker": {
+		"clips": [
+			"attack",
+			"attack_alt",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.85,
+		"impact": 0.83,
+		"impact_alt": 0.21,
+		"move_speed": 3.7
+	},
+	"bog_lurker": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 1.42
+	},
+	"bog_serpent": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.2,
+		"move_speed": 2.55
+	},
+	"briar_deadshot": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.85,
+		"impact": 0.31,
+		"move_speed": 3.83
+	},
+	"briar_huntress": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.24
+	},
+	"brimstone_bombardier": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 2.0,
+		"impact": 0.58,
+		"move_speed": 5.04
+	},
+	"brimstone_hurler": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.0,
+		"move_speed": 5.61
+	},
+	"bulwark_sworn": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.85,
+		"impact": 0.33,
+		"move_speed": 3.36
+	},
+	"cairn_giant": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 5.0,
+		"move_speed": 3.56
+	},
+	"cairn_warlord": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 5.2,
+		"impact": 0.26,
+		"move_speed": 3.67
+	},
+	"cave_stalker": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 1.65
+	},
+	"charnel_behemoth": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 4.6,
+		"impact": 0.26,
+		"move_speed": 3.03
+	},
+	"charnel_hulk": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 4.37,
+		"move_speed": 4.33
+	},
+	"charnel_weaver": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 2.3,
+		"impact": 0.34,
+		"move_speed": 4.77
+	},
+	"cinder_engineer": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.95,
+		"move_speed": 1.81
+	},
+	"cinder_maw": {
+		"clips": [
+			"move"
+		],
+		"height": 4.6,
+		"move_speed": 4.94
+	},
+	"cinder_wraith": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.6,
+		"move_speed": 1.95
+	},
+	"cinderling": {
+		"clips": [],
+		"height": 1.5,
+		"move_speed": 0.0
+	},
+	"citadel_colossus": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 4.7,
+		"impact": 0.83,
+		"move_speed": 3.48
+	},
+	"clan_raider": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 4.14
+	},
+	"cobolt_bolt_broker": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.3,
+		"move_speed": 3.07
+	},
+	"cobolt_caravan_spear": {
+		"clips": [
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.3,
+		"move_speed": 2.83
+	},
+	"cobolt_cinder_alchemist": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.3,
+		"move_speed": 2.79
+	},
+	"cobolt_pack_runner": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.3,
+		"move_speed": 3.02
+	},
+	"cobolt_vault_warden": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.6,
+		"move_speed": 3.63
+	},
+	"corpse_weaver": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.3,
+		"move_speed": 5.22
+	},
+	"crag_slinger": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.3,
+		"move_speed": 3.2
+	},
+	"dawn_confessor": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.95,
+		"impact": 0.34,
+		"move_speed": 3.4
+	},
+	"de_blood_scythe": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.85,
+		"impact": 0.56,
+		"move_speed": 4.26
+	},
+	"de_cave_lancer": {
+		"clips": [
+			"move"
+		],
+		"height": 2.6,
+		"move_speed": 1.11
+	},
+	"de_dread_rider": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.6,
+		"impact": 0.45,
+		"move_speed": 0.97
+	},
+	"de_dusk_sentinel": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.51,
+		"move_speed": 3.73
+	},
+	"de_eclipse_dragon": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 5.0,
+		"impact": 0.45,
+		"move_speed": 0.0
+	},
+	"de_gloam_drake": {
+		"clips": [],
+		"height": 4.6,
+		"move_speed": 0.0
+	},
+	"de_gloam_spear": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 4.08
+	},
+	"de_knifedancer": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.33
+	},
+	"de_mirror_witch": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.95,
+		"impact": 0.34,
+		"move_speed": 2.99
+	},
+	"de_obsidian_guard": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.6,
+		"move_speed": 6.16
+	},
+	"de_onyx_executioner": {
+		"clips": [
+			"attack",
+			"attack_alt",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 2.7,
+		"impact": 0.53,
+		"impact_alt": 0.19,
+		"move_speed": 5.38
+	},
+	"de_shardbow": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 4.38
+	},
+	"de_veil_adept": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.95,
+		"move_speed": 4.44
+	},
+	"de_venom_arbalist": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.54,
+		"move_speed": 4.11
+	},
+	"de_widow_matriarch": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.4,
+		"impact": 0.39,
+		"move_speed": 0.0
+	},
+	"dirge_shade": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 2.2,
+		"impact": 0.26,
+		"move_speed": 0.0
+	},
+	"doom_bombard": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.9,
+		"impact": 0.45,
+		"move_speed": 0.0
+	},
+	"dune_wurm": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.0,
+		"move_speed": 0.0
+	},
+	"flayer": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.2,
+		"move_speed": 1.91
+	},
+	"flayer_exalted": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 2.3,
+		"impact": 0.26,
+		"move_speed": 1.55
+	},
+	"fm_abyss_harpooner": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.45,
+		"move_speed": 1.89
+	},
+	"fm_abyss_sovereign": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 5.0,
+		"impact": 0.34,
+		"move_speed": 11.34
+	},
+	"fm_barnacle_bulwark": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.85,
+		"impact": 0.56,
+		"move_speed": 3.96
+	},
+	"fm_coil_serpent": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.8,
+		"move_speed": 2.12
+	},
+	"fm_drowned_oracle": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.95,
+		"impact": 0.55,
+		"move_speed": 2.55
+	},
+	"fm_hookcaster": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 2.26
+	},
+	"fm_lantern_acolyte": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.95,
+		"move_speed": 3.89
+	},
+	"fm_reef_guard": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.34,
+		"move_speed": 3.81
+	},
+	"fm_shellback": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.72
+	},
+	"fm_siege_carapace": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.7,
+		"impact": 0.39,
+		"move_speed": 0.92
+	},
+	"fm_storm_leviathan": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.4,
+		"impact": 0.53,
+		"move_speed": 0.0
+	},
+	"fm_tide_mauler": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.4,
+		"move_speed": 5.11
+	},
+	"fm_trench_reaver": {
+		"clips": [
+			"attack",
+			"attack_alt",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 2.4,
+		"impact": 0.83,
+		"impact_alt": 0.21,
+		"move_speed": 6.13
+	},
+	"fm_trench_titan": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 4.8,
+		"move_speed": 3.57
+	},
+	"frost_drake": {
+		"clips": [],
+		"height": 3.0,
+		"move_speed": 0.0
+	},
+	"frost_shaman": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.95,
+		"move_speed": 4.07
+	},
+	"furnace_golem": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 3.0,
+		"impact": 0.26,
+		"move_speed": 2.63
+	},
+	"gibbet_knight": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.3,
+		"move_speed": 4.94
+	},
+	"gibbet_lord": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 2.4,
+		"impact": 0.64,
+		"move_speed": 5.48
+	},
+	"gloom_panther": {
+		"clips": [
+			"move"
+		],
+		"height": 1.5,
+		"move_speed": 0.96
+	},
+	"gloomwing_shrike": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.6,
+		"impact": 0.42,
+		"move_speed": 3.89
+	},
+	"gloomwing_strix": {
+		"clips": [],
+		"height": 2.6,
+		"move_speed": 0.0
+	},
+	"gorgewing": {
+		"clips": [],
+		"height": 3.0,
+		"move_speed": 0.0
+	},
+	"gorgewing_matron": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.0,
+		"impact": 0.45,
+		"move_speed": 0.0
+	},
+	"gravecrawler": {
+		"clips": [
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 1.9
+	},
+	"gravecrawler_brood": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.9,
+		"impact": 0.39,
+		"move_speed": 1.4
+	},
+	"hellmaw_hound": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.2,
+		"impact": 0.39,
+		"move_speed": 0.77
+	},
+	"hill_giant": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 4.4,
+		"move_speed": 4.3
+	},
+	"hill_troll": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.0,
+		"move_speed": 2.3
+	},
+	"iron_margrave": {
+		"clips": [
+			"move"
+		],
+		"height": 3.4,
+		"move_speed": 2.05
+	},
+	"iron_sovereign": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.5,
+		"impact": 0.42,
+		"move_speed": 0.0
+	},
+	"ironclad_thrall": {
+		"clips": [
+			"attack",
+			"attack_alt",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.12,
+		"impact_alt": 0.21,
+		"move_speed": 3.12
+	},
+	"ironhoof_charger": {
+		"clips": [
+			"move"
+		],
+		"height": 3.0,
+		"move_speed": 2.06
+	},
+	"ironhoof_warboar": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.0,
+		"impact": 0.43,
+		"move_speed": 0.78
+	},
+	"lancer": {
+		"clips": [
+			"move"
+		],
+		"height": 2.6,
+		"move_speed": 0.66
+	},
+	"lightbearer": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.95,
+		"move_speed": 3.63
+	},
+	"longbowman": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 4.23
+	},
+	"marrow_archer": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.9,
+		"move_speed": 4.45
+	},
+	"marrow_deadeye": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.9,
+		"impact": 0.31,
+		"move_speed": 3.85
+	},
+	"marsh_hag": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.0,
+		"move_speed": 4.44
+	},
+	"master_engineer": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.95,
+		"impact": 0.51,
+		"move_speed": 1.75
+	},
+	"maw_of_ruin": {
+		"clips": [
+			"attack",
+			"idle",
+			"move"
+		],
+		"height": 4.8,
+		"impact": 0.39,
+		"move_speed": 5.89
+	},
+	"moss_creeper": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.0,
+		"move_speed": 0.09
+	},
+	"npc_child": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.35,
+		"impact": 0.26,
+		"move_speed": 2.77
+	},
+	"npc_elder": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.75,
+		"impact": 0.26,
+		"move_speed": 3.54
+	},
+	"npc_noble": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"impact": 0.26,
+		"move_speed": 3.63
+	},
+	"npc_peddler": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.78,
+		"impact": 0.26,
+		"move_speed": 3.68
+	},
+	"npc_priest": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.72,
+		"impact": 0.26,
+		"move_speed": 3.65
+	},
+	"npc_risen": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.6,
+		"impact": 0.26,
+		"move_speed": 3.44
+	},
+	"npc_woman": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.65,
+		"impact": 0.26,
+		"move_speed": 3.57
+	},
+	"oathbound_lancer": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.6,
+		"impact": 0.42,
+		"move_speed": 0.9
+	},
+	"oathless_berserker": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.0
+	},
+	"ogre_mauler": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.0,
+		"move_speed": 3.66
+	},
+	"pike_militia": {
+		"clips": [
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 4.15
+	},
+	"pike_veteran": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.46,
+		"move_speed": 3.64
+	},
+	"plague_lobber": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 2.0,
+		"impact": 0.34,
+		"move_speed": 3.85
+	},
+	"primordial_wyrm": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 4.6,
+		"move_speed": 0.03
+	},
+	"pyre_sovereign": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 4.0,
+		"impact": 0.12,
+		"move_speed": 2.63
+	},
+	"pyre_titan": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.8,
+		"move_speed": 2.97
+	},
+	"rime_wight": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.0,
+		"move_speed": 1.59
+	},
+	"rimeback_aurochs": {
+		"clips": [
+			"move"
+		],
+		"height": 2.6,
+		"move_speed": 1.04
+	},
+	"rimeback_stampede": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.7,
+		"impact": 0.42,
+		"move_speed": 5.84
+	},
+	"rimefang_hound": {
+		"clips": [
+			"move"
+		],
+		"height": 1.2,
+		"move_speed": 1.36
+	},
+	"rimefang_packleader": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.2,
+		"impact": 0.39,
+		"move_speed": 1.12
+	},
+	"rivet_arbalist": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.31,
+		"move_speed": 3.3
+	},
+	"rivet_crossbowman": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 4.59
+	},
+	"road_cutthroat": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 3.85
+	},
+	"rootbinder": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.9,
+		"move_speed": 3.51
+	},
+	"rootbinder_elder": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.9,
+		"impact": 0.55,
+		"move_speed": 3.09
+	},
+	"rootbound_ancient": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 4.37,
+		"move_speed": 3.95
+	},
+	"rootbound_patriarch": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 4.6,
+		"impact": 0.26,
+		"move_speed": 2.72
+	},
+	"rotting_shambler": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.26,
+		"move_speed": 1.28
+	},
+	"rotwing_leviathan": {
+		"clips": [],
+		"height": 5.29,
+		"move_speed": 0.0
+	},
+	"rotwing_sovereign": {
+		"clips": [
+			"attack",
+			"idle",
+			"move"
+		],
+		"height": 5.5,
+		"impact": 0.42,
+		"move_speed": 0.0
+	},
+	"ruin_sentinel": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.2,
+		"move_speed": 2.31
+	},
+	"salt_witch": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.9,
+		"move_speed": 3.43
+	},
+	"sand_reaver": {
+		"clips": [
+			"move"
+		],
+		"height": 2.6,
+		"move_speed": 1.21
+	},
+	"scorchhound": {
+		"clips": [
+			"move"
+		],
+		"height": 1.2,
+		"move_speed": 0.87
+	},
+	"seared_cinderling": {
+		"clips": [
+			"attack",
+			"idle",
+			"move"
+		],
+		"height": 0.9,
+		"impact": 0.39,
+		"move_speed": 0.73
+	},
+	"shambler": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.8,
+		"move_speed": 1.61
+	},
+	"shieldwarden": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.85,
+		"move_speed": 4.03
+	},
+	"shrieking_harpy": {
+		"clips": [],
+		"height": 1.8,
+		"move_speed": 0.0
+	},
+	"slag_golem": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.0,
+		"move_speed": 2.11
+	},
+	"spore_lobber": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.0,
+		"move_speed": 4.6
+	},
+	"steppe_centaur": {
+		"clips": [
+			"move"
+		],
+		"height": 2.5,
+		"move_speed": 0.47
+	},
+	"storm_shaman": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.95,
+		"impact": 0.34,
+		"move_speed": 4.11
+	},
+	"sunhawk_paladin": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.0,
+		"impact": 0.45,
+		"move_speed": 0.0
+	},
+	"sunhawk_rider": {
+		"clips": [],
+		"height": 3.0,
+		"move_speed": 0.0
+	},
+	"thorn_stalker": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.38,
+		"move_speed": 3.42
+	},
+	"thornwolf": {
+		"clips": [
+			"move"
+		],
+		"height": 1.2,
+		"move_speed": 1.05
+	},
+	"tusk_chieftain": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.6,
+		"impact": 0.45,
+		"move_speed": 0.9
+	},
+	"tusk_rider": {
+		"clips": [
+			"move"
+		],
+		"height": 2.6,
+		"move_speed": 1.06
+	},
+	"venom_wyvern": {
+		"clips": [],
+		"height": 3.0,
+		"move_speed": 0.0
+	},
+	"wailing_shade": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 2.2,
+		"move_speed": 0.01
+	},
+	"warbow_sergeant": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 1.8,
+		"impact": 0.31,
+		"move_speed": 3.86
+	},
+	"winter_wyrm": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.2,
+		"move_speed": 0.38
+	},
+	"winter_wyrm_ancient": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.8,
+		"impact": 0.53,
+		"move_speed": 2.22
+	},
+	"worker_ashen": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.2,
+		"move_speed": 1.95
+	},
+	"worker_concord": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.45,
+		"move_speed": 2.59
+	},
+	"worker_darkelf": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.45,
+		"move_speed": 2.46
+	},
+	"worker_fishmen": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.4,
+		"move_speed": 2.2
+	},
+	"worker_forge": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.3,
+		"move_speed": 2.07
+	},
+	"worker_frostmarch": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.45,
+		"move_speed": 2.33
+	},
+	"worker_hollow": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.45,
+		"move_speed": 2.37
+	},
+	"worker_thornwood": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 1.45,
+		"move_speed": 2.76
+	},
+	"worldforge_engine": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 3.6,
+		"impact": 0.26,
+		"move_speed": 2.14
+	},
+	"wyrdthorn_matriarch": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"idle_alt",
+			"move"
+		],
+		"height": 5.5,
+		"impact": 0.34,
+		"move_speed": 9.92
+	},
+	"wyrdthorn_mother": {
+		"clips": [
+			"attack",
+			"death",
+			"idle",
+			"move"
+		],
+		"height": 5.29,
+		"move_speed": 10.72
+	}
+}

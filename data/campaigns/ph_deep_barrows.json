@@ -1,0 +1,1010 @@
+{
+ "id": "ph_deep_barrows",
+ "title": "Down the Deep Barrows",
+ "kind": "hero",
+ "seed": 5707,
+ "intro": [
+  "The dead keep fleeing upward, so the Regent goes down. Beneath the oldest barrows lies the Barrow Below, where the dead of the south have slept since before the Concord had a name. It is full of smoke.",
+  "Something has dug into it from the east: tunnels still hot, walls scored with claws.",
+  "Find the diggers, a brood under a chief called Garsh Emberclaw, and drive them out."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "ossric_woken"
+   },
+   "text": [
+    "The diggers are Ashen: burrowers of the Host, tunnelling around the Lockstone through the land of the dead because the stone itself still holds.",
+    "The dead did not wake because the world was warm. They woke because the Host was walking through their graves. Old King Ossric walks behind the Regent now, and his sleepers with him, and none of them will ever sleep again."
+   ]
+  },
+  {
+   "text": [
+    "The diggers are Ashen: burrowers of the Host, tunnelling around the Lockstone through the land of the dead because the stone itself still holds.",
+    "The dead did not wake because the world was warm. They woke because the Host was walking through their graves."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "hollow"
+  },
+  {
+   "faction": "ashen"
+  }
+ ],
+ "speakers": {
+  "orrin": "Sir Orrin Wren",
+  "corvin": "Father Corvin Mire",
+  "rotwing": "The Rotwing",
+  "hesk": "Lady Hesk of the Howe"
+ },
+ "hero": {
+  "at": [
+   0.07,
+   0.5
+  ]
+ },
+ "hero_boost": {
+  "hp": 550,
+  "damage_pct": 0.85
+ },
+ "checkpoint": "gate_shrine",
+ "map": {
+  "name": "Down the Deep Barrows",
+  "size": [
+   176,
+   112
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "gloomcrag",
+  "border": "mountains",
+  "features": {
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.22,
+       0.0
+      ],
+      [
+       0.22,
+       0.36
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.22,
+       0.64
+      ],
+      [
+       0.22,
+       1.0
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.46,
+       0.22
+      ],
+      [
+       0.5,
+       0.44
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.46,
+       0.78
+      ],
+      [
+       0.5,
+       0.56
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.72,
+       0.0
+      ],
+      [
+       0.7,
+       0.3
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.72,
+       1.0
+      ],
+      [
+       0.7,
+       0.7
+      ]
+     ],
+     "w": 5
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.36,
+      0.5
+     ],
+     "r": 0.04
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "bone_gate",
+    "at": [
+     0.12,
+     0.5
+    ],
+    "size": "waystone",
+    "owner": 0,
+    "name": "The Bone Gate"
+   },
+   {
+    "id": "ossuary",
+    "at": [
+     0.34,
+     0.16
+    ],
+    "size": "waystone",
+    "name": "The Ossuary"
+   },
+   {
+    "id": "scored_halls",
+    "at": [
+     0.56,
+     0.5
+    ],
+    "size": "waystone",
+    "name": "The Scored Halls",
+    "biome": "ashland"
+   },
+   {
+    "id": "warren",
+    "at": [
+     0.88,
+     0.5
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Emberclaw Warren",
+    "biome": "ashland",
+    "nodes": 0
+   }
+  ],
+  "sites": [
+   {
+    "id": "gate_shrine",
+    "at": [
+     0.1,
+     0.34
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "bone_seller",
+    "at": [
+     0.16,
+     0.68
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "scarab_nest",
+    "at": [
+     0.34,
+     0.86
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "echo_hall",
+    "guards": [
+     [
+      "tomb_scarabs",
+      3
+     ],
+     [
+      "cave_stalker",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "sentinel_hall",
+    "at": [
+     0.6,
+     0.14
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "column_ring",
+    "guards": [
+     [
+      "ruin_sentinel",
+      1
+     ],
+     [
+      "barrow_revenant",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "deep_shrine",
+    "at": [
+     0.62,
+     0.62
+    ],
+    "kind": "shrine"
+   }
+  ],
+  "links": [
+   [
+    "bone_gate",
+    "gate_shrine",
+    "trail"
+   ],
+   [
+    "bone_gate",
+    "bone_seller",
+    "trail"
+   ],
+   [
+    "bone_gate",
+    "ossuary",
+    "trail"
+   ],
+   [
+    "bone_gate",
+    "scored_halls",
+    "road"
+   ],
+   [
+    "bone_seller",
+    "scarab_nest",
+    "trail"
+   ],
+   [
+    "ossuary",
+    "sentinel_hall",
+    "trail"
+   ],
+   [
+    "scored_halls",
+    "deep_shrine",
+    "trail"
+   ],
+   [
+    "scored_halls",
+    "warren",
+    "road"
+   ],
+   [
+    "sentinel_hall",
+    "warren",
+    "trail"
+   ],
+   [
+    "scarab_nest",
+    "scored_halls",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 0,
+   "rocks": 12,
+   "ponds": 1
+  }
+ },
+ "npcs": [
+  {
+   "id": "ossric",
+   "name": "Old King Ossric",
+   "look": "barrow_revenant",
+   "at": [
+    0.35,
+    0.12
+   ],
+   "facing": 1.6,
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "ossric_decided"
+      }
+     },
+     "dialogue": "ossric",
+     "mark": "!"
+    },
+    {
+     "dialogue": "ossric_after"
+    }
+   ]
+  },
+  {
+   "id": "ambrel",
+   "name": "Ambrel the Grave-Scribe",
+   "look": "shambler",
+   "at": [
+    0.2,
+    0.76
+   ],
+   "talk": [
+    {
+     "if": {
+      "quest": "tablets",
+      "is": "new"
+     },
+     "dialogue": "ambrel_ask",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "step": [
+       "tablets",
+       1
+      ]
+     },
+     "dialogue": "ambrel_back",
+     "mark": "?"
+    },
+    {
+     "dialogue": "ambrel_idle"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "hesk_band",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.1,
+    0.56
+   ],
+   "units": [
+    [
+     "barrow_revenant",
+     1
+    ],
+    [
+     "shambler",
+     4
+    ],
+    [
+     "marrow_archer",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "sleepers",
+   "owner": "wild",
+   "passive": true,
+   "spawn": false,
+   "at": [
+    0.36,
+    0.2
+   ],
+   "units": [
+    [
+     "barrow_revenant",
+     2
+    ],
+    [
+     "shambler",
+     4
+    ]
+   ]
+  },
+  {
+   "id": "tunnel_rats",
+   "owner": 1,
+   "at": [
+    0.3,
+    0.5
+   ],
+   "units": [
+    [
+     "cinderling",
+     5
+    ],
+    [
+     "scorchhound",
+     1
+    ]
+   ],
+   "guard": 8
+  },
+  {
+   "id": "halls_ambush",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.62,
+    0.46
+   ],
+   "units": [
+    [
+     "cinderling",
+     6
+    ],
+    [
+     "scorchhound",
+     2
+    ],
+    [
+     "brimstone_hurler",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "north_dig",
+   "owner": 1,
+   "at": [
+    0.74,
+    0.36
+   ],
+   "units": [
+    [
+     "cinderling",
+     5
+    ],
+    [
+     "scorchhound",
+     2
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ],
+    [
+     "flayer",
+     1
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "south_dig",
+   "owner": 1,
+   "at": [
+    0.74,
+    0.64
+   ],
+   "units": [
+    [
+     "cinderling",
+     5
+    ],
+    [
+     "scorchhound",
+     2
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ],
+    [
+     "ash_witch",
+     1
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "garsh",
+   "owner": 1,
+   "at": [
+    0.89,
+    0.46
+   ],
+   "hero": {
+    "class": "warlord",
+    "name": "Garsh Emberclaw",
+    "level": 16
+   },
+   "guard": 12
+  },
+  {
+   "id": "garsh_guard",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.53
+   ],
+   "units": [
+    [
+     "cinderling",
+     6
+    ],
+    [
+     "scorchhound",
+     3
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ],
+    [
+     "flayer",
+     1
+    ],
+    [
+     "ash_witch",
+     1
+    ]
+   ],
+   "guard": 12
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "Smoke, under the graves. Three hundred years I've ruled this fen and I never came down here. I should have.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "hesk_knelt"
+   },
+   "spawn": "hesk_band"
+  },
+  {
+   "if": {
+    "flag": "hesk_knelt"
+   },
+   "say": "I said I wanted to be there when you went down, Regent. Here I am. My dead too.",
+   "who": "hesk"
+  },
+  {
+   "if": {
+    "companion": "Sir Orrin Wren"
+   },
+   "say": "Stay close, my lady. Whatever dug this has claws as long as my arm.",
+   "who": "orrin"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "Down the Deep Barrows",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Clear the burrowers out of the tunnel below the Bone Gate",
+     "done": {
+      "dead": "tunnel_rats"
+     },
+     "do": [
+      {
+       "xp": 300
+      }
+     ]
+    },
+    {
+     "text": "Follow the claw-marks to the Scored Halls",
+     "done": {
+      "near": "scored_halls",
+      "r": 10
+     },
+     "do": [
+      {
+       "xp": 200
+      }
+     ]
+    },
+    {
+     "text": "Break the burrowers' two digs",
+     "done": {
+      "all": [
+       {
+        "dead": "north_dig"
+       },
+       {
+        "dead": "south_dig"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 600
+      }
+     ]
+    },
+    {
+     "text": "Drive Garsh Emberclaw out of his warren",
+     "done": {
+      "all": [
+       {
+        "dead": "garsh"
+       },
+       {
+        "dead": "garsh_guard"
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 1200
+    },
+    {
+     "item": {
+      "rarity": "rare",
+      "slot": "weapon",
+      "level": 18
+     }
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "king": {
+   "title": "The King Under the Hill",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Decide whether Old King Ossric wakes",
+     "done": {
+      "flag": "ossric_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 300
+    }
+   ]
+  },
+  "tablets": {
+   "title": "The Grave-Scribe's Tablets",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Take Ambrel's tablets back from the scarab nest",
+     "done": {
+      "cleared": "scarab_nest"
+     }
+    },
+    {
+     "text": "Bring them to Ambrel",
+     "done": {
+      "flag": "ambrel_done"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 400
+    },
+    {
+     "item": {
+      "rarity": "rare",
+      "slot": "charm",
+      "level": 17
+     }
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "ossric": {
+   "nodes": {
+    "start": {
+     "text": "Who walks in my hall with a crown she made herself? I am Ossric. I was king of the fen when your Sallowmere was a puddle.",
+     "next": "b"
+    },
+    "b": {
+     "text": "The stone is hot under my bed. Something scratches at the walls all night. My sleepers turn and turn and cannot rest. Tell me, little regent. Should I get up?",
+     "choices": [
+      {
+       "text": "Get up, King Ossric. Your sleepers and mine will drive the diggers out together.",
+       "do": [
+        {
+         "flag": "ossric_decided"
+        },
+        {
+         "flag": "ossric_woken"
+        },
+        {
+         "spawn": "sleepers"
+        },
+        {
+         "join": "sleepers"
+        },
+        {
+         "remove": "ossric"
+        }
+       ],
+       "next": "woken"
+      },
+      {
+       "text": "Sleep. I'll stop the scratching. You've earned your rest.",
+       "do": [
+        {
+         "flag": "ossric_decided"
+        },
+        {
+         "flag": "ossric_sleeps"
+        },
+        {
+         "item": {
+          "rarity": "rare",
+          "slot": "helm",
+          "level": 17
+         }
+        }
+       ],
+       "next": "sleep"
+      }
+     ]
+    },
+    "woken": {
+     "text": "Then up, sleepers, up! It has been too long since we had anything to hate."
+    },
+    "sleep": {
+     "text": "Rest. Yes. Take my crown, then; I won't need it under the stone. Wake me if you lose."
+    }
+   }
+  },
+  "ossric_after": {
+   "nodes": {
+    "start": {
+     "text": "Mm. Still scratching."
+    }
+   }
+  },
+  "ambrel_ask": {
+   "nodes": {
+    "start": {
+     "text": "Regent! Ambrel. I kept the grave-rolls of the Barrow Below. Every name, every king, on clay. The scarabs took the tablets for their nest. Clay is warm, you see.",
+     "choices": [
+      {
+       "text": "I'll bring them back.",
+       "do": [
+        {
+         "start_quest": "tablets"
+        }
+       ],
+       "next": "yes"
+      },
+      {
+       "text": "Clay can wait.",
+       "next": "no"
+      }
+     ]
+    },
+    "yes": {
+     "text": "Mind the stalker in there. It doesn't care that I'm dead."
+    },
+    "no": {
+     "text": "Everything can wait, down here. Until it can't."
+    }
+   }
+  },
+  "ambrel_back": {
+   "nodes": {
+    "start": {
+     "text": "My tablets! Look, look here. The newest roll. Fifty years ago the scratching started, under the eastern graves. The kings wrote it down and nobody upstairs read it.",
+     "next": "b"
+    },
+    "b": {
+     "text": "They've been digging for fifty years, Regent. Around something. Here, take this. It was on the scarabs' queen. I don't want it.",
+     "do": [
+      {
+       "flag": "ambrel_done"
+      },
+      {
+       "flag": "knows_burrows"
+      }
+     ]
+    }
+   }
+  },
+  "ambrel_idle": {
+   "nodes": {
+    "start": {
+     "text": "Every name. Every king. Somebody has to keep them."
+    }
+   }
+  },
+  "garsh_parley": {
+   "nodes": {
+    "start": {
+     "who": "garsh",
+     "text": "Bones. Walking bones! We dig through you like roots through dirt, and now you walk up and bark at me?",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "You're digging through my country, Emberclaw. Why?",
+     "next": "c"
+    },
+    "c": {
+     "who": "garsh",
+     "text": "Because the stone won't move, bone-queen. So we go round it. Burn her!"
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "ossric",
+      "r": 8
+     },
+     {
+      "not": {
+       "flag": "ossric_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "start_quest": "king"
+    },
+    {
+     "dialogue": "ossric",
+     "npc": "ossric"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "ambrel",
+      "r": 7
+     },
+     {
+      "quest": "tablets",
+      "is": "new"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "ambrel_ask",
+     "npc": "ambrel"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "scored_halls",
+      "r": 10
+     },
+     {
+      "not": {
+       "spawned": "halls_ambush"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "spawn": "halls_ambush"
+    },
+    {
+     "attack": "halls_ambush",
+     "to": "hero"
+    },
+    {
+     "say": "Claw-marks on every wall, all going one way. And here they come!",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "companion": "Father Corvin Mire"
+     },
+     {
+      "near": "scored_halls",
+      "r": 10
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Look at the scoring, Regent. They're not digging toward anything. They're digging around something.",
+     "who": "corvin"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "warren",
+      "r": 22
+     },
+     {
+      "alive": "garsh"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "garsh_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "dead": "north_dig"
+     },
+     {
+      "dead": "south_dig"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Both digs are broken. Emberclaw's warren is east.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "garsh"
+     },
+     {
+      "not": {
+       "alive": "garsh"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Emberclaw is dead. His brood will scatter.",
+     "who": "hero"
+    },
+    {
+     "xp": 400
+    }
+   ]
+  }
+ ]
+}

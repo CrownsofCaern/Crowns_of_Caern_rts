@@ -1,0 +1,1018 @@
+{
+ "id": "ph_barrow_lords",
+ "title": "Barrow-Lords",
+ "kind": "war",
+ "seed": 5202,
+ "max_tier": 3,
+ "ai": "easy",
+ "intro": [
+  "Cairnholt was the smallest of the barrow-lords. The others have heard, and they have gathered behind the oldest of them, Morrow of the Deep Fen, who was a barrow-lord before Ysmay was born. They would rather go on sleeping than serve.",
+  "This is a war chapter. Your court builds and raises troops as in a skirmish: workers gather, dwellings raise the dead, and you can raise up to tier 3 here, gravecrawlers. While Morrow and his lords hold all three of their halls, his dead march on your court again and again.",
+  "Take Greywater and Hesk's Howe, or win Lady Hesk to your side. Then break Morrow of the Deep Fen."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "hesk_knelt"
+   },
+   "text": [
+    "The last barrow-lord kneels with his jaw hanging loose. \"Something is burning below,\" Morrow says. \"Under the fen, under the graves. We are not rising, Regent. We are fleeing.\"",
+    "Lady Hesk stands at the Regent's left hand and says nothing. Ysmay does not answer him either. A frightened army still marches."
+   ]
+  },
+  {
+   "text": [
+    "The last barrow-lord kneels with his jaw hanging loose. \"Something is burning below,\" Morrow says. \"Under the fen, under the graves. We are not rising, Regent. We are fleeing.\"",
+    "Ysmay does not answer. A frightened army still marches."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "hollow"
+  },
+  {
+   "faction": "hollow"
+  }
+ ],
+ "speakers": {
+  "orrin": "Sir Orrin Wren",
+  "corvin": "Father Corvin Mire",
+  "rotwing": "The Rotwing"
+ },
+ "hero": {
+  "at": [
+   0.1,
+   0.56
+  ]
+ },
+ "map": {
+  "name": "Barrow-Lords",
+  "size": [
+   192,
+   128
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "swamp",
+  "border": "mountains",
+  "features": {
+   "lakes": [
+    {
+     "at": [
+      0.36,
+      0.36
+     ],
+     "r": 0.06
+    },
+    {
+     "at": [
+      0.4,
+      0.72
+     ],
+     "r": 0.05
+    },
+    {
+     "at": [
+      0.74,
+      0.5
+     ],
+     "r": 0.06
+    }
+   ],
+   "woods": [
+    {
+     "at": [
+      0.2,
+      0.1
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.24,
+      0.9
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.8,
+      0.1
+     ],
+     "r": 0.07
+    },
+    {
+     "at": [
+      0.8,
+      0.9
+     ],
+     "r": 0.07
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.64,
+       0.36
+      ],
+      [
+       0.68,
+       0.42
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.64,
+       0.64
+      ],
+      [
+       0.68,
+       0.58
+      ]
+     ],
+     "w": 4
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "court",
+    "at": [
+     0.07,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 0,
+    "name": "Sallowmere Court"
+   },
+   {
+    "id": "peatmoor",
+    "at": [
+     0.24,
+     0.26
+    ],
+    "size": "hamlet",
+    "name": "Peatmoor"
+   },
+   {
+    "id": "reedholm",
+    "at": [
+     0.24,
+     0.74
+    ],
+    "size": "farmstead",
+    "name": "Reedholm"
+   },
+   {
+    "id": "drowned_road",
+    "at": [
+     0.42,
+     0.52
+    ],
+    "size": "hamlet",
+    "name": "Drowned Road"
+   },
+   {
+    "id": "hesk_howe",
+    "at": [
+     0.58,
+     0.2
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Hesk's Howe"
+   },
+   {
+    "id": "greywater",
+    "at": [
+     0.58,
+     0.8
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Greywater"
+   },
+   {
+    "id": "deepfen",
+    "at": [
+     0.9,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 1,
+    "name": "Morrow's Deep"
+   }
+  ],
+  "sites": [
+   {
+    "id": "bone_trader",
+    "at": [
+     0.15,
+     0.64
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "mound_shrine",
+    "at": [
+     0.3,
+     0.48
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "lurker_pool",
+    "at": [
+     0.34,
+     0.1
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "drowned_chapel",
+    "guards": [
+     [
+      "bog_lurker",
+      2
+     ],
+     [
+      "plague_rats",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "hag_ring",
+    "at": [
+     0.38,
+     0.9
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "stone_circle",
+    "guards": [
+     [
+      "marsh_hag",
+      2
+     ],
+     [
+      "moss_creeper",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "old_howe",
+    "at": [
+     0.74,
+     0.24
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "graveyard",
+    "keeper": 1,
+    "guards": [
+     [
+      "barrow_revenant",
+      1
+     ],
+     [
+      "shambler",
+      4
+     ],
+     [
+      "marrow_archer",
+      2
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "court",
+    "peatmoor",
+    "road"
+   ],
+   [
+    "court",
+    "reedholm",
+    "road"
+   ],
+   [
+    "court",
+    "bone_trader",
+    "road"
+   ],
+   [
+    "court",
+    "drowned_road",
+    "road"
+   ],
+   [
+    "drowned_road",
+    "mound_shrine",
+    "trail"
+   ],
+   [
+    "peatmoor",
+    "lurker_pool",
+    "trail"
+   ],
+   [
+    "reedholm",
+    "hag_ring",
+    "trail"
+   ],
+   [
+    "peatmoor",
+    "hesk_howe",
+    "road"
+   ],
+   [
+    "drowned_road",
+    "hesk_howe",
+    "road"
+   ],
+   [
+    "drowned_road",
+    "greywater",
+    "road"
+   ],
+   [
+    "reedholm",
+    "greywater",
+    "road"
+   ],
+   [
+    "hesk_howe",
+    "old_howe",
+    "trail"
+   ],
+   [
+    "old_howe",
+    "deepfen",
+    "trail"
+   ],
+   [
+    "hesk_howe",
+    "deepfen",
+    "road"
+   ],
+   [
+    "greywater",
+    "deepfen",
+    "road"
+   ]
+  ],
+  "scatter": {
+   "woods": 5,
+   "rocks": 5,
+   "ponds": 4
+  }
+ },
+ "npcs": [
+  {
+   "id": "hesk",
+   "name": "Lady Hesk of the Howe",
+   "look": "hero_barrow_lord",
+   "at": [
+    0.52,
+    0.26
+   ],
+   "facing": 1.0,
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "hesk_decided"
+      }
+     },
+     "dialogue": "hesk",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "all": [
+       {
+        "quest": "hesk",
+        "is": "active"
+       },
+       {
+        "dead": "tarn"
+       }
+      ]
+     },
+     "dialogue": "hesk_kneel",
+     "mark": "?"
+    },
+    {
+     "dialogue": "hesk_wait"
+    }
+   ]
+  },
+  {
+   "id": "wick",
+   "name": "Old Wick the Bone-Reeve",
+   "look": "worker_hollow",
+   "at": [
+    0.13,
+    0.42
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "wick_decided"
+      }
+     },
+     "dialogue": "wick",
+     "mark": "!"
+    },
+    {
+     "dialogue": "wick_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "levy",
+   "owner": 0,
+   "at": [
+    0.13,
+    0.54
+   ],
+   "units": [
+    [
+     "shambler",
+     10
+    ],
+    [
+     "marrow_archer",
+     6
+    ],
+    [
+     "gravecrawler",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "hesk_guard",
+   "owner": 1,
+   "at": [
+    0.57,
+    0.24
+   ],
+   "units": [
+    [
+     "shambler",
+     5
+    ],
+    [
+     "marrow_archer",
+     3
+    ],
+    [
+     "gravecrawler",
+     1
+    ]
+   ],
+   "guard": 10
+  },
+  {
+   "id": "tarn",
+   "owner": 1,
+   "at": [
+    0.6,
+    0.84
+   ],
+   "hero": {
+    "class": "barrow_lord",
+    "name": "Old Tarn of Greywater",
+    "level": 4
+   },
+   "guard": 11
+  },
+  {
+   "id": "tarn_guard",
+   "owner": 1,
+   "at": [
+    0.58,
+    0.78
+   ],
+   "units": [
+    [
+     "shambler",
+     6
+    ],
+    [
+     "marrow_archer",
+     3
+    ],
+    [
+     "gravecrawler",
+     1
+    ]
+   ],
+   "guard": 11
+  },
+  {
+   "id": "morrow",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.46
+   ],
+   "hero": {
+    "class": "gravewarden",
+    "name": "Morrow of the Deep Fen",
+    "level": 6
+   },
+   "guard": 12
+  },
+  {
+   "id": "morrow_guard",
+   "owner": 1,
+   "at": [
+    0.87,
+    0.52
+   ],
+   "units": [
+    [
+     "shambler",
+     6
+    ],
+    [
+     "marrow_archer",
+     3
+    ],
+    [
+     "gravecrawler",
+     2
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "column",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.8,
+    0.5
+   ],
+   "units": [
+    [
+     "shambler",
+     5
+    ],
+    [
+     "marrow_archer",
+     2
+    ]
+   ],
+   "attack": "court"
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "Three barrow-lords, one old man to hold them together. Pull the old man down and the rest will kneel.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "vathek_bound"
+   },
+   "say": "Morrow's afraid, Regent. I can smell it from here. He's as afraid of the heat as I was.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Sir Orrin Wren"
+   },
+   "say": "Shall I ride to Hesk's Howe first, my lady? Of the three, she has the least love for Morrow.",
+   "who": "orrin"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "Barrow-Lords",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Take Greywater, and take Hesk's Howe or bring Lady Hesk to your side",
+     "done": {
+      "all": [
+       {
+        "held": "greywater"
+       },
+       {
+        "any": [
+         {
+          "held": "hesk_howe"
+         },
+         {
+          "flag": "hesk_knelt"
+         }
+        ]
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 400
+      }
+     ]
+    },
+    {
+     "text": "Break Morrow of the Deep Fen: kill him and his hall guard, or take his town",
+     "done": {
+      "any": [
+       {
+        "held": "deepfen"
+       },
+       {
+        "not": {
+         "holds": [
+          1,
+          1
+         ]
+        }
+       },
+       {
+        "all": [
+         {
+          "dead": "morrow"
+         },
+         {
+          "dead": "morrow_guard"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 600
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "hesk": {
+   "title": "The Lady of the Howe",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Break Old Tarn of Greywater",
+     "done": {
+      "dead": "tarn"
+     }
+    },
+    {
+     "text": "Go back to Lady Hesk",
+     "done": {
+      "flag": "hesk_knelt"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 300
+    }
+   ]
+  },
+  "wick": {
+   "title": "The Bone-Reeve",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Answer Old Wick the bone-reeve",
+     "done": {
+      "flag": "wick_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 100
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "hesk": {
+   "nodes": {
+    "start": {
+     "text": "The Regent herself, at my door. Vathek's hill is ash, they say. Vathek was a fool. I am not.",
+     "next": "b"
+    },
+    "b": {
+     "text": "Morrow holds us together because he is the oldest, and because no one has ever beaten him. Old Tarn of Greywater is his right hand. Break Tarn and I will know you can break Morrow. Then I'll kneel.",
+     "choices": [
+      {
+       "text": "Tarn first, then. Wait for me.",
+       "do": [
+        {
+         "flag": "hesk_decided"
+        },
+        {
+         "start_quest": "hesk"
+        }
+       ],
+       "next": "wait"
+      },
+      {
+       "text": "Kneel now, or burn with Morrow.",
+       "do": [
+        {
+         "flag": "hesk_decided"
+        },
+        {
+         "flag": "hesk_defied"
+        },
+        {
+         "hostile": "hesk"
+        },
+        {
+         "attack": "hesk_guard",
+         "to": "hero"
+        }
+       ],
+       "next": "defy"
+      }
+     ]
+    },
+    "wait": {
+     "text": "I have waited three hundred years, Regent. I can wait for Tarn."
+    },
+    "defy": {
+     "text": "Then come and light the fire yourself."
+    }
+   }
+  },
+  "hesk_kneel": {
+   "nodes": {
+    "start": {
+     "text": "Tarn is dust. I felt him go. Well, Regent, I said I would.",
+     "next": "b"
+    },
+    "b": {
+     "text": "My howe kneels. My dead march with yours. And when you go down after whatever is burning under us, I want to be there.",
+     "do": [
+      {
+       "flag": "hesk_knelt"
+      },
+      {
+       "join": "hesk_guard"
+      },
+      {
+       "leave": "hesk",
+       "to": "hesk_howe"
+      }
+     ]
+    }
+   }
+  },
+  "hesk_wait": {
+   "nodes": {
+    "start": {
+     "text": "Tarn first, Regent."
+    }
+   }
+  },
+  "wick": {
+   "nodes": {
+    "start": {
+     "text": "Regent. Wick, bone-reeve of the court. We've more dead than we have bones to arm them. There's two ways to fix that.",
+     "next": "b"
+    },
+    "b": {
+     "text": "The old battlefield at Peatmoor is full of good iron and better bone. Or we sell the grave-goods from the court barrows to the river-traders. They pay in gold and they don't ask whose.",
+     "choices": [
+      {
+       "text": "Dig up the battlefield.",
+       "do": [
+        {
+         "flag": "wick_decided"
+        },
+        {
+         "res": {
+          "ore": 200,
+          "wood": 100
+         }
+        }
+       ],
+       "next": "dig"
+      },
+      {
+       "text": "Sell the grave-goods.",
+       "do": [
+        {
+         "flag": "wick_decided"
+        },
+        {
+         "flag": "grave_goods_sold"
+        },
+        {
+         "res": {
+          "gold": 350
+         }
+        }
+       ],
+       "next": "sell"
+      }
+     ]
+    },
+    "dig": {
+     "text": "Iron and bone. The old soldiers won't mind; most of them are already in your ranks."
+    },
+    "sell": {
+     "text": "Gold it is. Some of those rings belonged to people who are still walking about. I'll not tell them."
+    }
+   }
+  },
+  "wick_after": {
+   "nodes": {
+    "start": {
+     "text": "Bones in the pits, Regent, and more coming every night."
+    }
+   }
+  },
+  "morrow_parley": {
+   "nodes": {
+    "start": {
+     "who": "morrow",
+     "text": "Little Ysmay. I remember when you were alive. You were a clever girl then, too.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Kneel, Morrow, and keep your Deep.",
+     "next": "c"
+    },
+    "c": {
+     "who": "morrow",
+     "text": "I have slept here since before the Concord had a name. I will not be woken by a girl with a crown she made herself."
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "hesk",
+      "r": 10
+     },
+     {
+      "not": {
+       "flag": "hesk_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "hesk",
+     "npc": "hesk"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "deepfen",
+      "r": 26
+     },
+     {
+      "alive": "morrow"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "morrow_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 40
+   },
+   "do": [
+    {
+     "say": "Gravecrawlers at tier 3. Put them where the archers can't reach them first.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "tarn"
+     },
+     {
+      "not": {
+       "alive": "tarn"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Old Tarn is down.",
+     "who": "hero"
+    },
+    {
+     "xp": 200
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "dead": "tarn"
+     },
+     {
+      "quest": "hesk",
+      "is": "active"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Tarn is dust. Lady Hesk will want to hear it.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "morrow"
+     },
+     {
+      "not": {
+       "alive": "morrow"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Morrow is down. The Deep is ours.",
+     "who": "hero"
+    },
+    {
+     "xp": 300
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 150
+     },
+     {
+      "holds": [
+       1,
+       3
+      ]
+     },
+     {
+      "not": {
+       "flag": "hesk_knelt"
+      }
+     }
+    ]
+   },
+   "repeat": 100,
+   "do": [
+    {
+     "spawn": "column"
+    }
+   ]
+  }
+ ]
+}

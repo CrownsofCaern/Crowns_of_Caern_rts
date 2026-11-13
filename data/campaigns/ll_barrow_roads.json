@@ -1,0 +1,1142 @@
+{
+ "id": "ll_barrow_roads",
+ "title": "The Barrow Roads",
+ "kind": "war",
+ "seed": 4202,
+ "max_tier": 3,
+ "ai": "easy",
+ "intro": [
+  "Every barrow along the south road has opened. The dead march north in columns, too orderly for corpses. Maelis Thorne has tracked them to a single grave-town in the marsh, Mournfield, kept by a gravedigger who buried half of them himself: Sexton Grue.",
+  "How to play: this is a war chapter. Greyhold builds and recruits as in a skirmish: your workers gather, dwellings raise soldiers, and you can raise troops up to tier 3 here. Take the villages on the way for their workers and gold.",
+  "While a barrow on the south road stands open it sends a column of dead north to Greyhold every minute and a half. Burn the three barrows, then take Mournfield. If Greyhold and every village you hold fall, the chapter is lost."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "learned_corvin"
+   },
+   "text": [
+    "Mournfield burns, and the columns stop. But the dead in its pits were not all Greyhold's: some wore the grey of the fen villages further south, where the lantern temples stand.",
+    "Grue's last words were a name. Father Corvin Mire, a lantern-priest of the fen, who taught a gravedigger how to make the dead walk in rows."
+   ]
+  },
+  {
+   "text": [
+    "Mournfield burns, and the columns stop. But the dead in its pits were not all Greyhold's: some wore the grey of the fen villages further south, where the lantern temples stand.",
+    "Whatever taught Sexton Grue to raise them came from the fens. The road goes south."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "concord"
+  },
+  {
+   "faction": "hollow"
+  }
+ ],
+ "hero": {
+  "at": [
+   0.1,
+   0.56
+  ]
+ },
+ "map": {
+  "name": "The Barrow Roads",
+  "size": [
+   192,
+   128
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "meadow",
+  "border": "mountains",
+  "features": {
+   "woods": [
+    {
+     "at": [
+      0.18,
+      0.1
+     ],
+     "r": 0.09
+    },
+    {
+     "at": [
+      0.3,
+      0.92
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.74,
+      0.12
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.47,
+      0.88
+     ],
+     "r": 0.07
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.78,
+      0.72
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.82,
+      0.28
+     ],
+     "r": 0.06
+    },
+    {
+     "at": [
+      0.4,
+      0.66
+     ],
+     "r": 0.05
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.36,
+       0.3
+      ],
+      [
+       0.44,
+       0.36
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.7,
+       0.45
+      ],
+      [
+       0.72,
+       0.6
+      ]
+     ],
+     "w": 4
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "greyhold",
+    "at": [
+     0.07,
+     0.48
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 0,
+    "name": "Greyhold"
+   },
+   {
+    "id": "hobbs_acre",
+    "at": [
+     0.2,
+     0.26
+    ],
+    "size": "farmstead",
+    "name": "Hobb's Acre"
+   },
+   {
+    "id": "fenwick",
+    "at": [
+     0.26,
+     0.78
+    ],
+    "size": "hamlet",
+    "name": "Fenwick Ford"
+   },
+   {
+    "id": "waymeet",
+    "at": [
+     0.42,
+     0.5
+    ],
+    "size": "village",
+    "name": "Waymeet"
+   },
+   {
+    "id": "saltcross",
+    "at": [
+     0.6,
+     0.28
+    ],
+    "size": "hamlet",
+    "name": "Saltcross",
+    "biome": "swamp"
+   },
+   {
+    "id": "mournfield",
+    "at": [
+     0.9,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 1,
+    "name": "Mournfield",
+    "biome": "swamp"
+   }
+  ],
+  "sites": [
+   {
+    "id": "peddler",
+    "at": [
+     0.15,
+     0.64
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "wayside",
+    "at": [
+     0.33,
+     0.46
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "den",
+    "at": [
+     0.33,
+     0.14
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "small_ruin",
+    "guards": [
+     [
+      "thornwolf",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "barrow_north",
+    "at": [
+     0.5,
+     0.14
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "graveyard",
+    "keeper": 1,
+    "guards": [
+     [
+      "shambler",
+      4
+     ],
+     [
+      "marrow_archer",
+      2
+     ],
+     [
+      "gravecrawler",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "barrow_mid",
+    "at": [
+     0.57,
+     0.62
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "graveyard",
+    "keeper": 1,
+    "guards": [
+     [
+      "shambler",
+      4
+     ],
+     [
+      "marrow_archer",
+      2
+     ],
+     [
+      "gravecrawler",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "barrow_south",
+    "at": [
+     0.62,
+     0.88
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "graveyard",
+    "keeper": 1,
+    "guards": [
+     [
+      "shambler",
+      5
+     ],
+     [
+      "marrow_archer",
+      2
+     ],
+     [
+      "gravecrawler",
+      1
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "greyhold",
+    "hobbs_acre",
+    "road"
+   ],
+   [
+    "greyhold",
+    "peddler",
+    "road"
+   ],
+   [
+    "greyhold",
+    "waymeet",
+    "road"
+   ],
+   [
+    "waymeet",
+    "wayside",
+    "road"
+   ],
+   [
+    "greyhold",
+    "fenwick",
+    "trail"
+   ],
+   [
+    "fenwick",
+    "barrow_south",
+    "trail"
+   ],
+   [
+    "waymeet",
+    "barrow_mid",
+    "road"
+   ],
+   [
+    "waymeet",
+    "saltcross",
+    "road"
+   ],
+   [
+    "saltcross",
+    "barrow_north",
+    "trail"
+   ],
+   [
+    "barrow_mid",
+    "mournfield",
+    "road"
+   ],
+   [
+    "saltcross",
+    "mournfield",
+    "road"
+   ],
+   [
+    "barrow_south",
+    "mournfield",
+    "trail"
+   ],
+   [
+    "hobbs_acre",
+    "den",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 8,
+   "rocks": 6,
+   "ponds": 3
+  }
+ },
+ "npcs": [
+  {
+   "id": "maelis",
+   "name": "Maelis Thorne",
+   "look": "hero_ranger",
+   "at": [
+    0.12,
+    0.44
+   ],
+   "if": {
+    "not": {
+     "companion": "Maelis Thorne"
+    }
+   },
+   "talk": [
+    {
+     "dialogue": "maelis_join",
+     "mark": "!"
+    }
+   ]
+  },
+  {
+   "id": "odo",
+   "name": "Pell the Ferryman",
+   "look": "worker_concord",
+   "at": [
+    0.28,
+    0.84
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "odo_decided"
+      }
+     },
+     "dialogue": "odo",
+     "mark": "!"
+    },
+    {
+     "dialogue": "odo_after"
+    }
+   ]
+  },
+  {
+   "id": "elder",
+   "name": "Goodwife Ama",
+   "look": "npc_woman",
+   "at": [
+    0.4,
+    0.42
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "refugees_decided"
+      }
+     },
+     "dialogue": "refugees",
+     "mark": "!"
+    },
+    {
+     "dialogue": "refugees_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "levy",
+   "owner": 0,
+   "at": [
+    0.12,
+    0.52
+   ],
+   "units": [
+    [
+     "pike_militia",
+     10
+    ],
+    [
+     "longbowman",
+     6
+    ],
+    [
+     "shieldwarden",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "grue",
+   "owner": 1,
+   "at": [
+    0.86,
+    0.5
+   ],
+   "hero": {
+    "class": "gravewarden",
+    "name": "Sexton Grue",
+    "level": 4
+   },
+   "guard": 12
+  },
+  {
+   "id": "grue_guard",
+   "owner": 1,
+   "at": [
+    0.85,
+    0.5
+   ],
+   "units": [
+    [
+     "shambler",
+     8
+    ],
+    [
+     "marrow_archer",
+     4
+    ],
+    [
+     "gravecrawler",
+     2
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "refugees",
+   "owner": "wild",
+   "passive": true,
+   "at": [
+    0.41,
+    0.45
+   ],
+   "units": [
+    [
+     "lost_pilgrims",
+     3
+    ]
+   ]
+  },
+  {
+   "id": "new_hands",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.1,
+    0.5
+   ],
+   "units": [
+    [
+     "worker_concord",
+     4
+    ]
+   ]
+  },
+  {
+   "id": "refugee_hunters",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.5,
+    0.56
+   ],
+   "units": [
+    [
+     "shambler",
+     5
+    ],
+    [
+     "marrow_archer",
+     2
+    ]
+   ],
+   "attack": "waymeet"
+  },
+  {
+   "id": "column_0",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": "barrow_north",
+   "units": [
+    [
+     "shambler",
+     4
+    ],
+    [
+     "marrow_archer",
+     1
+    ]
+   ],
+   "attack": "greyhold"
+  },
+  {
+   "id": "column_1",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": "barrow_mid",
+   "units": [
+    [
+     "shambler",
+     4
+    ],
+    [
+     "marrow_archer",
+     1
+    ]
+   ],
+   "attack": "greyhold"
+  },
+  {
+   "id": "column_2",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": "barrow_south",
+   "units": [
+    [
+     "shambler",
+     4
+    ],
+    [
+     "marrow_archer",
+     1
+    ]
+   ],
+   "attack": "greyhold"
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "if": {
+    "flag": "grue_spared"
+   },
+   "say": "I let him walk out of his barrow field. Now he keeps a town of them.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "grue_chained"
+   },
+   "say": "Somebody unlocked Grue's chains. I want to know who.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "grue_slain"
+   },
+   "say": "We buried Grue. His grave stood open by morning. Nobody sleeps in Greyhold now.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "not": {
+     "any": [
+      {
+       "flag": "grue_spared"
+      },
+      {
+       "flag": "grue_chained"
+      },
+      {
+       "flag": "grue_slain"
+      }
+     ]
+    }
+   },
+   "say": "A gravedigger leads them. A gravedigger.",
+   "who": "hero"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "The Barrow Roads",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Burn the three barrows on the south road",
+     "done": {
+      "all": [
+       {
+        "cleared": "barrow_north"
+       },
+       {
+        "cleared": "barrow_mid"
+       },
+       {
+        "cleared": "barrow_south"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 300
+      }
+     ]
+    },
+    {
+     "text": "Break Mournfield: kill Sexton Grue and his hall guard, or take the town",
+     "done": {
+      "any": [
+       {
+        "held": "mournfield"
+       },
+       {
+        "not": {
+         "holds": [
+          1,
+          1
+         ]
+        }
+       },
+       {
+        "all": [
+         {
+          "dead": "grue"
+         },
+         {
+          "dead": "grue_guard"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 500
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "ferry": {
+   "title": "The Ferryman's Silver",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Decide what to do with Pell the ferryman",
+     "done": {
+      "flag": "odo_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 150
+    }
+   ]
+  },
+  "refugees": {
+   "title": "Folk on the Road",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Answer the refugees at Waymeet",
+     "done": {
+      "flag": "refugees_decided"
+     }
+    },
+    {
+     "text": "Keep the dead off the refugees' road",
+     "done": {
+      "any": [
+       {
+        "not": {
+         "flag": "refugees_taken"
+        }
+       },
+       {
+        "dead": "refugee_hunters"
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 200
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "maelis_join": {
+   "nodes": {
+    "start": {
+     "text": "My lord. I came back from the marsh as fast as I could. They march in columns, ten abreast, and they stop to let the slow ones catch up. Somebody is teaching them.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Then we teach them something else. Ride with me, Maelis.",
+     "next": "c"
+    },
+    "c": {
+     "text": "I'll take the bows. Mind the south road: there's a barrow every mile of it, and every one of them is open.",
+     "do": [
+      {
+       "join": "maelis"
+      },
+      {
+       "flag": "maelis_rides"
+      }
+     ]
+    }
+   }
+  },
+  "odo": {
+   "nodes": {
+    "start": {
+     "text": "Don't look at me like that, my lord. A man has to eat. They pay in grave-silver, but silver's silver.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "You ferry the dead across your ford?",
+     "next": "c"
+    },
+    "c": {
+     "text": "Every night. A gentleman with a lantern pays the fare for all of them. Very polite. Never says a word.",
+     "choices": [
+      {
+       "text": "Then the silver goes to Greyhold's war chest.",
+       "do": [
+        {
+         "flag": "odo_decided"
+        },
+        {
+         "flag": "odo_robbed"
+        },
+        {
+         "res": {
+          "gold": 300
+         }
+        }
+       ],
+       "next": "robbed"
+      },
+      {
+       "text": "Sink your ferry. Here, for your trouble.",
+       "if": {
+        "marks": 40
+       },
+       "do": [
+        {
+         "flag": "odo_decided"
+        },
+        {
+         "flag": "ford_closed"
+        },
+        {
+         "marks": -40
+        }
+       ],
+       "next": "sunk"
+      },
+      {
+       "text": "You sold your neighbours to the dead. Hang him.",
+       "do": [
+        {
+         "flag": "odo_decided"
+        },
+        {
+         "flag": "odo_hanged"
+        },
+        {
+         "remove": "odo"
+        }
+       ],
+       "next": "hanged"
+      }
+     ]
+    },
+    "robbed": {
+     "text": "All of it? That's... that's my whole winter, my lord. Fine. Take it. They'll come across anyway."
+    },
+    "sunk": {
+     "text": "Sink her? She was my father's. ...Very well, my lord. No more dead cross at Fenwick. They'll have to go round by the south barrow."
+    },
+    "hanged": {
+     "who": "hero",
+     "text": "No one in Greyhold takes the dead's coin. Tell the village why."
+    }
+   }
+  },
+  "odo_after": {
+   "nodes": {
+    "start": {
+     "text": "I'll keep to fish from now on, my lord."
+    }
+   }
+  },
+  "refugees": {
+   "nodes": {
+    "start": {
+     "text": "My lord Wren? We're from the fen villages, south of the barrows. The dead came through at night and took the whole of Brackwater. Walked them away in rows.",
+     "next": "b"
+    },
+    "b": {
+     "text": "We've walked three days. Will Greyhold take us in? We can work. We can carry, dig, mind the fires.",
+     "choices": [
+      {
+       "text": "Greyhold takes you in. Go north by the road.",
+       "do": [
+        {
+         "flag": "refugees_decided"
+        },
+        {
+         "flag": "refugees_taken"
+        },
+        {
+         "remove": "refugees"
+        },
+        {
+         "remove": "elder"
+        },
+        {
+         "spawn": "new_hands"
+        },
+        {
+         "spawn": "refugee_hunters"
+        },
+        {
+         "say": "The dead are coming after the refugees! Cover the Waymeet road.",
+         "who": "hero"
+        }
+       ]
+      },
+      {
+       "text": "Greyhold has no bread to spare. Go west, over the hills.",
+       "do": [
+        {
+         "flag": "refugees_decided"
+        },
+        {
+         "flag": "refugees_turned"
+        },
+        {
+         "leave": "refugees"
+        },
+        {
+         "leave": "elder"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "refugees_after": {
+   "nodes": {
+    "start": {
+     "text": "Gods keep you, my lord."
+    }
+   }
+  },
+  "grue_parley": {
+   "nodes": {
+    "start": {
+     "who": "grue",
+     "text": "My lord Wren. Mind the edges, they crumble. You've come to burn my neighbours a second time.",
+     "next": "b"
+    },
+    "b": {
+     "who": "grue",
+     "text": "They were cold, my lord. Cold and forgotten under your fields. Now they walk, and they listen, and they never go hungry. Isn't that a kindness?",
+     "choices": [
+      {
+       "text": "Who taught you this, Grue?",
+       "next": "who"
+      },
+      {
+       "text": "Lay down your lantern and I'll let you walk away again.",
+       "if": {
+        "flag": "grue_spared"
+       },
+       "next": "again"
+      },
+      {
+       "text": "Enough talk.",
+       "next": "end"
+      }
+     ]
+    },
+    "who": {
+     "who": "grue",
+     "text": "A priest, my lord. A lantern-priest from the fen, Father Corvin Mire. He says the ground is warm because something under it is waking. He says the dead are only the first to feel it.",
+     "do": [
+      {
+       "flag": "learned_corvin"
+      }
+     ],
+     "next": "end"
+    },
+    "again": {
+     "who": "grue",
+     "text": "You let me go once, and look what I made. No, my lord. Not twice.",
+     "next": "end"
+    },
+    "end": {
+     "who": "grue",
+     "text": "Come down to the pits, then. My neighbours have been waiting for you."
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "near": "mournfield",
+    "r": 22
+   },
+   "do": [
+    {
+     "dialogue": "grue_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "barrow_north"
+   },
+   "do": [
+    {
+     "say": "The north barrow burns. One road quiet.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "barrow_mid"
+   },
+   "do": [
+    {
+     "say": "The barrow by the Waymeet road is ash.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "barrow_south"
+   },
+   "do": [
+    {
+     "say": "The south barrow is burnt. No more columns from the ford.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 45
+   },
+   "do": [
+    {
+     "say": "Build up Greyhold first: workers on the timber and ore, a dwelling for bows. The first column comes in two minutes.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "grue"
+     },
+     {
+      "not": {
+       "alive": "grue"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Grue is down. His dead stumble without him, for now.",
+     "who": "hero"
+    },
+    {
+     "xp": 200
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 120
+     },
+     {
+      "not": {
+       "cleared": "barrow_north"
+      }
+     }
+    ]
+   },
+   "repeat": 90,
+   "do": [
+    {
+     "spawn": "column_0"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 120
+     },
+     {
+      "not": {
+       "cleared": "barrow_mid"
+      }
+     }
+    ]
+   },
+   "repeat": 90,
+   "do": [
+    {
+     "spawn": "column_1"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 120
+     },
+     {
+      "not": {
+       "cleared": "barrow_south"
+      }
+     },
+     {
+      "not": {
+       "flag": "ford_closed"
+      }
+     }
+    ]
+   },
+   "repeat": 90,
+   "do": [
+    {
+     "spawn": "column_2"
+    }
+   ]
+  }
+ ]
+}

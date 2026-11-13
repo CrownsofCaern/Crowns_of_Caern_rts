@@ -1,0 +1,1067 @@
+{
+ "_doc": "Skirmish economy (plan: Sectors and settlements, Key skirmish mechanics). Times in seconds, distances in world pixels. capture_speed: settlements are taken this many times faster than their capture_time. militia_guard_radius: neutral militia go for any enemy this close (and anyone who hurts them), chase at most 1.5x as far from their post, then walk back.",
+ "people_cap": 150,
+ "capture_radius": 150.0,
+ "militia_guard_radius": 220.0,
+ "unsettled_seconds": 60.0,
+ "start": {
+  "workers": 4,
+  "resources": {
+   "gold": 300,
+   "wood": 200,
+   "ore": 100
+  },
+  "dwellings": [
+   1
+  ]
+ },
+ "settlements": {
+  "waystone": {
+   "name": "Waystone",
+   "workers": 0,
+   "spawn_every": 0,
+   "gold_per_min": 0,
+   "nodes": [
+    6,
+    8
+   ],
+   "capture_time": 15,
+   "militia": 0,
+   "next": ""
+  },
+  "farmstead": {
+   "name": "Farmstead",
+   "workers": 2,
+   "spawn_every": 40,
+   "gold_per_min": 15,
+   "nodes": [
+    5,
+    6
+   ],
+   "capture_time": 20,
+   "militia": 2,
+   "next": "hamlet"
+  },
+  "hamlet": {
+   "name": "Hamlet",
+   "workers": 4,
+   "spawn_every": 30,
+   "gold_per_min": 30,
+   "nodes": [
+    4,
+    5
+   ],
+   "capture_time": 30,
+   "militia": 4,
+   "next": "village"
+  },
+  "village": {
+   "name": "Village",
+   "workers": 6,
+   "spawn_every": 25,
+   "gold_per_min": 60,
+   "nodes": [
+    3,
+    4
+   ],
+   "capture_time": 45,
+   "militia": 6,
+   "next": "town"
+  },
+  "town": {
+   "name": "Town",
+   "workers": 10,
+   "spawn_every": 20,
+   "gold_per_min": 100,
+   "nodes": [
+    2,
+    2
+   ],
+   "capture_time": 60,
+   "militia": 10,
+   "next": "city"
+  },
+  "city": {
+   "name": "City",
+   "workers": 16,
+   "spawn_every": 15,
+   "gold_per_min": 180,
+   "nodes": [
+    0,
+    1
+   ],
+   "capture_time": 90,
+   "militia": 16,
+   "next": ""
+  }
+ },
+ "settlement_upgrade": {
+  "seconds": 45,
+  "gold_per_min_factor": 5,
+  "wood": 150,
+  "ore": 100
+ },
+ "resources": {
+  "gold": "Gold",
+  "wood": "Timber",
+  "ore": "Ore",
+  "mercury": "Quicksilver",
+  "sulfur": "Brimstone",
+  "crystal": "Crystal",
+  "gems": "Gems"
+ },
+ "pile_amounts": {
+  "_doc": "How much each resource pile holds before it runs dry (rare = every faction rare and gems). Piles in a home sector hold home_factor times as much, so the start is not a race against the clock. -1 makes piles endless.",
+  "wood": 1200,
+  "ore": 1000,
+  "rare": 150,
+  "home_factor": 1.5
+ },
+ "node_resources": [
+  "wood",
+  "ore",
+  "mercury",
+  "sulfur",
+  "crystal",
+  "gems"
+ ],
+ "faction_resources": {
+  "concord": [
+   "wood",
+   "ore",
+   "crystal",
+   "gems"
+  ],
+  "hollow": [
+   "wood",
+   "ore",
+   "mercury",
+   "gems"
+  ],
+  "ashen": [
+   "wood",
+   "ore",
+   "sulfur",
+   "gems"
+  ],
+  "thornwood": [
+   "wood",
+   "ore",
+   "crystal",
+   "gems"
+  ],
+  "forge": [
+   "wood",
+   "ore",
+   "mercury",
+   "gems"
+  ],
+  "fishmen": [
+   "wood",
+   "ore",
+   "crystal",
+   "gems"
+  ],
+  "darkelf": [
+   "wood",
+   "ore",
+   "crystal",
+   "gems"
+  ],
+  "frostmarch": [
+   "wood",
+   "ore",
+   "crystal",
+   "gems"
+  ]
+ },
+ "gather_weights": {
+  "default": {
+   "wood": 2,
+   "ore": 2
+  },
+  "other": 1,
+  "max": 10
+ },
+ "gather": {
+  "seconds": 5.0,
+  "carry": 5,
+  "reach": 26.0
+ },
+ "hall_levels": [
+  {
+   "level": 1,
+   "max_tier": 2,
+   "arrows": {
+    "count": 2,
+    "damage": 8.0,
+    "interval": 1.8
+   },
+   "home": {
+    "workers": 10,
+    "spawn_every": 20,
+    "gold_per_min": 100
+   }
+  },
+  {
+   "level": 2,
+   "max_tier": 4,
+   "cost": {
+    "gold": 150,
+    "wood": 200,
+    "ore": 150
+   },
+   "seconds": 45,
+   "arrows": {
+    "count": 3,
+    "damage": 11.0,
+    "interval": 1.6
+   },
+   "home": {
+    "workers": 12,
+    "spawn_every": 18,
+    "gold_per_min": 120
+   }
+  },
+  {
+   "level": 3,
+   "max_tier": 6,
+   "cost": {
+    "gold": 300,
+    "wood": 350,
+    "ore": 300,
+    "rare": 10
+   },
+   "seconds": 60,
+   "arrows": {
+    "count": 4,
+    "damage": 14.0,
+    "interval": 1.5
+   },
+   "home": {
+    "workers": 14,
+    "spawn_every": 17,
+    "gold_per_min": 150
+   }
+  },
+  {
+   "level": 4,
+   "max_tier": 8,
+   "cost": {
+    "gold": 500,
+    "wood": 550,
+    "ore": 500,
+    "rare": 20
+   },
+   "seconds": 90,
+   "arrows": {
+    "count": 5,
+    "damage": 18.0,
+    "interval": 1.4
+   },
+   "home": {
+    "workers": 16,
+    "spawn_every": 15,
+    "gold_per_min": 180
+   }
+  }
+ ],
+ "hall_defense": {
+  "_doc": "The hall shoots 'arrows' (per hall level) at enemies within range px; height is the roof in metres, for the view. A capital cannot be captured: it has 'hp' hit points (one value per hall level, I-IV) behind armor_pct armour, a body of 'radius' px, and mends mend_per_second once mend_after seconds pass without a hit. When it falls its owner has lost.",
+  "hp": [2400.0, 4800.0, 8000.0, 12000.0],
+  "armor_pct": 0.5,
+  "radius": 56.0,
+  "mend_after": 15.0,
+  "mend_per_second": 10.0,
+  "range": 300.0,
+  "height": 6.5
+ },
+ "building_defense": {
+  "_doc": "Unit buildings (dwellings and faction buildings) can be torn down. A dwelling has hp_base + hp_per_tier x (its lowest tier - 1) hit points, x upgraded_factor once any of its upgrades is bought; a faction building has special_hp. A site under construction starts at start_share of them and grows with the work. armor_pct, mend_after and mend_per_second as for the hall. When one falls its queue is lost and its ground opens again.",
+  "hp_base": 1000.0,
+  "hp_per_tier": 150.0,
+  "upgraded_factor": 1.25,
+  "special_hp": 1500.0,
+  "start_share": 0.1,
+  "armor_pct": 0.35,
+  "mend_after": 15.0,
+  "mend_per_second": 5.0
+ },
+ "dwelling": {
+  "radius": 80.0,
+  "base_seconds": 20,
+  "seconds_per_tier": 6,
+  "cost": {
+   "gold": [
+    30,
+    20
+   ],
+   "wood": [
+    50,
+    30
+   ],
+   "ore": [
+    20,
+    20
+   ]
+  }
+ },
+ "dwelling_slots": [
+  [
+   1,
+   2
+  ],
+  [
+   3,
+   4
+  ],
+  [
+   5
+  ],
+  [
+   6
+  ],
+  [
+   7
+  ],
+  [
+   8
+  ]
+ ],
+ "dwelling_slots_doc": "Which tiers share one dwelling (one queue, the art of its first tier; each tier keeps its own upgrade). The art of the other tiers (dwellings[1], dwellings[3]) is free for the faction buildings.",
+ "faction_buildings": {
+  "_doc": "Two buildings per faction in the art the shared dwellings freed (dwellings[1] and dwellings[3]). hall: hall level needed; limit: how many a player may own. effect.kind: aura (own: heal per second as a share of max health, statuses on own units; foe: statuses on enemies; sight: px it sees beyond its footprint), tower (arrows like a hall), raise (enemies dying within radius rise as unit for seconds, at most max at once), trade (a button: pay 'give' for 'take'; worker: true spends a worker), market (a button per pair: pay amount of one for rate x amount of another), gate (a button: units within radius of the partner, the hall or another gate of the same id, step out here; cooldown), research (a button, once: every unit of yours takes taken_factor of the damage), feast (a button: every soldier of yours gets the status for seconds; cooldown), income (resource per minute), spawn (every seconds a unit with no worker, at most max alive from it). Statuses as SimUnit.status kinds; radius in px.",
+  "concord": [
+   {
+    "id": "watch_bastion",
+    "key": "c_dw2",
+    "name": "Watch Bastion",
+    "text": "An arrow tower for any of your sectors, like a small hall.",
+    "cost": {
+     "gold": 150,
+     "wood": 200,
+     "ore": 200
+    },
+    "hall": 2,
+    "limit": 4,
+    "effect": {
+     "kind": "tower",
+     "range": 280.0,
+     "count": 2,
+     "damage": 10.0,
+     "interval": 1.6,
+     "height": 5.0
+    }
+   },
+   {
+    "id": "chapel_of_dawn",
+    "key": "c_dw4",
+    "name": "Chapel of Dawn",
+    "text": "Your troops near it slowly heal.",
+    "cost": {
+     "gold": 200,
+     "wood": 150,
+     "ore": 100,
+     "crystal": 4
+    },
+    "hall": 2,
+    "limit": 1,
+    "effect": {
+     "kind": "aura",
+     "radius": 260.0,
+     "own": {
+      "heal": 0.02
+     }
+    }
+   }
+  ],
+  "hollow": [
+   {
+    "id": "ossuary",
+    "key": "h_dw2",
+    "name": "Ossuary",
+    "text": "Enemies who die near it rise for a while as Shamblers on your side.",
+    "cost": {
+     "gold": 180,
+     "wood": 150,
+     "ore": 150,
+     "mercury": 4
+    },
+    "hall": 2,
+    "limit": 1,
+    "effect": {
+     "kind": "raise",
+     "radius": 420.0,
+     "unit": "shambler",
+     "seconds": 45.0,
+     "max": 8
+    }
+   },
+   {
+    "id": "plague_pit",
+    "key": "h_dw4",
+    "name": "Plague Pit",
+    "text": "Enemies near it are sickened and deal less damage.",
+    "cost": {
+     "gold": 200,
+     "wood": 150,
+     "ore": 150,
+     "mercury": 4
+    },
+    "hall": 2,
+    "limit": 1,
+    "effect": {
+     "kind": "aura",
+     "radius": 320.0,
+     "foe": {
+      "weak": 0.2
+     }
+    }
+   }
+  ],
+  "ashen": [
+   {
+    "id": "brand_pit",
+    "key": "a_dw4",
+    "name": "Brand Pit",
+    "text": "Sacrifice a worker for Brimstone.",
+    "cost": {
+     "gold": 150,
+     "wood": 150,
+     "ore": 100
+    },
+    "hall": 1,
+    "limit": 1,
+    "effect": {
+     "kind": "trade",
+     "worker": true,
+     "give": {
+      "gold": 20
+     },
+     "take": {
+      "sulfur": 3
+     }
+    }
+   },
+   {
+    "id": "hellgate",
+    "key": "a_dw2",
+    "name": "Hellgate",
+    "text": "Your troops standing at the hall step out of this gate.",
+    "cost": {
+     "gold": 250,
+     "wood": 200,
+     "ore": 200,
+     "sulfur": 4
+    },
+    "hall": 2,
+    "limit": 3,
+    "effect": {
+     "kind": "gate",
+     "radius": 260.0,
+     "cooldown": 60.0,
+     "from": "hall"
+    }
+   }
+  ],
+  "thornwood": [
+   {
+    "id": "heartwood_grove",
+    "key": "t_dw2",
+    "name": "Heartwood Grove",
+    "text": "Gives timber, and your troops near it heal.",
+    "cost": {
+     "gold": 150,
+     "wood": 100,
+     "ore": 150
+    },
+    "hall": 1,
+    "limit": 2,
+    "effect": {
+     "kind": "income",
+     "resource": "wood",
+     "per_minute": 40,
+     "radius": 220.0,
+     "own": {
+      "heal": 0.015
+     }
+    }
+   },
+   {
+    "id": "warden_circle",
+    "key": "t_dw4",
+    "name": "Warden Circle",
+    "text": "Your troops near it are warded and take less damage.",
+    "cost": {
+     "gold": 200,
+     "wood": 200,
+     "ore": 150,
+     "crystal": 4
+    },
+    "hall": 2,
+    "limit": 1,
+    "effect": {
+     "kind": "aura",
+     "radius": 280.0,
+     "own": {
+      "ward": 0.2
+     }
+    }
+   }
+  ],
+  "forge": [
+   {
+    "id": "armoury",
+    "key": "f_dw2",
+    "name": "Armoury",
+    "text": "A once-only refit: all your troops take less damage.",
+    "cost": {
+     "gold": 150,
+     "wood": 150,
+     "ore": 250
+    },
+    "hall": 2,
+    "limit": 1,
+    "effect": {
+     "kind": "research",
+     "cost": {
+      "gold": 400,
+      "wood": 100,
+      "ore": 400,
+      "mercury": 6
+     },
+     "taken_factor": 0.88,
+     "seconds": 60.0
+    }
+   },
+   {
+    "id": "tunnel_gate",
+    "key": "f_dw4",
+    "name": "Tunnel Gate",
+    "text": "Build two: troops at one gate come out of the other.",
+    "cost": {
+     "gold": 200,
+     "wood": 150,
+     "ore": 250
+    },
+    "hall": 2,
+    "limit": 3,
+    "effect": {
+     "kind": "gate",
+     "radius": 220.0,
+     "cooldown": 45.0,
+     "from": "gate"
+    }
+   }
+  ],
+  "fishmen": [
+   {
+    "id": "spawning_pool",
+    "key": "s_dw2",
+    "name": "Spawning Pool",
+    "text": "Raises Brine Spears on its own, without workers.",
+    "cost": {
+     "gold": 200,
+     "wood": 150,
+     "ore": 150,
+     "crystal": 4
+    },
+    "hall": 2,
+    "limit": 1,
+    "effect": {
+     "kind": "spawn",
+     "unit": "fm_brine_spear",
+     "seconds": 30.0,
+     "max": 6
+    }
+   },
+   {
+    "id": "tide_shrine",
+    "key": "s_dw4",
+    "name": "Tide Shrine",
+    "text": "Your troops near it heal; enemies there wade slowly.",
+    "cost": {
+     "gold": 200,
+     "wood": 150,
+     "ore": 150,
+     "crystal": 4
+    },
+    "hall": 2,
+    "limit": 1,
+    "effect": {
+     "kind": "aura",
+     "radius": 260.0,
+     "own": {
+      "heal": 0.015
+     },
+     "foe": {
+      "slow": 0.3
+     }
+    }
+   }
+  ],
+  "darkelf": [
+   {
+    "id": "web_spire",
+    "key": "e_dw2",
+    "name": "Web Spire",
+    "text": "Sees far; enemies in its web take more damage.",
+    "cost": {
+     "gold": 150,
+     "wood": 150,
+     "ore": 150,
+     "crystal": 3
+    },
+    "hall": 1,
+    "limit": 2,
+    "effect": {
+     "kind": "aura",
+     "radius": 340.0,
+     "sight": 520.0,
+     "foe": {
+      "exposed": 0.15
+     }
+    }
+   },
+   {
+    "id": "shadow_market",
+    "key": "e_dw4",
+    "name": "Shadow Market",
+    "text": "Trade resources for each other, at a poor rate.",
+    "cost": {
+     "gold": 200,
+     "wood": 150,
+     "ore": 100
+    },
+    "hall": 1,
+    "limit": 1,
+    "effect": {
+     "kind": "market",
+     "amount": 100,
+     "rate": 0.4,
+     "rare_rate": 0.04
+    }
+   }
+  ],
+  "frostmarch": [
+   {
+    "id": "mead_hall",
+    "key": "r_dw4",
+    "name": "Mead Hall",
+    "text": "Pay for a feast: the whole army strikes harder for a minute.",
+    "cost": {
+     "gold": 200,
+     "wood": 200,
+     "ore": 100
+    },
+    "hall": 2,
+    "limit": 1,
+    "effect": {
+     "kind": "feast",
+     "cost": {
+      "gold": 250
+     },
+     "status": "might",
+     "value": 0.2,
+     "seconds": 60.0,
+     "cooldown": 150.0
+    }
+   },
+   {
+    "id": "ancestor_cairn",
+    "key": "r_dw2",
+    "name": "Ancestor Cairn",
+    "text": "Your troops near it fight harder.",
+    "cost": {
+     "gold": 150,
+     "wood": 100,
+     "ore": 250
+    },
+    "hall": 2,
+    "limit": 2,
+    "effect": {
+     "kind": "aura",
+     "radius": 260.0,
+     "own": {
+      "might": 0.15
+     }
+    }
+   }
+  ]
+ },
+ "storehouse": {
+  "radius": 60.0,
+  "seconds": 25,
+  "cost": {
+   "gold": 50,
+   "wood": 80
+  }
+ },
+ "worker_upgrades": {
+  "_doc": "Bought at a finished storehouse, one track per resource the faction gathers (gold comes from settlements and has none). Each level adds bonus[level-1] to the loads workers deliver of that resource (+15%, +30%, +50% in all), for good and for every worker. Level n costs cost[n-1] and takes seconds[n-1] at that storehouse, which works on one upgrade at a time; it needs hall level hall[n-1]. A track for a rare resource also costs rare[n-1] of that resource.",
+  "bonus": [
+   0.15,
+   0.15,
+   0.2
+  ],
+  "hall": [
+   1,
+   2,
+   3
+  ],
+  "seconds": [
+   30,
+   45,
+   60
+  ],
+  "cost": [
+   {
+    "gold": 100,
+    "wood": 50,
+    "ore": 50
+   },
+   {
+    "gold": 200,
+    "wood": 100,
+    "ore": 100
+   },
+   {
+    "gold": 350,
+    "wood": 175,
+    "ore": 175
+   }
+  ],
+  "rare": [
+   0,
+   5,
+   10
+  ]
+ },
+ "train": {
+  "base_seconds": 8,
+  "seconds_per_tier": 4,
+  "rare_multiplier": 10,
+  "wood": [
+   3,
+   3
+  ],
+  "ore": [
+   3,
+   4
+  ]
+ },
+ "dwelling_upgrade": {
+  "_doc": "A dwelling's permanent upgrade: from then on it trains its tier's upgraded unit (units.json 'upgrade'). Costs base + per_tier x tier of each resource; from tier rare_from_tier on, also rare_per_tier x (tier - rare_from_tier + 1) of the faction's own rare. The dwelling trains nothing while it is being upgraded.",
+  "base_seconds": 30,
+  "seconds_per_tier": 8,
+  "cost": {
+   "gold": [
+    150,
+    100
+   ],
+   "wood": [
+    100,
+    40
+   ],
+   "ore": [
+    100,
+    40
+   ]
+  },
+  "rare_from_tier": 5,
+  "rare_per_tier": 3
+ },
+ "buildings": {
+  "concord": {
+   "hall": "c_hall",
+   "storehouse": "c_market",
+   "dwellings": [
+    "c_dw1",
+    "c_dw2",
+    "c_dw3",
+    "c_dw4",
+    "c_dw5",
+    "c_dw6",
+    "c_dw7",
+    "c_dw8"
+   ]
+  },
+  "hollow": {
+   "hall": "h_hall",
+   "storehouse": "h_market",
+   "dwellings": [
+    "h_dw1",
+    "h_dw2",
+    "h_dw3",
+    "h_dw4",
+    "h_dw5",
+    "h_dw6",
+    "h_dw7",
+    "h_dw8"
+   ]
+  },
+  "ashen": {
+   "hall": "a_hall",
+   "storehouse": "a_market",
+   "dwellings": [
+    "a_dw1",
+    "a_dw2",
+    "a_dw3",
+    "a_dw4",
+    "a_dw5",
+    "a_dw6",
+    "a_dw7",
+    "a_dw8"
+   ]
+  },
+  "thornwood": {
+   "hall": "t_hall",
+   "storehouse": "t_market",
+   "dwellings": [
+    "t_dw1",
+    "t_dw2",
+    "t_dw3",
+    "t_dw4",
+    "t_dw5",
+    "t_dw6",
+    "t_dw7",
+    "t_dw8"
+   ]
+  },
+  "forge": {
+   "hall": "f_hall",
+   "storehouse": "f_market",
+   "dwellings": [
+    "f_dw1",
+    "f_dw2",
+    "f_dw3",
+    "f_dw4",
+    "f_dw5",
+    "f_dw6",
+    "f_dw7",
+    "f_dw8"
+   ]
+  },
+  "fishmen": {
+   "hall": "s_hall",
+   "storehouse": "s_market",
+   "dwellings": [
+    "s_dw1",
+    "s_dw2",
+    "s_dw3",
+    "s_dw4",
+    "s_dw5",
+    "s_dw6",
+    "s_dw7",
+    "s_dw8"
+   ]
+  },
+  "darkelf": {
+   "hall": "e_hall",
+   "storehouse": "e_market",
+   "dwellings": [
+    "e_dw1",
+    "e_dw2",
+    "e_dw3",
+    "e_dw4",
+    "e_dw5",
+    "e_dw6",
+    "e_dw7",
+    "e_dw8"
+   ]
+  },
+  "frostmarch": {
+   "hall": "r_hall",
+   "storehouse": "r_market",
+   "dwellings": [
+    "r_dw1",
+    "r_dw2",
+    "r_dw3",
+    "r_dw4",
+    "r_dw5",
+    "r_dw6",
+    "r_dw7",
+    "r_dw8"
+   ]
+  }
+ },
+ "twists": {
+  "_doc": "Faction twists (plan: Key skirmish mechanics). no_worker_tiers: these tiers train without drafting a worker, while fewer than raised_base + raised_per_sector x sectors of them are alive (then they need a worker like any unit); raised_time_factor / raised_gold_factor make those worker-free units slower and dearer. capture_time_factor: enemies need this much longer to take your settlements. plunder: gold this faction takes when it captures a settlement, by settlement size. unit_gold_factor: this faction's troops cost that much more gold. regen_near (forest or water) / regen_reach (px) / regen_per_second: units this close to woods or water heal that share of their health per second. road_speed_factor: this faction marches that much faster on roads. gather_factor: {resource: factor} for loads this faction's workers deliver. sight_factor: this faction's units spot enemies that much farther away. first_strike_factor: a blow on an enemy still at full health deals that much more. kill_heal: a unit that lands a killing blow heals that share of its health.",
+  "concord": {
+   "name": "Sturdy settlements",
+   "capture_time_factor": 1.5,
+   "no_worker_tiers": []
+  },
+  "hollow": {
+   "name": "Raise the dead",
+   "capture_time_factor": 1.0,
+   "no_worker_tiers": [
+    1
+   ],
+   "raised_time_factor": 1.5,
+   "raised_gold_factor": 1.0,
+   "raised_base": 3,
+   "raised_per_sector": 1
+  },
+  "ashen": {
+   "name": "Brand and plunder",
+   "capture_time_factor": 1.0,
+   "no_worker_tiers": [],
+   "plunder": {
+    "waystone": 0,
+    "farmstead": 40,
+    "hamlet": 60,
+    "village": 80,
+    "town": 110,
+    "city": 150
+   },
+   "unit_gold_factor": 1.35
+  },
+  "thornwood": {
+   "name": "Wildwalk",
+   "capture_time_factor": 1.0,
+   "no_worker_tiers": [],
+   "regen_near": "forest",
+   "regen_reach": 90.0,
+   "regen_per_second": 0.03,
+   "unit_gold_factor": 1.0,
+   "gather_factor": {
+    "wood": 1.3
+   }
+  },
+  "forge": {
+   "name": "Deep roads",
+   "capture_time_factor": 1.0,
+   "no_worker_tiers": [],
+   "road_speed_factor": 1.4
+  },
+  "fishmen": {
+   "name": "Tidebound",
+   "capture_time_factor": 1.0,
+   "no_worker_tiers": [],
+   "regen_near": "water",
+   "regen_reach": 90.0,
+   "regen_per_second": 0.025,
+   "unit_gold_factor": 1.0
+  },
+  "darkelf": {
+   "name": "Whisper Web",
+   "capture_time_factor": 1.0,
+   "no_worker_tiers": [],
+   "unit_gold_factor": 1.0,
+   "sight_factor": 1.3,
+   "first_strike_factor": 1.5
+  },
+  "frostmarch": {
+   "name": "Feast of Victory",
+   "capture_time_factor": 1.0,
+   "no_worker_tiers": [],
+   "unit_gold_factor": 1.0,
+   "kill_heal": 0.3
+  }
+ },
+ "home_capture_factor": 2.0,
+ "capture_speed": 1.4,
+ "capture_decay": {
+  "_doc": "A half-taken settlement nobody is taking recovers at this many times its capture speed: empty = no one there, defended = its owner's troops (or neutral militia) are back.",
+  "empty": 1.0,
+  "defended": 3.0
+ },
+ "settlement_clearance": 390.0,
+ "ai_difficulty": {
+  "_doc": "Computer players: think_every = seconds between decisions; first_wave = army size before the first attack; wave_growth = added to it after each wave. expand = capture squads it sends out at once to take free settlements (0 = they wait for the waves). attack_edge = strength ratio (EconomyAi.power_of) a wave needs over its target's defenders, also over the rival armies before it storms a capital (0 = it counts heads). regroup_ratio = a wave whose strength falls below this share of the foes around it runs back to the capital (0 = never). protect_rank = veterans of this rank or more retreat home when below retreat_hp of their health and rest until rejoin_hp (0 = never). hall_army = soldiers it keeps before raising the hall (+2 per hall level). income_bonus = extra share of every load and of settlement gold (the one level that cheats).",
+  "easy": {
+   "think_every": 4.0,
+   "first_wave": 18,
+   "wave_growth": 6,
+   "expand": 1
+  },
+  "normal": {
+   "think_every": 2.0,
+   "first_wave": 12,
+   "wave_growth": 4,
+   "expand": 2,
+   "attack_edge": 1.2,
+   "regroup_ratio": 0.5,
+   "protect_rank": 4,
+   "retreat_hp": 0.3,
+   "rejoin_hp": 0.75
+  },
+  "hard": {
+   "think_every": 1.0,
+   "first_wave": 10,
+   "wave_growth": 3,
+   "expand": 2,
+   "attack_edge": 1.15,
+   "regroup_ratio": 0.55,
+   "protect_rank": 3,
+   "retreat_hp": 0.35,
+   "rejoin_hp": 0.8
+  },
+  "very_hard": {
+   "think_every": 0.5,
+   "first_wave": 9,
+   "wave_growth": 3,
+   "expand": 3,
+   "attack_edge": 1.1,
+   "regroup_ratio": 0.6,
+   "protect_rank": 3,
+   "retreat_hp": 0.35,
+   "rejoin_hp": 0.8,
+   "hall_army": 5
+  },
+  "brutal": {
+   "think_every": 0.5,
+   "first_wave": 9,
+   "wave_growth": 3,
+   "expand": 3,
+   "attack_edge": 1.1,
+   "regroup_ratio": 0.6,
+   "protect_rank": 3,
+   "retreat_hp": 0.35,
+   "rejoin_hp": 0.8,
+   "hall_army": 5,
+   "income_bonus": 0.3
+  }
+ },
+ "forts": {
+  "_doc": "Walls (Fortifications). A wall order is a line of cells cut into pieces of piece_cells; each piece costs 'wall' cost and is built by workers. A finished piece can become a gate (opens for its owner's units) or a tower (holds up to 'garrison' ranged units that shoot farther and only ranged and flying foes can hurt). Ends snap onto rock, water or walls within snap_cells. No wall cell within settlement_clearance px of a settlement centre, or within enemy_clearance px of an enemy's.",
+  "piece_cells": 3,
+  "max_cells": 36,
+  "snap_cells": 3,
+  "settlement_clearance": 120.0,
+  "enemy_clearance": 420.0,
+  "wall": {
+   "cost": {
+    "wood": 15,
+    "ore": 10
+   },
+   "hp": 700,
+   "armor_pct": 0.4,
+   "seconds": 10
+  },
+  "gate": {
+   "cost": {
+    "wood": 40,
+    "ore": 20
+   },
+   "hp": 600,
+   "armor_pct": 0.35,
+   "seconds": 12,
+   "open_reach": 80.0
+  },
+  "tower": {
+   "cost": {
+    "gold": 60,
+    "wood": 60,
+    "ore": 90
+   },
+   "hp": 1600,
+   "armor_pct": 0.45,
+   "seconds": 25,
+   "garrison": 2,
+   "range_factor": 1.3,
+   "lift": 4.2
+  }
+ }
+}

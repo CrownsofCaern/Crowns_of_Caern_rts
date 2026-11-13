@@ -1,0 +1,1029 @@
+{
+ "id": "ph_hungry_fire",
+ "title": "The Hungry Fire",
+ "kind": "war",
+ "seed": 5808,
+ "max_tier": 7,
+ "ai": "normal",
+ "intro": [
+  "The Lockstone has broken and the whole Host is coming out. Most of it marches on the Concord. Some of it stays below, and it is burning the Barrow Below tomb by tomb. Morvath the Kindler, who remembers the Sealing, feeds the dead to his fires because he likes the smell.",
+  "Tier 7 is open: charnel hulks. While Morvath holds two of his halls, his kindlers come for the Tomb of Kings and the Weeping Tomb. A tomb that falls to him burns, and its dead are gone for good.",
+  "Take the Kiln Halls and the Cinder Gallery, then put out Morvath's Furnace."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "tombs_kept"
+   },
+   "text": [
+    "Morvath's fires go out one by one. The tombs of the kings stand, black with soot, and their dead stand in them.",
+    "But the dead who were burned elsewhere do not come back: there is nothing left of them to raise. For the first time in three hundred years Ysmay Vane is afraid of something."
+   ]
+  },
+  {
+   "text": [
+    "Morvath's fires go out one by one. The dead who were burned do not come back: there is nothing left of them to raise.",
+    "For the first time in three hundred years Ysmay Vane is afraid of something."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "hollow"
+  },
+  {
+   "faction": "ashen"
+  }
+ ],
+ "speakers": {
+  "orrin": "Sir Orrin Wren",
+  "corvin": "Father Corvin Mire",
+  "rotwing": "The Rotwing"
+ },
+ "hero": {
+  "at": [
+   0.1,
+   0.56
+  ]
+ },
+ "map": {
+  "name": "The Hungry Fire",
+  "size": [
+   192,
+   128
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "gloomcrag",
+  "border": "mountains",
+  "features": {
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.38,
+       0.0
+      ],
+      [
+       0.4,
+       0.18
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.38,
+       1.0
+      ],
+      [
+       0.4,
+       0.82
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.58,
+       0.36
+      ],
+      [
+       0.6,
+       0.64
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.78,
+       0.0
+      ],
+      [
+       0.78,
+       0.16
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.78,
+       1.0
+      ],
+      [
+       0.78,
+       0.84
+      ]
+     ],
+     "w": 4
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.2,
+      0.86
+     ],
+     "r": 0.05
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "regents_tomb",
+    "at": [
+     0.07,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 0,
+    "name": "The Regent's Tomb",
+    "biome": "swamp"
+   },
+   {
+    "id": "tomb_kings",
+    "at": [
+     0.3,
+     0.24
+    ],
+    "size": "village",
+    "owner": 0,
+    "name": "The Tomb of Kings"
+   },
+   {
+    "id": "weeping_tomb",
+    "at": [
+     0.3,
+     0.76
+    ],
+    "size": "hamlet",
+    "owner": 0,
+    "name": "The Weeping Tomb"
+   },
+   {
+    "id": "ossuary_road",
+    "at": [
+     0.46,
+     0.5
+    ],
+    "size": "hamlet",
+    "name": "The Ossuary Road"
+   },
+   {
+    "id": "kiln_halls",
+    "at": [
+     0.66,
+     0.2
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "The Kiln Halls",
+    "biome": "ashland"
+   },
+   {
+    "id": "cinder_gallery",
+    "at": [
+     0.66,
+     0.8
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "The Cinder Gallery",
+    "biome": "ashland"
+   },
+   {
+    "id": "furnace",
+    "at": [
+     0.9,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 1,
+    "name": "Morvath's Furnace",
+    "biome": "ashland"
+   }
+  ],
+  "sites": [
+   {
+    "id": "bone_trader",
+    "at": [
+     0.15,
+     0.66
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "crypt_shrine",
+    "at": [
+     0.18,
+     0.36
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "wraith_vault",
+    "at": [
+     0.48,
+     0.12
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "citadel_ruin",
+    "guards": [
+     [
+      "cinder_wraith",
+      2
+     ],
+     [
+      "ruin_sentinel",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "wurm_pit",
+    "at": [
+     0.48,
+     0.9
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "echo_hall",
+    "guards": [
+     [
+      "cave_stalker",
+      2
+     ],
+     [
+      "hill_troll",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "ember_pit",
+    "at": [
+     0.76,
+     0.5
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "pyre_hold",
+    "keeper": 1,
+    "guards": [
+     [
+      "pyre_titan",
+      1
+     ],
+     [
+      "flayer",
+      2
+     ],
+     [
+      "brimstone_hurler",
+      2
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "regents_tomb",
+    "tomb_kings",
+    "road"
+   ],
+   [
+    "regents_tomb",
+    "weeping_tomb",
+    "road"
+   ],
+   [
+    "regents_tomb",
+    "bone_trader",
+    "road"
+   ],
+   [
+    "regents_tomb",
+    "crypt_shrine",
+    "trail"
+   ],
+   [
+    "regents_tomb",
+    "ossuary_road",
+    "road"
+   ],
+   [
+    "tomb_kings",
+    "wraith_vault",
+    "trail"
+   ],
+   [
+    "weeping_tomb",
+    "wurm_pit",
+    "trail"
+   ],
+   [
+    "tomb_kings",
+    "kiln_halls",
+    "road"
+   ],
+   [
+    "weeping_tomb",
+    "cinder_gallery",
+    "road"
+   ],
+   [
+    "ossuary_road",
+    "kiln_halls",
+    "road"
+   ],
+   [
+    "ossuary_road",
+    "cinder_gallery",
+    "road"
+   ],
+   [
+    "kiln_halls",
+    "ember_pit",
+    "trail"
+   ],
+   [
+    "cinder_gallery",
+    "ember_pit",
+    "trail"
+   ],
+   [
+    "ember_pit",
+    "furnace",
+    "trail"
+   ],
+   [
+    "kiln_halls",
+    "furnace",
+    "road"
+   ],
+   [
+    "cinder_gallery",
+    "furnace",
+    "road"
+   ]
+  ],
+  "scatter": {
+   "woods": 0,
+   "rocks": 12,
+   "ponds": 1
+  }
+ },
+ "npcs": [
+  {
+   "id": "calloway",
+   "name": "Tomb-Warden Calloway",
+   "look": "gibbet_knight",
+   "at": [
+    0.27,
+    0.2
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "calloway_decided"
+      }
+     },
+     "dialogue": "calloway",
+     "mark": "!"
+    },
+    {
+     "dialogue": "calloway_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "levy",
+   "owner": 0,
+   "at": [
+    0.13,
+    0.54
+   ],
+   "units": [
+    [
+     "shambler",
+     10
+    ],
+    [
+     "marrow_archer",
+     8
+    ],
+    [
+     "gravecrawler",
+     4
+    ],
+    [
+     "wailing_shade",
+     4
+    ],
+    [
+     "corpse_weaver",
+     2
+    ],
+    [
+     "gibbet_knight",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "ossric_sleepers",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.12,
+    0.46
+   ],
+   "units": [
+    [
+     "barrow_revenant",
+     2
+    ],
+    [
+     "shambler",
+     4
+    ]
+   ]
+  },
+  {
+   "id": "kings",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.28,
+    0.24
+   ],
+   "units": [
+    [
+     "gibbet_knight",
+     2
+    ],
+    [
+     "barrow_revenant",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "tunnel_watch",
+   "owner": 1,
+   "at": [
+    0.46,
+    0.46
+   ],
+   "units": [
+    [
+     "scorchhound",
+     4
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ],
+    [
+     "flayer",
+     1
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "morvath",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.46
+   ],
+   "hero": {
+    "class": "tormentor",
+    "name": "Morvath the Kindler",
+    "level": 18
+   },
+   "guard": 12
+  },
+  {
+   "id": "morvath_guard",
+   "owner": 1,
+   "at": [
+    0.87,
+    0.53
+   ],
+   "units": [
+    [
+     "cinderling",
+     8
+    ],
+    [
+     "scorchhound",
+     3
+    ],
+    [
+     "brimstone_hurler",
+     3
+    ],
+    [
+     "flayer",
+     2
+    ],
+    [
+     "ash_witch",
+     1
+    ],
+    [
+     "pyre_titan",
+     1
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "kindlers_north",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.64,
+    0.24
+   ],
+   "units": [
+    [
+     "cinderling",
+     6
+    ],
+    [
+     "scorchhound",
+     3
+    ],
+    [
+     "brimstone_hurler",
+     1
+    ]
+   ],
+   "attack": "tomb_kings"
+  },
+  {
+   "id": "kindlers_south",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.64,
+    0.76
+   ],
+   "units": [
+    [
+     "cinderling",
+     6
+    ],
+    [
+     "scorchhound",
+     2
+    ],
+    [
+     "flayer",
+     1
+    ]
+   ],
+   "attack": "weeping_tomb"
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "start_quest": "tombs"
+  },
+  {
+   "say": "I can smell them burning from here. Three hundred years of kings, and he's using them for kindling.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "ossric_woken"
+   },
+   "spawn": "ossric_sleepers"
+  },
+  {
+   "if": {
+    "flag": "ossric_woken"
+   },
+   "say": "King Ossric's sleepers are with us. He says he hasn't had this much fun since he died.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "knows_burrows"
+   },
+   "remove": "tunnel_watch"
+  },
+  {
+   "if": {
+    "flag": "knows_burrows"
+   },
+   "say": "Ambrel's tablets showed the burrowers' side-tunnel. The watch on the Ossuary Road is gone; we went round it.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Father Corvin Mire"
+   },
+   "say": "The Kindler doesn't burn the dead for warmth, Regent. He burns them so they can't be raised against him.",
+   "who": "corvin"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "The Hungry Fire",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Take the Kiln Halls and the Cinder Gallery",
+     "done": {
+      "all": [
+       {
+        "held": "kiln_halls"
+       },
+       {
+        "held": "cinder_gallery"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 800
+      }
+     ]
+    },
+    {
+     "text": "Put out Morvath's Furnace: kill Morvath and his guard, or take the furnace",
+     "done": {
+      "any": [
+       {
+        "held": "furnace"
+       },
+       {
+        "not": {
+         "holds": [
+          1,
+          1
+         ]
+        }
+       },
+       {
+        "all": [
+         {
+          "dead": "morvath"
+         },
+         {
+          "dead": "morvath_guard"
+         }
+        ]
+       }
+      ]
+     },
+     "do": [
+      {
+       "if": {
+        "not": {
+         "flag": "tomb_burned"
+        }
+       },
+       "flag": "tombs_kept"
+      }
+     ]
+    }
+   ],
+   "reward": [
+    {
+     "xp": 1200
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "tombs": {
+   "title": "Fight for the Graves",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Keep the Tomb of Kings and the Weeping Tomb out of the fire until Morvath is beaten",
+     "done": {
+      "flag": "tombs_kept"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 600
+    },
+    {
+     "item": {
+      "rarity": "rare",
+      "slot": "banner",
+      "level": 20
+     }
+    }
+   ]
+  },
+  "warden": {
+   "title": "The Tomb-Warden",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Answer Tomb-Warden Calloway",
+     "done": {
+      "flag": "calloway_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 200
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "calloway": {
+   "nodes": {
+    "start": {
+     "text": "Regent. Calloway, warden of the kings. Nineteen of them sleep in my tomb, with their knights around them. The Kindler wants them very badly.",
+     "next": "b"
+    },
+    "b": {
+     "text": "I can wake the knights. They'll fight for you, and gladly. But a tomb with its knights gone is just a cellar full of old men. If the fire comes, nothing will stop it.",
+     "choices": [
+      {
+       "text": "Wake the knights. We need them in the field.",
+       "do": [
+        {
+         "flag": "calloway_decided"
+        },
+        {
+         "flag": "kings_woken"
+        },
+        {
+         "spawn": "kings"
+        }
+       ],
+       "next": "wake"
+      },
+      {
+       "text": "Let them guard their kings. Send me what the tomb can spare instead.",
+       "do": [
+        {
+         "flag": "calloway_decided"
+        },
+        {
+         "res": {
+          "gold": 300,
+          "ore": 200
+         }
+        }
+       ],
+       "next": "keep"
+      }
+     ]
+    },
+    "wake": {
+     "text": "Up, sworn ones. Your kings can watch over themselves for once."
+    },
+    "keep": {
+     "text": "Grave-gold and old iron. The kings won't miss it. They never counted anything."
+    }
+   }
+  },
+  "calloway_after": {
+   "nodes": {
+    "start": {
+     "text": "The kings sleep, Regent. For now."
+    }
+   }
+  },
+  "morvath_parley": {
+   "nodes": {
+    "start": {
+     "who": "morvath",
+     "text": "Little regent of rot. I was at the Sealing, did you know? I watched your fen-folk stand beside the living and shut us in. I remember every face.",
+     "next": "b"
+    },
+    "b": {
+     "who": "morvath",
+     "text": "I've been burning them one by one. Yours will smell sweeter."
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "furnace",
+      "r": 26
+     },
+     {
+      "alive": "morvath"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "morvath_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "calloway",
+      "r": 10
+     },
+     {
+      "not": {
+       "flag": "calloway_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "start_quest": "warden"
+    },
+    {
+     "dialogue": "calloway",
+     "npc": "calloway"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 40
+   },
+   "do": [
+    {
+     "say": "Charnel hulks at tier 7. Put one in front of each tomb.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 5
+     },
+     {
+      "not": {
+       "held": "tomb_kings"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "flag": "tomb_burned"
+    },
+    {
+     "fail_quest": "tombs"
+    },
+    {
+     "say": "The Tomb of Kings is burning. Nineteen kings, gone.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 5
+     },
+     {
+      "not": {
+       "held": "weeping_tomb"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "flag": "tomb_burned"
+    },
+    {
+     "fail_quest": "tombs"
+    },
+    {
+     "say": "The Weeping Tomb is burning. There's nothing left in it to raise.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "held": "kiln_halls"
+   },
+   "do": [
+    {
+     "say": "The Kiln Halls are ours.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "held": "cinder_gallery"
+   },
+   "do": [
+    {
+     "say": "The Cinder Gallery is ours.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "morvath"
+     },
+     {
+      "not": {
+       "alive": "morvath"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "The Kindler is dead.",
+     "who": "hero"
+    },
+    {
+     "xp": 600
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 150
+     },
+     {
+      "holds": [
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   "repeat": 120,
+   "do": [
+    {
+     "spawn": "kindlers_north"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 210
+     },
+     {
+      "holds": [
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   "repeat": 120,
+   "do": [
+    {
+     "spawn": "kindlers_south"
+    }
+   ]
+  }
+ ]
+}

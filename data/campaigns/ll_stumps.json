@@ -1,0 +1,940 @@
+{
+ "id": "ll_stumps",
+ "title": "The Stumps of Elderwold",
+ "kind": "war",
+ "seed": 4606,
+ "max_tier": 5,
+ "ai": "normal",
+ "intro": [
+  "The short road to the Wound runs through Elderwold, the forest the Concord felled to feed its foundries. Nothing grows there now but stumps and thorn. The Thornwood Covenant has not forgotten, and its huntmaster, Neve Hollowreed, has had archers in the stumps for a week.",
+  "Maelis was born in this forest. She is quiet the whole way in.",
+  "Tier 5 is open: lantern priests heal your army. While the Covenant holds all three of its towns, its archers come out of the tree line again and again. Take Thornmere and Rootholm, then Briarhall."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "oathbreaker"
+   },
+   "text": [
+    "Briarhall falls. A dying druid tells Maelis what the forest knew: the great roots of Elderwold held the Lockstone in place. When the Concord cut the trees, it cut the seal.",
+    "He looks at Maelis and calls her Branwen, and then he looks past her at the smoke over Heartwood and does not say anything else. She does not tell Aldous any of it for a day."
+   ]
+  },
+  {
+   "text": [
+    "Briarhall falls. A dying druid tells Maelis what the forest knew: the great roots of Elderwold held the Lockstone in place. When the Concord cut the trees, it cut the seal.",
+    "Before he dies the druid looks at Maelis and calls her Branwen. She does not answer to it, and she does not tell Aldous any of it for a day."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "concord"
+  },
+  {
+   "faction": "thornwood"
+  }
+ ],
+ "speakers": {
+  "edda": "Sister Edda Vey",
+  "maelis": "Maelis Thorne"
+ },
+ "hero": {
+  "at": [
+   0.1,
+   0.56
+  ]
+ },
+ "map": {
+  "name": "The Stumps of Elderwold",
+  "size": [
+   192,
+   128
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "meadow",
+  "border": "mountains",
+  "features": {
+   "woods": [
+    {
+     "at": [
+      0.74,
+      0.12
+     ],
+     "r": 0.1
+    },
+    {
+     "at": [
+      0.78,
+      0.88
+     ],
+     "r": 0.1
+    },
+    {
+     "at": [
+      0.95,
+      0.2
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.95,
+      0.8
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.52,
+      0.9
+     ],
+     "r": 0.06
+    },
+    {
+     "at": [
+      0.18,
+      0.12
+     ],
+     "r": 0.05
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.36,
+      0.5
+     ],
+     "r": 0.05
+    },
+    {
+     "at": [
+      0.66,
+      0.5
+     ],
+     "r": 0.05
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.42,
+       0.02
+      ],
+      [
+       0.44,
+       0.16
+      ]
+     ],
+     "w": 4
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "edge",
+    "at": [
+     0.07,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 0,
+    "name": "Elderwold Edge"
+   },
+   {
+    "id": "stumpfield",
+    "at": [
+     0.28,
+     0.28
+    ],
+    "size": "hamlet",
+    "name": "Stumpfield"
+   },
+   {
+    "id": "old_mill",
+    "at": [
+     0.28,
+     0.74
+    ],
+    "size": "farmstead",
+    "name": "Sawpit Mill"
+   },
+   {
+    "id": "felling",
+    "at": [
+     0.48,
+     0.5
+    ],
+    "size": "hamlet",
+    "name": "Felling Camp"
+   },
+   {
+    "id": "thornmere",
+    "at": [
+     0.62,
+     0.24
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Thornmere",
+    "biome": "deepwood"
+   },
+   {
+    "id": "rootholm",
+    "at": [
+     0.62,
+     0.76
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Rootholm",
+    "biome": "deepwood"
+   },
+   {
+    "id": "briarhall",
+    "at": [
+     0.9,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 1,
+    "name": "Briarhall",
+    "biome": "deepwood"
+   }
+  ],
+  "sites": [
+   {
+    "id": "stump_circle",
+    "at": [
+     0.46,
+     0.12
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "peddler",
+    "at": [
+     0.17,
+     0.62
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "heartwood",
+    "at": [
+     0.76,
+     0.5
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "stone_circle",
+    "keeper": 1,
+    "guards": [
+     [
+      "rootbound_ancient",
+      1
+     ],
+     [
+      "briar_huntress",
+      3
+     ],
+     [
+      "barkhide_warden",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "wolf_den",
+    "at": [
+     0.36,
+     0.9
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "wolf_den",
+    "guards": [
+     [
+      "thornwolf",
+      3
+     ],
+     [
+      "gloom_panther",
+      1
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "edge",
+    "stumpfield",
+    "road"
+   ],
+   [
+    "edge",
+    "old_mill",
+    "road"
+   ],
+   [
+    "edge",
+    "peddler",
+    "road"
+   ],
+   [
+    "edge",
+    "felling",
+    "road"
+   ],
+   [
+    "stumpfield",
+    "stump_circle",
+    "trail"
+   ],
+   [
+    "stumpfield",
+    "thornmere",
+    "trail"
+   ],
+   [
+    "old_mill",
+    "rootholm",
+    "trail"
+   ],
+   [
+    "old_mill",
+    "wolf_den",
+    "trail"
+   ],
+   [
+    "felling",
+    "thornmere",
+    "road"
+   ],
+   [
+    "felling",
+    "rootholm",
+    "road"
+   ],
+   [
+    "thornmere",
+    "heartwood",
+    "trail"
+   ],
+   [
+    "rootholm",
+    "heartwood",
+    "trail"
+   ],
+   [
+    "thornmere",
+    "briarhall",
+    "road"
+   ],
+   [
+    "rootholm",
+    "briarhall",
+    "road"
+   ],
+   [
+    "heartwood",
+    "briarhall",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 5,
+   "rocks": 5,
+   "ponds": 2
+  }
+ },
+ "npcs": [
+  {
+   "id": "gil",
+   "name": "Forester Gil Hatch",
+   "look": "worker_concord",
+   "at": [
+    0.12,
+    0.42
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "gil_decided"
+      }
+     },
+     "dialogue": "gil",
+     "mark": "!"
+    },
+    {
+     "dialogue": "gil_after"
+    }
+   ]
+  },
+  {
+   "id": "aelith",
+   "name": "Aelith Moss",
+   "look": "hero_thornspeaker",
+   "at": [
+    0.47,
+    0.17
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "aelith_decided"
+      }
+     },
+     "dialogue": "aelith",
+     "mark": "!"
+    },
+    {
+     "dialogue": "aelith_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "levy",
+   "owner": 0,
+   "at": [
+    0.13,
+    0.54
+   ],
+   "units": [
+    [
+     "pike_militia",
+     10
+    ],
+    [
+     "longbowman",
+     8
+    ],
+    [
+     "shieldwarden",
+     3
+    ],
+    [
+     "lancer",
+     3
+    ],
+    [
+     "lightbearer",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "felling_watch",
+   "owner": 1,
+   "at": [
+    0.49,
+    0.46
+   ],
+   "units": [
+    [
+     "thorn_skulker",
+     4
+    ],
+    [
+     "barkhide_warden",
+     2
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "neve",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.5
+   ],
+   "hero": {
+    "class": "huntmaster",
+    "name": "Neve Hollowreed",
+    "level": 14
+   },
+   "guard": 12
+  },
+  {
+   "id": "neve_guard",
+   "owner": 1,
+   "at": [
+    0.87,
+    0.52
+   ],
+   "units": [
+    [
+     "briar_huntress",
+     5
+    ],
+    [
+     "barkhide_warden",
+     5
+    ],
+    [
+     "thorn_skulker",
+     5
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "tree_line",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.74,
+    0.14
+   ],
+   "units": [
+    [
+     "thorn_skulker",
+     4
+    ],
+    [
+     "barkhide_warden",
+     2
+    ]
+   ],
+   "attack": "edge"
+  },
+  {
+   "id": "tree_line_south",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.76,
+    0.86
+   ],
+   "units": [
+    [
+     "thorn_skulker",
+     4
+    ],
+    [
+     "briar_huntress",
+     1
+    ]
+   ],
+   "attack": "edge"
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "if": {
+    "companion": "Maelis Thorne"
+   },
+   "say": "I know where we are, my lord. Let's just get through it.",
+   "who": "maelis"
+  },
+  {
+   "say": "Stumps to the horizon. We did this.",
+   "who": "hero"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "The Stumps of Elderwold",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Take the Covenant towns of Thornmere and Rootholm",
+     "done": {
+      "all": [
+       {
+        "held": "thornmere"
+       },
+       {
+        "held": "rootholm"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 500
+      }
+     ]
+    },
+    {
+     "text": "Take Briarhall, or bring down Neve Hollowreed and her hunters",
+     "done": {
+      "any": [
+       {
+        "held": "briarhall"
+       },
+       {
+        "not": {
+         "holds": [
+          1,
+          1
+         ]
+        }
+       },
+       {
+        "all": [
+         {
+          "dead": "neve"
+         },
+         {
+          "dead": "neve_guard"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 900
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "timber": {
+   "title": "Timber for the War",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Answer Forester Gil Hatch",
+     "done": {
+      "flag": "gil_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 100
+    }
+   ]
+  },
+  "heartwood": {
+   "title": "The Last Grove",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Answer the druid Aelith Moss at the stump circle",
+     "done": {
+      "flag": "aelith_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 200
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "gil": {
+   "nodes": {
+    "start": {
+     "text": "My lord. There's still standing timber east of the Felling Camp, if you want it. My crews could have it down in a week and in your palisades by the next.",
+     "choices": [
+      {
+       "text": "Cut it. We need every plank.",
+       "do": [
+        {
+         "flag": "gil_decided"
+        },
+        {
+         "flag": "felled_more"
+        },
+        {
+         "res": {
+          "wood": 250,
+          "gold": 150
+         }
+        }
+       ],
+       "next": "cut"
+      },
+      {
+       "text": "Leave it standing. Enough has been cut here.",
+       "do": [
+        {
+         "flag": "gil_decided"
+        },
+        {
+         "flag": "left_standing"
+        }
+       ],
+       "next": "leave"
+      }
+     ]
+    },
+    "cut": {
+     "text": "Aye, my lord. The Covenant won't like it."
+    },
+    "leave": {
+     "text": "...As you say, my lord. Strange orders for a forester, but I'll give them."
+    }
+   }
+  },
+  "gil_after": {
+   "nodes": {
+    "start": {
+     "text": "The crews are ready if you need them."
+    }
+   }
+  },
+  "aelith": {
+   "nodes": {
+    "start": {
+     "text": "You walk through the bones of my forest in iron shoes, Concord. You'll want to know why we hate you. Look around.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "I know what was done here. I need the road east. I'm not here for your trees.",
+     "next": "c"
+    },
+    "c": {
+     "text": "There is one grove left. Heartwood, between our towns. Its roots go down further than you can think. Swear you will not burn it, and my hunters will stay out of the tree line while you settle things with Neve.",
+     "choices": [
+      {
+       "text": "I swear it. Heartwood stands.",
+       "do": [
+        {
+         "flag": "aelith_decided"
+        },
+        {
+         "flag": "heartwood_oath"
+        }
+       ],
+       "next": "oath"
+      },
+      {
+       "text": "I don't swear oaths in a war.",
+       "do": [
+        {
+         "flag": "aelith_decided"
+        }
+       ],
+       "next": "no"
+      }
+     ]
+    },
+    "oath": {
+     "text": "Then the tree line is quiet, for as long as your oath holds. Neve's own band won't listen to me. That fight is yours."
+    },
+    "no": {
+     "text": "Honest, at least. Then the tree line will be full of arrows."
+    }
+   }
+  },
+  "aelith_after": {
+   "nodes": {
+    "start": {
+     "text": "The roots remember everything, Concord. Even you."
+    }
+   }
+  },
+  "neve_parley": {
+   "nodes": {
+    "start": {
+     "who": "neve",
+     "text": "Wren. You came the short way, through the stumps. Do you even know what grew here?",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Trees. A long time ago.",
+     "next": "c"
+    },
+    "c": {
+     "who": "neve",
+     "text": "Trees. Yes. Only trees. Bows!"
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "briarhall",
+      "r": 26
+     },
+     {
+      "alive": "neve"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "neve_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "stump_circle",
+      "r": 10
+     },
+     {
+      "companion": "Maelis Thorne"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "My mother brought me here once. There were trees then. That's all I'll say about it.",
+     "who": "maelis"
+    }
+   ]
+  },
+  {
+   "when": {
+    "held": "thornmere"
+   },
+   "do": [
+    {
+     "say": "Thornmere is ours.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "held": "rootholm"
+   },
+   "do": [
+    {
+     "say": "Rootholm is ours.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 40
+   },
+   "do": [
+    {
+     "say": "Priests at tier 5 now. Keep them behind the pikes; the Covenant shoots whatever glows.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "flag": "heartwood_oath"
+     },
+     {
+      "cleared": "heartwood"
+     }
+    ]
+   },
+   "do": [
+    {
+     "flag": "oathbreaker"
+    },
+    {
+     "unflag": "heartwood_oath"
+    },
+    {
+     "say": "Heartwood is burning. My oath... The tree line will be full of them now.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "neve"
+     },
+     {
+      "not": {
+       "alive": "neve"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Neve Hollowreed is down.",
+     "who": "hero"
+    },
+    {
+     "xp": 300
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 180
+     },
+     {
+      "holds": [
+       1,
+       3
+      ]
+     },
+     {
+      "not": {
+       "flag": "heartwood_oath"
+      }
+     }
+    ]
+   },
+   "repeat": 120,
+   "do": [
+    {
+     "spawn": "tree_line"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 240
+     },
+     {
+      "holds": [
+       1,
+       3
+      ]
+     },
+     {
+      "not": {
+       "flag": "heartwood_oath"
+      }
+     }
+    ]
+   },
+   "repeat": 120,
+   "do": [
+    {
+     "spawn": "tree_line_south"
+    }
+   ]
+  }
+ ]
+}

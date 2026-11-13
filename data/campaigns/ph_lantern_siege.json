@@ -1,0 +1,1012 @@
+{
+ "id": "ph_lantern_siege",
+ "title": "The Lantern Siege",
+ "kind": "war",
+ "seed": 5606,
+ "max_tier": 5,
+ "ai": "normal",
+ "intro": [
+  "North of the fens the lantern-priests have built a temple-fortress whose lamps burn the dead at a hundred paces. Abbess Maud Lorne keeps it, and every night the court loses whole columns to its light. Corvin served in a temple like it, once. He knows where the oil is kept.",
+  "Tier 5 is open: corpse weavers, who knit your fallen back together. While any of the three outer lanterns burns, the fortress sends its light out against your camp.",
+  "Put out the three lanterns. Take the fortress."
+ ],
+ "outro": [
+  {
+   "text": [
+    "The last lamp goes dark. In the temple vault Orrin finds a hundred years of records, among them the order that sealed the Wound: five peoples, one stone, and the roots of the Elderwold to hold it.",
+    "He reads it twice, and then he says nothing at all for three days."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "hollow"
+  },
+  {
+   "faction": "concord"
+  }
+ ],
+ "speakers": {
+  "orrin": "Sir Orrin Wren",
+  "corvin": "Father Corvin Mire",
+  "rotwing": "The Rotwing"
+ },
+ "hero": {
+  "at": [
+   0.1,
+   0.56
+  ]
+ },
+ "map": {
+  "name": "The Lantern Siege",
+  "size": [
+   192,
+   128
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "meadow",
+  "border": "mountains",
+  "features": {
+   "woods": [
+    {
+     "at": [
+      0.22,
+      0.1
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.24,
+      0.9
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.56,
+      0.5
+     ],
+     "r": 0.05
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.4,
+      0.3
+     ],
+     "r": 0.05
+    },
+    {
+     "at": [
+      0.14,
+      0.84
+     ],
+     "r": 0.06
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.74,
+       0.12
+      ],
+      [
+       0.78,
+       0.3
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.74,
+       0.88
+      ],
+      [
+       0.78,
+       0.7
+      ]
+     ],
+     "w": 4
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "sallowgate",
+    "at": [
+     0.07,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 0,
+    "name": "Sallowgate",
+    "biome": "swamp"
+   },
+   {
+    "id": "reedmarch",
+    "at": [
+     0.24,
+     0.3
+    ],
+    "size": "hamlet",
+    "name": "Reedmarch"
+   },
+   {
+    "id": "lampwick",
+    "at": [
+     0.3,
+     0.7
+    ],
+    "size": "village",
+    "name": "Lampwick"
+   },
+   {
+    "id": "fenwick",
+    "at": [
+     0.56,
+     0.2
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Fenwick"
+   },
+   {
+    "id": "crossing",
+    "at": [
+     0.48,
+     0.62
+    ],
+    "size": "hamlet",
+    "name": "Pilgrim's Cross"
+   },
+   {
+    "id": "fortress",
+    "at": [
+     0.9,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 1,
+    "name": "The Lantern Fortress"
+   }
+  ],
+  "sites": [
+   {
+    "id": "bone_trader",
+    "at": [
+     0.15,
+     0.64
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "grave_shrine",
+    "at": [
+     0.18,
+     0.4
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "lamp_west",
+    "at": [
+     0.66,
+     0.5
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "saint_shrine",
+    "keeper": 1,
+    "guards": [
+     [
+      "lightbearer",
+      1
+     ],
+     [
+      "longbowman",
+      3
+     ],
+     [
+      "pike_militia",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "lamp_north",
+    "at": [
+     0.78,
+     0.08
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "obelisk",
+    "keeper": 1,
+    "guards": [
+     [
+      "lightbearer",
+      1
+     ],
+     [
+      "longbowman",
+      3
+     ],
+     [
+      "shieldwarden",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "lamp_south",
+    "at": [
+     0.78,
+     0.9
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "obelisk",
+    "keeper": 1,
+    "guards": [
+     [
+      "lightbearer",
+      1
+     ],
+     [
+      "longbowman",
+      3
+     ],
+     [
+      "shieldwarden",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "oil_store",
+    "at": [
+     0.62,
+     0.86
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "trading_post",
+    "keeper": 1,
+    "guards": [
+     [
+      "pike_militia",
+      4
+     ],
+     [
+      "longbowman",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "troll_ford",
+    "at": [
+     0.4,
+     0.9
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "small_ruin",
+    "guards": [
+     [
+      "hill_troll",
+      1
+     ],
+     [
+      "crag_slinger",
+      2
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "sallowgate",
+    "reedmarch",
+    "road"
+   ],
+   [
+    "sallowgate",
+    "lampwick",
+    "road"
+   ],
+   [
+    "sallowgate",
+    "bone_trader",
+    "road"
+   ],
+   [
+    "sallowgate",
+    "grave_shrine",
+    "trail"
+   ],
+   [
+    "reedmarch",
+    "fenwick",
+    "road"
+   ],
+   [
+    "lampwick",
+    "crossing",
+    "road"
+   ],
+   [
+    "lampwick",
+    "troll_ford",
+    "trail"
+   ],
+   [
+    "crossing",
+    "oil_store",
+    "trail"
+   ],
+   [
+    "crossing",
+    "lamp_west",
+    "road"
+   ],
+   [
+    "fenwick",
+    "lamp_west",
+    "road"
+   ],
+   [
+    "fenwick",
+    "lamp_north",
+    "trail"
+   ],
+   [
+    "oil_store",
+    "lamp_south",
+    "trail"
+   ],
+   [
+    "lamp_west",
+    "fortress",
+    "road"
+   ],
+   [
+    "lamp_north",
+    "fortress",
+    "trail"
+   ],
+   [
+    "lamp_south",
+    "fortress",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 5,
+   "rocks": 5,
+   "ponds": 2
+  }
+ },
+ "npcs": [
+  {
+   "id": "garran",
+   "name": "Sir Garran of Fenwick",
+   "look": "hero_knight",
+   "at": [
+    0.5,
+    0.26
+   ],
+   "facing": 3.1,
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "garran_decided"
+      }
+     },
+     "dialogue": "garran",
+     "mark": "!"
+    },
+    {
+     "dialogue": "garran_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "levy",
+   "owner": 0,
+   "at": [
+    0.13,
+    0.54
+   ],
+   "units": [
+    [
+     "shambler",
+     10
+    ],
+    [
+     "marrow_archer",
+     8
+    ],
+    [
+     "gravecrawler",
+     4
+    ],
+    [
+     "wailing_shade",
+     3
+    ],
+    [
+     "corpse_weaver",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "fenwick_levy",
+   "owner": 1,
+   "at": [
+    0.55,
+    0.24
+   ],
+   "units": [
+    [
+     "pike_militia",
+     5
+    ],
+    [
+     "longbowman",
+     3
+    ],
+    [
+     "lancer",
+     2
+    ]
+   ],
+   "guard": 10
+  },
+  {
+   "id": "maud",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.46
+   ],
+   "hero": {
+    "class": "oracle",
+    "name": "Abbess Maud Lorne",
+    "level": 12
+   },
+   "guard": 12
+  },
+  {
+   "id": "maud_guard",
+   "owner": 1,
+   "at": [
+    0.87,
+    0.52
+   ],
+   "units": [
+    [
+     "pike_militia",
+     5
+    ],
+    [
+     "longbowman",
+     3
+    ],
+    [
+     "shieldwarden",
+     2
+    ],
+    [
+     "lightbearer",
+     1
+    ],
+    [
+     "lancer",
+     1
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "lamp_wardens",
+   "owner": 1,
+   "at": [
+    0.84,
+    0.5
+   ],
+   "units": [
+    [
+     "shieldwarden",
+     3
+    ],
+    [
+     "lightbearer",
+     2
+    ],
+    [
+     "longbowman",
+     3
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "sally",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.84,
+    0.5
+   ],
+   "units": [
+    [
+     "pike_militia",
+     4
+    ],
+    [
+     "longbowman",
+     2
+    ],
+    [
+     "lancer",
+     2
+    ],
+    [
+     "lightbearer",
+     1
+    ]
+   ],
+   "attack": "sallowgate"
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "Three lamps outside the walls and a fourth on the tower. Put out the three and the fourth stands alone.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Father Corvin Mire"
+   },
+   "say": "The oil comes up from the stores by the south road, Regent. No oil, no light. Not for long, anyway.",
+   "who": "corvin"
+  },
+  {
+   "if": {
+    "companion": "Sir Orrin Wren"
+   },
+   "say": "I knelt in a temple like that once, my lady. A long time ago.",
+   "who": "orrin"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "The Lantern Siege",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Put out the three outer lanterns",
+     "done": {
+      "all": [
+       {
+        "cleared": "lamp_west"
+       },
+       {
+        "cleared": "lamp_north"
+       },
+       {
+        "cleared": "lamp_south"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 600
+      }
+     ]
+    },
+    {
+     "text": "Take the Lantern Fortress: bring down Abbess Maud Lorne and her guard, or take the fortress",
+     "done": {
+      "any": [
+       {
+        "held": "fortress"
+       },
+       {
+        "not": {
+         "holds": [
+          1,
+          1
+         ]
+        }
+       },
+       {
+        "all": [
+         {
+          "dead": "maud"
+         },
+         {
+          "dead": "maud_guard"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 900
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "oil": {
+   "title": "Where the Oil Is Kept",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Burn the oil store on the south road",
+     "done": {
+      "cleared": "oil_store"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 300
+    }
+   ]
+  },
+  "garran": {
+   "title": "The Knight of Fenwick",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Answer Sir Garran of Fenwick",
+     "done": {
+      "flag": "garran_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 200
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "garran": {
+   "nodes": {
+    "start": {
+     "text": "That's close enough, Regent. Garran of Fenwick. My levy holds this road for the Abbess. Not because I love her lamps.",
+     "next": "b"
+    },
+    "b": {
+     "text": "She burns every corpse in the march, ours too. My father went into her fire before he was cold. Fenwick has no graves left to visit.",
+     "next": "c"
+    },
+    "c": {
+     "text": "So. Tell me why I shouldn't fight you.",
+     "choices": [
+      {
+       "text": "Because I spared Hobb's Acre, and I'll spare Fenwick. Stand aside.",
+       "if": {
+        "flag": "acre_spared"
+       },
+       "do": [
+        {
+         "flag": "garran_decided"
+        },
+        {
+         "flag": "garran_aside"
+        },
+        {
+         "leave": "fenwick_levy",
+         "to": [
+          0.5,
+          0.02
+         ]
+        },
+        {
+         "leave": "garran",
+         "to": [
+          0.5,
+          0.02
+         ]
+        }
+       ],
+       "next": "aside"
+      },
+      {
+       "text": "Stand aside and Fenwick keeps its living. I want the Abbess, not you.",
+       "do": [
+        {
+         "flag": "garran_decided"
+        },
+        {
+         "flag": "garran_aside"
+        },
+        {
+         "res": {
+          "gold": -150
+         }
+        },
+        {
+         "leave": "fenwick_levy",
+         "to": [
+          0.5,
+          0.02
+         ]
+        },
+        {
+         "leave": "garran",
+         "to": [
+          0.5,
+          0.02
+         ]
+        }
+       ],
+       "next": "paid"
+      },
+      {
+       "text": "You shouldn't. You should run.",
+       "do": [
+        {
+         "flag": "garran_decided"
+        },
+        {
+         "flag": "garran_fought"
+        },
+        {
+         "hostile": "garran"
+        },
+        {
+         "attack": "fenwick_levy",
+         "to": "hero"
+        }
+       ],
+       "next": "fight"
+      }
+     ]
+    },
+    "aside": {
+     "text": "The Acre. Yes, the reeve told everyone. I didn't believe him. ...Fenwick stands aside. Don't make me sorry."
+    },
+    "paid": {
+     "text": "Words are cheap from the dead. Pay my men for the road and we'll go home. ...Fine. Fenwick stands aside."
+    },
+    "fight": {
+     "text": "Then Fenwick dies standing. Levy, form up!"
+    }
+   }
+  },
+  "garran_after": {
+   "nodes": {
+    "start": {
+     "text": "I said I'd stand aside, Regent. I didn't say I'd watch."
+    }
+   }
+  },
+  "maud_parley": {
+   "nodes": {
+    "start": {
+     "who": "maud",
+     "text": "Corpse-queen. I have burned eleven thousand of your subjects. I will not stop at you.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Eleven thousand of your own people's grandparents, Abbess.",
+     "next": "c"
+    },
+    "c": {
+     "who": "maud",
+     "text": "Grandparents rest. Yours walk. Light the lamps!"
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "fortress",
+      "r": 26
+     },
+     {
+      "alive": "maud"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "maud_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "garran",
+      "r": 12
+     },
+     {
+      "not": {
+       "flag": "garran_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "start_quest": "garran"
+    },
+    {
+     "dialogue": "garran",
+     "npc": "garran"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 5
+   },
+   "do": [
+    {
+     "start_quest": "oil"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 40
+   },
+   "do": [
+    {
+     "say": "Corpse weavers at tier 5. Keep them behind the line; they stitch the fallen back up.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "oil_store"
+   },
+   "do": [
+    {
+     "remove": "lamp_wardens"
+    },
+    {
+     "say": "The oil's burning in the wrong place. The lamp-wardens on the walls have nothing to pour.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "companion": "Father Corvin Mire"
+     },
+     {
+      "cleared": "oil_store"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Every lamp in that fortress just started counting down, Regent.",
+     "who": "corvin"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "lamp_west"
+   },
+   "do": [
+    {
+     "say": "One lamp dark.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "cleared": "lamp_west"
+     },
+     {
+      "cleared": "lamp_north"
+     },
+     {
+      "cleared": "lamp_south"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "All three are out. Now the fortress.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "maud"
+     },
+     {
+      "not": {
+       "alive": "maud"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "The Abbess is dead.",
+     "who": "hero"
+    },
+    {
+     "xp": 400
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 150
+     },
+     {
+      "not": {
+       "all": [
+        {
+         "cleared": "lamp_west"
+        },
+        {
+         "cleared": "lamp_north"
+        },
+        {
+         "cleared": "lamp_south"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "repeat": 120,
+   "do": [
+    {
+     "spawn": "sally"
+    }
+   ]
+  }
+ ]
+}

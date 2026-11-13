@@ -1,0 +1,55 @@
+{
+ "_doc": "Looks of the 3D ground per biome (view only, no rules). Colours are linear multipliers on the CC0 textures. puddles: 0..1 shallow pools on open ground; lava: still water in this biome glows as lava. dead_trees: share of dead trees; trees/bushes/tufts scale the decoration densities. factions: each faction's home biome; base: the biome between the homes. snow: 0..1 snow cover over the ground. ground_tex / rock_tex: assets/terrain3d/<name>_alb_ht.png (+ _nrm_rgh) for open ground and for rock; embers: 0..1 glowing cracks in the open ground. scenery: models (assets/nature) that replace the default trees / dead / rocks / bushes / cover of this biome, plus litter (logs, stumps, fungus: litter_share of the low cover) and water (floating in shallow water).",
+ "base": "meadow",
+ "factions": {"concord": "meadow", "hollow": "swamp", "ashen": "ashland", "thornwood": "deepwood", "forge": "ashland", "frostmarch": "snowfield", "darkelf": "gloomcrag", "fishmen": "swamp", "neutral": "meadow"},
+ "biomes": {
+  "meadow": {
+   "grass": [0.36, 0.41, 0.29], "lush": [0.26, 0.33, 0.21], "dry": [0.5, 0.44, 0.3], "dirt": [0.42, 0.34, 0.28],
+   "rock": [0.5, 0.5, 0.53], "moss": [0.32, 0.36, 0.24], "ash": [0.36, 0.3, 0.27],
+   "water_deep": [0.1, 0.13, 0.15], "water_sky": [0.34, 0.27, 0.27], "lava": false, "puddles": 0.0,
+   "dead_trees": 0.12, "trees": 1.0, "bushes": 1.0, "tufts": 1.0, "snow": 0.0, "tuft": [0.62, 0.64, 0.46],
+   "ground_tex": "ground003", "rock_tex": "rock030", "embers": 0.0,
+   "scenery": {"litter": ["stump", "log", "fern"], "litter_share": 0.12}
+  },
+  "swamp": {
+   "grass": [0.72, 0.89, 1.37], "lush": [0.54, 0.71, 1.07], "dry": [0.83, 0.94, 1.45], "dirt": [0.35, 0.31, 0.26],
+   "rock": [0.62, 0.66, 0.66], "moss": [0.55, 0.73, 1.11], "ash": [0.54, 0.62, 0.99],
+   "water_deep": [0.13, 0.16, 0.08], "water_sky": [0.34, 0.33, 0.22], "lava": false, "puddles": 0.75,
+   "dead_trees": 0.6, "trees": 0.8, "bushes": 1.6, "tufts": 1.6, "snow": 0.0, "tuft": [0.4, 0.45, 0.28],
+   "ground_tex": "ground047", "rock_tex": "rock028", "embers": 0.0,
+   "scenery": {"trees": ["fn_willow_1", "fn_willow_2", "fn_willow_3", "fn_willow_4"], "dead": ["fn_willow_dead_1", "fn_willow_dead_2", "fn_willow_dead_3", "dead_tree_2", "dead_tree_6"], "rocks": ["mo_rock_1", "mo_rock_2", "mo_rock_3", "mo_rock_4"], "cover": ["reeds", "reeds", "fern", "grass_large", "grass_small"], "litter": ["mo_log", "mo_stump", "shelf_fungus", "mushrooms"], "litter_share": 0.22, "water": ["fn_lilypad"]}
+  },
+  "deepwood": {
+   "grass": [0.43, 0.56, 0.56], "lush": [0.31, 0.46, 0.44], "dry": [0.47, 0.53, 0.55], "dirt": [0.36, 0.31, 0.26],
+   "rock": [0.59, 0.63, 0.61], "moss": [0.3, 0.47, 0.43], "ash": [0.35, 0.37, 0.44],
+   "water_deep": [0.07, 0.12, 0.1], "water_sky": [0.26, 0.26, 0.22], "lava": false, "puddles": 0.15,
+   "dead_trees": 0.05, "trees": 1.9, "bushes": 1.6, "tufts": 1.3, "snow": 0.0, "tuft": [0.5, 0.6, 0.36],
+   "ground_tex": "ground068", "rock_tex": "rock028", "embers": 0.0,
+   "scenery": {"trees": ["pine_tree_1", "pine_tree_2", "pine_tree_3", "pine_tree_4", "normal_tree_1", "normal_tree_2", "normal_tree_4", "twisted_tree_1", "twisted_tree_2", "twisted_tree_3"], "rocks": ["mo_rock_1", "mo_rock_2", "rock_1", "rock_3"], "cover": ["fern", "grass_large", "grass_small", "flower_3_clump"], "litter": ["mo_log", "mo_stump", "mushrooms", "shelf_fungus", "fern"], "litter_share": 0.15}
+  },
+  "snowfield": {
+   "grass": [0.34, 0.37, 0.3], "lush": [0.26, 0.3, 0.24], "dry": [0.4, 0.38, 0.32], "dirt": [0.38, 0.34, 0.32],
+   "rock": [0.52, 0.54, 0.58], "moss": [0.3, 0.33, 0.28], "ash": [0.34, 0.33, 0.32],
+   "water_deep": [0.32, 0.4, 0.46], "water_sky": [0.6, 0.62, 0.66], "lava": false, "puddles": 0.1,
+   "dead_trees": 0.35, "trees": 0.9, "bushes": 0.4, "tufts": 0.3, "snow": 0.85, "tuft": [0.6, 0.6, 0.5],
+   "ground_tex": "ground022", "rock_tex": "rock026", "embers": 0.0,
+   "scenery": {"trees": ["sn_pine_1", "sn_pine_2", "sn_pine_3", "sn_pine_4", "sn_pine_5"], "dead": ["sn_dead_1", "sn_dead_2", "sn_dead_3"], "rocks": ["sn_rock_1", "sn_rock_2", "sn_rock_3", "sn_rock_4"], "bushes": ["sn_bush_1", "sn_bush_2"], "cover": ["grass_small", "grass_small", "grass_large"], "litter": ["sn_stump", "stump"], "litter_share": 0.07}
+  },
+  "gloomcrag": {
+   "grass": [0.43, 0.44, 0.63], "lush": [0.34, 0.35, 0.5], "dry": [0.51, 0.52, 0.73], "dirt": [0.32, 0.31, 0.26],
+   "rock": [0.46, 0.46, 0.38], "moss": [0.33, 0.33, 0.48], "ash": [0.28, 0.29, 0.42],
+   "water_deep": [0.12, 0.1, 0.18], "water_sky": [0.32, 0.28, 0.4], "lava": false, "puddles": 0.3,
+   "dead_trees": 1.1, "trees": 0.45, "bushes": 0.6, "tufts": 0.5, "snow": 0.0, "tuft": [0.36, 0.33, 0.4],
+   "ground_tex": "gravel040", "rock_tex": "rock022", "embers": 0.0,
+   "scenery": {"trees": ["gl_tree_1", "gl_tree_2", "pine_tree_5"], "cover": ["gl_mushrooms", "gl_fungus", "grass_small"], "litter": ["gl_fungus", "gl_mushrooms", "ch_stump"], "litter_share": 0.2}
+  },
+  "ashland": {
+   "grass": [0.75, 0.71, 0.95], "lush": [0.55, 0.51, 0.69], "dry": [0.96, 0.87, 1.13], "dirt": [0.33, 0.31, 0.26],
+   "rock": [0.49, 0.5, 0.49], "moss": [0.75, 0.71, 0.92], "ash": [0.62, 0.6, 0.8],
+   "water_deep": [0.9, 0.25, 0.05], "water_sky": [1.0, 0.55, 0.15], "lava": true, "puddles": 0.4,
+   "dead_trees": 0.9, "trees": 0.5, "bushes": 0.3, "tufts": 0.25, "snow": 0.0, "tuft": [0.42, 0.36, 0.28],
+   "ground_tex": "gravel024", "rock_tex": "rock033", "embers": 1.0,
+   "scenery": {"dead": ["ch_tree_1", "ch_tree_2", "ch_tree_3", "dead_tree_1", "dead_tree_8"], "cover": ["grass_small"], "litter": ["ch_log", "ch_stump", "ch_stump"], "litter_share": 0.3}
+  }
+ }
+}

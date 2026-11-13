@@ -1,0 +1,857 @@
+{
+	"_doc": "Skirmish map templates for MapGen (src/sim/map_gen.gd). Positions are fractions of the map (x of width, y of height); radii and widths: r is a fraction of the map height, w is in cells (1 cell = 1 m). symmetry: none | mirror_x (2 players, west/east) | rot180 (2 players, opposite corners) | mirror4 (3-4 players, corners; quarter 0 is the top left). Zones, sites and features are written for the first image and copied to the others; a zone on the mirror line is kept once. A link end 'id#n' names image n of a zone or site (images combine by XOR: 1 = flip x or rotate, 2 = flip y, 3 = both). Zone size: a settlement key or a list to pick from. home: the player's start. rich: more piles and both sides' rares. biome: home (that side's faction), base, wild/wild2 (a faction terrain no player uses) or a biome name. Link kinds: road (painted, 4 wide), trail (3), pass (3, through rock), bridge (3, a wooden bridge where it crosses water), ford (4, water turns to shallows), land (9, an isthmus on sea maps). Sites: lair (tier 1-3, guarded loot), shrine, merchant; set names a set piece (MapGen.SET_PIECES). Features: sea, land/lakes/woods (discs), rivers/ridges (lines), isles (discs of land drawn last, inside lakes and rivers). Sites never drain water: give a site in water an isle. scatter: random woods, rock outcrops and ponds per image.",
+	"templates": {
+		"classic": {
+			"name": "Old Marches",
+			"desc": "Nine sectors on open ground, roads between neighbours.",
+			"players": [2],
+			"size": [192, 128],
+			"symmetry": "mirror_x",
+			"base": "meadow",
+			"border": "mountains",
+			"zones": [
+				{"id": "h", "at": [0.12, 0.5], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.15, 0.17], "size": ["waystone", "farmstead", "hamlet"], "biome": "home"},
+				{"id": "b", "at": [0.15, 0.83], "size": ["waystone", "farmstead", "hamlet"], "biome": "home"},
+				{"id": "m", "at": [0.32, 0.5], "size": ["hamlet", "farmstead"]},
+				{"id": "n", "at": [0.5, 0.17], "size": ["village", "waystone"], "biome": "wild"},
+				{"id": "s", "at": [0.5, 0.83], "size": ["village", "waystone"], "biome": "wild"},
+				{"id": "c", "at": [0.5, 0.5], "size": ["city", "town"], "rich": true}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["h", "m", "road"],
+				["a", "n", "road"],
+				["b", "s", "road"],
+				["m", "c", "road"],
+				["n", "c", "trail"],
+				["s", "c", "trail"],
+				["a", "m", "trail"]
+			],
+			"sites": [
+				{"id": "l1", "at": [0.05, 0.06], "kind": "lair", "tier": 1},
+				{"id": "l2", "at": [0.32, 0.92], "kind": "lair", "tier": 2},
+				{"id": "sh", "at": [0.5, 0.33], "kind": "shrine"},
+				{"id": "l3", "at": [0.5, 0.95], "kind": "lair", "tier": 3}
+			],
+			"scatter": {"woods": 10, "rocks": 9, "ponds": 2}
+		},
+		"sundered_isles": {
+			"name": "Sundered Isles",
+			"desc": "Each house holds an island of three sectors; a rich central island with two great settlements lies between, joined by bridges. Guarded islets at the edges.",
+			"players": [2],
+			"size": [204, 136],
+			"symmetry": "mirror_x",
+			"base": "meadow",
+			"border": "sea",
+			"features": {"sea": true, "land": [{"at": [0.12, 0.28], "r": 0.2}, {"at": [0.12, 0.72], "r": 0.2}, {"at": [0.09, 0.5], "r": 0.2}, {"at": [0.5, 0.36], "r": 0.2, "whole": true}, {"at": [0.5, 0.64], "r": 0.2, "whole": true}, {"at": [0.5, 0.07], "r": 0.075, "whole": true}, {"at": [0.5, 0.93], "r": 0.075, "whole": true}, {"at": [0.04, 0.05], "r": 0.07}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.5], "home": true, "size": "town", "biome": "home"},
+				{"id": "n", "at": [0.16, 0.22], "size": ["hamlet", "farmstead"], "biome": "home"},
+				{"id": "s", "at": [0.16, 0.78], "size": ["farmstead", "hamlet", "waystone"], "biome": "home"},
+				{"id": "c1", "at": [0.5, 0.34], "size": "city", "rich": true, "biome": "wild"},
+				{"id": "c2", "at": [0.5, 0.68], "size": ["village", "town"], "rich": true, "biome": "wild"}
+			],
+			"links": [
+				["h", "n", "road"],
+				["h", "s", "road"],
+				["n", "c1", "bridge"],
+				["s", "c2", "bridge"],
+				["c1", "c2", "road"],
+				["c1", "dn", "bridge"],
+				["c2", "ds", "bridge"],
+				["n", "co", "bridge"]
+			],
+			"sites": [
+				{"id": "dn", "at": [0.5, 0.07], "kind": "lair", "tier": 3, "set": "temple_ruin"},
+				{"id": "ds", "at": [0.5, 0.93], "kind": "lair", "tier": 2, "set": "graveyard"},
+				{"id": "co", "at": [0.04, 0.06], "kind": "lair", "tier": 1, "set": "watch_ruin"},
+				{"id": "sh", "at": [0.42, 0.5], "kind": "shrine"},
+				{"id": "mk", "at": [0.21, 0.5], "kind": "merchant"}
+			],
+			"scatter": {"woods": 6, "rocks": 5, "ponds": 0}
+		},
+		"twin_bridges": {
+			"name": "Twin Bridges",
+			"desc": "A deep river splits the land; only two bridges cross it. A guarded temple island in the river can be waded from both banks.",
+			"players": [2],
+			"size": [204, 136],
+			"symmetry": "mirror_x",
+			"base": "meadow",
+			"border": "mountains",
+			"features": {"rivers": [{"pts": [[0.5, -0.03], [0.48, 0.22], [0.52, 0.45], [0.48, 0.7], [0.5, 1.03]], "w": 7, "whole": true}], "woods": [{"at": [0.3, 0.32], "r": 0.07}, {"at": [0.28, 0.7], "r": 0.06}], "lakes": [{"at": [0.5, 0.48], "r": 0.15, "whole": true}], "isles": [{"at": [0.5, 0.48], "r": 0.09, "whole": true}]},
+			"zones": [
+				{"id": "h", "at": [0.09, 0.5], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.18, 0.16], "size": ["hamlet", "farmstead"], "biome": "home"},
+				{"id": "b", "at": [0.2, 0.84], "size": ["farmstead", "waystone"], "biome": "home"},
+				{"id": "c", "at": [0.3, 0.5], "size": ["village", "hamlet"]},
+				{"id": "n", "at": [0.38, 0.22], "size": ["village", "town"], "biome": "wild"},
+				{"id": "s", "at": [0.38, 0.8], "size": ["hamlet", "village"], "biome": "wild2"}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["h", "c", "road"],
+				["c", "n", "road"],
+				["c", "s", "road"],
+				["n", "n#1", "bridge"],
+				["s", "s#1", "bridge"],
+				["a", "n", "trail"],
+				["b", "s", "trail"],
+				["c", "isle", "ford"]
+			],
+			"sites": [
+				{"id": "isle", "at": [0.5, 0.48], "kind": "lair", "tier": 3, "set": "temple_ruin"},
+				{"id": "l1", "at": [0.05, 0.06], "kind": "lair", "tier": 1},
+				{"id": "l2", "at": [0.12, 0.95], "kind": "lair", "tier": 2},
+				{"id": "sh", "at": [0.33, 0.07], "kind": "shrine"},
+				{"id": "mk", "at": [0.24, 0.62], "kind": "merchant"}
+			],
+			"scatter": {"woods": 10, "rocks": 8, "ponds": 1}
+		},
+		"highland_passes": {
+			"name": "Highland Passes",
+			"desc": "Each house starts in a walled valley that opens through two narrow passes onto a rich plateau. Beasts den in the dead-end gorges.",
+			"players": [2],
+			"size": [204, 136],
+			"symmetry": "mirror_x",
+			"base": "meadow",
+			"border": "mountains",
+			"features": {"ridges": [{"pts": [[0.27, -0.03], [0.29, 0.3], [0.26, 0.6], [0.3, 1.03]], "w": 7}, {"pts": [[0.5, 0.36], [0.45, 0.2], [0.42, 0.0]], "w": 5}, {"pts": [[0.5, 0.64], [0.45, 0.8], [0.42, 1.0]], "w": 5}]},
+			"zones": [
+				{"id": "h", "at": [0.11, 0.5], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.13, 0.16], "size": ["hamlet", "farmstead"], "biome": "home"},
+				{"id": "b", "at": [0.13, 0.84], "size": ["farmstead", "waystone"], "biome": "home"},
+				{"id": "m1", "at": [0.38, 0.3], "size": ["waystone", "hamlet"]},
+				{"id": "m2", "at": [0.38, 0.72], "size": ["hamlet", "farmstead"]},
+				{"id": "c", "at": [0.5, 0.5], "size": "city", "rich": true, "biome": "wild"},
+				{"id": "n", "at": [0.5, 0.14], "size": ["village", "town"], "biome": "wild2"},
+				{"id": "s", "at": [0.5, 0.86], "size": ["village", "hamlet"], "biome": "wild2"}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["a", "m1", "pass"],
+				["b", "m2", "pass"],
+				["m1", "c", "road"],
+				["m2", "c", "road"],
+				["m1", "n", "trail"],
+				["m2", "s", "trail"]
+			],
+			"sites": [
+				{"id": "g1", "at": [0.04, 0.05], "kind": "lair", "tier": 2, "set": "graveyard"},
+				{"id": "g2", "at": [0.04, 0.95], "kind": "lair", "tier": 1},
+				{"id": "top", "at": [0.5, 0.03], "kind": "lair", "tier": 3, "set": "dragon_bones"},
+				{"id": "sh", "at": [0.2, 0.5], "kind": "shrine"},
+				{"id": "mk", "at": [0.5, 0.33], "kind": "merchant"}
+			],
+			"scatter": {"woods": 9, "rocks": 7, "ponds": 1}
+		},
+		"lake_crown": {
+			"name": "Crown Lake",
+			"desc": "A ring road runs around a dark lake. Two long bridges reach the drowned temple at its heart.",
+			"players": [2],
+			"size": [204, 136],
+			"symmetry": "mirror_x",
+			"base": "meadow",
+			"border": "mountains",
+			"features": {"lakes": [{"at": [0.5, 0.5], "r": 0.27, "whole": true}, {"at": [0.27, 0.5], "r": 0.06}], "isles": [{"at": [0.5, 0.5], "r": 0.1, "whole": true}]},
+			"zones": [
+				{"id": "h", "at": [0.08, 0.5], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.2, 0.18], "size": ["hamlet", "village"], "biome": "home"},
+				{"id": "b", "at": [0.2, 0.82], "size": ["farmstead", "hamlet"], "biome": "home"},
+				{"id": "n", "at": [0.5, 0.1], "size": "city", "rich": true, "biome": "wild"},
+				{"id": "s", "at": [0.5, 0.9], "size": ["village", "town"], "rich": true, "biome": "wild2"}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["a", "n", "road"],
+				["b", "s", "road"],
+				["n", "isle", "bridge"],
+				["s", "isle", "bridge"]
+			],
+			"sites": [
+				{"id": "isle", "at": [0.5, 0.5], "kind": "lair", "tier": 3, "set": "ziggurat"},
+				{"id": "l1", "at": [0.04, 0.07], "kind": "lair", "tier": 1, "set": "watch_ruin"},
+				{"id": "l2", "at": [0.32, 0.95], "kind": "lair", "tier": 2},
+				{"id": "sh", "at": [0.32, 0.06], "kind": "shrine"},
+				{"id": "mk", "at": [0.06, 0.88], "kind": "merchant"}
+			],
+			"scatter": {"woods": 10, "rocks": 7, "ponds": 1}
+		},
+		"three_lanes": {
+			"name": "Three Roads",
+			"desc": "Homes in opposite corners, three roads between them: along each edge and straight through the middle. Wild forest between the roads hides beast dens.",
+			"players": [2],
+			"size": [196, 140],
+			"symmetry": "rot180",
+			"base": "meadow",
+			"border": "mountains",
+			"features": {"woods": [{"at": [0.62, 0.74], "r": 0.12}, {"at": [0.25, 0.3], "r": 0.12}, {"at": [0.5, 0.82], "r": 0.06}, {"at": [0.12, 0.5], "r": 0.05}]},
+			"zones": [
+				{"id": "h", "at": [0.08, 0.88], "home": true, "size": "town", "biome": "home"},
+				{"id": "bl", "at": [0.4, 0.9], "size": ["hamlet", "farmstead"], "biome": "home"},
+				{"id": "tl", "at": [0.08, 0.5], "size": ["hamlet", "waystone"], "biome": "home"},
+				{"id": "mid", "at": [0.28, 0.66], "size": ["village", "hamlet"]},
+				{"id": "k", "at": [0.88, 0.88], "size": ["village", "town"], "rich": true, "biome": "wild"},
+				{"id": "c", "at": [0.5, 0.5], "size": "city", "rich": true, "biome": "wild2"}
+			],
+			"links": [
+				["h", "bl", "road"],
+				["bl", "k", "road"],
+				["k", "tl#1", "road"],
+				["h", "tl", "road"],
+				["h", "mid", "road"],
+				["mid", "c", "road"],
+				["bl", "j1", "trail"],
+				["tl", "j2", "trail"],
+				["j1", "mid", "trail"],
+				["j2", "mid", "trail"]
+			],
+			"sites": [
+				{"id": "j1", "at": [0.6, 0.7], "kind": "lair", "tier": 2},
+				{"id": "j2", "at": [0.24, 0.33], "kind": "lair", "tier": 1, "set": "graveyard"},
+				{"id": "far", "at": [0.96, 0.6], "kind": "lair", "tier": 3, "set": "dragon_bones"},
+				{"id": "sh", "at": [0.3, 0.92], "kind": "shrine"},
+				{"id": "mk", "at": [0.5, 0.68], "kind": "merchant"}
+			],
+			"scatter": {"woods": 8, "rocks": 7, "ponds": 1}
+		},
+		"marsh_delta": {
+			"name": "Drowned Delta",
+			"desc": "A wide river cuts the map corner to corner. One bridge over a guarded island in the middle and two shallow fords at the ends; bog pools everywhere.",
+			"players": [2],
+			"size": [200, 136],
+			"symmetry": "rot180",
+			"base": "swamp",
+			"border": "mountains",
+			"features": {"rivers": [{"pts": [[-0.03, -0.03], [0.28, 0.36], [0.5, 0.5], [0.72, 0.64], [1.03, 1.03]], "w": 9, "whole": true}], "lakes": [{"at": [0.3, 0.78], "r": 0.04}, {"at": [0.12, 0.66], "r": 0.035}, {"at": [0.5, 0.5], "r": 0.15, "whole": true}], "isles": [{"at": [0.5, 0.5], "r": 0.095, "whole": true}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.86], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.36, 0.9], "size": ["farmstead", "hamlet"], "biome": "home"},
+				{"id": "b", "at": [0.08, 0.55], "size": ["hamlet", "waystone"], "biome": "home"},
+				{"id": "c", "at": [0.36, 0.64], "size": ["village", "hamlet"]},
+				{"id": "k", "at": [0.74, 0.9], "size": ["village", "town"], "rich": true, "biome": "wild"}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["h", "c", "road"],
+				["a", "k", "road"],
+				["a", "c", "trail"],
+				["c", "isle", "bridge"],
+				["b", "k#1", "ford"]
+			],
+			"sites": [
+				{"id": "isle", "at": [0.5, 0.5], "kind": "lair", "tier": 2, "set": "temple_ruin"},
+				{"id": "l1", "at": [0.04, 0.95], "kind": "lair", "tier": 1, "set": "graveyard"},
+				{"id": "l3", "at": [0.96, 0.95], "kind": "lair", "tier": 3, "set": "dragon_bones"},
+				{"id": "sh", "at": [0.22, 0.74], "kind": "shrine"},
+				{"id": "mk", "at": [0.56, 0.84], "kind": "merchant"}
+			],
+			"scatter": {"woods": 8, "rocks": 5, "ponds": 3}
+		},
+		"four_corners": {
+			"name": "Four Thrones",
+			"desc": "A house in every corner, settlements along the edges and a great city in the middle under a ruined temple.",
+			"players": [3, 4],
+			"size": [252, 168],
+			"symmetry": "mirror4",
+			"base": "meadow",
+			"border": "mountains",
+			"zones": [
+				{"id": "h", "at": [0.09, 0.12], "home": true, "size": "town", "biome": "home"},
+				{"id": "e", "at": [0.5, 0.12], "size": ["village", "hamlet"], "biome": "wild"},
+				{"id": "l", "at": [0.08, 0.5], "size": ["hamlet", "village"], "biome": "wild2"},
+				{"id": "m", "at": [0.28, 0.33], "size": ["farmstead", "hamlet"], "biome": "home"},
+				{"id": "c", "at": [0.5, 0.5], "size": ["city", "town"], "rich": true}
+			],
+			"links": [
+				["h", "e", "road"],
+				["h", "l", "road"],
+				["h", "m", "trail"],
+				["m", "c", "road"],
+				["e", "c", "trail"],
+				["l", "c", "trail"]
+			],
+			"sites": [
+				{"id": "t", "at": [0.5, 0.33], "kind": "lair", "tier": 3, "set": "temple_ruin"},
+				{"id": "l1", "at": [0.3, 0.05], "kind": "lair", "tier": 1},
+				{"id": "l2", "at": [0.04, 0.32], "kind": "lair", "tier": 2, "set": "graveyard"},
+				{"id": "sh", "at": [0.2, 0.22], "kind": "shrine"},
+				{"id": "mk", "at": [0.32, 0.5], "kind": "merchant"}
+			],
+			"scatter": {"woods": 7, "rocks": 6, "ponds": 1}
+		},
+		"archipelago": {
+			"name": "Ember Archipelago",
+			"desc": "Each house holds a corner island; bridges lead to edge islets and a rich central island.",
+			"players": [3, 4],
+			"size": [252, 168],
+			"symmetry": "mirror4",
+			"base": "meadow",
+			"border": "sea",
+			"features": {"sea": true, "land": [{"at": [0.12, 0.16], "r": 0.17}, {"at": [0.22, 0.1], "r": 0.1}, {"at": [0.08, 0.3], "r": 0.1}, {"at": [0.5, 0.5], "r": 0.25, "whole": true}, {"at": [0.5, 0.1], "r": 0.09}, {"at": [0.08, 0.5], "r": 0.1}, {"at": [0.27, 0.27], "r": 0.07}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.14], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.24, 0.1], "size": ["farmstead", "hamlet"], "biome": "home"},
+				{"id": "b", "at": [0.08, 0.32], "size": ["hamlet", "waystone"], "biome": "home"},
+				{"id": "e", "at": [0.5, 0.1], "size": ["village", "hamlet"], "biome": "wild"},
+				{"id": "l", "at": [0.07, 0.5], "size": ["hamlet", "village"], "biome": "wild2"},
+				{"id": "c", "at": [0.5, 0.5], "size": "city", "rich": true}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["a", "e", "bridge"],
+				["b", "l", "bridge"],
+				["h", "st", "bridge"],
+				["st", "c", "bridge"]
+			],
+			"sites": [
+				{"id": "t", "at": [0.5, 0.38], "kind": "lair", "tier": 3, "set": "ziggurat"},
+				{"id": "l1", "at": [0.03, 0.04], "kind": "lair", "tier": 1, "set": "watch_ruin"},
+				{"id": "st", "at": [0.27, 0.27], "kind": "lair", "tier": 1, "set": "small_ruin"},
+				{"id": "sh", "at": [0.4, 0.5], "kind": "shrine"},
+				{"id": "mk", "at": [0.16, 0.22], "kind": "merchant"}
+			],
+			"scatter": {"woods": 5, "rocks": 4, "ponds": 0}
+		},
+		"river_cross": {
+			"name": "Crossed Rivers",
+			"desc": "Two rivers cross in a plus and cut the land into four quarters. Bridges join neighbours; the city on the river island at the centre has four.",
+			"players": [3, 4],
+			"size": [252, 168],
+			"symmetry": "mirror4",
+			"base": "meadow",
+			"border": "mountains",
+			"features": {"rivers": [{"pts": [[0.5, -0.03], [0.48, 0.25], [0.5, 0.5]], "w": 9}, {"pts": [[-0.03, 0.5], [0.25, 0.53], [0.5, 0.5]], "w": 9}], "lakes": [{"at": [0.5, 0.5], "r": 0.17, "whole": true}], "isles": [{"at": [0.5, 0.5], "r": 0.1, "whole": true}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.12], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.32, 0.1], "size": ["hamlet", "farmstead"], "biome": "home"},
+				{"id": "b", "at": [0.1, 0.36], "size": ["farmstead", "waystone"], "biome": "home"},
+				{"id": "m", "at": [0.3, 0.33], "size": ["village", "hamlet"], "biome": "wild"},
+				{"id": "c", "at": [0.5, 0.5], "size": "city", "rich": true, "biome": "wild2"}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["a", "m", "trail"],
+				["b", "m", "trail"],
+				["h", "m", "road"],
+				["a", "a#1", "bridge"],
+				["b", "b#2", "bridge"],
+				["m", "c", "bridge"]
+			],
+			"sites": [
+				{"id": "l1", "at": [0.04, 0.24], "kind": "lair", "tier": 1},
+				{"id": "l2", "at": [0.22, 0.42], "kind": "lair", "tier": 2, "set": "graveyard"},
+				{"id": "l3", "at": [0.42, 0.04], "kind": "lair", "tier": 3, "set": "dragon_bones"},
+				{"id": "sh", "at": [0.2, 0.22], "kind": "shrine"}
+			],
+			"scatter": {"woods": 7, "rocks": 6, "ponds": 1}
+		},
+		"highland_corners": {
+			"name": "Walled Corners",
+			"desc": "Each corner is a mountain pocket with three narrow passes out; the open middle holds villages and a city.",
+			"players": [3, 4],
+			"size": [252, 168],
+			"symmetry": "mirror4",
+			"base": "meadow",
+			"border": "mountains",
+			"features": {"ridges": [{"pts": [[0.34, -0.03], [0.32, 0.18], [0.24, 0.3], [0.12, 0.34], [-0.03, 0.36]], "w": 6}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.13], "home": true, "size": "town", "biome": "home"},
+				{"id": "p", "at": [0.2, 0.06], "size": ["farmstead", "waystone"], "biome": "home"},
+				{"id": "e", "at": [0.5, 0.15], "size": ["village", "hamlet"], "biome": "wild"},
+				{"id": "l", "at": [0.1, 0.5], "size": ["village", "hamlet"], "biome": "wild2"},
+				{"id": "m", "at": [0.34, 0.38], "size": ["hamlet", "farmstead"]},
+				{"id": "c", "at": [0.5, 0.5], "size": "city", "rich": true}
+			],
+			"links": [
+				["h", "p", "road"],
+				["p", "e", "pass"],
+				["h", "l", "pass"],
+				["h", "m", "pass"],
+				["m", "c", "road"],
+				["e", "c", "trail"],
+				["l", "c", "trail"]
+			],
+			"sites": [
+				{"id": "g", "at": [0.03, 0.28], "kind": "lair", "tier": 1, "set": "watch_ruin"},
+				{"id": "t", "at": [0.5, 0.33], "kind": "lair", "tier": 3, "set": "temple_ruin"},
+				{"id": "l2", "at": [0.26, 0.5], "kind": "lair", "tier": 2},
+				{"id": "sh", "at": [0.36, 0.2], "kind": "shrine"},
+				{"id": "mk", "at": [0.2, 0.42], "kind": "merchant"}
+			],
+			"scatter": {"woods": 7, "rocks": 6, "ponds": 1}
+		},
+		"frozen_fjords": {
+			"name": "Frozen Fjords",
+			"desc": "Icy headlands cut by deep fjords. Each house holds a cape; narrow necks of land and two bridges lead to the rich middle shore. Wrecked camps and beasts wait on the outer skerries.",
+			"players": [2],
+			"size": [204, 136],
+			"symmetry": "mirror_x",
+			"base": "snowfield",
+			"border": "sea",
+			"features": {"sea": true, "land": [{"at": [0.13, 0.5], "r": 0.25}, {"at": [0.14, 0.15], "r": 0.14}, {"at": [0.14, 0.85], "r": 0.14}, {"at": [0.5, 0.5], "r": 0.27, "whole": true}, {"at": [0.34, 0.5], "r": 0.1}, {"at": [0.5, 0.1], "r": 0.1, "whole": true}, {"at": [0.5, 0.9], "r": 0.1, "whole": true}], "isles": [{"at": [0.04, 0.04], "r": 0.06}, {"at": [0.3, 0.94], "r": 0.06}], "woods": [{"at": [0.1, 0.3], "r": 0.05}]},
+			"zones": [
+				{"id": "h", "at": [0.11, 0.5], "home": true, "size": "town", "biome": "home"},
+				{"id": "n", "at": [0.15, 0.16], "size": ["hamlet", "farmstead"], "biome": "home"},
+				{"id": "s", "at": [0.15, 0.84], "size": ["farmstead", "waystone"], "biome": "home"},
+				{"id": "m", "at": [0.33, 0.5], "size": ["hamlet", "village"]},
+				{"id": "c", "at": [0.5, 0.5], "size": "city", "rich": true, "biome": "wild"},
+				{"id": "tn", "at": [0.5, 0.11], "size": ["village", "hamlet"], "biome": "wild2"},
+				{"id": "ts", "at": [0.5, 0.89], "size": ["village", "hamlet"], "biome": "wild2"}
+			],
+			"links": [
+				["h", "n", "road"],
+				["h", "s", "road"],
+				["h", "m", "land"],
+				["m", "c", "road"],
+				["n", "tn", "bridge"],
+				["s", "ts", "bridge"],
+				["tn", "c", "land"],
+				["ts", "c", "land"],
+				["n", "sk1", "ford"],
+				["s", "sk2", "bridge"]
+			],
+			"sites": [
+				{"id": "sk1", "at": [0.04, 0.04], "kind": "lair", "tier": 2, "set": "war_camp"},
+				{"id": "sk2", "at": [0.3, 0.94], "kind": "lair", "tier": 1, "set": "siege_wreck"},
+				{"id": "top", "at": [0.5, 0.03], "kind": "lair", "tier": 3, "set": "dragon_bones"},
+				{"id": "sh", "at": [0.22, 0.5], "kind": "shrine"},
+				{"id": "mk", "at": [0.5, 0.66], "kind": "merchant"}
+			],
+			"scatter": {"woods": 5, "rocks": 6, "ponds": 1}
+		},
+		"ember_crater": {
+			"name": "Ember Crater",
+			"desc": "A burnt land around a great crater. Its rim of black rock opens through four passes onto the crater floor, where a city stands beside a lake of fire.",
+			"players": [2],
+			"size": [204, 136],
+			"symmetry": "mirror_x",
+			"base": "ashland",
+			"border": "mountains",
+			"features": {"ridges": [{"pts": [[0.5, 0.14], [0.38, 0.18], [0.31, 0.32], [0.3, 0.5], [0.31, 0.68], [0.38, 0.82], [0.5, 0.86]], "w": 6}], "lakes": [{"at": [0.5, 0.62], "r": 0.08, "whole": true}], "woods": [{"at": [0.12, 0.25], "r": 0.05}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.5], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.17, 0.17], "size": ["hamlet", "farmstead"], "biome": "home"},
+				{"id": "b", "at": [0.17, 0.83], "size": ["farmstead", "hamlet"], "biome": "home"},
+				{"id": "rn", "at": [0.4, 0.06], "size": ["waystone", "hamlet"], "biome": "wild"},
+				{"id": "c", "at": [0.5, 0.4], "size": "city", "rich": true},
+				{"id": "f", "at": [0.41, 0.5], "size": ["village", "hamlet"], "rich": true}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["a", "rn", "trail"],
+				["a", "f", "pass"],
+				["b", "f", "pass"],
+				["f", "c", "road"],
+				["rn", "rn#1", "trail"],
+				["b", "b#1", "trail"]
+			],
+			"sites": [
+				{"id": "l1", "at": [0.04, 0.06], "kind": "lair", "tier": 1, "set": "war_camp"},
+				{"id": "l2", "at": [0.25, 0.95], "kind": "lair", "tier": 2, "set": "siege_wreck"},
+				{"id": "core", "at": [0.5, 0.22], "kind": "lair", "tier": 3, "set": "ziggurat"},
+				{"id": "sh", "at": [0.22, 0.5], "kind": "shrine"},
+				{"id": "mk", "at": [0.5, 0.76], "kind": "merchant"}
+			],
+			"scatter": {"woods": 4, "rocks": 10, "ponds": 1}
+		},
+		"fords_of_treachery": {
+			"name": "Traitor's Fords",
+			"desc": "A broad river runs corner to corner with no bridge at all: three fords cross it, one through a guarded island. Homes in opposite corners.",
+			"players": [2],
+			"size": [200, 136],
+			"symmetry": "rot180",
+			"base": "meadow",
+			"border": "mountains",
+			"features": {"rivers": [{"pts": [[1.03, -0.03], [0.72, 0.3], [0.5, 0.5], [0.28, 0.7], [-0.03, 1.03]], "w": 10}], "isles": [{"at": [0.5, 0.5], "r": 0.08, "whole": true}], "woods": [{"at": [0.3, 0.35], "r": 0.07}, {"at": [0.12, 0.62], "r": 0.05}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.12], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.36, 0.1], "size": ["hamlet", "farmstead"], "biome": "home"},
+				{"id": "b", "at": [0.1, 0.42], "size": ["farmstead", "waystone"], "biome": "home"},
+				{"id": "m", "at": [0.3, 0.48], "size": ["village", "hamlet"], "biome": "wild"},
+				{"id": "r", "at": [0.62, 0.14], "size": ["village", "town"], "rich": true, "biome": "wild2"},
+				{"id": "o", "at": [0.84, 0.36], "size": ["hamlet", "farmstead"], "biome": "wild"}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["h", "m", "road"],
+				["a", "r", "road"],
+				["m", "iz", "ford"],
+				["r", "o", "ford"],
+				["b", "o#1", "road"],
+				["r", "m", "trail"]
+			],
+			"sites": [
+				{"id": "iz", "at": [0.5, 0.5], "kind": "lair", "tier": 3, "set": "temple_ruin"},
+				{"id": "l1", "at": [0.04, 0.3], "kind": "lair", "tier": 1},
+				{"id": "l2", "at": [0.8, 0.05], "kind": "lair", "tier": 2, "set": "graveyard"},
+				{"id": "sh", "at": [0.22, 0.28], "kind": "shrine"},
+				{"id": "mk", "at": [0.46, 0.24], "kind": "merchant"}
+			],
+			"scatter": {"woods": 8, "rocks": 7, "ponds": 2}
+		},
+		"witchwood": {
+			"name": "Witchwood",
+			"desc": "A dark forest swallows the whole land. Only narrow trails wind between the thickets; clearings hold settlements, shrines and the dens of what hunts there.",
+			"players": [2],
+			"size": [204, 136],
+			"symmetry": "mirror_x",
+			"base": "deepwood",
+			"border": "mountains",
+			"features": {"woods": [{"at": [0.25, 0.3], "r": 0.13}, {"at": [0.25, 0.75], "r": 0.13}, {"at": [0.42, 0.15], "r": 0.1}, {"at": [0.42, 0.55], "r": 0.12}, {"at": [0.42, 0.88], "r": 0.09}, {"at": [0.08, 0.25], "r": 0.07}, {"at": [0.08, 0.8], "r": 0.07}, {"at": [0.5, 0.32], "r": 0.07, "whole": true}, {"at": [0.5, 0.72], "r": 0.07, "whole": true}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.5], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.18, 0.12], "size": ["hamlet", "farmstead"], "biome": "home"},
+				{"id": "b", "at": [0.16, 0.9], "size": ["farmstead", "hamlet"], "biome": "home"},
+				{"id": "g", "at": [0.33, 0.52], "size": ["hamlet", "waystone"]},
+				{"id": "c", "at": [0.5, 0.5], "size": ["town", "city"], "rich": true, "biome": "wild"},
+				{"id": "n", "at": [0.5, 0.1], "size": ["village", "hamlet"], "biome": "swamp"},
+				{"id": "s", "at": [0.5, 0.9], "size": ["village", "hamlet"], "biome": "wild2"}
+			],
+			"links": [
+				["h", "a", "trail"],
+				["h", "b", "trail"],
+				["h", "g", "trail"],
+				["g", "c", "trail"],
+				["a", "n", "trail"],
+				["b", "s", "trail"],
+				["n", "c", "trail"],
+				["s", "c", "trail"],
+				["a", "g", "trail"]
+			],
+			"sites": [
+				{"id": "l1", "at": [0.27, 0.06], "kind": "lair", "tier": 1, "set": "small_graves"},
+				{"id": "l2", "at": [0.33, 0.95], "kind": "lair", "tier": 2, "set": "graveyard"},
+				{"id": "heart", "at": [0.5, 0.97], "kind": "lair", "tier": 3, "set": "stone_circle"},
+				{"id": "sh", "at": [0.3, 0.4], "kind": "shrine"},
+				{"id": "mk", "at": [0.5, 0.22], "kind": "merchant"}
+			],
+			"scatter": {"woods": 14, "rocks": 4, "ponds": 2}
+		},
+		"crown_of_ridges": {
+			"name": "Crown of Ridges",
+			"desc": "A walled plateau rises in the middle, entered by four passes, with a city and two rich towns inside. Each corner home has open land, a lake and its own dens.",
+			"players": [3, 4],
+			"size": [252, 168],
+			"symmetry": "mirror4",
+			"base": "meadow",
+			"border": "mountains",
+			"features": {"ridges": [{"pts": [[0.5, 0.22], [0.38, 0.25], [0.29, 0.36], [0.27, 0.5]], "w": 6}], "lakes": [{"at": [0.24, 0.12], "r": 0.05}], "woods": [{"at": [0.07, 0.35], "r": 0.05}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.13], "home": true, "size": "town", "biome": "home"},
+				{"id": "p", "at": [0.36, 0.08], "size": ["farmstead", "hamlet"], "biome": "home"},
+				{"id": "q", "at": [0.08, 0.4], "size": ["hamlet", "waystone"]},
+				{"id": "e", "at": [0.5, 0.08], "size": ["village", "hamlet"], "biome": "wild"},
+				{"id": "w", "at": [0.06, 0.5], "size": ["village", "hamlet"], "biome": "wild2"},
+				{"id": "in", "at": [0.38, 0.4], "size": ["town", "village"], "rich": true},
+				{"id": "c", "at": [0.5, 0.5], "size": "city", "rich": true, "biome": "wild"}
+			],
+			"links": [
+				["h", "p", "road"],
+				["h", "q", "road"],
+				["p", "e", "road"],
+				["q", "w", "road"],
+				["h", "in", "pass"],
+				["in", "c", "road"],
+				["e", "c", "pass"],
+				["w", "c", "pass"]
+			],
+			"sites": [
+				{"id": "g", "at": [0.2, 0.3], "kind": "lair", "tier": 1, "set": "watch_ruin"},
+				{"id": "far", "at": [0.03, 0.03], "kind": "lair", "tier": 2, "set": "graveyard"},
+				{"id": "t", "at": [0.44, 0.32], "kind": "lair", "tier": 3, "set": "temple_ruin"},
+				{"id": "sh", "at": [0.22, 0.22], "kind": "shrine"},
+				{"id": "mk", "at": [0.28, 0.06], "kind": "merchant"}
+			],
+			"scatter": {"woods": 7, "rocks": 5, "ponds": 1}
+		},
+		"sunken_marches": {
+			"name": "Sunken Marches",
+			"desc": "Drowned fenland for four: pools and black channels everywhere, crossed by causeways and fords. Bog lairs lurk between the corners; a ziggurat isle sits in the central mere.",
+			"players": [3, 4],
+			"size": [252, 168],
+			"symmetry": "mirror4",
+			"base": "swamp",
+			"border": "mountains",
+			"features": {"rivers": [{"pts": [[0.5, -0.03], [0.47, 0.2], [0.5, 0.38]], "w": 7}, {"pts": [[-0.03, 0.5], [0.2, 0.46], [0.36, 0.5]], "w": 7}], "lakes": [{"at": [0.5, 0.5], "r": 0.16, "whole": true}, {"at": [0.26, 0.24], "r": 0.05}, {"at": [0.12, 0.34], "r": 0.04}, {"at": [0.36, 0.12], "r": 0.04}], "isles": [{"at": [0.5, 0.5], "r": 0.1, "whole": true}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.13], "home": true, "size": "town", "biome": "home"},
+				{"id": "p", "at": [0.3, 0.08], "size": ["farmstead", "hamlet"], "biome": "home"},
+				{"id": "q", "at": [0.1, 0.38], "size": ["hamlet", "waystone"], "biome": "home"},
+				{"id": "m", "at": [0.3, 0.34], "size": ["village", "hamlet"], "rich": true, "biome": "wild"},
+				{"id": "e", "at": [0.4, 0.16], "size": ["village", "hamlet"], "biome": "wild2"}
+			],
+			"links": [
+				["h", "p", "road"],
+				["h", "q", "road"],
+				["h", "m", "road"],
+				["p", "e", "road"],
+				["e", "e#1", "bridge"],
+				["q", "q#2", "ford"],
+				["m", "iz", "bridge"]
+			],
+			"sites": [
+				{"id": "iz", "at": [0.5, 0.5], "kind": "lair", "tier": 3, "set": "ziggurat"},
+				{"id": "l1", "at": [0.04, 0.25], "kind": "lair", "tier": 1, "set": "small_graves"},
+				{"id": "l2", "at": [0.2, 0.46], "kind": "lair", "tier": 2, "set": "graveyard"},
+				{"id": "sh", "at": [0.2, 0.22], "kind": "shrine"},
+				{"id": "mk", "at": [0.34, 0.42], "kind": "merchant"}
+			],
+			"scatter": {"woods": 6, "rocks": 3, "ponds": 4}
+		},
+		"serpent_river": {
+			"name": "Serpent River",
+			"desc": "A river winds across the land in a long S. Each house has a bridge into the other's far corner, and fords lead both ways to a guarded island at the bend.",
+			"players": [2],
+			"size": [204, 136],
+			"symmetry": "rot180",
+			"base": "meadow",
+			"border": "mountains",
+			"features": {"rivers": [{"pts": [[0.62, -0.03], [0.66, 0.2], [0.56, 0.36], [0.5, 0.5], [0.44, 0.64], [0.34, 0.8], [0.38, 1.03]], "w": 9}], "isles": [{"at": [0.5, 0.5], "r": 0.07, "whole": true}], "woods": [{"at": [0.22, 0.66], "r": 0.05}, {"at": [0.42, 0.3], "r": 0.04}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.15], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.34, 0.1], "size": ["hamlet", "farmstead"], "biome": "home"},
+				{"id": "b", "at": [0.1, 0.48], "size": ["farmstead", "waystone"], "biome": "home"},
+				{"id": "m", "at": [0.3, 0.42], "size": ["village", "hamlet"], "biome": "wild"},
+				{"id": "s", "at": [0.16, 0.84], "size": ["village", "town"], "rich": true, "biome": "wild2"}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["a", "m", "trail"],
+				["b", "m", "road"],
+				["b", "s", "road"],
+				["m", "iz", "ford"],
+				["a", "s#1", "bridge"]
+			],
+			"sites": [
+				{"id": "iz", "at": [0.5, 0.5], "kind": "lair", "tier": 3, "set": "pyre_hold"},
+				{"id": "l1", "at": [0.04, 0.04], "kind": "lair", "tier": 1},
+				{"id": "l2", "at": [0.3, 0.64], "kind": "lair", "tier": 2},
+				{"id": "sh", "at": [0.2, 0.32], "kind": "shrine"},
+				{"id": "mk", "at": [0.47, 0.17], "kind": "merchant"}
+			],
+			"scatter": {"woods": 9, "rocks": 7, "ponds": 1}
+		},
+		"long_steppe": {
+			"name": "The Long Steppe",
+			"desc": "Open grassland with many small settlements and hardly a wall: armies can meet anywhere. Two rich towns stand on the centre line.",
+			"players": [2],
+			"size": [216, 136],
+			"symmetry": "mirror_x",
+			"base": "meadow",
+			"border": "mountains",
+			"features": {"woods": [{"at": [0.3, 0.24], "r": 0.04}, {"at": [0.31, 0.78], "r": 0.035}]},
+			"zones": [
+				{"id": "h", "at": [0.08, 0.5], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.13, 0.17], "size": ["farmstead", "hamlet"], "biome": "home"},
+				{"id": "b", "at": [0.13, 0.83], "size": ["farmstead", "hamlet"], "biome": "home"},
+				{"id": "c", "at": [0.25, 0.37], "size": ["waystone", "farmstead"]},
+				{"id": "d", "at": [0.25, 0.66], "size": ["hamlet", "farmstead"], "biome": "wild"},
+				{"id": "e", "at": [0.38, 0.12], "size": ["hamlet", "village"], "biome": "wild"},
+				{"id": "f", "at": [0.38, 0.88], "size": ["village", "hamlet"], "biome": "wild2"},
+				{"id": "g", "at": [0.38, 0.5], "size": ["farmstead", "waystone"]},
+				{"id": "n", "at": [0.5, 0.3], "size": ["town", "village"], "rich": true, "biome": "wild2"},
+				{"id": "s", "at": [0.5, 0.72], "size": ["village", "town"], "rich": true, "biome": "wild"}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["h", "c", "road"],
+				["h", "d", "road"],
+				["a", "c", "trail"],
+				["b", "d", "trail"],
+				["a", "e", "road"],
+				["b", "f", "road"],
+				["c", "g", "trail"],
+				["d", "g", "trail"],
+				["c", "n", "road"],
+				["d", "s", "road"],
+				["e", "n", "trail"],
+				["f", "s", "trail"],
+				["g", "n", "trail"],
+				["g", "s", "trail"]
+			],
+			"sites": [
+				{"id": "l1", "at": [0.04, 0.05], "kind": "lair", "tier": 1},
+				{"id": "l2", "at": [0.04, 0.95], "kind": "lair", "tier": 2, "set": "barrow_camp"},
+				{"id": "l3", "at": [0.5, 0.05], "kind": "lair", "tier": 3},
+				{"id": "l4", "at": [0.27, 0.96], "kind": "lair", "tier": 1, "set": "wolf_den"},
+				{"id": "sh", "at": [0.2, 0.52], "kind": "shrine"},
+				{"id": "mk", "at": [0.5, 0.51], "kind": "merchant"}
+			],
+			"scatter": {"woods": 6, "rocks": 14, "peaks": 1, "ruins": 9}
+		},
+		"three_valleys": {
+			"name": "Three Valleys",
+			"desc": "Two long ridges split the middle of the land into three valleys. Each house starts where they open out; passes lead over the ridges, and a rich town waits in the middle valley.",
+			"players": [2],
+			"size": [204, 136],
+			"symmetry": "mirror_x",
+			"base": "gloomcrag",
+			"border": "mountains",
+			"features": {"ridges": [{"pts": [[0.17, 0.34], [0.3, 0.3], [0.42, 0.35], [0.53, 0.32]], "w": 6}, {"pts": [[0.17, 0.66], [0.3, 0.7], [0.42, 0.65], [0.53, 0.68]], "w": 6}], "woods": [{"at": [0.22, 0.18], "r": 0.045}, {"at": [0.24, 0.84], "r": 0.04}]},
+			"zones": [
+				{"id": "h", "at": [0.08, 0.5], "home": true, "size": "town", "biome": "home"},
+				{"id": "a", "at": [0.1, 0.15], "size": ["hamlet", "farmstead"], "biome": "home"},
+				{"id": "b", "at": [0.1, 0.85], "size": ["farmstead", "waystone"], "biome": "home"},
+				{"id": "m", "at": [0.28, 0.5], "size": ["village", "hamlet"]},
+				{"id": "n", "at": [0.34, 0.15], "size": ["village", "hamlet"], "biome": "wild"},
+				{"id": "s", "at": [0.34, 0.85], "size": ["hamlet", "village"], "biome": "wild2"},
+				{"id": "c", "at": [0.5, 0.5], "size": ["town", "city"], "rich": true},
+				{"id": "nt", "at": [0.5, 0.13], "size": ["hamlet", "village"], "biome": "wild"},
+				{"id": "st", "at": [0.5, 0.87], "size": ["village", "hamlet"], "biome": "wild2"}
+			],
+			"links": [
+				["h", "a", "road"],
+				["h", "b", "road"],
+				["h", "m", "road"],
+				["a", "n", "road"],
+				["b", "s", "road"],
+				["m", "c", "road"],
+				["n", "nt", "road"],
+				["s", "st", "road"],
+				["m", "n", "pass"],
+				["m", "s", "pass"]
+			],
+			"sites": [
+				{"id": "l1", "at": [0.04, 0.04], "kind": "lair", "tier": 1},
+				{"id": "l2", "at": [0.22, 0.95], "kind": "lair", "tier": 2, "set": "graveyard"},
+				{"id": "t3", "at": [0.5, 0.97], "kind": "lair", "tier": 3, "set": "citadel_ruin"},
+				{"id": "sh", "at": [0.42, 0.24], "kind": "shrine"},
+				{"id": "mk", "at": [0.42, 0.76], "kind": "merchant"}
+			],
+			"scatter": {"woods": 8, "rocks": 9}
+		},
+		"drowned_wheel": {
+			"name": "The Drowned Wheel",
+			"desc": "A round lake holds a rich island city, reached by one bridge from each house. A ring of settlements joins the shores, with woods between the spokes.",
+			"players": [3, 4],
+			"size": [252, 168],
+			"symmetry": "mirror4",
+			"base": "meadow",
+			"border": "mountains",
+			"features": {"lakes": [{"at": [0.5, 0.5], "r": 0.2, "whole": true}], "isles": [{"at": [0.5, 0.5], "r": 0.1, "whole": true}], "woods": [{"at": [0.37, 0.17], "r": 0.05}, {"at": [0.17, 0.37], "r": 0.05}]},
+			"zones": [
+				{"id": "h", "at": [0.1, 0.15], "home": true, "size": "town", "biome": "home"},
+				{"id": "e", "at": [0.5, 0.1], "size": ["village", "hamlet"], "biome": "wild"},
+				{"id": "l", "at": [0.07, 0.5], "size": ["hamlet", "village"], "biome": "wild2"},
+				{"id": "r", "at": [0.27, 0.27], "size": ["farmstead", "hamlet"], "biome": "home"},
+				{"id": "c", "at": [0.5, 0.5], "size": "city", "rich": true}
+			],
+			"links": [
+				["h", "e", "road"],
+				["h", "l", "road"],
+				["h", "r", "road"],
+				["r", "c", "bridge"],
+				["r", "e", "trail"],
+				["r", "l", "trail"]
+			],
+			"sites": [
+				{"id": "l1", "at": [0.3, 0.05], "kind": "lair", "tier": 1},
+				{"id": "l2", "at": [0.04, 0.3], "kind": "lair", "tier": 2, "set": "drowned_chapel"},
+				{"id": "t3", "at": [0.5, 0.24], "kind": "lair", "tier": 3, "set": "dragon_bones"},
+				{"id": "sh", "at": [0.2, 0.06], "kind": "shrine"},
+				{"id": "mk", "at": [0.06, 0.2], "kind": "merchant"}
+			],
+			"scatter": {"woods": 7, "rocks": 6, "ponds": 1}
+		}
+	},
+	"lair_guards": {
+		"_doc": "Wild creatures (data/units.json, faction wilds) that guard lairs, per tier and biome. Each entry: [unit id, count]; a lair takes one list of its tier, picked by the biome it stands in (or any).",
+		"1": {
+			"any": [
+				[["road_cutthroat", 4], ["deserter_crossbows", 2]],
+				[["thornwolf", 4]],
+				[["plague_rats", 6], ["crag_slinger", 2]],
+				[["carrion_flock", 3], ["plague_rats", 4]],
+				[["road_cutthroat", 3], ["crag_slinger", 2], ["thornwolf", 1]]
+			],
+			"swamp": [[["moss_creeper", 5], ["marsh_hag", 1]]],
+			"snowfield": [[["rime_wight", 3], ["crag_slinger", 2]]],
+			"ashland": [[["tomb_scarabs", 3], ["dune_scuttler", 3]]],
+			"gloomcrag": [[["corpse_light", 4], ["gloom_panther", 1]]],
+			"deepwood": [[["thornwolf", 3], ["moss_creeper", 3]]]
+		},
+		"2": {
+			"any": [
+				[["ogre_mauler", 2], ["road_cutthroat", 4]],
+				[["hill_troll", 2], ["crag_slinger", 3]],
+				[["ruin_sentinel", 2], ["deserter_crossbows", 3]],
+				[["shrieking_harpy", 3], ["carrion_flock", 3]],
+				[["steppe_centaur", 2], ["sand_reaver", 2], ["road_cutthroat", 2]],
+				[["salt_witch", 1], ["ruin_sentinel", 1], ["deserter_crossbows", 3]]
+			],
+			"swamp": [[["bog_lurker", 3], ["marsh_hag", 2]]],
+			"snowfield": [[["rime_wight", 4], ["hill_troll", 1]]],
+			"ashland": [[["ashscale_basilisk", 2], ["cinder_wraith", 2]]],
+			"gloomcrag": [[["cave_stalker", 3], ["barrow_revenant", 2]]],
+			"deepwood": [[["steppe_centaur", 3], ["thornwolf", 3]]]
+		},
+		"3": {
+			"any": [
+				[["hill_giant", 1], ["ogre_mauler", 3]],
+				[["primordial_wyrm", 1], ["shrieking_harpy", 3]],
+				[["venom_wyvern", 2], ["barrow_revenant", 2]],
+				[["hill_giant", 1], ["hill_troll", 2], ["crag_slinger", 4]],
+				[["bog_serpent", 1], ["salt_witch", 2], ["ogre_mauler", 2]]
+			],
+			"swamp": [[["bog_serpent", 2], ["bog_lurker", 2]]],
+			"snowfield": [[["frost_drake", 2], ["rime_wight", 3]]],
+			"ashland": [[["dune_wurm", 1], ["cinder_wraith", 3]]],
+			"gloomcrag": [[["primordial_wyrm", 1], ["cave_stalker", 3]]],
+			"deepwood": [[["venom_wyvern", 2], ["hill_troll", 2]]]
+		}
+	},
+	"garrisons": {
+		"_doc": "Neutral settlement garrisons on skirmish maps (campaign maps keep plain militia). Each neutral settlement is held by one group, scaled to the settlement's strength: its militia count in economy.json, in militia worth (MapGen.unit_worth: sqrt of effective hit points times damage a second, ranged x1.3). units: [unit id, share]; the first is the leader and always stays. A group fits a settlement when the scaled group lands within 80-125% of that strength, has at most max_units, and a mixed group stays mixed. biomes: where it lives ('any' or biome ids); groups of the zone's own biome count twice. Copies of one zone on a mirrored map get the same group.",
+		"max_units": 18,
+		"groups": [
+			{"id": "village_watch", "name": "Village watch", "units": [["militia", 3], ["crag_slinger", 1]], "biomes": ["any"], "weight": 2},
+			{"id": "pikes", "name": "Pike levy", "units": [["militia", 1]], "biomes": ["any"]},
+			{"id": "pilgrims", "name": "Lost pilgrims and their guards", "units": [["lost_pilgrims", 3], ["militia", 1]], "biomes": ["any"]},
+			{"id": "rat_swarm", "name": "Rat swarm", "units": [["plague_rats", 1]], "biomes": ["any"]},
+			{"id": "cutthroats", "name": "Cutthroat gang", "units": [["road_cutthroat", 2], ["deserter_crossbows", 1]], "biomes": ["any"]},
+			{"id": "deserters", "name": "Deserters' muster", "units": [["deserter_crossbows", 1], ["militia", 2]], "biomes": ["any"]},
+			{"id": "hedge_robbers", "name": "Hedge robbers", "units": [["road_cutthroat", 1], ["crag_slinger", 1]], "biomes": ["any"]},
+			{"id": "wolf_pack", "name": "Thornwolf pack", "units": [["thornwolf", 1]], "biomes": ["any"]},
+			{"id": "scavengers", "name": "Carrion feast", "units": [["carrion_flock", 1], ["plague_rats", 2]], "biomes": ["any"]},
+			{"id": "hill_folk", "name": "Hill folk and their troll", "units": [["hill_troll", 1], ["crag_slinger", 3]], "biomes": ["any"]},
+			{"id": "toll_ogres", "name": "Ogre toll-keepers", "units": [["ogre_mauler", 1], ["road_cutthroat", 3]], "biomes": ["any"]},
+			{"id": "ruin_wardens", "name": "Ruin wardens", "units": [["ruin_sentinel", 1], ["deserter_crossbows", 2]], "biomes": ["any"]},
+			{"id": "steppe_riders", "name": "Steppe riders", "units": [["steppe_centaur", 2], ["sand_reaver", 1]], "biomes": ["any"]},
+			{"id": "harpy_roost", "name": "Harpy roost", "units": [["shrieking_harpy", 2], ["carrion_flock", 2]], "biomes": ["any"]},
+			{"id": "giants_hall", "name": "Giant's hall", "units": [["hill_giant", 1], ["ogre_mauler", 2], ["crag_slinger", 4]], "biomes": ["any"]},
+			{"id": "salt_coven", "name": "Salt coven", "units": [["salt_witch", 1], ["marsh_hag", 1], ["lost_pilgrims", 4]], "biomes": ["any"]},
+			{"id": "sellswords", "name": "Sellsword company", "units": [["road_cutthroat", 3], ["deserter_crossbows", 2], ["steppe_centaur", 1]], "biomes": ["any"]},
+			{"id": "fen_folk", "name": "Fen dwellers", "units": [["moss_creeper", 3], ["marsh_hag", 1]], "biomes": ["swamp"]},
+			{"id": "bog_court", "name": "Bog court", "units": [["bog_lurker", 1], ["marsh_hag", 2], ["moss_creeper", 2]], "biomes": ["swamp"]},
+			{"id": "serpent_mire", "name": "Serpent mire", "units": [["bog_serpent", 1], ["bog_lurker", 2], ["salt_witch", 1]], "biomes": ["swamp"]},
+			{"id": "rime_host", "name": "Rime host", "units": [["rime_wight", 2], ["crag_slinger", 1]], "biomes": ["snowfield"]},
+			{"id": "drake_roost", "name": "Drake roost", "units": [["frost_drake", 1], ["rime_wight", 3]], "biomes": ["snowfield"]},
+			{"id": "scarab_nest", "name": "Scarab nest", "units": [["tomb_scarabs", 1], ["dune_scuttler", 2]], "biomes": ["ashland"]},
+			{"id": "cinder_pack", "name": "Cinder pack", "units": [["cinder_wraith", 1], ["ashscale_basilisk", 1], ["dune_scuttler", 2]], "biomes": ["ashland"]},
+			{"id": "wurm_cult", "name": "Wurm cult", "units": [["dune_wurm", 1], ["sand_reaver", 3], ["tomb_scarabs", 2]], "biomes": ["ashland"]},
+			{"id": "corpse_lights", "name": "Corpse lights", "units": [["corpse_light", 2], ["gloom_panther", 1]], "biomes": ["gloomcrag"]},
+			{"id": "barrow_watch", "name": "Barrow watch", "units": [["barrow_revenant", 1], ["cave_stalker", 1], ["corpse_light", 2]], "biomes": ["gloomcrag"]},
+			{"id": "wild_hunt", "name": "Wild hunt", "units": [["thornwolf", 2], ["steppe_centaur", 1]], "biomes": ["deepwood"]},
+			{"id": "creeper_grove", "name": "Creeper grove", "units": [["moss_creeper", 2], ["thornwolf", 1]], "biomes": ["deepwood", "swamp"]},
+			{"id": "wyvern_nest", "name": "Wyvern nest", "units": [["venom_wyvern", 1], ["thornwolf", 2], ["gloom_panther", 1]], "biomes": ["deepwood", "gloomcrag"]},
+			{"id": "farm_hands", "name": "Farm hands and hounds", "units": [["militia", 2], ["thornwolf", 1]], "biomes": ["meadow"]},
+			{"id": "border_keep", "name": "Border keep", "units": [["militia", 4], ["deserter_crossbows", 2], ["ruin_sentinel", 1]], "biomes": ["meadow"]},
+			{"id": "marsh_lights", "name": "Marsh lights", "units": [["corpse_light", 1]], "biomes": ["swamp", "gloomcrag"]},
+			{"id": "rime_shades", "name": "Rime shades", "units": [["rime_wight", 1]], "biomes": ["snowfield"]},
+			{"id": "scuttlers", "name": "Dune scuttlers", "units": [["dune_scuttler", 1], ["plague_rats", 1]], "biomes": ["ashland"]},
+			{"id": "creepers", "name": "Moss creepers", "units": [["moss_creeper", 1]], "biomes": ["swamp", "deepwood"]}
+		]
+	}
+}

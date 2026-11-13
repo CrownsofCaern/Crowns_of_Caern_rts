@@ -1,0 +1,1285 @@
+{
+ "_doc": "Warbound 3D buildings (tools/assets/tripo_buildings.py). key = the RTS sprite key; image = 2D source art.",
+ "buildings": {
+  "c_dw1": {
+   "image": "assets/towns/concord/c_dw1.png",
+   "group": "concord",
+   "task": "30a9239b-f05d-4dd6-92e0-96b98e012a98",
+   "raw": "assets/source/buildings3d/c_dw1/c_dw1_model.glb",
+   "credits": 40
+  },
+  "c_hall": {
+   "image": "assets/towns/concord/c_hall.png",
+   "group": "concord",
+   "task": "79eb2e99-5f08-442b-8892-cc2534b3a4e3",
+   "raw": "assets/source/buildings3d/c_hall/c_hall_model.glb",
+   "credits": 40,
+   "width_m": 4.2
+  },
+  "c_market": {
+   "image": "assets/towns/concord/c_market.png",
+   "group": "concord",
+   "task": "9a496c62-1f8f-44ef-83f3-707273b2da58",
+   "raw": "assets/source/buildings3d/c_market/c_market_model.glb",
+   "credits": 40
+  },
+  "c_dw2": {
+   "image": "assets/towns/concord/c_dw2.png",
+   "group": "concord",
+   "task": "c4e7b4f6-5ded-49e3-a3c6-c26481e64159",
+   "raw": "assets/source/buildings3d/c_dw2/c_dw2_model.glb",
+   "credits": 40
+  },
+  "c_dw3": {
+   "image": "assets/towns/concord/c_dw3.png",
+   "group": "concord",
+   "task": "3e8b6537-5e79-4a90-9844-beb65698a690",
+   "raw": "assets/source/buildings3d/c_dw3/c_dw3_model.glb",
+   "credits": 40
+  },
+  "c_dw4": {
+   "image": "assets/towns/concord/c_dw4.png",
+   "group": "concord",
+   "task": "87ce9f60-c019-4671-a170-9c7f622ea2a8",
+   "raw": "assets/source/buildings3d/c_dw4/c_dw4_model.glb",
+   "credits": 40
+  },
+  "c_dw5": {
+   "image": "assets/towns/concord/c_dw5.png",
+   "group": "concord",
+   "task": "a008c867-293b-46ac-8ea9-cb6c2d0e2324",
+   "raw": "assets/source/buildings3d/c_dw5/c_dw5_model.glb",
+   "credits": 40
+  },
+  "c_dw6": {
+   "image": "assets/towns/concord/c_dw6.png",
+   "group": "concord",
+   "task": "1006437d-2df1-49c8-9d13-3516dbdae0be",
+   "raw": "assets/source/buildings3d/c_dw6/c_dw6_model.glb",
+   "credits": 40
+  },
+  "c_dw7": {
+   "image": "assets/towns/concord/c_dw7.png",
+   "group": "concord",
+   "task": "f474e8a7-78fa-4ab2-b5e4-8aad33408e76",
+   "raw": "assets/source/buildings3d/c_dw7/c_dw7_model.glb",
+   "credits": 40
+  },
+  "c_dw8": {
+   "image": "assets/towns/concord/c_dw8.png",
+   "group": "concord",
+   "task": "cc3937e5-458a-47e4-9ccf-7e3757a3ac3a",
+   "raw": "assets/source/buildings3d/c_dw8/c_dw8_model.glb",
+   "credits": 40
+  },
+  "h_hall": {
+   "image": "assets/towns/hollow/h_hall.png",
+   "group": "hollow",
+   "task": "cb487bc5-d514-4fce-9f10-9509f393d089",
+   "raw": "assets/source/buildings3d/h_hall/h_hall_model.glb",
+   "credits": 40,
+   "width_m": 4.2
+  },
+  "h_market": {
+   "image": "assets/towns/hollow/h_market.png",
+   "group": "hollow",
+   "task": "a5dba523-c614-43b0-994a-686b83d863ed",
+   "raw": "assets/source/buildings3d/h_market/h_market_model.glb",
+   "credits": 40
+  },
+  "h_dw1": {
+   "image": "assets/towns/hollow/h_dw1.png",
+   "group": "hollow",
+   "task": "685a3b92-1e08-4636-be34-18b176e31b8c",
+   "raw": "assets/source/buildings3d/h_dw1/h_dw1_model.glb",
+   "credits": 40
+  },
+  "h_dw2": {
+   "image": "assets/towns/hollow/h_dw2.png",
+   "group": "hollow",
+   "task": "38341b57-ebd2-4e2a-9e8a-2e3a4eb618a6",
+   "raw": "assets/source/buildings3d/h_dw2/h_dw2_model.glb",
+   "credits": 40
+  },
+  "h_dw3": {
+   "image": "assets/towns/hollow/h_dw3.png",
+   "group": "hollow",
+   "task": "7605dd67-c01d-44ff-b44b-335e08ccef5f",
+   "raw": "assets/source/buildings3d/h_dw3/h_dw3_model.glb",
+   "credits": 40
+  },
+  "h_dw4": {
+   "image": "assets/towns/hollow/h_dw4.png",
+   "group": "hollow",
+   "task": "80972f07-a151-4e1f-9f8c-8209b17c5518",
+   "raw": "assets/source/buildings3d/h_dw4/h_dw4_model.glb",
+   "credits": 40
+  },
+  "h_dw5": {
+   "image": "assets/towns/hollow/h_dw5.png",
+   "group": "hollow",
+   "task": "e27cbeaf-8bb9-44b0-8584-b98af045e3b0",
+   "raw": "assets/source/buildings3d/h_dw5/h_dw5_model.glb",
+   "credits": 40
+  },
+  "h_dw6": {
+   "image": "assets/towns/hollow/h_dw6.png",
+   "group": "hollow",
+   "credits": 40,
+   "rejected": [
+    "6ae4d402-b550-480d-8302-c51feed6a777"
+   ],
+   "task": "ef2c2ecd-7d13-49ca-998f-fa0c2c8a1c21",
+   "raw": "assets/source/buildings3d/h_dw6/h_dw6_model.glb"
+  },
+  "h_dw7": {
+   "image": "assets/towns/hollow/h_dw7.png",
+   "group": "hollow",
+   "task": "40e13ffe-ff40-4a80-88b0-bdddc062f21e",
+   "raw": "assets/source/buildings3d/h_dw7/h_dw7_model.glb",
+   "credits": 40
+  },
+  "h_dw8": {
+   "image": "assets/towns/hollow/h_dw8.png",
+   "group": "hollow",
+   "task": "5d8be2dc-30c1-46d5-98d2-9bee4a3a1579",
+   "raw": "assets/source/buildings3d/h_dw8/h_dw8_model.glb",
+   "credits": 40
+  },
+  "n_house": {
+   "image": "assets/source/buildings3d/neutral/n_house.png",
+   "group": "neutral",
+   "from": "assets/towns/concord/c_yard.png (recoloured)",
+   "task": "d6a47007-00e0-468a-8086-0317b500f43a",
+   "raw": "assets/source/buildings3d/n_house/n_house_model.glb",
+   "credits": 40,
+   "width_m": 3.6,
+   "tris": 8000,
+   "tint": [
+    0.8,
+    0.77,
+    0.76
+   ]
+  },
+  "n_inn": {
+   "image": "assets/source/buildings3d/neutral/n_inn.png",
+   "group": "neutral",
+   "from": "assets/towns/concord/c_tavern.png (recoloured)",
+   "task": "bd136ecc-58fa-4761-b921-9373271b4fde",
+   "raw": "assets/source/buildings3d/n_inn/n_inn_model.glb",
+   "credits": 40,
+   "width_m": 4.0,
+   "tris": 8000,
+   "tint": [
+    0.8,
+    0.77,
+    0.76
+   ]
+  },
+  "n_barn": {
+   "image": "assets/source/buildings3d/neutral/n_barn.png",
+   "group": "neutral",
+   "from": "assets/towns/concord/c_remount.png (recoloured)",
+   "task": "a6e2cb6d-843f-4073-af24-3c14b2e3cc81",
+   "raw": "assets/source/buildings3d/n_barn/n_barn_model.glb",
+   "credits": 40,
+   "width_m": 4.0,
+   "tris": 8000,
+   "tint": [
+    0.8,
+    0.77,
+    0.76
+   ]
+  },
+  "n_chapel": {
+   "image": "assets/source/buildings3d/neutral/n_chapel.png",
+   "group": "neutral",
+   "from": "assets/towns/concord/c_dw5.png (recoloured)",
+   "task": "f1f5ecea-4eac-487a-99b3-0cc9a83e139a",
+   "raw": "assets/source/buildings3d/n_chapel/n_chapel_model.glb",
+   "credits": 40,
+   "width_m": 3.6,
+   "tris": 8000,
+   "tint": [
+    0.8,
+    0.77,
+    0.76
+   ]
+  },
+  "n_tower": {
+   "image": "assets/source/buildings3d/neutral/n_tower.png",
+   "group": "neutral",
+   "from": "assets/towns/concord/c_dw6.png (recoloured)",
+   "task": "453efe89-3591-4c3b-b2e4-5956c3554081",
+   "raw": "assets/source/buildings3d/n_tower/n_tower_model.glb",
+   "credits": 40,
+   "width_m": 2.4,
+   "tris": 8000,
+   "tint": [
+    0.8,
+    0.77,
+    0.76
+   ]
+  },
+  "n_palisade": {
+   "image": "assets/source/buildings3d/neutral/n_palisade.png",
+   "group": "neutral",
+   "from": "assets/towns/concord/c_palisade.png (recoloured)",
+   "task": "be21c903-b118-44bc-8d69-18b5f38aa4f8",
+   "raw": "assets/source/buildings3d/n_palisade/n_palisade_model.glb",
+   "credits": 40,
+   "width_m": 4.0,
+   "tris": 8000,
+   "tint": [
+    0.8,
+    0.77,
+    0.76
+   ]
+  },
+  "n_keep": {
+   "image": "assets/source/buildings3d/neutral/n_keep.png",
+   "group": "neutral",
+   "from": "assets/towns/concord/c_keep.png (recoloured)",
+   "task": "c734f18e-27a4-4c9c-8fac-990196a8f00d",
+   "raw": "assets/source/buildings3d/n_keep/n_keep_model.glb",
+   "credits": 40,
+   "width_m": 4.2,
+   "tris": 8000,
+   "tint": [
+    0.8,
+    0.77,
+    0.76
+   ]
+  },
+  "n_gatehouse": {
+   "image": "assets/source/buildings3d/neutral/n_gatehouse.png",
+   "group": "neutral",
+   "from": "assets/towns/concord/c_bastion.png (recoloured)",
+   "task": "1c7ce7c6-b926-44ef-9e56-ba65f862415d",
+   "raw": "assets/source/buildings3d/n_gatehouse/n_gatehouse_model.glb",
+   "credits": 40,
+   "width_m": 4.6,
+   "tris": 8000,
+   "tint": [
+    0.8,
+    0.77,
+    0.76
+   ]
+  },
+  "n_guildhall": {
+   "image": "assets/source/buildings3d/neutral/n_guildhall.png",
+   "group": "neutral",
+   "from": "assets/towns/concord/c_court.png (recoloured)",
+   "task": "097b1c53-89a4-441d-952b-96901d706ddc",
+   "raw": "assets/source/buildings3d/n_guildhall/n_guildhall_model.glb",
+   "credits": 40,
+   "width_m": 5.0,
+   "tris": 8000,
+   "tint": [
+    0.8,
+    0.77,
+    0.76
+   ]
+  },
+  "n_smithy": {
+   "image": "assets/source/buildings3d/neutral/n_smithy.png",
+   "group": "neutral",
+   "from": "assets/towns/concord/c_dw7.png (recoloured)",
+   "task": "981a6e52-eed9-44ad-85c6-01b76abba094",
+   "raw": "assets/source/buildings3d/n_smithy/n_smithy_model.glb",
+   "credits": 40,
+   "width_m": 4.0,
+   "tris": 8000,
+   "tint": [
+    0.8,
+    0.77,
+    0.76
+   ]
+  },
+  "n_waystone": {
+   "image": "assets/source/batches/special-sites-001/source.png",
+   "crop": [
+    384,
+    768,
+    768,
+    1024
+   ],
+   "group": "neutral",
+   "task": "1b377790-01ff-40b2-b7ad-5727f23a425e",
+   "raw": "assets/source/buildings3d/n_waystone/n_waystone_model.glb",
+   "credits": 40,
+   "width_m": 2.4,
+   "tris": 8000
+  },
+  "res_wood": {
+   "image": "assets/source/batches/resource-pickups-001/map/source.png",
+   "crop": [
+    444,
+    0,
+    887,
+    444
+   ],
+   "group": "resource",
+   "width_m": 1.4,
+   "task": "57d30ed9-ddcb-46e1-bd4d-ded3f6a2d8ea",
+   "raw": "assets/source/buildings3d/res_wood/res_wood_model.glb",
+   "credits": 40,
+   "tris": 5000
+  },
+  "res_ore": {
+   "image": "assets/source/batches/resource-pickups-001/map/source.png",
+   "crop": [
+    887,
+    0,
+    1330,
+    444
+   ],
+   "group": "resource",
+   "width_m": 1.4,
+   "task": "11e4f699-a165-4855-afdd-ab6711d1764d",
+   "raw": "assets/source/buildings3d/res_ore/res_ore_model.glb",
+   "credits": 40,
+   "tris": 5000,
+   "metal": true,
+   "tint": [
+    0.5,
+    0.42,
+    0.42
+   ]
+  },
+  "res_mercury": {
+   "image": "assets/source/batches/resource-pickups-001/map/source.png",
+   "crop": [
+    1330,
+    0,
+    1774,
+    444
+   ],
+   "group": "resource",
+   "width_m": 1.4,
+   "task": "f9710faa-bab9-4312-94db-0cfb270307b1",
+   "raw": "assets/source/buildings3d/res_mercury/res_mercury_model.glb",
+   "credits": 40,
+   "tris": 5000,
+   "metal": true
+  },
+  "res_sulfur": {
+   "image": "assets/source/batches/resource-pickups-001/map/source.png",
+   "crop": [
+    0,
+    444,
+    444,
+    887
+   ],
+   "group": "resource",
+   "width_m": 1.4,
+   "task": "dc254351-1bdf-4092-81bd-91d3c9086883",
+   "raw": "assets/source/buildings3d/res_sulfur/res_sulfur_model.glb",
+   "credits": 40,
+   "tris": 5000
+  },
+  "res_crystal": {
+   "image": "assets/source/batches/resource-pickups-001/map/source.png",
+   "crop": [
+    444,
+    444,
+    887,
+    887
+   ],
+   "group": "resource",
+   "width_m": 1.4,
+   "task": "9ee69ba7-ce9f-4029-ba40-4a4dcf8b248d",
+   "raw": "assets/source/buildings3d/res_crystal/res_crystal_model.glb",
+   "credits": 40,
+   "tris": 5000
+  },
+  "res_gems": {
+   "image": "assets/source/batches/resource-pickups-001/map/source.png",
+   "crop": [
+    887,
+    444,
+    1330,
+    887
+   ],
+   "group": "resource",
+   "width_m": 1.4,
+   "task": "02ea077b-2d07-43c9-9445-8d54d472e6be",
+   "raw": "assets/source/buildings3d/res_gems/res_gems_model.glb",
+   "credits": 40,
+   "tris": 5000
+  },
+  "a_hall": {
+   "image": "assets/towns/ashen/a_hall.png",
+   "group": "ashen",
+   "width_m": 4.2,
+   "task": "e3ed5c9d-f594-4ee9-8a79-8004671b752b",
+   "raw": "assets/source/buildings3d/a_hall/a_hall_model.glb",
+   "credits": 40,
+   "tint": [
+    0.62,
+    0.56,
+    0.56
+   ],
+   "yaw_degrees": 0
+  },
+  "a_market": {
+   "image": "assets/towns/ashen/a_market.png",
+   "group": "ashen",
+   "task": "4a20d1eb-093f-4c42-b3ce-15450dbc5a8d",
+   "raw": "assets/source/buildings3d/a_market/a_market_model.glb",
+   "credits": 40,
+   "tint": [
+    0.62,
+    0.56,
+    0.56
+   ],
+   "yaw_degrees": -180
+  },
+  "a_dw1": {
+   "image": "assets/towns/ashen/a_dw1.png",
+   "group": "ashen",
+   "task": "2357cfc2-6971-413c-8198-ee7835fa4de2",
+   "raw": "assets/source/buildings3d/a_dw1/a_dw1_model.glb",
+   "credits": 40,
+   "tint": [
+    0.62,
+    0.56,
+    0.56
+   ]
+  },
+  "a_dw2": {
+   "image": "assets/towns/ashen/a_dw2.png",
+   "group": "ashen",
+   "task": "2b0e95a5-96ff-4286-a46f-83961e2291a7",
+   "raw": "assets/source/buildings3d/a_dw2/a_dw2_model.glb",
+   "credits": 40,
+   "tint": [
+    0.62,
+    0.56,
+    0.56
+   ]
+  },
+  "a_dw3": {
+   "image": "assets/towns/ashen/a_dw3.png",
+   "group": "ashen",
+   "task": "06afa645-e6a2-4ee6-bde4-1886022b5eed",
+   "raw": "assets/source/buildings3d/a_dw3/a_dw3_model.glb",
+   "credits": 40,
+   "tint": [
+    0.62,
+    0.56,
+    0.56
+   ]
+  },
+  "a_dw4": {
+   "image": "assets/towns/ashen/a_dw4.png",
+   "group": "ashen",
+   "task": "883f25f9-f1f6-41a9-89f9-88ff984b012c",
+   "raw": "assets/source/buildings3d/a_dw4/a_dw4_model.glb",
+   "credits": 40,
+   "tint": [
+    0.62,
+    0.56,
+    0.56
+   ],
+   "yaw_degrees": -180
+  },
+  "a_dw5": {
+   "image": "assets/towns/ashen/a_dw5.png",
+   "group": "ashen",
+   "task": "09de3815-19ea-4456-942f-3547e0aaa0d8",
+   "raw": "assets/source/buildings3d/a_dw5/a_dw5_model.glb",
+   "credits": 40,
+   "tint": [
+    0.62,
+    0.56,
+    0.56
+   ]
+  },
+  "a_dw6": {
+   "image": "assets/towns/ashen/a_dw6.png",
+   "group": "ashen",
+   "task": "89b85ce3-ab03-4a95-905b-5caafa1e0502",
+   "raw": "assets/source/buildings3d/a_dw6/a_dw6_model.glb",
+   "credits": 40,
+   "tint": [
+    0.62,
+    0.56,
+    0.56
+   ]
+  },
+  "a_dw7": {
+   "image": "assets/towns/ashen/a_dw7.png",
+   "group": "ashen",
+   "task": "cc5c7033-dc01-4de4-b40f-b3367f8f8ff5",
+   "raw": "assets/source/buildings3d/a_dw7/a_dw7_model.glb",
+   "credits": 40,
+   "tint": [
+    0.62,
+    0.56,
+    0.56
+   ]
+  },
+  "a_dw8": {
+   "image": "assets/towns/ashen/a_dw8.png",
+   "group": "ashen",
+   "task": "51d415ce-9c1c-4239-986c-0a8c0160c54f",
+   "raw": "assets/source/buildings3d/a_dw8/a_dw8_model.glb",
+   "credits": 40,
+   "tint": [
+    0.62,
+    0.56,
+    0.56
+   ]
+  },
+  "t_hall": {
+   "image": "assets/towns/thornwood/t_hall.png",
+   "group": "thornwood",
+   "width_m": 4.2,
+   "task": "b4f76bfb-5afb-4d56-a8b9-fd18d535adb4",
+   "raw": "assets/source/buildings3d/t_hall/t_hall_model.glb",
+   "credits": 40,
+   "tint": [
+    0.72,
+    0.7,
+    0.68
+   ]
+  },
+  "t_market": {
+   "image": "assets/towns/thornwood/t_market.png",
+   "group": "thornwood",
+   "task": "240b6997-3b7d-415f-8c6f-126860e25f79",
+   "raw": "assets/source/buildings3d/t_market/t_market_model.glb",
+   "credits": 40,
+   "tint": [
+    0.72,
+    0.7,
+    0.68
+   ]
+  },
+  "t_dw1": {
+   "image": "assets/towns/thornwood/t_dw1.png",
+   "group": "thornwood",
+   "task": "9c00a5e6-7944-4b69-866d-9c37fc94487b",
+   "raw": "assets/source/buildings3d/t_dw1/t_dw1_model.glb",
+   "credits": 40,
+   "tint": [
+    0.72,
+    0.7,
+    0.68
+   ]
+  },
+  "t_dw2": {
+   "image": "assets/towns/thornwood/t_dw2.png",
+   "group": "thornwood",
+   "task": "1d550615-652a-4e42-9f88-a913a67ac5ea",
+   "raw": "assets/source/buildings3d/t_dw2/t_dw2_model.glb",
+   "credits": 40,
+   "tint": [
+    0.72,
+    0.7,
+    0.68
+   ]
+  },
+  "t_dw3": {
+   "image": "assets/towns/thornwood/t_dw3.png",
+   "group": "thornwood",
+   "task": "5e841f19-3c40-4be3-9f9d-9aa3f05df6c9",
+   "raw": "assets/source/buildings3d/t_dw3/t_dw3_model.glb",
+   "credits": 40,
+   "tint": [
+    0.72,
+    0.7,
+    0.68
+   ]
+  },
+  "t_dw4": {
+   "image": "assets/towns/thornwood/t_dw4.png",
+   "group": "thornwood",
+   "task": "0c1af9b9-b84c-4d59-afee-e5838fc1d37c",
+   "raw": "assets/source/buildings3d/t_dw4/t_dw4_model.glb",
+   "credits": 40,
+   "tint": [
+    0.72,
+    0.7,
+    0.68
+   ]
+  },
+  "t_dw5": {
+   "image": "assets/towns/thornwood/t_dw5.png",
+   "group": "thornwood",
+   "task": "e147cc7b-bf82-4e7e-9d5f-87e80de116a7",
+   "raw": "assets/source/buildings3d/t_dw5/t_dw5_model.glb",
+   "credits": 40,
+   "tint": [
+    0.72,
+    0.7,
+    0.68
+   ]
+  },
+  "t_dw6": {
+   "image": "assets/towns/thornwood/t_dw6.png",
+   "group": "thornwood",
+   "task": "986157dd-89ef-4565-89ad-3413f6015390",
+   "raw": "assets/source/buildings3d/t_dw6/t_dw6_model.glb",
+   "credits": 40,
+   "tint": [
+    0.72,
+    0.7,
+    0.68
+   ]
+  },
+  "t_dw7": {
+   "image": "assets/towns/thornwood/t_dw7.png",
+   "group": "thornwood",
+   "task": "c69f46bf-3beb-486a-8897-098da75cefc2",
+   "raw": "assets/source/buildings3d/t_dw7/t_dw7_model.glb",
+   "credits": 40,
+   "tint": [
+    0.72,
+    0.7,
+    0.68
+   ]
+  },
+  "t_dw8": {
+   "image": "assets/towns/thornwood/t_dw8.png",
+   "group": "thornwood",
+   "task": "f191bfcc-3de0-4fe5-97e6-4c7dc5948532",
+   "raw": "assets/source/buildings3d/t_dw8/t_dw8_model.glb",
+   "credits": 40,
+   "tint": [
+    0.72,
+    0.7,
+    0.68
+   ]
+  },
+  "f_hall": {
+   "image": "assets/towns/forge/f_hall.png",
+   "group": "forge",
+   "width_m": 4.2,
+   "task": "37982b22-f601-4ed1-97b9-ccb4e28b347a",
+   "raw": "assets/source/buildings3d/f_hall/f_hall_model.glb",
+   "credits": 40
+  },
+  "f_market": {
+   "image": "assets/towns/forge/f_market.png",
+   "group": "forge",
+   "task": "8788172a-e2a2-4bec-90a4-ea0612893f44",
+   "raw": "assets/source/buildings3d/f_market/f_market_model.glb",
+   "credits": 40
+  },
+  "f_dw1": {
+   "image": "assets/towns/forge/f_dw1.png",
+   "group": "forge",
+   "task": "d7208019-4844-471f-8d0b-142bf974e45a",
+   "raw": "assets/source/buildings3d/f_dw1/f_dw1_model.glb",
+   "credits": 40
+  },
+  "f_dw2": {
+   "image": "assets/towns/forge/f_dw2.png",
+   "group": "forge",
+   "task": "21a90801-97d3-499e-a1d6-f1c7351f554e",
+   "raw": "assets/source/buildings3d/f_dw2/f_dw2_model.glb",
+   "credits": 40
+  },
+  "f_dw3": {
+   "image": "assets/towns/forge/f_dw3.png",
+   "group": "forge",
+   "task": "9192e6b8-3a98-46dd-adba-0502b825b4a9",
+   "raw": "assets/source/buildings3d/f_dw3/f_dw3_model.glb",
+   "credits": 40
+  },
+  "f_dw4": {
+   "image": "assets/towns/forge/f_dw4.png",
+   "group": "forge",
+   "task": "7734fb97-23ba-4a11-a5b9-e9452d105580",
+   "raw": "assets/source/buildings3d/f_dw4/f_dw4_model.glb",
+   "credits": 40
+  },
+  "f_dw5": {
+   "image": "assets/towns/forge/f_dw5.png",
+   "group": "forge",
+   "task": "a568ef88-50da-46ca-ab8e-bea96daa4000",
+   "raw": "assets/source/buildings3d/f_dw5/f_dw5_model.glb",
+   "credits": 40
+  },
+  "f_dw6": {
+   "image": "assets/towns/forge/f_dw6.png",
+   "group": "forge",
+   "task": "28e5c8c4-a6b6-4a69-a2d3-ec7acaa3fb54",
+   "raw": "assets/source/buildings3d/f_dw6/f_dw6_model.glb",
+   "credits": 40
+  },
+  "f_dw7": {
+   "image": "assets/towns/forge/f_dw7.png",
+   "group": "forge",
+   "task": "403585f5-a204-474a-8082-343e9a897662",
+   "raw": "assets/source/buildings3d/f_dw7/f_dw7_model.glb",
+   "credits": 40
+  },
+  "f_dw8": {
+   "image": "assets/towns/forge/f_dw8.png",
+   "group": "forge",
+   "task": "2160091d-cb6e-4317-9e4a-a1f4b620a3b6",
+   "raw": "assets/source/buildings3d/f_dw8/f_dw8_model.glb",
+   "credits": 40
+  },
+  "s_hall": {
+   "image": "assets/towns/fishmen/fm_hall.png",
+   "group": "fishmen",
+   "width_m": 4.2,
+   "task": "91329fe7-e738-4163-b9b1-5edd38699a67",
+   "raw": "assets/source/buildings3d/s_hall/s_hall_model.glb",
+   "credits": 40
+  },
+  "s_market": {
+   "image": "assets/towns/fishmen/fm_market.png",
+   "group": "fishmen",
+   "task": "d7d1a25a-cc6b-4b7d-a051-bb2031f420a0",
+   "raw": "assets/source/buildings3d/s_market/s_market_model.glb",
+   "credits": 40
+  },
+  "s_dw1": {
+   "image": "assets/towns/fishmen/fm_dw1.png",
+   "group": "fishmen",
+   "credits": 40,
+   "rejected": [
+    "f893973f-d4c9-4ab9-9dd5-2f3bb809c08c"
+   ],
+   "task": "0fe86963-1516-49d4-9a8a-9c8dcc48ac80",
+   "raw": "assets/source/buildings3d/s_dw1/s_dw1_model.glb"
+  },
+  "s_dw2": {
+   "image": "assets/towns/fishmen/fm_dw2.png",
+   "group": "fishmen",
+   "task": "bb321f6e-2886-4bc9-9623-151d1bca0b2f",
+   "raw": "assets/source/buildings3d/s_dw2/s_dw2_model.glb",
+   "credits": 40
+  },
+  "s_dw3": {
+   "image": "assets/towns/fishmen/fm_dw3.png",
+   "group": "fishmen",
+   "task": "c07c670e-8609-4655-a1ac-972101f40e0a",
+   "raw": "assets/source/buildings3d/s_dw3/s_dw3_model.glb",
+   "credits": 40
+  },
+  "s_dw4": {
+   "image": "assets/towns/fishmen/fm_dw4.png",
+   "group": "fishmen",
+   "task": "cbcc6c79-6127-4bac-9d54-1ce1a6348b74",
+   "raw": "assets/source/buildings3d/s_dw4/s_dw4_model.glb",
+   "credits": 40
+  },
+  "s_dw5": {
+   "image": "assets/towns/fishmen/fm_dw5.png",
+   "group": "fishmen",
+   "task": "3501f79c-3233-4009-af38-f663d81a583e",
+   "raw": "assets/source/buildings3d/s_dw5/s_dw5_model.glb",
+   "credits": 40
+  },
+  "s_dw6": {
+   "image": "assets/towns/fishmen/fm_dw6.png",
+   "group": "fishmen",
+   "task": "fc6d8b6d-ed75-4cdc-b510-2f0efec0389e",
+   "raw": "assets/source/buildings3d/s_dw6/s_dw6_model.glb",
+   "credits": 40
+  },
+  "s_dw7": {
+   "image": "assets/towns/fishmen/fm_dw7.png",
+   "group": "fishmen",
+   "task": "9af27879-73d9-4c01-a021-16ef16bf9311",
+   "raw": "assets/source/buildings3d/s_dw7/s_dw7_model.glb",
+   "credits": 40
+  },
+  "s_dw8": {
+   "image": "assets/towns/fishmen/fm_dw8.png",
+   "group": "fishmen",
+   "task": "c2e73538-b5a0-4266-ab0f-0f7ea97dfbee",
+   "raw": "assets/source/buildings3d/s_dw8/s_dw8_model.glb",
+   "credits": 40
+  },
+  "e_hall": {
+   "image": "assets/towns/darkelf/de_hall.png",
+   "group": "darkelf",
+   "width_m": 4.2,
+   "task": "403f353c-ca63-421e-a576-3dc5b25d5cec",
+   "raw": "assets/source/buildings3d/e_hall/e_hall_model.glb",
+   "credits": 40,
+   "tint": [
+    0.7,
+    0.68,
+    0.72
+   ]
+  },
+  "e_market": {
+   "image": "assets/towns/darkelf/de_market.png",
+   "group": "darkelf",
+   "task": "36b9d7d2-6082-4f85-85ad-a8db762f90e6",
+   "raw": "assets/source/buildings3d/e_market/e_market_model.glb",
+   "credits": 40,
+   "tint": [
+    0.7,
+    0.68,
+    0.72
+   ]
+  },
+  "e_dw1": {
+   "image": "assets/towns/darkelf/de_dw1.png",
+   "group": "darkelf",
+   "task": "bb36a876-49f7-497b-bff2-c950dd288cd9",
+   "raw": "assets/source/buildings3d/e_dw1/e_dw1_model.glb",
+   "credits": 40,
+   "tint": [
+    0.7,
+    0.68,
+    0.72
+   ]
+  },
+  "e_dw2": {
+   "image": "assets/towns/darkelf/de_dw2.png",
+   "group": "darkelf",
+   "task": "5905ec68-131c-4296-b83b-96bd924d5743",
+   "raw": "assets/source/buildings3d/e_dw2/e_dw2_model.glb",
+   "credits": 40,
+   "tint": [
+    0.7,
+    0.68,
+    0.72
+   ],
+   "yaw_degrees": -180
+  },
+  "e_dw3": {
+   "image": "assets/towns/darkelf/de_dw3.png",
+   "group": "darkelf",
+   "task": "8f4b59cf-c057-4c53-8160-e15a5ede4ff9",
+   "raw": "assets/source/buildings3d/e_dw3/e_dw3_model.glb",
+   "credits": 40,
+   "tint": [
+    0.7,
+    0.68,
+    0.72
+   ]
+  },
+  "e_dw4": {
+   "image": "assets/towns/darkelf/de_dw4.png",
+   "group": "darkelf",
+   "task": "4cea0bc9-87a6-4a53-a0ba-96c597b0c13b",
+   "raw": "assets/source/buildings3d/e_dw4/e_dw4_model.glb",
+   "credits": 40,
+   "tint": [
+    0.7,
+    0.68,
+    0.72
+   ]
+  },
+  "e_dw5": {
+   "image": "assets/towns/darkelf/de_dw5.png",
+   "group": "darkelf",
+   "task": "e4e2a392-30c7-4717-b373-1957ac5aa96c",
+   "raw": "assets/source/buildings3d/e_dw5/e_dw5_model.glb",
+   "credits": 40,
+   "tint": [
+    0.7,
+    0.68,
+    0.72
+   ]
+  },
+  "e_dw6": {
+   "image": "assets/towns/darkelf/de_dw6.png",
+   "group": "darkelf",
+   "task": "07f6c884-7001-427a-904a-d01de9f0521c",
+   "raw": "assets/source/buildings3d/e_dw6/e_dw6_model.glb",
+   "credits": 40,
+   "tint": [
+    0.7,
+    0.68,
+    0.72
+   ]
+  },
+  "e_dw7": {
+   "image": "assets/towns/darkelf/de_dw7.png",
+   "group": "darkelf",
+   "task": "fd395233-f540-49cd-9979-5bad226a8235",
+   "raw": "assets/source/buildings3d/e_dw7/e_dw7_model.glb",
+   "credits": 40,
+   "tint": [
+    0.7,
+    0.68,
+    0.72
+   ],
+   "yaw_degrees": -180
+  },
+  "e_dw8": {
+   "image": "assets/towns/darkelf/de_dw8.png",
+   "group": "darkelf",
+   "task": "2da5c3fb-4ccb-4a25-b309-b6345d56addf",
+   "raw": "assets/source/buildings3d/e_dw8/e_dw8_model.glb",
+   "credits": 40,
+   "tint": [
+    0.7,
+    0.68,
+    0.72
+   ]
+  },
+  "r_hall": {
+   "image": "assets/towns/frostmarch/r_hall.png",
+   "group": "frostmarch",
+   "width_m": 4.2,
+   "task": "ffb456be-e36f-420a-b32c-4510ad22cc71",
+   "raw": "assets/source/buildings3d/r_hall/r_hall_model.glb",
+   "credits": 40,
+   "yaw_degrees": -180
+  },
+  "r_market": {
+   "image": "assets/towns/frostmarch/r_market.png",
+   "group": "frostmarch",
+   "task": "a9659ff1-0add-49c9-b84f-8273541b3754",
+   "raw": "assets/source/buildings3d/r_market/r_market_model.glb",
+   "credits": 40
+  },
+  "r_dw1": {
+   "image": "assets/towns/frostmarch/r_dw1.png",
+   "group": "frostmarch",
+   "task": "078f264b-c0ac-4456-b55a-cdac4dc1cfd9",
+   "raw": "assets/source/buildings3d/r_dw1/r_dw1_model.glb",
+   "credits": 40
+  },
+  "r_dw2": {
+   "image": "assets/towns/frostmarch/r_dw2.png",
+   "group": "frostmarch",
+   "task": "14e71b9b-ef87-4eff-abef-c74c2f1b0412",
+   "raw": "assets/source/buildings3d/r_dw2/r_dw2_model.glb",
+   "credits": 40,
+   "yaw_degrees": -180
+  },
+  "r_dw3": {
+   "image": "assets/towns/frostmarch/r_dw3.png",
+   "group": "frostmarch",
+   "task": "b2d3e450-a4bb-4914-a6da-e471d7cfa55c",
+   "raw": "assets/source/buildings3d/r_dw3/r_dw3_model.glb",
+   "credits": 40
+  },
+  "r_dw4": {
+   "image": "assets/towns/frostmarch/r_dw4.png",
+   "group": "frostmarch",
+   "task": "9310839c-9334-41dc-93dd-8e1d20f4b09c",
+   "raw": "assets/source/buildings3d/r_dw4/r_dw4_model.glb",
+   "credits": 40
+  },
+  "r_dw5": {
+   "image": "assets/towns/frostmarch/r_dw5.png",
+   "group": "frostmarch",
+   "task": "10a4d899-4734-40de-8826-4dc17a406cfe",
+   "raw": "assets/source/buildings3d/r_dw5/r_dw5_model.glb",
+   "credits": 40
+  },
+  "r_dw6": {
+   "image": "assets/towns/frostmarch/r_dw6.png",
+   "group": "frostmarch",
+   "task": "372d1110-2291-49dd-bfc9-2e614c9172d5",
+   "raw": "assets/source/buildings3d/r_dw6/r_dw6_model.glb",
+   "credits": 40
+  },
+  "r_dw7": {
+   "image": "assets/towns/frostmarch/r_dw7.png",
+   "group": "frostmarch",
+   "task": "ebf94846-42c0-4d96-8281-36153225d0da",
+   "raw": "assets/source/buildings3d/r_dw7/r_dw7_model.glb",
+   "credits": 40
+  },
+  "r_dw8": {
+   "image": "assets/towns/frostmarch/r_dw8.png",
+   "group": "frostmarch",
+   "credits": 40,
+   "rejected": [
+    "f4fd9369-c5a5-4972-982b-334fd7868f50"
+   ],
+   "task": "b89879ee-8e2e-4489-b8d4-3674d85e2201",
+   "raw": "assets/source/buildings3d/r_dw8/r_dw8_model.glb"
+  },
+  "fort_wall": {
+   "prompt": "A single straight section of a dark medieval castle curtain wall, rough grey-black weathered stone blocks, battlements with crenellations along the top, a narrow wooden walkway, moss and soot stains, flat cut ends on left and right so sections tile seamlessly in a row, about 4 m long, 1.2 m thick, 3.5 m tall, dark gothic fantasy strategy game asset, no ground base, no people",
+   "group": "fort",
+   "task": "c4a31683-9b81-4cfe-80dd-737395bc9ff5",
+   "raw": "assets/source/buildings3d/fort_wall/fort_wall_model.glb",
+   "credits": 30,
+   "width_m": 4.0,
+   "yaw_degrees": 90.0
+  },
+  "fort_tower": {
+   "prompt": "A squat square medieval watchtower made of rough grey-black weathered stone blocks, 4 m wide, 7 m tall, crenellated battlement top with a dark wooden roofed lookout, arrow slits, iron braces, soot stains and moss, dark gothic fantasy strategy game asset, no ground base, no people",
+   "group": "fort",
+   "task": "26477661-3cba-492a-8bcd-f61b5698a245",
+   "raw": "assets/source/buildings3d/fort_tower/fort_tower_model.glb",
+   "credits": 30,
+   "width_m": 2.8,
+   "yaw_degrees": 0.0
+  }
+ },
+ "settlements": {
+  "waystone": [
+   [
+    "n_waystone",
+    0,
+    0,
+    0
+   ]
+  ],
+  "farmstead": [
+   [
+    "n_house",
+    -2.0,
+    0,
+    -7
+   ],
+   [
+    "n_barn",
+    2.2,
+    0.3,
+    5
+   ]
+  ],
+  "hamlet": [
+   [
+    "n_house",
+    -2.2,
+    1.8,
+    -7
+   ],
+   [
+    "n_barn",
+    2.4,
+    2.0,
+    5
+   ],
+   [
+    "n_inn",
+    -2.2,
+    -2.4,
+    -3
+   ],
+   [
+    "n_house",
+    2.2,
+    -2.2,
+    188
+   ]
+  ],
+  "village": [
+   [
+    "n_house",
+    -5.6,
+    5.6,
+    128
+   ],
+   [
+    "n_barn",
+    5.6,
+    5.6,
+    -130
+   ],
+   [
+    "n_inn",
+    -5.6,
+    -5.6,
+    42
+   ],
+   [
+    "n_chapel",
+    5.6,
+    -5.6,
+    -37
+   ],
+   [
+    "n_smithy",
+    -9.8,
+    -3.8,
+    63
+   ],
+   [
+    "n_house",
+    9.8,
+    3.8,
+    -107
+   ]
+  ],
+  "town": [
+   [
+    "n_house",
+    -5.6,
+    5.6,
+    128
+   ],
+   [
+    "n_barn",
+    5.6,
+    5.6,
+    -130
+   ],
+   [
+    "n_inn",
+    -5.6,
+    -5.6,
+    42
+   ],
+   [
+    "n_chapel",
+    5.6,
+    -5.6,
+    -37
+   ],
+   [
+    "n_smithy",
+    -9.8,
+    -3.8,
+    63
+   ],
+   [
+    "n_house",
+    9.8,
+    3.8,
+    -107
+   ],
+   [
+    "n_keep",
+    -9.6,
+    -9.8,
+    36
+   ],
+   [
+    "n_guildhall",
+    4.8,
+    -11.0,
+    -18
+   ],
+   [
+    "n_tower",
+    -9.4,
+    9.8,
+    0
+   ],
+   [
+    "n_tower",
+    9.4,
+    9.8,
+    0
+   ],
+   [
+    "n_palisade",
+    -5.4,
+    10.6,
+    0
+   ],
+   [
+    "n_palisade",
+    5.4,
+    10.6,
+    0
+   ]
+  ],
+  "city": [
+   [
+    "n_house",
+    -5.6,
+    5.6,
+    128
+   ],
+   [
+    "n_barn",
+    5.6,
+    5.6,
+    -130
+   ],
+   [
+    "n_inn",
+    -5.6,
+    -5.6,
+    42
+   ],
+   [
+    "n_chapel",
+    5.6,
+    -5.6,
+    -37
+   ],
+   [
+    "n_smithy",
+    -9.8,
+    -3.8,
+    63
+   ],
+   [
+    "n_house",
+    9.8,
+    3.8,
+    -107
+   ],
+   [
+    "n_keep",
+    -9.6,
+    -9.8,
+    36
+   ],
+   [
+    "n_guildhall",
+    4.8,
+    -11.0,
+    -18
+   ],
+   [
+    "n_house",
+    -9.8,
+    3.8,
+    107
+   ],
+   [
+    "n_house",
+    9.8,
+    -3.8,
+    -62
+   ],
+   [
+    "n_inn",
+    -4.6,
+    -11.4,
+    17
+   ],
+   [
+    "n_chapel",
+    10.4,
+    -9.6,
+    -44
+   ],
+   [
+    "n_gatehouse",
+    0,
+    12.4,
+    0
+   ],
+   [
+    "n_tower",
+    -5.0,
+    12.2,
+    0
+   ],
+   [
+    "n_tower",
+    5.0,
+    12.2,
+    0
+   ],
+   [
+    "n_palisade",
+    -9.4,
+    12.0,
+    0
+   ],
+   [
+    "n_palisade",
+    9.4,
+    12.0,
+    0
+   ]
+  ]
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "_doc": "Real-time combat rules for the skirmish demo. Every blow is melee, ranged or magic (units.json damage_type) and meets the target's defense against that type (units.json defense); against a building, wall, gate or tower a unit deals its building_damage instead of damage x role_matchups. Times in seconds, distances in world pixels (1 tile = 32). provoke_seconds: how long an idle unit or lair guard hunts the enemy that last hurt it, even one shooting from beyond its leash. fight_memory_seconds: a unit hit or striking within this time counts as in a fight, so a plain right-click moves it out (a retreat) instead of marching ready to fight.",
+ "tick_rate": 20,
+ "speed_scale": 1.25,
+ "vision_scale": 1.35,
+ "role_matchups": {
+  "infantry": {"cavalry": 1.5},
+  "cavalry": {"ranged": 1.5, "support": 1.25},
+  "ranged": {"infantry": 2.0, "flyer": 1.5},
+  "flyer": {"ranged": 1.25},
+  "heavy": {},
+  "support": {}
+ },
+ "damage_variance": 0.1,
+ "acquire_interval": 0.25,
+ "repath_interval": 0.5,
+ "idle_leash": 260.0,
+ "provoke_seconds": 6.0,
+ "fight_memory_seconds": 2.5,
+ "projectile_speed": 520.0,
+ "charge": {"distance": 100.0, "multiplier": 2.0},
+ "heal": {"range": 150.0, "fraction_of_damage": 1.0, "below_hp_ratio": 0.9},
+ "regenerate_per_second": 0.01,
+ "shield_wall_ranged_factor": 0.5,
+ "curse": {"damage_factor": 0.7, "seconds": 5.0},
+ "poison": {"fraction": 0.5, "seconds": 4.0},
+ "dots": {
+  "_doc": "Damage over time (abilities burn, bleed, frost; poison has its own entry above). burn: fire, fraction x the blow before defences, over seconds, cut by the target's magic defense; buildings burn too. bleed: fraction x the damage dealt, over seconds, through armour; the bloodless (undead, spirits, constructs, plants, buildings) don't bleed. frost: the target moves slow slower for seconds. A new dose keeps the stronger rate and restarts the clock.",
+  "burn": {"fraction": 0.35, "seconds": 3.0},
+  "bleed": {"fraction": 0.4, "seconds": 5.0},
+  "frost": {"slow": 0.3, "seconds": 2.0}
+ },
+ "relentless": {"stagger_seconds": 0.6},
+ "brace": {"charge_bonus_factor": 0.5},
+ "formation_spacing": 6.0,
+ "veterans": {
+  "_doc": "Veteran ranks, like the main game's (levels 1-5). A unit earns xp for the damage it deals and the hit points it heals, counted in its own hit points (100 damage dealt by a 100 hp unit = 1.0), plus kill_bonus x the victim's hit points for a kill. thresholds: xp for levels 1-5. Per level (index 0 = level 1): damage = more damage dealt, ward = less damage taken, hp = more hit points. At promote_level a base unit turns into its upgraded form (keeping its share of health); units trained already upgraded start at that level. Level 5 is the Ascendant form (its own art when the main game has it). Workers, heroes, summons and structures never rank up.",
+  "thresholds": [0.0, 1.5, 4.0, 8.0, 15.0],
+  "kill_bonus": 0.5,
+  "damage": [0.0, 0.05, 0.05, 0.1, 0.32],
+  "ward": [0.0, 0.05, 0.05, 0.1, 0.15],
+  "hp": [0.0, 0.0, 0.0, 0.0, 0.2],
+  "promote_level": 3,
+  "names": ["Recruit", "Blooded", "Seasoned", "Hardened", "Ascendant"]
+ },
+ "rest_heal": {
+  "_doc": "Resting at home: a soldier (not a worker) that stands idle or on hold within radius px of its own capital and has not been hit for calm_seconds heals per_second of its health a second. Slow on purpose; the faction healing buildings are the fast way.",
+  "per_second": 0.004,
+  "radius": 420.0,
+  "calm_seconds": 5.0
+ },
+ "retreat": {
+  "_doc": "Retreat (the foot on a unit card, or F): the units run to their capital (else the nearest settlement they hold) at speed_factor x their pace, and pick no fight and answer no blow until they get there.",
+  "speed_factor": 1.4
+ },
+ "upgrade_specials": {
+  "_doc": "Specials of upgraded units (a dwelling's paid upgrade; see economy.json dwelling_upgrade). first_strike: blow on a foe at full health x factor. double_strike: a second blow or shot of factor x the first. life_drain: heals fraction of the damage dealt. armor_pierce: ignores this share of the target's armour. sunder: the target takes exposed more damage for seconds. fear: the target deals weak less damage for seconds. stun: chance a blow stuns for seconds (not heroes). cleave (melee) and splash: up to max_targets other foes within radius take factor x the blow. aura: allies within radius deal might more damage.",
+  "first_strike": {"factor": 1.5},
+  "double_strike": {"factor": 0.5},
+  "life_drain": {"fraction": 0.4},
+  "armor_pierce": {"ignore": 0.5},
+  "sunder": {"seconds": 5.0, "exposed": 0.2},
+  "fear": {"seconds": 3.0, "weak": 0.25},
+  "stun": {"chance": 0.15, "seconds": 0.8},
+  "cleave": {"radius": 40.0, "factor": 0.5, "max_targets": 2},
+  "splash": {"radius": 50.0, "factor": 0.5, "max_targets": 3},
+  "aura": {"radius": 160.0, "might": 0.1}
+ }
+}

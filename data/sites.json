@@ -1,0 +1,31 @@
+{
+ "_doc": "Hero sites on a skirmish map (see src/sim/map_sites.gd). Distances in world pixels, times in seconds. Lair tiers 1-3: guard strength, loot, hero marks and XP once every guard is dead (drop tables lair_1..3 in items.json; item level = time-based level + level_bonus). Shrines heal, refill mana and bless the hero and its units nearby, then rest. Merchants sell potions and a small rotating stock of items for marks (the hero's own coin, never the army's gold) to a hero standing by.",
+ "lair": {
+  "radius": 150.0,
+  "claim_radius": 420.0,
+  "tiers": {
+   "1": {"name": "Den", "xp": 120, "marks": 60, "items": 1, "potions": 1, "level_bonus": 0},
+   "2": {"name": "Lair", "xp": 300, "marks": 140, "items": 1, "potions": 2, "level_bonus": 2},
+   "3": {"name": "Hoard", "xp": 600, "marks": 280, "items": 2, "potions": 2, "level_bonus": 4}
+  }
+ },
+ "shrine": {
+  "name": "Blood Shrine",
+  "radius": 90.0,
+  "heal_pct": 0.6,
+  "mana_pct": 1.0,
+  "blessing": "might",
+  "blessing_value": 0.15,
+  "blessing_seconds": 60.0,
+  "cooldown": 120.0
+ },
+ "merchant": {
+  "name": "Wandering Peddler",
+  "radius": 110.0,
+  "stock": 3,
+  "restock_seconds": 180.0,
+  "potion_price": {"health": 30, "mana": 30},
+  "price_by_rarity": {"common": 60, "magic": 120, "rare": 240, "set": 400, "unique": 450},
+  "price_per_level": 25
+ }
+}

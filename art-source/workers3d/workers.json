@@ -1,0 +1,93 @@
+{
+ "note": "Warbound worker bodies, generated with Tripo text_to_model (no artwork exists for them) and rigged like the heroes. Output: spinoff/warbound/assets/units3d/worker_<faction>.glb.",
+ "workers": {
+  "worker_concord": {
+   "faction": "concord",
+   "name": "Labourer",
+   "prompt": "full body single character, standing in A-pose with arms held slightly away from the body, feet apart, dark gothic fantasy, painterly hand-painted textures, muted grim colours, humble worn work clothes, no armour, game-ready low-poly-friendly silhouette, a human village labourer in a patched tan tunic and leather apron with faded crimson and cream cloth trim, rolled sleeves, simple cap, holding a wooden-handled iron mallet in the right hand",
+   "negative_prompt": "weapon, sword, shield, armour plates, multiple characters, base, pedestal, ground plane, cute, chibi",
+   "height": 1.45,
+   "model_task": "4fe3f93e-497e-46ad-8d86-96cf606e4bc7",
+   "model": "assets/source/workers3d/worker_concord/worker_concord_model.glb",
+   "rig_task": "0f79bbc2-1685-4366-93e6-9f6e80f33a1e",
+   "rigged": "assets/source/workers3d/worker_concord/worker_concord_rigged.glb"
+  },
+  "worker_hollow": {
+   "faction": "hollow",
+   "name": "Grave Thrall",
+   "prompt": "full body single character, standing in A-pose with arms held slightly away from the body, feet apart, dark gothic fantasy, painterly hand-painted textures, muted grim colours, humble worn work clothes, no armour, game-ready low-poly-friendly silhouette, a gaunt undead corpse labourer, grey-green dead skin, tattered burial rags, hunched shambling posture, holding a rusty shovel in the right hand",
+   "negative_prompt": "weapon, sword, shield, armour plates, multiple characters, base, pedestal, ground plane, cute, chibi",
+   "height": 1.45,
+   "model_task": "9ee5ccd8-cc77-46fa-8aaf-77d543e239c7",
+   "model": "assets/source/workers3d/worker_hollow/worker_hollow_model.glb",
+   "rig_task": "cf5cbd35-80ed-4f84-b821-f5f42c4d20c0",
+   "rigged": "assets/source/workers3d/worker_hollow/worker_hollow_rigged.glb"
+  },
+  "worker_ashen": {
+   "faction": "ashen",
+   "name": "Slag Thrall",
+   "prompt": "full body single character, standing in A-pose with arms held slightly away from the body, feet apart, dark gothic fantasy, painterly hand-painted textures, muted grim colours, humble worn work clothes, no armour, game-ready low-poly-friendly silhouette, a small hunched cinder imp labourer, charcoal-black cracked skin with glowing orange ember seams, small horns, soot-stained loincloth and leather apron, holding long iron smithing tongs in the right hand",
+   "negative_prompt": "weapon, sword, shield, armour plates, multiple characters, base, pedestal, ground plane, cute, chibi",
+   "height": 1.2,
+   "model_task": "ff49bc1e-136c-49e1-8c09-af85b44b2e44",
+   "model": "assets/source/workers3d/worker_ashen/worker_ashen_model.glb",
+   "rig_task": "7e2766ef-29ee-4cd1-898c-a91171453502",
+   "rigged": "assets/source/workers3d/worker_ashen/worker_ashen_rigged.glb"
+  },
+  "worker_thornwood": {
+   "faction": "thornwood",
+   "name": "Grove Tender",
+   "prompt": "full body single character, standing in A-pose with arms held slightly away from the body, feet apart, dark gothic fantasy, painterly hand-painted textures, muted grim colours, humble worn work clothes, no armour, game-ready low-poly-friendly silhouette, a lean forest folk gardener in mossy green and brown woven clothes with leaf details, wicker basket strapped on the back, holding a curved iron sickle in the right hand",
+   "negative_prompt": "weapon, sword, shield, armour plates, multiple characters, base, pedestal, ground plane, cute, chibi",
+   "height": 1.45,
+   "model_task": "fb6c4582-2c3e-49e2-9848-729e912a31e5",
+   "model": "assets/source/workers3d/worker_thornwood/worker_thornwood_model.glb",
+   "rig_task": "fd502693-1147-4b25-addd-3717618b7615",
+   "rigged": "assets/source/workers3d/worker_thornwood/worker_thornwood_rigged.glb"
+  },
+  "worker_forge": {
+   "faction": "forge",
+   "name": "Pit Hand",
+   "prompt": "full body single character, standing in A-pose with arms held slightly away from the body, feet apart, dark gothic fantasy, painterly hand-painted textures, muted grim colours, humble worn work clothes, no armour, game-ready low-poly-friendly silhouette, a short stocky dwarf-like miner with a braided beard, soot-stained leather jerkin, iron-grey and bronze colours, miner's helmet with a small lamp, holding a pickaxe in the right hand",
+   "negative_prompt": "weapon, sword, shield, armour plates, multiple characters, base, pedestal, ground plane, cute, chibi",
+   "height": 1.3,
+   "model_task": "e831108c-6bf3-47d0-a99c-94e13c3b0822",
+   "model": "assets/source/workers3d/worker_forge/worker_forge_model.glb",
+   "rig_task": "1e289d4d-ab3c-47e8-b660-5689709ab4ae",
+   "rigged": "assets/source/workers3d/worker_forge/worker_forge_rigged.glb"
+  },
+  "worker_fishmen": {
+   "faction": "fishmen",
+   "name": "Shore Drudge",
+   "prompt": "full body single character, standing in A-pose with arms held slightly away from the body, feet apart, dark gothic fantasy, painterly hand-painted textures, muted grim colours, humble worn work clothes, no armour, game-ready low-poly-friendly silhouette, a hunched amphibious fish-man labourer, blue-green scaly skin, fin ears, bulging eyes, ragged sailcloth wrap, coiled fishing net over one shoulder, holding an iron gaff hook in the right hand",
+   "negative_prompt": "weapon, sword, shield, armour plates, multiple characters, base, pedestal, ground plane, cute, chibi",
+   "height": 1.4,
+   "model_task": "dfefed81-e287-48df-a6e8-10043cfdd495",
+   "model": "assets/source/workers3d/worker_fishmen/worker_fishmen_model.glb",
+   "rig_task": "ea237c9c-bf15-47aa-b829-90a3dce6ef37",
+   "rigged": "assets/source/workers3d/worker_fishmen/worker_fishmen_rigged.glb"
+  },
+  "worker_darkelf": {
+   "faction": "darkelf",
+   "name": "Bound Hand",
+   "prompt": "full body single character, standing in A-pose with arms held slightly away from the body, feet apart, dark gothic fantasy, painterly hand-painted textures, muted grim colours, humble worn work clothes, no armour, game-ready low-poly-friendly silhouette, a thin pale dark-elf slave labourer in a deep purple hooded rag cloak, iron collar, bare feet, gaunt, holding a spade in the right hand",
+   "negative_prompt": "weapon, sword, shield, armour plates, multiple characters, base, pedestal, ground plane, cute, chibi",
+   "height": 1.45,
+   "model_task": "79302594-6966-44b1-9cf7-4a2e67f01843",
+   "model": "assets/source/workers3d/worker_darkelf/worker_darkelf_model.glb",
+   "rig_task": "9e1b2aa5-ac97-4639-96e0-4f5ff38f2e21",
+   "rigged": "assets/source/workers3d/worker_darkelf/worker_darkelf_rigged.glb"
+  },
+  "worker_frostmarch": {
+   "faction": "frostmarch",
+   "name": "Clan Hauler",
+   "prompt": "full body single character, standing in A-pose with arms held slightly away from the body, feet apart, dark gothic fantasy, painterly hand-painted textures, muted grim colours, humble worn work clothes, no armour, game-ready low-poly-friendly silhouette, a stocky northern clansman hauler in thick fur and wool layers, icy blue and grey colours, braided hair, coil of sledge rope over the shoulder, holding a small hand axe in the right hand",
+   "negative_prompt": "weapon, sword, shield, armour plates, multiple characters, base, pedestal, ground plane, cute, chibi",
+   "height": 1.45,
+   "model_task": "1a15cd03-86dc-441e-9aed-be2e90f6ed3a",
+   "model": "assets/source/workers3d/worker_frostmarch/worker_frostmarch_model.glb",
+   "rig_task": "2258aecd-6790-4cb7-a536-8d2a4fce5228",
+   "rigged": "assets/source/workers3d/worker_frostmarch/worker_frostmarch_rigged.glb"
+  }
+ }
+}

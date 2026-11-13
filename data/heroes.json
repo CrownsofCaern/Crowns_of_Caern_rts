@@ -1,0 +1,4728 @@
+{
+ "_doc": "Warbound heroes (skirmish kits). Distances in world pixels (32 = 1 m), times in seconds. Each class has a kit of 4 skills: its signature (the main game's battle art), two archetype skills and the archetype ultimate. Basic skills have 3 ranks (rank N from hero level 2N-1); the ultimate has 1 rank from level 6. Attributes as in the main game: Attack +4% weapon damage, Defense +25 HP and armour D/(D+20), Power +5% skill strength, Knowledge +15 mana and +0.1 mana/s. See src/sim/hero_catalog.gd.",
+ "rules": {
+  "max_level": 10,
+  "xp_base": 100,
+  "xp_per_level": 100,
+  "xp_radius": 384,
+  "xp_per_tier": 20,
+  "xp_worker": 10,
+  "xp_capture": 150,
+  "coin": {"_doc": "The hero's own coin for merchants, kept apart from the army's gold. Earned by kills near the hero (per tier of the fallen), settlements taken and lairs cleared (sites.json).", "name": "Marks", "per_kill_tier": 2, "worker": 1, "capture": 40},
+  "hp_per_level": 60,
+  "hp_per_defense": 25,
+  "damage_per_attack": 0.04,
+  "power_pct": 0.05,
+  "mana_base": 100,
+  "mana_per_knowledge": 15,
+  "mana_regen": 1.0,
+  "mana_regen_per_knowledge": 0.1,
+  "respawn_base": 15,
+  "respawn_per_level": 3,
+  "revive_gold_per_level": 50,
+  "ultimate_level": 6,
+  "auto_learn_delay": 10.0,
+  "autocast_interval": 0.25,
+  "aura_pulse": 0.5,
+  "sight": 320,
+  "radius": 11,
+  "armor_cap": 0.6,
+  "move_cap": 0.3
+ },
+ "archetypes": {
+  "warrior": {
+   "role": "infantry",
+   "hp": 360,
+   "damage": 16,
+   "attack_interval": 1.0,
+   "range": 14,
+   "speed": 66,
+   "abilities": [
+    "reach"
+   ],
+   "start": {
+    "attack": 3,
+    "defense": 2,
+    "power": 0,
+    "knowledge": 1
+   },
+   "per_level": {
+    "attack": 1.25,
+    "defense": 0.5,
+    "power": 0,
+    "knowledge": 0.25
+   },
+   "skills": [
+    "cleave",
+    "leap",
+    "red_harvest"
+   ]
+  },
+  "guardian": {
+   "role": "infantry",
+   "hp": 420,
+   "damage": 12,
+   "attack_interval": 1.1,
+   "range": 0,
+   "speed": 62,
+   "abilities": [],
+   "start": {
+    "attack": 2,
+    "defense": 4,
+    "power": 0,
+    "knowledge": 1
+   },
+   "per_level": {
+    "attack": 0.5,
+    "defense": 1.25,
+    "power": 0,
+    "knowledge": 0.25
+   },
+   "skills": [
+    "shield_bash",
+    "defend_aura",
+    "last_stand"
+   ]
+  },
+  "ranger": {
+   "role": "ranged",
+   "hp": 300,
+   "damage": 14,
+   "attack_interval": 1.4,
+   "range": 240,
+   "speed": 64,
+   "abilities": [
+    "ranged"
+   ],
+   "start": {
+    "attack": 3,
+    "defense": 1,
+    "power": 0,
+    "knowledge": 1
+   },
+   "per_level": {
+    "attack": 1.25,
+    "defense": 0.25,
+    "power": 0.25,
+    "knowledge": 0.25
+   },
+   "skills": [
+    "power_shot",
+    "volley",
+    "arrow_storm"
+   ]
+  },
+  "mystic": {
+   "role": "ranged", "damage_type": "magic",
+   "hp": 280,
+   "damage": 11,
+   "attack_interval": 1.6,
+   "range": 200,
+   "speed": 60,
+   "abilities": [
+    "ranged"
+   ],
+   "start": {
+    "attack": 0,
+    "defense": 1,
+    "power": 3,
+    "knowledge": 2
+   },
+   "per_level": {
+    "attack": 0,
+    "defense": 0.25,
+    "power": 1.25,
+    "knowledge": 0.5
+   },
+   "skills": [
+    "binding",
+    "arcane_bolt",
+    "cataclysm"
+   ]
+  },
+  "mender": {
+   "role": "support", "damage_type": "magic",
+   "hp": 300,
+   "damage": 9,
+   "attack_interval": 1.5,
+   "range": 190,
+   "speed": 60,
+   "abilities": [
+    "ranged"
+   ],
+   "start": {
+    "attack": 0,
+    "defense": 1,
+    "power": 2,
+    "knowledge": 3
+   },
+   "per_level": {
+    "attack": 0,
+    "defense": 0.25,
+    "power": 0.75,
+    "knowledge": 1
+   },
+   "skills": [
+    "mend",
+    "blessing_aura",
+    "revival"
+   ]
+  },
+  "summoner": {
+   "role": "ranged", "damage_type": "magic",
+   "hp": 300,
+   "damage": 10,
+   "attack_interval": 1.6,
+   "range": 200,
+   "speed": 60,
+   "abilities": [
+    "ranged"
+   ],
+   "start": {
+    "attack": 0,
+    "defense": 1,
+    "power": 3,
+    "knowledge": 2
+   },
+   "per_level": {
+    "attack": 0,
+    "defense": 0.25,
+    "power": 1,
+    "knowledge": 0.75
+   },
+   "skills": [
+    "summon_minions",
+    "drain",
+    "legion"
+   ]
+  }
+ },
+ "classes": {
+  "knight": {
+   "name": "Knight",
+   "text": "A sworn shield of the Concord who holds the line and lifts the soldiers around him.",
+   "faction": "concord",
+   "archetype": "guardian",
+   "kit": [
+    "rallying_oath",
+    "shield_bash",
+    "defend_aura",
+    "last_stand"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "shieldwarden",
+   "weapons": [
+    "sword",
+    "shield"
+   ]
+  },
+  "ranger": {
+   "name": "Ranger",
+   "text": "A border archer who pins the enemy down and rains shafts on them.",
+   "faction": "concord",
+   "archetype": "ranger",
+   "kit": [
+    "pinning_shafts",
+    "power_shot",
+    "volley",
+    "arrow_storm"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "longbowman",
+   "weapons": [
+    "bow"
+   ]
+  },
+  "oracle": {
+   "name": "Oracle",
+   "text": "A lantern-bearing seer who keeps the army on its feet.",
+   "faction": "concord",
+   "archetype": "mender",
+   "kit": [
+    "lantern_of_mending",
+    "mend",
+    "blessing_aura",
+    "revival"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "lightbearer",
+   "weapons": [
+    "staff"
+   ]
+  },
+  "templar": {
+   "name": "Templar",
+   "text": "A zealot with a two-handed blade who breaks into the enemy line.",
+   "faction": "concord",
+   "archetype": "warrior",
+   "kit": [
+    "judgement",
+    "cleave",
+    "leap",
+    "red_harvest"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "pike_militia",
+   "weapons": [
+    "great_weapon"
+   ]
+  },
+  "warlord": {
+   "name": "Warlord",
+   "text": "An Ashen war-chief who drives the horde forward with fury.",
+   "faction": "ashen",
+   "archetype": "warrior",
+   "kit": [
+    "warcry",
+    "cleave",
+    "leap",
+    "red_harvest"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "flayer",
+   "weapons": [
+    "axe"
+   ]
+  },
+  "warlock": {
+   "name": "Warlock",
+   "text": "A caster of burning slag and binding hexes.",
+   "faction": "ashen",
+   "archetype": "mystic",
+   "kit": [
+    "cinderfall",
+    "binding",
+    "arcane_bolt",
+    "cataclysm"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "ash_witch",
+   "weapons": [
+    "staff"
+   ]
+  },
+  "tormentor": {
+   "name": "Tormentor",
+   "text": "A branding priest who calls cinder-spawn and saps the enemy's strength.",
+   "faction": "ashen",
+   "archetype": "summoner",
+   "kit": [
+    "brand_of_agony",
+    "summon_minions",
+    "drain",
+    "legion"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "brimstone_hurler",
+   "weapons": [
+    "club"
+   ]
+  },
+  "brandguard": {
+   "name": "Brandguard",
+   "text": "A slag-armoured bodyguard who shields the warband.",
+   "faction": "ashen",
+   "archetype": "guardian",
+   "kit": [
+    "slag_shield",
+    "shield_bash",
+    "defend_aura",
+    "last_stand"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "flayer",
+   "weapons": [
+    "club",
+    "shield"
+   ]
+  },
+  "necromancer": {
+   "name": "Necromancer",
+   "text": "A grave-speaker who knits the dead back together and raises more.",
+   "faction": "hollow",
+   "archetype": "summoner",
+   "kit": [
+    "knit_the_fallen",
+    "summon_minions",
+    "drain",
+    "legion"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "corpse_weaver",
+   "weapons": [
+    "staff"
+   ]
+  },
+  "gravewarden": {
+   "name": "Gravewarden",
+   "text": "A bone-armoured keeper of the barrows who stands in front.",
+   "faction": "hollow",
+   "archetype": "guardian",
+   "kit": [
+    "bone_bulwark",
+    "shield_bash",
+    "defend_aura",
+    "last_stand"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "gibbet_knight",
+   "weapons": [
+    "sword",
+    "shield"
+   ]
+  },
+  "blightcaller": {
+   "name": "Blightcaller",
+   "text": "A plague-witch who chokes the enemy in rot.",
+   "faction": "hollow",
+   "archetype": "mystic",
+   "kit": [
+    "rot_cloud",
+    "binding",
+    "arcane_bolt",
+    "cataclysm"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "marrow_archer",
+   "weapons": [
+    "staff"
+   ]
+  },
+  "barrow_lord": {
+   "name": "Barrow Lord",
+   "text": "A risen champion whose great blade saps whoever it strikes.",
+   "faction": "hollow",
+   "archetype": "warrior",
+   "kit": [
+    "grave_cleave",
+    "cleave",
+    "leap",
+    "red_harvest"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "gibbet_knight",
+   "weapons": [
+    "great_weapon"
+   ]
+  },
+  "grovewarden": {
+   "name": "Grovewarden",
+   "text": "A keeper of the old groves who turns the land itself against invaders.",
+   "faction": "thornwood",
+   "archetype": "guardian",
+   "kit": [
+    "bramble_wall",
+    "shield_bash",
+    "defend_aura",
+    "last_stand"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "barkhide_warden",
+   "weapons": [
+    "club",
+    "shield"
+   ]
+  },
+  "huntmaster": {
+   "name": "Huntmaster",
+   "text": "A volley captain who marks the enemy's best and brings them down.",
+   "faction": "thornwood",
+   "archetype": "ranger",
+   "kit": [
+    "called_shot",
+    "power_shot",
+    "volley",
+    "arrow_storm"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "briar_huntress",
+   "weapons": [
+    "bow"
+   ]
+  },
+  "thornspeaker": {
+   "name": "Thornspeaker",
+   "text": "A voice of the green who heals the army with living sap.",
+   "faction": "thornwood",
+   "archetype": "mender",
+   "kit": [
+    "sap_of_renewal",
+    "mend",
+    "blessing_aura",
+    "revival"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "rootbinder",
+   "weapons": [
+    "staff"
+   ]
+  },
+  "beastcaller": {
+   "name": "Beastcaller",
+   "text": "A wild-eyed caller who summons the forest's beasts and drives them into a frenzy.",
+   "faction": "thornwood",
+   "archetype": "summoner",
+   "kit": [
+    "feral_howl",
+    "summon_minions",
+    "drain",
+    "legion"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "thorn_skulker",
+   "weapons": [
+    "dagger"
+   ]
+  },
+  "anvilbreaker": {
+   "name": "Anvilbreaker",
+   "text": "A forge champion with a great hammer who stuns what it does not crush.",
+   "faction": "forge",
+   "archetype": "warrior",
+   "kit": [
+    "anvil_blow",
+    "cleave",
+    "leap",
+    "red_harvest"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "anvil_guard",
+   "weapons": [
+    "great_weapon"
+   ]
+  },
+  "ironmarshal": {
+   "name": "Ironmarshal",
+   "text": "A siege commander who anchors the line and calls down bombard fire.",
+   "faction": "forge",
+   "archetype": "guardian",
+   "kit": [
+    "bombard",
+    "shield_bash",
+    "defend_aura",
+    "last_stand"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "anvil_guard",
+   "weapons": [
+    "axe",
+    "shield"
+   ]
+  },
+  "runesmith": {
+   "name": "Runesmith",
+   "text": "An engraver of power-runes who weaves lattices of sparks.",
+   "faction": "forge",
+   "archetype": "mystic",
+   "kit": [
+    "spark_lattice",
+    "binding",
+    "arcane_bolt",
+    "cataclysm"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "cinder_engineer",
+   "weapons": [
+    "staff"
+   ]
+  },
+  "artificer": {
+   "name": "Artificer",
+   "text": "A patient engineer who plates allies in riveted iron and builds helpers.",
+   "faction": "forge",
+   "archetype": "summoner",
+   "kit": [
+    "riveted_aegis",
+    "summon_minions",
+    "drain",
+    "legion"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "cinder_engineer",
+   "weapons": [
+    "club"
+   ]
+  },
+  "brine_champion": {
+   "name": "Brine Champion",
+   "text": "A huge trident-bearer of the deep who drags the enemy under.",
+   "faction": "fishmen",
+   "archetype": "warrior",
+   "kit": [
+    "undertow",
+    "cleave",
+    "leap",
+    "red_harvest"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "fm_tide_mauler",
+   "weapons": [
+    "polearm"
+   ]
+  },
+  "tidemarshal": {
+   "name": "Tidemarshal",
+   "text": "A coral-armoured commander whose rally surges like the tide.",
+   "faction": "fishmen",
+   "archetype": "guardian",
+   "kit": [
+    "tidal_rally",
+    "shield_bash",
+    "defend_aura",
+    "last_stand"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "fm_shellback",
+   "weapons": [
+    "polearm",
+    "shield"
+   ]
+  },
+  "reef_hunter": {
+   "name": "Reef Hunter",
+   "text": "A lean harpoon scout who strikes from range and pins prey in place.",
+   "faction": "fishmen",
+   "archetype": "ranger",
+   "kit": [
+    "called_harpoon",
+    "power_shot",
+    "volley",
+    "arrow_storm"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "fm_hookcaster",
+   "weapons": [
+    "thrown"
+   ]
+  },
+  "deep_oracle": {
+   "name": "Deep Oracle",
+   "text": "An anglerfish oracle whose pearl mends the gravest wounds.",
+   "faction": "fishmen",
+   "archetype": "mender",
+   "kit": [
+    "pearl_of_mending",
+    "mend",
+    "blessing_aura",
+    "revival"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "fm_lantern_acolyte",
+   "weapons": [
+    "staff"
+   ]
+  },
+  "dreadmarshal": {
+   "name": "Dreadmarshal",
+   "text": "A shadow captain who strikes from the dark and never lets a foe recover.",
+   "faction": "darkelf",
+   "archetype": "warrior",
+   "kit": [
+    "veiled_strike",
+    "cleave",
+    "leap",
+    "red_harvest"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "de_knifedancer",
+   "weapons": [
+    "great_weapon"
+   ],
+   "abilities": [
+    "relentless"
+   ]
+  },
+  "nightstalker": {
+   "name": "Nightstalker",
+   "text": "A silent hunter whose every bolt is poisoned.",
+   "faction": "darkelf",
+   "archetype": "ranger",
+   "kit": [
+    "venom_shot",
+    "power_shot",
+    "volley",
+    "arrow_storm"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "de_shardbow",
+   "weapons": [
+    "bow"
+   ],
+   "abilities": [
+    "poison"
+   ]
+  },
+  "veilseer": {
+   "name": "Veilseer",
+   "text": "A seer who drapes the enemy in a blinding veil.",
+   "faction": "darkelf",
+   "archetype": "mystic",
+   "kit": [
+    "veil_of_shadows",
+    "binding",
+    "arcane_bolt",
+    "cataclysm"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "de_veil_adept",
+   "weapons": [
+    "staff"
+   ]
+  },
+  "broodbinder": {
+   "name": "Broodbinder",
+   "text": "A spider-mistress who snares the enemy in silk and calls the brood.",
+   "faction": "darkelf",
+   "archetype": "summoner",
+   "kit": [
+    "silk_snare",
+    "summon_minions",
+    "drain",
+    "legion"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "de_silk_stalker",
+   "weapons": [
+    "dagger"
+   ]
+  },
+  "thane": {
+   "name": "Thane",
+   "text": "A hold-lord who leads hardy warbands from the front.",
+   "faction": "frostmarch",
+   "archetype": "warrior",
+   "kit": [
+    "horn_of_the_hold",
+    "cleave",
+    "leap",
+    "red_harvest"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "clan_raider",
+   "weapons": [
+    "axe"
+   ],
+   "abilities": [
+    "relentless"
+   ]
+  },
+  "reaver": {
+   "name": "Reaver",
+   "text": "A raider who hurls axes from the snow and lives off plunder.",
+   "faction": "frostmarch",
+   "archetype": "ranger",
+   "kit": [
+    "hail_of_axes",
+    "power_shot",
+    "volley",
+    "arrow_storm"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "clan_raider",
+   "weapons": [
+    "thrown"
+   ]
+  },
+  "frostcaller": {
+   "name": "Frostcaller",
+   "text": "A rime-witch whose cold slows any foe.",
+   "faction": "frostmarch",
+   "archetype": "mystic",
+   "kit": [
+    "frostbite",
+    "binding",
+    "arcane_bolt",
+    "cataclysm"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "frost_shaman",
+   "weapons": [
+    "staff"
+   ]
+  },
+  "hearthkeeper": {
+   "name": "Hearthkeeper",
+   "text": "Keeper of the feast-fire: heals the warband and stokes its fury.",
+   "faction": "frostmarch",
+   "archetype": "mender",
+   "kit": [
+    "feast_fire",
+    "mend",
+    "blessing_aura",
+    "revival"
+   ],
+   "learn_order": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    2,
+    2
+   ],
+   "stand_in": "frost_shaman",
+   "weapons": [
+    "club"
+   ]
+  }
+ },
+ "skills": {
+  "cleave": {
+   "name": "Cleave",
+   "text": "Hits every enemy around the hero.",
+   "target": "self",
+   "range": 0,
+   "radius": 80,
+   "mana": [
+    10,
+    12,
+    14
+   ],
+   "cooldown": [
+    6,
+    6,
+    6
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      30,
+      45,
+      60
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 2
+   }
+  },
+  "leap": {
+   "name": "Leap",
+   "text": "Jumps to a point and stuns enemies where it lands.",
+   "target": "point",
+   "range": 320,
+   "radius": 64,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    14,
+    13,
+    12
+   ],
+   "effects": [
+    {
+     "type": "leap"
+    },
+    {
+     "type": "damage",
+     "amount": [
+      20,
+      30,
+      40
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "stun",
+     "seconds": [
+      1.0,
+      1.25,
+      1.5
+     ],
+     "value": [
+      1,
+      1,
+      1
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_far",
+    "min": 110
+   }
+  },
+  "red_harvest": {
+   "name": "Red Harvest",
+   "text": "Ultimate: for 10 s the hero attacks 50% faster and deals 30% more damage.",
+   "target": "self",
+   "range": 0,
+   "radius": 0,
+   "mana": [
+    50
+   ],
+   "cooldown": [
+    90
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "haste",
+     "seconds": [
+      10
+     ],
+     "value": [
+      0.5
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "might",
+     "seconds": [
+      10
+     ],
+     "value": [
+      0.3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 4
+   },
+   "ultimate": true
+  },
+  "shield_bash": {
+   "name": "Shield Bash",
+   "text": "Strikes one enemy and stuns it.",
+   "target": "enemy",
+   "range": 24,
+   "radius": 0,
+   "mana": [
+    15,
+    15,
+    15
+   ],
+   "cooldown": [
+    10,
+    9,
+    8
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      20,
+      30,
+      40
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "stun",
+     "seconds": [
+      1.5,
+      2.0,
+      2.5
+     ],
+     "value": [
+      1,
+      1,
+      1
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "defend_aura": {
+   "name": "Defend Aura",
+   "text": "Aura: your units within 10 m take less damage.",
+   "target": "aura",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    0,
+    0,
+    0
+   ],
+   "cooldown": [
+    0,
+    0,
+    0
+   ],
+   "effects": [
+    {
+     "type": "aura",
+     "kind": "ward",
+     "value": [
+      0.08,
+      0.12,
+      0.16
+     ]
+    }
+   ]
+  },
+  "last_stand": {
+   "name": "Last Stand",
+   "text": "Ultimate: your units within 10 m are healed 15% and take half damage for 8 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    60
+   ],
+   "cooldown": [
+    100
+   ],
+   "effects": [
+    {
+     "type": "heal_pct",
+     "pct": [
+      0.15
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "ward",
+     "seconds": [
+      8
+     ],
+     "value": [
+      0.5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 6
+   },
+   "ultimate": true
+  },
+  "power_shot": {
+   "name": "Power Shot",
+   "text": "A heavy shot at one enemy.",
+   "target": "enemy",
+   "range": 300,
+   "radius": 0,
+   "mana": [
+    15,
+    15,
+    15
+   ],
+   "cooldown": [
+    8,
+    8,
+    8
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      50,
+      75,
+      100
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "volley": {
+   "name": "Volley",
+   "text": "A rain of arrows on an area.",
+   "target": "point",
+   "range": 280,
+   "radius": 96,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      25,
+      40,
+      55
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "arrow_storm": {
+   "name": "Arrow Storm",
+   "text": "Ultimate: arrows pour down on a wide area for 6 s.",
+   "target": "point",
+   "range": 300,
+   "radius": 160,
+   "mana": [
+    60
+   ],
+   "cooldown": [
+    90
+   ],
+   "effects": [
+    {
+     "type": "dot",
+     "dps": [
+      30
+     ],
+     "seconds": [
+      6
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 5
+   },
+   "ultimate": true
+  },
+  "binding": {
+   "name": "Binding",
+   "text": "Damages and slows enemies in an area.",
+   "target": "point",
+   "range": 260,
+   "radius": 96,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      15,
+      25,
+      35
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      2,
+      3,
+      4
+     ],
+     "value": [
+      0.5,
+      0.5,
+      0.5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "arcane_bolt": {
+   "name": "Arcane Bolt",
+   "text": "A bolt of raw power at one enemy.",
+   "target": "enemy",
+   "range": 280,
+   "radius": 0,
+   "mana": [
+    15,
+    15,
+    15
+   ],
+   "cooldown": [
+    6,
+    6,
+    6
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      40,
+      60,
+      80
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "cataclysm": {
+   "name": "Cataclysm",
+   "text": "Ultimate: a blast that crushes and stuns a wide area.",
+   "target": "point",
+   "range": 280,
+   "radius": 160,
+   "mana": [
+    80
+   ],
+   "cooldown": [
+    100
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      200
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "stun",
+     "seconds": [
+      1.5
+     ],
+     "value": [
+      1
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 5
+   },
+   "ultimate": true
+  },
+  "mend": {
+   "name": "Mend",
+   "text": "Heals one ally.",
+   "target": "ally",
+   "range": 260,
+   "radius": 0,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    6,
+    6,
+    6
+   ],
+   "effects": [
+    {
+     "type": "heal",
+     "amount": [
+      60,
+      100,
+      140
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "ally_hurt",
+    "below": 0.6
+   }
+  },
+  "blessing_aura": {
+   "name": "Blessing",
+   "text": "Aura: your units within 10 m attack faster.",
+   "target": "aura",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    0,
+    0,
+    0
+   ],
+   "cooldown": [
+    0,
+    0,
+    0
+   ],
+   "effects": [
+    {
+     "type": "aura",
+     "kind": "haste",
+     "value": [
+      0.06,
+      0.09,
+      0.12
+     ]
+    }
+   ]
+  },
+  "revival": {
+   "name": "Revival",
+   "text": "Ultimate: heals your units within 10 m by half their health and shields them for 6 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    80
+   ],
+   "cooldown": [
+    110
+   ],
+   "effects": [
+    {
+     "type": "heal_pct",
+     "pct": [
+      0.5
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "ward",
+     "seconds": [
+      6
+     ],
+     "value": [
+      0.3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "ally_hurt",
+    "below": 0.5,
+    "count": 4
+   },
+   "ultimate": true
+  },
+  "summon_minions": {
+   "name": "Summon",
+   "text": "Calls tier 1 troops of your faction to fight for 40 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 0,
+   "mana": [
+    40,
+    40,
+    40
+   ],
+   "cooldown": [
+    30,
+    30,
+    30
+   ],
+   "effects": [
+    {
+     "type": "summon",
+     "tier": 1,
+     "count": [
+      2,
+      3,
+      4
+     ],
+     "seconds": [
+      40,
+      40,
+      40
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 2
+   }
+  },
+  "drain": {
+   "name": "Drain",
+   "text": "Drains life from one enemy to heal the hero.",
+   "target": "enemy",
+   "range": 220,
+   "radius": 0,
+   "mana": [
+    15,
+    15,
+    15
+   ],
+   "cooldown": [
+    8,
+    8,
+    8
+   ],
+   "effects": [
+    {
+     "type": "drain",
+     "amount": [
+      30,
+      45,
+      60
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "legion": {
+   "name": "Legion",
+   "text": "Ultimate: calls a warband of tier 1 and tier 2 troops for 30 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 0,
+   "mana": [
+    80
+   ],
+   "cooldown": [
+    120
+   ],
+   "effects": [
+    {
+     "type": "summon",
+     "tier": 1,
+     "count": [
+      6
+     ],
+     "seconds": [
+      30
+     ]
+    },
+    {
+     "type": "summon",
+     "tier": 2,
+     "count": [
+      3
+     ],
+     "seconds": [
+      30
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 5
+   },
+   "ultimate": true
+  },
+  "rallying_oath": {
+   "name": "Rallying Oath",
+   "text": "Your units within 10 m attack faster for 8 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    20,
+    20,
+    20
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "haste",
+     "seconds": [
+      8,
+      8,
+      8
+     ],
+     "value": [
+      0.15,
+      0.2,
+      0.25
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 4
+   }
+  },
+  "pinning_shafts": {
+   "name": "Pinning Shafts",
+   "text": "Shoots one enemy and pins it: slowed by 60%.",
+   "target": "enemy",
+   "range": 300,
+   "radius": 0,
+   "mana": [
+    15,
+    15,
+    15
+   ],
+   "cooldown": [
+    10,
+    10,
+    10
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      25,
+      35,
+      45
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      2,
+      3,
+      4
+     ],
+     "value": [
+      0.6,
+      0.6,
+      0.6
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "lantern_of_mending": {
+   "name": "Lantern of Mending",
+   "text": "Heals your units within 10 m.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    30,
+    30,
+    30
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "heal",
+     "amount": [
+      40,
+      60,
+      80
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "ally_hurt",
+    "below": 0.7,
+    "count": 3
+   }
+  },
+  "judgement": {
+   "name": "Judgement",
+   "text": "A crushing two-handed blow at one enemy.",
+   "target": "enemy",
+   "range": 24,
+   "radius": 0,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    9,
+    9,
+    9
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      60,
+      90,
+      120
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "warcry": {
+   "name": "Warcry",
+   "text": "Your units within 10 m deal more damage for 8 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    20,
+    20,
+    20
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "might",
+     "seconds": [
+      8,
+      8,
+      8
+     ],
+     "value": [
+      0.15,
+      0.2,
+      0.25
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 4
+   }
+  },
+  "cinderfall": {
+   "name": "Cinderfall",
+   "text": "Drops burning slag on one enemy.",
+   "target": "enemy",
+   "range": 300,
+   "radius": 0,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    10,
+    10,
+    10
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      70,
+      105,
+      140
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "brand_of_agony": {
+   "name": "Brand of Agony",
+   "text": "Enemies in an area deal less damage for 6 s.",
+   "target": "point",
+   "range": 280,
+   "radius": 96,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    14,
+    14,
+    14
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "weak",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.2,
+      0.25,
+      0.3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "slag_shield": {
+   "name": "Slag Shield",
+   "text": "Your units within 10 m take less damage for 6 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    20,
+    20,
+    20
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "ward",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.2,
+      0.25,
+      0.3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 4
+   }
+  },
+  "knit_the_fallen": {
+   "name": "Knit the Fallen",
+   "text": "Heals your units within 10 m.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "heal",
+     "amount": [
+      30,
+      45,
+      60
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "ally_hurt",
+    "below": 0.7,
+    "count": 3
+   }
+  },
+  "bone_bulwark": {
+   "name": "Bone Bulwark",
+   "text": "Your units within 10 m take less damage for 6 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    20,
+    20,
+    20
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "ward",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.2,
+      0.25,
+      0.3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 4
+   }
+  },
+  "rot_cloud": {
+   "name": "Rot Cloud",
+   "text": "A poison cloud that eats at enemies for 5 s.",
+   "target": "point",
+   "range": 280,
+   "radius": 128,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "dot",
+     "dps": [
+      10,
+      15,
+      20
+     ],
+     "seconds": [
+      5,
+      5,
+      5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "grave_cleave": {
+   "name": "Grave Cleave",
+   "text": "Hits every enemy around the hero and weakens them for 4 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 80,
+   "mana": [
+    15,
+    15,
+    15
+   ],
+   "cooldown": [
+    8,
+    8,
+    8
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      35,
+      50,
+      65
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "weak",
+     "seconds": [
+      4,
+      4,
+      4
+     ],
+     "value": [
+      0.2,
+      0.2,
+      0.2
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 2
+   }
+  },
+  "bramble_wall": {
+   "name": "Bramble Wall",
+   "text": "Thorns burst up around the hero: enemies within 4 m are slowed and bleed for 4 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 128,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    14,
+    14,
+    14
+   ],
+   "effects": [
+    {
+     "type": "dot",
+     "dps": [
+      8,
+      12,
+      16
+     ],
+     "seconds": [
+      4,
+      4,
+      4
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      4,
+      4,
+      4
+     ],
+     "value": [
+      0.3,
+      0.4,
+      0.5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 2
+   }
+  },
+  "called_shot": {
+   "name": "Called Shot",
+   "text": "A marked arrow at one enemy: heavy damage, and the target deals less damage for 5 s.",
+   "target": "enemy",
+   "range": 320,
+   "radius": 0,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    11,
+    11,
+    11
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      45,
+      70,
+      95
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "weak",
+     "seconds": [
+      5,
+      5,
+      5
+     ],
+     "value": [
+      0.2,
+      0.2,
+      0.2
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "sap_of_renewal": {
+   "name": "Sap of Renewal",
+   "text": "Your units within 10 m regain a share of their health.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    30,
+    30,
+    30
+   ],
+   "cooldown": [
+    14,
+    14,
+    14
+   ],
+   "effects": [
+    {
+     "type": "heal_pct",
+     "pct": [
+      0.12,
+      0.18,
+      0.24
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "ally_hurt",
+    "below": 0.7,
+    "count": 3
+   }
+  },
+  "feral_howl": {
+   "name": "Feral Howl",
+   "text": "Your units within 10 m move and strike in a frenzy for 6 s: faster attacks and more damage.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    30,
+    30,
+    30
+   ],
+   "cooldown": [
+    22,
+    22,
+    22
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "haste",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.1,
+      0.12,
+      0.15
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "might",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.1,
+      0.12,
+      0.15
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 4
+   }
+  },
+  "anvil_blow": {
+   "name": "Anvil Blow",
+   "text": "A hammer stroke that stuns one enemy.",
+   "target": "enemy",
+   "range": 24,
+   "radius": 0,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    10,
+    10,
+    10
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      45,
+      65,
+      85
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "stun",
+     "seconds": [
+      1,
+      1.5,
+      2
+     ],
+     "value": [
+      1,
+      1,
+      1
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "bombard": {
+   "name": "Bombard",
+   "text": "Calls a bombard shot on an area.",
+   "target": "point",
+   "range": 320,
+   "radius": 96,
+   "mana": [
+    30,
+    30,
+    30
+   ],
+   "cooldown": [
+    14,
+    14,
+    14
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      40,
+      60,
+      80
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "spark_lattice": {
+   "name": "Spark Lattice",
+   "text": "A net of runic sparks: enemies in an area are burned and slowed for 3 s.",
+   "target": "point",
+   "range": 280,
+   "radius": 112,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      30,
+      45,
+      60
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      3,
+      3,
+      3
+     ],
+     "value": [
+      0.35,
+      0.35,
+      0.35
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "riveted_aegis": {
+   "name": "Riveted Aegis",
+   "text": "Plates one ally in riveted iron: it takes much less damage for 8 s.",
+   "target": "ally",
+   "range": 260,
+   "radius": 0,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "ward",
+     "seconds": [
+      8,
+      8,
+      8
+     ],
+     "value": [
+      0.3,
+      0.4,
+      0.5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "ally_hurt",
+    "below": 0.6
+   }
+  },
+  "undertow": {
+   "name": "Undertow",
+   "text": "A sweeping trident blow: hits every enemy around the hero and drags at their feet for 3 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 80,
+   "mana": [
+    15,
+    15,
+    15
+   ],
+   "cooldown": [
+    8,
+    8,
+    8
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      35,
+      50,
+      65
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      3,
+      3,
+      3
+     ],
+     "value": [
+      0.4,
+      0.4,
+      0.4
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 2
+   }
+  },
+  "tidal_rally": {
+   "name": "Tidal Rally",
+   "text": "Your units within 10 m are healed a little and attack faster for 6 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    20,
+    20,
+    20
+   ],
+   "effects": [
+    {
+     "type": "heal",
+     "amount": [
+      15,
+      25,
+      35
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "haste",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.1,
+      0.15,
+      0.2
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 4
+   }
+  },
+  "called_harpoon": {
+   "name": "Called Harpoon",
+   "text": "A barbed harpoon at one enemy: damage and a short stun.",
+   "target": "enemy",
+   "range": 300,
+   "radius": 0,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    11,
+    11,
+    11
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      35,
+      50,
+      65
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "stun",
+     "seconds": [
+      0.8,
+      1.2,
+      1.6
+     ],
+     "value": [
+      1,
+      1,
+      1
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "pearl_of_mending": {
+   "name": "Pearl of Mending",
+   "text": "Heals the most wounded ally by a share of its health.",
+   "target": "ally",
+   "range": 280,
+   "radius": 0,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    8,
+    8,
+    8
+   ],
+   "effects": [
+    {
+     "type": "heal_pct",
+     "pct": [
+      0.25,
+      0.35,
+      0.45
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "ally_hurt",
+    "below": 0.6
+   }
+  },
+  "whirlwind_of_steel": {
+   "name": "Whirlwind of Steel",
+   "text": "Ultimate: the hero spins through the enemy line, hitting everything within 4 m and weakening it for 6 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 128,
+   "mana": [
+    60
+   ],
+   "cooldown": [
+    80
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      180
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "weak",
+     "seconds": [
+      6
+     ],
+     "value": [
+      0.3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 4
+   },
+   "ultimate": true
+  },
+  "unbroken_line": {
+   "name": "Unbroken Line",
+   "text": "Ultimate: your units within 10 m are healed and take 40% less damage for 8 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    70
+   ],
+   "cooldown": [
+    110
+   ],
+   "effects": [
+    {
+     "type": "heal",
+     "amount": [
+      100
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "ward",
+     "seconds": [
+      8
+     ],
+     "value": [
+      0.4
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 6
+   },
+   "ultimate": true
+  },
+  "hail_of_shafts": {
+   "name": "Hail of Shafts",
+   "text": "Ultimate: a hail of arrows pins a wide area: enemies are hurt and slowed for 6 s.",
+   "target": "point",
+   "range": 320,
+   "radius": 160,
+   "mana": [
+    60
+   ],
+   "cooldown": [
+    90
+   ],
+   "effects": [
+    {
+     "type": "dot",
+     "dps": [
+      25
+     ],
+     "seconds": [
+      6
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      6
+     ],
+     "value": [
+      0.5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 5
+   },
+   "ultimate": true
+  },
+  "unmaking": {
+   "name": "Unmaking",
+   "text": "Ultimate: unravels one enemy: heavy damage, and it deals 40% less damage for 8 s.",
+   "target": "enemy",
+   "range": 300,
+   "radius": 0,
+   "mana": [
+    70
+   ],
+   "cooldown": [
+    90
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      400
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "weak",
+     "seconds": [
+      8
+     ],
+     "value": [
+      0.4
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   },
+   "ultimate": true
+  },
+  "sanctuary": {
+   "name": "Sanctuary",
+   "text": "Ultimate: your units within 10 m regain a quarter of their health and take 35% less damage for 8 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    80
+   ],
+   "cooldown": [
+    110
+   ],
+   "effects": [
+    {
+     "type": "heal_pct",
+     "pct": [
+      0.25
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "ward",
+     "seconds": [
+      8
+     ],
+     "value": [
+      0.35
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "ally_hurt",
+    "below": 0.5,
+    "count": 4
+   },
+   "ultimate": true
+  },
+  "soul_harvest": {
+   "name": "Soul Harvest",
+   "text": "Ultimate: tears at every enemy within 8 m and gives your units there a share of their health back.",
+   "target": "self",
+   "range": 0,
+   "radius": 256,
+   "mana": [
+    80
+   ],
+   "cooldown": [
+    100
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      120
+     ]
+    },
+    {
+     "type": "heal_pct",
+     "pct": [
+      0.2
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 4
+   },
+   "ultimate": true
+  },
+  "shield_wall": {
+   "name": "Shield Wall",
+   "text": "Your units within 5 m take less damage for 6 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 160,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    18,
+    18,
+    18
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "ward",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.2,
+      0.28,
+      0.36
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 3
+   }
+  },
+  "dawn_charge": {
+   "name": "Dawn Charge",
+   "text": "Ultimate: your units within 10 m attack faster and hit harder for 10 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    80
+   ],
+   "cooldown": [
+    110
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "haste",
+     "seconds": [
+      10
+     ],
+     "value": [
+      0.3
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "might",
+     "seconds": [
+      10
+     ],
+     "value": [
+      0.25
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 6
+   },
+   "ultimate": true
+  },
+  "ember_burst": {
+   "name": "Ember Burst",
+   "text": "Embers burst from the hero: enemies within 3.5 m burn for 4 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 112,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    10,
+    10,
+    10
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      25,
+      35,
+      45
+     ]
+    },
+    {
+     "type": "dot",
+     "dps": [
+      8,
+      12,
+      16
+     ],
+     "seconds": [
+      4,
+      4,
+      4
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 2
+   }
+  },
+  "firestorm": {
+   "name": "Firestorm",
+   "text": "Ultimate: a storm of fire burns a wide area for 6 s.",
+   "target": "point",
+   "range": 300,
+   "radius": 192,
+   "mana": [
+    80
+   ],
+   "cooldown": [
+    100
+   ],
+   "effects": [
+    {
+     "type": "dot",
+     "dps": [
+      40
+     ],
+     "seconds": [
+      6
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 5
+   },
+   "ultimate": true
+  },
+  "grasp_of_the_dead": {
+   "name": "Grasp of the Dead",
+   "text": "Dead hands claw out of the ground: enemies in an area are hurt and slowed for 3 s.",
+   "target": "point",
+   "range": 280,
+   "radius": 96,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      20,
+      30,
+      40
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      3,
+      3,
+      3
+     ],
+     "value": [
+      0.5,
+      0.55,
+      0.6
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "raise_the_barrow": {
+   "name": "Raise the Barrow",
+   "text": "Ultimate: raises three tier 3 dead from the ground for 60 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 0,
+   "mana": [
+    90
+   ],
+   "cooldown": [
+    120
+   ],
+   "effects": [
+    {
+     "type": "summon",
+     "tier": 3,
+     "count": [
+      3
+     ],
+     "seconds": [
+      60
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 5
+   },
+   "ultimate": true
+  },
+  "entangle": {
+   "name": "Entangle",
+   "text": "Roots hold one enemy in place and squeeze it.",
+   "target": "enemy",
+   "range": 280,
+   "radius": 0,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "stun",
+     "seconds": [
+      1.5,
+      2,
+      2.5
+     ],
+     "value": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "type": "dot",
+     "dps": [
+      10,
+      15,
+      20
+     ],
+     "seconds": [
+      3,
+      3,
+      3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "wrath_of_the_grove": {
+   "name": "Wrath of the Grove",
+   "text": "Ultimate: the forest lashes out at a wide area: heavy damage and a 50% slow for 5 s.",
+   "target": "point",
+   "range": 300,
+   "radius": 192,
+   "mana": [
+    80
+   ],
+   "cooldown": [
+    100
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      150
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      5
+     ],
+     "value": [
+      0.5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 5
+   },
+   "ultimate": true
+  },
+  "overcharge": {
+   "name": "Overcharge",
+   "text": "Your units within 5 m attack faster for 6 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 160,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    18,
+    18,
+    18
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "haste",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.15,
+      0.22,
+      0.3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 3
+   }
+  },
+  "iron_tide": {
+   "name": "Iron Tide",
+   "text": "Ultimate: calls two tier 4 constructs to fight for 60 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 0,
+   "mana": [
+    90
+   ],
+   "cooldown": [
+    120
+   ],
+   "effects": [
+    {
+     "type": "summon",
+     "tier": 4,
+     "count": [
+      2
+     ],
+     "seconds": [
+      60
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 5
+   },
+   "ultimate": true
+  },
+  "brine_spray": {
+   "name": "Brine Spray",
+   "text": "A jet of stinging brine: enemies in an area are hurt and deal less damage for 5 s.",
+   "target": "point",
+   "range": 260,
+   "radius": 96,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    11,
+    11,
+    11
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      25,
+      35,
+      45
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "weak",
+     "seconds": [
+      5,
+      5,
+      5
+     ],
+     "value": [
+      0.15,
+      0.2,
+      0.25
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "drowning_tide": {
+   "name": "Drowning Tide",
+   "text": "Ultimate: a wave crashes around the hero: enemies within 8 m are hurt and slowed by half for 4 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 256,
+   "mana": [
+    80
+   ],
+   "cooldown": [
+    100
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      140
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      4
+     ],
+     "value": [
+      0.5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 4
+   },
+   "ultimate": true
+  },
+  "veiled_strike": {
+   "name": "Veiled Strike",
+   "text": "A blow from the shadows: heavy damage to one enemy, which is slowed for 2 s.",
+   "target": "enemy",
+   "range": 24,
+   "radius": 0,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    9,
+    9,
+    9
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      55,
+      80,
+      105
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      2,
+      2,
+      2
+     ],
+     "value": [
+      0.3,
+      0.3,
+      0.3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "venom_shot": {
+   "name": "Venom Shot",
+   "text": "A poisoned bolt: damage now and more over 5 s.",
+   "target": "enemy",
+   "range": 300,
+   "radius": 0,
+   "mana": [
+    15,
+    15,
+    15
+   ],
+   "cooldown": [
+    10,
+    10,
+    10
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      25,
+      35,
+      45
+     ]
+    },
+    {
+     "type": "dot",
+     "dps": [
+      8,
+      12,
+      16
+     ],
+     "seconds": [
+      5,
+      5,
+      5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "veil_of_shadows": {
+   "name": "Veil of Shadows",
+   "text": "A veil of darkness: enemies in an area deal less damage and move slower for 5 s.",
+   "target": "point",
+   "range": 280,
+   "radius": 112,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    14,
+    14,
+    14
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "weak",
+     "seconds": [
+      5,
+      5,
+      5
+     ],
+     "value": [
+      0.2,
+      0.25,
+      0.3
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      5,
+      5,
+      5
+     ],
+     "value": [
+      0.25,
+      0.25,
+      0.25
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "silk_snare": {
+   "name": "Silk Snare",
+   "text": "Webs one enemy in place and its venom eats at it.",
+   "target": "enemy",
+   "range": 260,
+   "radius": 0,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "stun",
+     "seconds": [
+      1.5,
+      2,
+      2.5
+     ],
+     "value": [
+      1,
+      1,
+      1
+     ]
+    },
+    {
+     "type": "dot",
+     "dps": [
+      8,
+      12,
+      16
+     ],
+     "seconds": [
+      3,
+      3,
+      3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "horn_of_the_hold": {
+   "name": "Horn of the Hold",
+   "text": "Your units within 10 m hit harder and take a little less damage for 8 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    20,
+    20,
+    20
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "might",
+     "seconds": [
+      8,
+      8,
+      8
+     ],
+     "value": [
+      0.12,
+      0.17,
+      0.22
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "ward",
+     "seconds": [
+      8,
+      8,
+      8
+     ],
+     "value": [
+      0.1,
+      0.1,
+      0.1
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 4
+   }
+  },
+  "hail_of_axes": {
+   "name": "Hail of Axes",
+   "text": "A volley of thrown axes on an area.",
+   "target": "point",
+   "range": 280,
+   "radius": 96,
+   "mana": [
+    25,
+    25,
+    25
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      35,
+      50,
+      65
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "frostbite": {
+   "name": "Frostbite",
+   "text": "Freezing cold bites one enemy: damage and a 50% slow for 3 s.",
+   "target": "enemy",
+   "range": 300,
+   "radius": 0,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    9,
+    9,
+    9
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      40,
+      60,
+      80
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      3,
+      3,
+      3
+     ],
+     "value": [
+      0.5,
+      0.5,
+      0.5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "feast_fire": {
+   "name": "Feast Fire",
+   "text": "Your units within 10 m regain a share of their health and hit harder for 6 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 320,
+   "mana": [
+    30,
+    30,
+    30
+   ],
+   "cooldown": [
+    16,
+    16,
+    16
+   ],
+   "effects": [
+    {
+     "type": "heal_pct",
+     "pct": [
+      0.1,
+      0.15,
+      0.2
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "might",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.1,
+      0.1,
+      0.1
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "ally_hurt",
+    "below": 0.7,
+    "count": 3
+   }
+  },
+  "shadowstep": {
+   "name": "Shadowstep",
+   "text": "Steps through the shadows to a point; enemies there are hurt and weakened for 4 s.",
+   "target": "point",
+   "range": 300,
+   "radius": 64,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    14,
+    13,
+    12
+   ],
+   "effects": [
+    {
+     "type": "leap"
+    },
+    {
+     "type": "damage",
+     "amount": [
+      25,
+      35,
+      45
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "weak",
+     "seconds": [
+      4,
+      4,
+      4
+     ],
+     "value": [
+      0.25,
+      0.25,
+      0.25
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_far",
+    "min": 110
+   }
+  },
+  "night_without_end": {
+   "name": "Night Without End",
+   "text": "Ultimate: endless night on a wide area for 6 s: enemies are weakened, slowed and bled.",
+   "target": "point",
+   "range": 300,
+   "radius": 192,
+   "mana": [
+    80
+   ],
+   "cooldown": [
+    100
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "weak",
+     "seconds": [
+      6
+     ],
+     "value": [
+      0.4
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      6
+     ],
+     "value": [
+      0.4
+     ]
+    },
+    {
+     "type": "dot",
+     "dps": [
+      25
+     ],
+     "seconds": [
+      6
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 5
+   },
+   "ultimate": true
+  },
+  "glacial_shards": {
+   "name": "Glacial Shards",
+   "text": "Ice shards burst from the hero: enemies within 3.5 m are hurt and slowed for 3 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 112,
+   "mana": [
+    20,
+    20,
+    20
+   ],
+   "cooldown": [
+    10,
+    10,
+    10
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      30,
+      45,
+      60
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      3,
+      3,
+      3
+     ],
+     "value": [
+      0.4,
+      0.4,
+      0.4
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 2
+   }
+  },
+  "call_of_the_giants": {
+   "name": "Call of the Giants",
+   "text": "Ultimate: a tier 7 giant strides in to fight for 45 s.",
+   "target": "self",
+   "range": 0,
+   "radius": 0,
+   "mana": [
+    90
+   ],
+   "cooldown": [
+    120
+   ],
+   "effects": [
+    {
+     "type": "summon",
+     "tier": 7,
+     "count": [
+      1
+     ],
+     "seconds": [
+      45
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 5
+   },
+   "ultimate": true
+  },
+  "reaping_blow": {
+   "name": "Reaping Blow",
+   "text": "A heavy blow at one enemy; double damage if it is below 30% health.",
+   "target": "enemy",
+   "range": 24,
+   "radius": 0,
+   "mana": [
+    12,
+    14,
+    16
+   ],
+   "cooldown": [
+    9,
+    8,
+    7
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      60,
+      85,
+      110
+     ],
+     "bonus_below": 0.3,
+     "bonus": 1.0
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "sunder": {
+   "name": "Sunder",
+   "text": "Smashes every enemy around the hero; they take more damage from everything for a while.",
+   "target": "self",
+   "range": 0,
+   "radius": 80,
+   "mana": [
+    12,
+    14,
+    16
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      20,
+      30,
+      40
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "exposed",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.15,
+      0.2,
+      0.25
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 2
+   }
+  },
+  "challenge": {
+   "name": "Challenge",
+   "text": "Every enemy around must attack the hero, who braces behind the shield.",
+   "target": "self",
+   "range": 0,
+   "radius": 160,
+   "mana": [
+    10,
+    12,
+    14
+   ],
+   "cooldown": [
+    14,
+    13,
+    12
+   ],
+   "effects": [
+    {
+     "type": "taunt",
+     "seconds": [
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "ward",
+     "seconds": [
+      4,
+      5,
+      6
+     ],
+     "value": [
+      0.2,
+      0.25,
+      0.3
+     ],
+     "self": true
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 3
+   }
+  },
+  "call_to_arms": {
+   "name": "Call to Arms",
+   "text": "Soldiers of the hero's people answer the call and fight for a while.",
+   "target": "self",
+   "range": 0,
+   "radius": 0,
+   "mana": [
+    25,
+    30,
+    35
+   ],
+   "cooldown": [
+    40,
+    40,
+    40
+   ],
+   "effects": [
+    {
+     "type": "summon",
+     "tier": 2,
+     "count": [
+      2,
+      2,
+      3
+     ],
+     "seconds": [
+      45,
+      45,
+      45
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 3
+   }
+  },
+  "hunters_mark": {
+   "name": "Hunter's Mark",
+   "text": "Marks an enemy: it takes more damage from everything.",
+   "target": "enemy",
+   "range": 300,
+   "radius": 0,
+   "mana": [
+    10,
+    12,
+    14
+   ],
+   "cooldown": [
+    10,
+    10,
+    10
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "exposed",
+     "seconds": [
+      8,
+      8,
+      8
+     ],
+     "value": [
+      0.2,
+      0.3,
+      0.4
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "caltrops": {
+   "name": "Caltrops",
+   "text": "Scatters iron spikes: enemies there bleed and slow down.",
+   "target": "point",
+   "range": 260,
+   "radius": 70,
+   "mana": [
+    12,
+    14,
+    16
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "dot",
+     "dps": [
+      8,
+      12,
+      16
+     ],
+     "seconds": [
+      6,
+      6,
+      6
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      3,
+      3,
+      3
+     ],
+     "value": [
+      0.4,
+      0.45,
+      0.5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 2
+   }
+  },
+  "chain_lightning": {
+   "name": "Chain Lightning",
+   "text": "A bolt that leaps from enemy to enemy, weaker with each leap.",
+   "target": "enemy",
+   "range": 280,
+   "radius": 0,
+   "mana": [
+    16,
+    19,
+    22
+   ],
+   "cooldown": [
+    8,
+    8,
+    8
+   ],
+   "effects": [
+    {
+     "type": "chain",
+     "amount": [
+      45,
+      60,
+      75
+     ],
+     "jumps": [
+      3,
+      4,
+      5
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemy_in_range"
+   }
+  },
+  "withering_hex": {
+   "name": "Withering Hex",
+   "text": "Enemies in the area deal less damage and take more.",
+   "target": "point",
+   "range": 280,
+   "radius": 90,
+   "mana": [
+    16,
+    19,
+    22
+   ],
+   "cooldown": [
+    14,
+    14,
+    14
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "weak",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.15,
+      0.2,
+      0.25
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "exposed",
+     "seconds": [
+      6,
+      6,
+      6
+     ],
+     "value": [
+      0.15,
+      0.2,
+      0.25
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "resurrection": {
+   "name": "Resurrection",
+   "text": "Brings back your soldiers who fell near the hero in the last 30 seconds, for good.",
+   "target": "self",
+   "range": 0,
+   "radius": 220,
+   "mana": [
+    40,
+    45,
+    50
+   ],
+   "cooldown": [
+    60,
+    55,
+    50
+   ],
+   "effects": [
+    {
+     "type": "resurrect",
+     "count": [
+      1,
+      2,
+      3
+     ],
+     "pct": [
+      0.5,
+      0.5,
+      0.6
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fallen_near",
+    "side": "own",
+    "count": 1
+   }
+  },
+  "purify": {
+   "name": "Purify",
+   "text": "Lifts stuns, slows, curses and venom from allies around the hero and heals them.",
+   "target": "self",
+   "range": 0,
+   "radius": 160,
+   "mana": [
+    14,
+    16,
+    18
+   ],
+   "cooldown": [
+    14,
+    13,
+    12
+   ],
+   "effects": [
+    {
+     "type": "cleanse"
+    },
+    {
+     "type": "heal",
+     "amount": [
+      20,
+      30,
+      40
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "ally_hindered",
+    "count": 2
+   }
+  },
+  "bind_champion": {
+   "name": "Bind Champion",
+   "text": "Binds a champion of the hero's people to fight for a while.",
+   "target": "self",
+   "range": 0,
+   "radius": 0,
+   "mana": [
+    40,
+    45,
+    50
+   ],
+   "cooldown": [
+    60,
+    60,
+    60
+   ],
+   "effects": [
+    {
+     "type": "summon",
+     "tier": 4,
+     "count": [
+      1,
+      1,
+      1
+     ],
+     "seconds": [
+      30,
+      40,
+      50
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 4
+   }
+  },
+  "raise_dead": {
+   "name": "Raise the Fallen",
+   "text": "Soldiers of any side who fell nearby in the last 30 seconds rise to fight for the hero.",
+   "target": "self",
+   "range": 0,
+   "radius": 220,
+   "mana": [
+    30,
+    35,
+    40
+   ],
+   "cooldown": [
+    40,
+    40,
+    40
+   ],
+   "effects": [
+    {
+     "type": "raise",
+     "count": [
+      2,
+      3,
+      4
+     ],
+     "seconds": [
+      30,
+      30,
+      30
+     ],
+     "pct": [
+      0.6,
+      0.6,
+      0.6
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fallen_near",
+    "side": "any",
+    "count": 2
+   }
+  },
+  "dawnbreak": {
+   "name": "Dawnbreak",
+   "text": "A flash of dawn light: enemies there are burned and blinded and deal less damage.",
+   "target": "point",
+   "range": 220,
+   "radius": 90,
+   "mana": [
+    14,
+    16,
+    18
+   ],
+   "cooldown": [
+    14,
+    14,
+    14
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      30,
+      45,
+      60
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "weak",
+     "seconds": [
+      4,
+      5,
+      6
+     ],
+     "value": [
+      0.3,
+      0.3,
+      0.3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 2
+   }
+  },
+  "blood_price": {
+   "name": "Blood Price",
+   "text": "The hero pays in blood: loses health, gains mana and fury.",
+   "target": "self",
+   "range": 0,
+   "radius": 0,
+   "mana": [
+    0,
+    0,
+    0
+   ],
+   "cooldown": [
+    20,
+    18,
+    16
+   ],
+   "effects": [
+    {
+     "type": "self_damage",
+     "pct": [
+      0.15,
+      0.15,
+      0.15
+     ]
+    },
+    {
+     "type": "mana",
+     "amount": [
+      30,
+      45,
+      60
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "might",
+     "seconds": [
+      8,
+      8,
+      8
+     ],
+     "value": [
+      0.2,
+      0.25,
+      0.3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 2,
+    "min_hp": 0.5
+   }
+  },
+  "bone_burst": {
+   "name": "Corpse Burst",
+   "text": "The bodies of the recently fallen around the hero burst, hurting every enemy near them.",
+   "target": "self",
+   "range": 0,
+   "radius": 200,
+   "mana": [
+    16,
+    19,
+    22
+   ],
+   "cooldown": [
+    12,
+    12,
+    12
+   ],
+   "effects": [
+    {
+     "type": "corpse_burst",
+     "amount": [
+      30,
+      40,
+      50
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fallen_near",
+    "side": "any",
+    "count": 2
+   }
+  },
+  "call_the_pack": {
+   "name": "Call the Pack",
+   "text": "Beasts of the forest come running and fight for a while.",
+   "target": "self",
+   "range": 0,
+   "radius": 0,
+   "mana": [
+    22,
+    26,
+    30
+   ],
+   "cooldown": [
+    35,
+    35,
+    35
+   ],
+   "effects": [
+    {
+     "type": "summon",
+     "tier": 2,
+     "count": [
+      2,
+      3,
+      3
+     ],
+     "seconds": [
+      40,
+      40,
+      40
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 3
+   }
+  },
+  "steam_blast": {
+   "name": "Steam Blast",
+   "text": "A burst of scalding steam throws back every enemy around the hero.",
+   "target": "self",
+   "range": 0,
+   "radius": 90,
+   "mana": [
+    12,
+    14,
+    16
+   ],
+   "cooldown": [
+    12,
+    11,
+    10
+   ],
+   "effects": [
+    {
+     "type": "damage",
+     "amount": [
+      25,
+      35,
+      45
+     ]
+    },
+    {
+     "type": "knockback",
+     "distance": [
+      70,
+      85,
+      100
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "slow",
+     "seconds": [
+      2,
+      2,
+      2
+     ],
+     "value": [
+      0.3,
+      0.3,
+      0.3
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "enemies_near",
+    "count": 2
+   }
+  },
+  "riptide": {
+   "name": "Riptide",
+   "text": "A rip of the tide drags enemies together into its centre and staggers them.",
+   "target": "point",
+   "range": 240,
+   "radius": 110,
+   "mana": [
+    14,
+    16,
+    18
+   ],
+   "cooldown": [
+    14,
+    13,
+    12
+   ],
+   "effects": [
+    {
+     "type": "pull",
+     "distance": [
+      60,
+      80,
+      100
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "stun",
+     "seconds": [
+      0.5,
+      0.75,
+      1.0
+     ],
+     "value": [
+      1,
+      1,
+      1
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "cluster",
+    "count": 3
+   }
+  },
+  "venom_blades": {
+   "name": "Venom Blades",
+   "text": "For a while the hero's blows are poisoned and faster.",
+   "target": "self",
+   "range": 0,
+   "radius": 0,
+   "mana": [
+    14,
+    16,
+    18
+   ],
+   "cooldown": [
+    18,
+    18,
+    18
+   ],
+   "effects": [
+    {
+     "type": "status",
+     "kind": "venom",
+     "seconds": [
+      8,
+      8,
+      8
+     ],
+     "value": [
+      0.4,
+      0.55,
+      0.7
+     ]
+    },
+    {
+     "type": "status",
+     "kind": "haste",
+     "seconds": [
+      8,
+      8,
+      8
+     ],
+     "value": [
+      0.1,
+      0.15,
+      0.2
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "fighting",
+    "count": 2
+   }
+  },
+  "rime_shell": {
+   "name": "Rime Shell",
+   "text": "Ice closes over the hero's wounds and freezes the enemies around.",
+   "target": "self",
+   "range": 0,
+   "radius": 90,
+   "mana": [
+    18,
+    21,
+    24
+   ],
+   "cooldown": [
+    24,
+    22,
+    20
+   ],
+   "effects": [
+    {
+     "type": "heal_pct",
+     "pct": [
+      0.15,
+      0.2,
+      0.25
+     ],
+     "self": true
+    },
+    {
+     "type": "status",
+     "kind": "stun",
+     "seconds": [
+      1.0,
+      1.5,
+      2.0
+     ],
+     "value": [
+      1,
+      1,
+      1
+     ]
+    }
+   ],
+   "autocast": {
+    "when": "self_hurt",
+    "below": 0.5
+   }
+  }
+ }
+}

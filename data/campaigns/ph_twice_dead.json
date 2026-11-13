@@ -1,0 +1,910 @@
+{
+ "id": "ph_twice_dead",
+ "title": "Twice Dead",
+ "kind": "hero",
+ "seed": 5505,
+ "intro": [
+  "Sir Orrin Wren rode to Saint Orrin's Rest to hold it against the Concord, and the Concord sent his own great-grandson. Aldous Wren cut him down at the chapel door and carried the body back to Greyhold to burn it at dawn.",
+  "The Regent does not let go of what is hers. Cross the dike, break into Greyhold and bring Orrin's body out of the chapel before the pyre is lit. You have until dawn: twenty minutes. Silencing the chapel bell buys you more.",
+  "Aldous himself has ridden north. His town has not."
+ ],
+ "outro": [
+  {
+   "text": [
+    "Greyhold burns, but not Orrin. Ysmay finds him laid out in the chapel under a Concord banner, and raises him a second time before the walls have stopped smoking.",
+    "He opens his eyes and asks only one thing: whether the boy lived. He did."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "hollow"
+  },
+  {
+   "faction": "concord"
+  }
+ ],
+ "speakers": {
+  "orrin": "Sir Orrin Wren",
+  "corvin": "Father Corvin Mire",
+  "rotwing": "The Rotwing"
+ },
+ "absent": [
+  "Sir Orrin Wren"
+ ],
+ "hero": {
+  "at": [
+   0.07,
+   0.64
+  ]
+ },
+ "hero_boost": {
+  "hp": 500,
+  "damage_pct": 0.8
+ },
+ "checkpoint": "fen_shrine",
+ "map": {
+  "name": "Twice Dead",
+  "size": [
+   176,
+   112
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "meadow",
+  "border": "mountains",
+  "features": {
+   "rivers": [
+    {
+     "pts": [
+      [
+       0.3,
+       -0.03
+      ],
+      [
+       0.28,
+       0.3
+      ],
+      [
+       0.31,
+       0.6
+      ],
+      [
+       0.29,
+       1.03
+      ]
+     ],
+     "w": 6
+    }
+   ],
+   "woods": [
+    {
+     "at": [
+      0.52,
+      0.9
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.58,
+      0.12
+     ],
+     "r": 0.07
+    },
+    {
+     "at": [
+      0.94,
+      0.84
+     ],
+     "r": 0.07
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.14,
+      0.88
+     ],
+     "r": 0.06
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "fen_camp",
+    "at": [
+     0.06,
+     0.62
+    ],
+    "size": "waystone",
+    "owner": 0,
+    "name": "The Regent's Camp",
+    "biome": "swamp"
+   },
+   {
+    "id": "dike",
+    "at": [
+     0.36,
+     0.56
+    ],
+    "size": "waystone",
+    "name": "The Dike"
+   },
+   {
+    "id": "hobbs_acre",
+    "at": [
+     0.5,
+     0.76
+    ],
+    "size": "farmstead",
+    "name": "Hobb's Acre",
+    "nodes": 0
+   },
+   {
+    "id": "greyhold",
+    "at": [
+     0.84,
+     0.46
+    ],
+    "size": "town",
+    "owner": 1,
+    "name": "Greyhold",
+    "nodes": 0
+   }
+  ],
+  "sites": [
+   {
+    "id": "fen_shrine",
+    "at": [
+     0.1,
+     0.46
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "smuggler",
+    "at": [
+     0.2,
+     0.76
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "wayside",
+    "at": [
+     0.44,
+     0.46
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "bell_tower",
+    "at": [
+     0.6,
+     0.22
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "lone_tower",
+    "guards": [
+     [
+      "longbowman",
+      2
+     ],
+     [
+      "pike_militia",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "wolf_wood",
+    "at": [
+     0.54,
+     0.92
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "wolf_den",
+    "guards": [
+     [
+      "thornwolf",
+      3
+     ],
+     [
+      "gloom_panther",
+      1
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "fen_camp",
+    "fen_shrine",
+    "trail"
+   ],
+   [
+    "fen_camp",
+    "smuggler",
+    "trail"
+   ],
+   [
+    "fen_camp",
+    "dike",
+    "ford"
+   ],
+   [
+    "dike",
+    "wayside",
+    "trail"
+   ],
+   [
+    "dike",
+    "hobbs_acre",
+    "road"
+   ],
+   [
+    "hobbs_acre",
+    "wolf_wood",
+    "trail"
+   ],
+   [
+    "dike",
+    "greyhold",
+    "road"
+   ],
+   [
+    "wayside",
+    "bell_tower",
+    "trail"
+   ],
+   [
+    "bell_tower",
+    "greyhold",
+    "road"
+   ],
+   [
+    "hobbs_acre",
+    "greyhold",
+    "road"
+   ]
+  ],
+  "scatter": {
+   "woods": 6,
+   "rocks": 4,
+   "ponds": 2
+  }
+ },
+ "npcs": [
+  {
+   "id": "reeve",
+   "name": "Reeve Hamlin Dace",
+   "look": "worker_concord",
+   "at": [
+    0.5,
+    0.72
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "reeve_decided"
+      }
+     },
+     "dialogue": "reeve",
+     "mark": "!"
+    },
+    {
+     "dialogue": "reeve_after"
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "name": "Sir Orrin Wren",
+   "look": "hero_gravewarden",
+   "at": [
+    0.82,
+    0.16
+   ],
+   "facing": 3.1,
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "orrin_raised"
+      }
+     },
+     "dialogue": "raise",
+     "mark": "!"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "dike_watch",
+   "owner": 1,
+   "at": [
+    0.35,
+    0.54
+   ],
+   "units": [
+    [
+     "pike_militia",
+     3
+    ],
+    [
+     "longbowman",
+     2
+    ],
+    [
+     "shieldwarden",
+     1
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "road_patrol",
+   "owner": 1,
+   "at": [
+    0.58,
+    0.5
+   ],
+   "units": [
+    [
+     "pike_militia",
+     3
+    ],
+    [
+     "lancer",
+     2
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "gate_guard",
+   "owner": 1,
+   "at": [
+    0.7,
+    0.36
+   ],
+   "units": [
+    [
+     "pike_militia",
+     3
+    ],
+    [
+     "longbowman",
+     2
+    ],
+    [
+     "lightbearer",
+     1
+    ]
+   ],
+   "guard": 10
+  },
+  {
+   "id": "aubert",
+   "owner": 1,
+   "at": [
+    0.76,
+    0.24
+   ],
+   "hero": {
+    "class": "templar",
+    "name": "Brother-Captain Aubert",
+    "level": 9
+   },
+   "guard": 12
+  },
+  {
+   "id": "pyre_guard",
+   "owner": 1,
+   "at": [
+    0.78,
+    0.21
+   ],
+   "units": [
+    [
+     "pike_militia",
+     3
+    ],
+    [
+     "longbowman",
+     2
+    ],
+    [
+     "shieldwarden",
+     1
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "acre_dead",
+   "owner": "wild",
+   "passive": true,
+   "spawn": false,
+   "at": [
+    0.52,
+    0.8
+   ],
+   "units": [
+    [
+     "shambler",
+     5
+    ],
+    [
+     "marrow_archer",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "acre_folk",
+   "owner": "wild",
+   "passive": true,
+   "at": [
+    0.51,
+    0.74
+   ],
+   "units": [
+    [
+     "lost_pilgrims",
+     3
+    ]
+   ]
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "He was mine for a hundred years, and they mean to burn him like a fen-rat. Not while I stand.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Father Corvin Mire"
+   },
+   "say": "Greyhold rings its bell at dawn, Regent. When it rings, they light the pyre.",
+   "who": "corvin"
+  },
+  {
+   "if": {
+    "flag": "vathek_bound"
+   },
+   "say": "Pyre-smoke on the wind, Regent. Good wood. Whoever they're burning, they love him.",
+   "who": "hero"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "Twice Dead",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Cross the dike: break the Concord watch on it",
+     "done": {
+      "dead": "dike_watch"
+     },
+     "do": [
+      {
+       "xp": 300
+      }
+     ]
+    },
+    {
+     "text": "Break the guard at Greyhold's gate",
+     "done": {
+      "dead": "gate_guard"
+     },
+     "do": [
+      {
+       "xp": 400
+      }
+     ]
+    },
+    {
+     "text": "Bring down Brother-Captain Aubert and the pyre guard",
+     "done": {
+      "all": [
+       {
+        "dead": "aubert"
+       },
+       {
+        "dead": "pyre_guard"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 500
+      }
+     ]
+    },
+    {
+     "text": "Raise Orrin before the pyre is lit",
+     "done": {
+      "flag": "orrin_raised"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 900
+    },
+    {
+     "item": {
+      "rarity": "rare",
+      "slot": "armor",
+      "level": 14
+     }
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "bell": {
+   "title": "The Dawn Bell",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Silence the chapel bell north of the road",
+     "done": {
+      "cleared": "bell_tower"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 300
+    }
+   ]
+  },
+  "acre": {
+   "title": "The Reeve of Hobb's Acre",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Answer Reeve Hamlin Dace",
+     "done": {
+      "flag": "reeve_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 200
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "reeve": {
+   "nodes": {
+    "start": {
+     "text": "Please. Please, lady. I'm only the reeve here. Hamlin Dace. My lord Wren is gone north and there's nobody left but farmers.",
+     "next": "b"
+    },
+    "b": {
+     "text": "Take what you came for and leave the Acre be. We've buried enough this year. Don't make us bury them twice.",
+     "choices": [
+      {
+       "text": "Keep your village, reeve. I came for one dead man, not for yours.",
+       "do": [
+        {
+         "flag": "reeve_decided"
+        },
+        {
+         "flag": "acre_spared"
+        },
+        {
+         "leave": "acre_folk",
+         "to": [
+          0.62,
+          0.98
+         ]
+        }
+       ],
+       "next": "spare"
+      },
+      {
+       "text": "Your churchyard is full of soldiers, reeve. I'll take them too.",
+       "do": [
+        {
+         "flag": "reeve_decided"
+        },
+        {
+         "flag": "acre_raised"
+        },
+        {
+         "spawn": "acre_dead"
+        },
+        {
+         "join": "acre_dead"
+        },
+        {
+         "leave": "acre_folk",
+         "to": [
+          0.62,
+          0.98
+         ]
+        }
+       ],
+       "next": "raise"
+      }
+     ]
+    },
+    "spare": {
+     "text": "...Thank you. I'll tell my lord Wren that the Regent spared the Acre. He won't believe it."
+    },
+    "raise": {
+     "text": "Gods. Gods forgive us. Come on, all of you, run!"
+    }
+   }
+  },
+  "reeve_after": {
+   "nodes": {
+    "start": {
+     "text": "I've nothing more to give you, lady."
+    }
+   }
+  },
+  "raise": {
+   "nodes": {
+    "start": {
+     "who": "hero",
+     "text": "There you are. Under their banner, with your hands crossed. They washed you, Orrin. They were kind to you.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Up. You're not finished. Neither am I.",
+     "do": [
+      {
+       "flag": "orrin_raised"
+      },
+      {
+       "join": "body"
+      }
+     ],
+     "next": "c"
+    },
+    "c": {
+     "text": "...My lady. The chapel at the Rest. There was a young knight at the door. He had my face.",
+     "next": "d"
+    },
+    "d": {
+     "text": "Did the boy live?"
+    }
+   }
+  },
+  "aubert_parley": {
+   "nodes": {
+    "start": {
+     "who": "aubert",
+     "text": "The Regent herself. Sir Aldous said you'd come for the old knight. He said to burn him before you did.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Sir Aldous is a long way north. I'm here.",
+     "next": "c"
+    },
+    "c": {
+     "who": "aubert",
+     "text": "Then I'll do it with you watching. Shields!"
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "reeve",
+      "r": 8
+     },
+     {
+      "not": {
+       "flag": "reeve_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "start_quest": "acre"
+    },
+    {
+     "dialogue": "reeve",
+     "npc": "reeve"
+    }
+   ]
+  },
+  {
+   "when": {
+    "near": "dike",
+    "r": 12
+   },
+   "do": [
+    {
+     "start_quest": "bell"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "greyhold",
+      "r": 20
+     },
+     {
+      "alive": "aubert"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "aubert_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "dead": "aubert"
+     },
+     {
+      "dead": "pyre_guard"
+     },
+     {
+      "not": {
+       "flag": "orrin_raised"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "The chapel. He's in the chapel. Quickly.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "bell_tower"
+   },
+   "do": [
+    {
+     "flag": "bell_silenced"
+    },
+    {
+     "say": "No bell, no dawn. They'll wait for a priest to ring it by hand. That buys us time.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 600
+     },
+     {
+      "not": {
+       "flag": "orrin_raised"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "The sky's going grey in the east. Half the night gone.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 1020
+     },
+     {
+      "not": {
+       "flag": "orrin_raised"
+      }
+     },
+     {
+      "not": {
+       "flag": "bell_silenced"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Dawn is close. Three minutes, no more!",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 1200
+     },
+     {
+      "not": {
+       "flag": "orrin_raised"
+      }
+     },
+     {
+      "not": {
+       "flag": "bell_silenced"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "lose": "The bell rings for dawn and the pyre is lit. Orrin burns."
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 1320
+     },
+     {
+      "not": {
+       "flag": "orrin_raised"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Dawn is close, bell or no bell. Three minutes!",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 1500
+     },
+     {
+      "not": {
+       "flag": "orrin_raised"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "lose": "A priest rings the dawn by hand and the pyre is lit. Orrin burns."
+    }
+   ]
+  }
+ ]
+}

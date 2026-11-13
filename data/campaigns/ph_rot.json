@@ -1,0 +1,1091 @@
+{
+ "id": "ph_rot",
+ "title": "Rot in the Roots",
+ "kind": "war",
+ "seed": 5404,
+ "max_tier": 4,
+ "ai": "normal",
+ "intro": [
+  "Where the dead walk, the ground rots, and the rot is creeping north toward what is left of the Elderwold. The Thornwood Covenant has answered the only way it knows: Grovewarden Cerrid Ashbark is burning the edge of the fen, and the court's new graves with it.",
+  "Tier 4 is open: wailing shades, which fly over the briars. While the Covenant holds all three of its camps, its burning bands come out of the trees again and again.",
+  "Take Briarwatch and Elderfall, then drive Cerrid back from Ashbark Camp."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "saw_carvings"
+   },
+   "text": [
+    "Cerrid escapes into the trees with half his warband. Among the ashes of a druid camp Corvin finds old carvings of a great stone held in a net of roots, the same as the stone in the clearing.",
+    "\"They knew,\" he says. \"The roots held something shut, and the Concord cut them down.\""
+   ]
+  },
+  {
+   "text": [
+    "Cerrid escapes into the trees with half his warband. Among the ashes of a druid camp Corvin finds old carvings of a great stone held in a net of roots.",
+    "\"They knew,\" he says. \"The roots held something shut, and the Concord cut them down.\""
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "hollow"
+  },
+  {
+   "faction": "thornwood"
+  }
+ ],
+ "speakers": {
+  "orrin": "Sir Orrin Wren",
+  "corvin": "Father Corvin Mire",
+  "rotwing": "The Rotwing"
+ },
+ "hero": {
+  "at": [
+   0.1,
+   0.56
+  ]
+ },
+ "map": {
+  "name": "Rot in the Roots",
+  "size": [
+   192,
+   128
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "swamp",
+  "border": "mountains",
+  "features": {
+   "woods": [
+    {
+     "at": [
+      0.62,
+      0.08
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.62,
+      0.92
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.8,
+      0.3
+     ],
+     "r": 0.07
+    },
+    {
+     "at": [
+      0.8,
+      0.7
+     ],
+     "r": 0.07
+    },
+    {
+     "at": [
+      0.96,
+      0.14
+     ],
+     "r": 0.06
+    },
+    {
+     "at": [
+      0.96,
+      0.86
+     ],
+     "r": 0.06
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.3,
+      0.5
+     ],
+     "r": 0.05
+    },
+    {
+     "at": [
+      0.2,
+      0.14
+     ],
+     "r": 0.05
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.46,
+       0.4
+      ],
+      [
+       0.5,
+       0.48
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.46,
+       0.6
+      ],
+      [
+       0.5,
+       0.52
+      ]
+     ],
+     "w": 3
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "rotmere",
+    "at": [
+     0.07,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 0,
+    "name": "Rotmere"
+   },
+   {
+    "id": "mirefield",
+    "at": [
+     0.24,
+     0.28
+    ],
+    "size": "hamlet",
+    "name": "Mirefield"
+   },
+   {
+    "id": "sedgeholt",
+    "at": [
+     0.26,
+     0.74
+    ],
+    "size": "farmstead",
+    "name": "Sedgeholt"
+   },
+   {
+    "id": "burnt_edge",
+    "at": [
+     0.44,
+     0.5
+    ],
+    "size": "hamlet",
+    "name": "The Burnt Edge",
+    "biome": "meadow"
+   },
+   {
+    "id": "briarwatch",
+    "at": [
+     0.64,
+     0.24
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Briarwatch",
+    "biome": "deepwood"
+   },
+   {
+    "id": "elderfall",
+    "at": [
+     0.64,
+     0.76
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Elderfall",
+    "biome": "deepwood"
+   },
+   {
+    "id": "ashbark",
+    "at": [
+     0.9,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 1,
+    "name": "Ashbark Camp",
+    "biome": "deepwood"
+   }
+  ],
+  "sites": [
+   {
+    "id": "charnel_house",
+    "at": [
+     0.14,
+     0.66
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "rot_shrine",
+    "at": [
+     0.34,
+     0.36
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "root_stone",
+    "at": [
+     0.72,
+     0.5
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "stone_circle",
+    "keeper": 1,
+    "guards": [
+     [
+      "rootbinder",
+      1
+     ],
+     [
+      "barkhide_warden",
+      3
+     ],
+     [
+      "briar_huntress",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "strix_hollow",
+    "at": [
+     0.42,
+     0.1
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "watch_ruin",
+    "guards": [
+     [
+      "gloom_panther",
+      1
+     ],
+     [
+      "thornwolf",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "bog_den",
+    "at": [
+     0.4,
+     0.9
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "drowned_chapel",
+    "guards": [
+     [
+      "bog_lurker",
+      1
+     ],
+     [
+      "marsh_hag",
+      1
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "rotmere",
+    "mirefield",
+    "road"
+   ],
+   [
+    "rotmere",
+    "sedgeholt",
+    "road"
+   ],
+   [
+    "rotmere",
+    "charnel_house",
+    "road"
+   ],
+   [
+    "rotmere",
+    "burnt_edge",
+    "road"
+   ],
+   [
+    "mirefield",
+    "rot_shrine",
+    "trail"
+   ],
+   [
+    "mirefield",
+    "strix_hollow",
+    "trail"
+   ],
+   [
+    "sedgeholt",
+    "bog_den",
+    "trail"
+   ],
+   [
+    "burnt_edge",
+    "briarwatch",
+    "road"
+   ],
+   [
+    "burnt_edge",
+    "elderfall",
+    "road"
+   ],
+   [
+    "mirefield",
+    "briarwatch",
+    "trail"
+   ],
+   [
+    "sedgeholt",
+    "elderfall",
+    "trail"
+   ],
+   [
+    "briarwatch",
+    "root_stone",
+    "trail"
+   ],
+   [
+    "elderfall",
+    "root_stone",
+    "trail"
+   ],
+   [
+    "root_stone",
+    "ashbark",
+    "trail"
+   ],
+   [
+    "briarwatch",
+    "ashbark",
+    "road"
+   ],
+   [
+    "elderfall",
+    "ashbark",
+    "road"
+   ]
+  ],
+  "scatter": {
+   "woods": 6,
+   "rocks": 4,
+   "ponds": 3
+  }
+ },
+ "npcs": [
+  {
+   "id": "aelith",
+   "name": "Aelith Moss",
+   "look": "hero_thornspeaker",
+   "at": [
+    0.46,
+    0.2
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "aelith_decided"
+      }
+     },
+     "dialogue": "aelith",
+     "mark": "!"
+    },
+    {
+     "dialogue": "aelith_after"
+    }
+   ]
+  },
+  {
+   "id": "gall",
+   "name": "Mother Gall of the Charnel House",
+   "look": "worker_hollow",
+   "at": [
+    0.15,
+    0.6
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "gall_decided"
+      }
+     },
+     "dialogue": "gall",
+     "mark": "!"
+    },
+    {
+     "dialogue": "gall_after"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "levy",
+   "owner": 0,
+   "at": [
+    0.13,
+    0.54
+   ],
+   "units": [
+    [
+     "shambler",
+     10
+    ],
+    [
+     "marrow_archer",
+     8
+    ],
+    [
+     "gravecrawler",
+     3
+    ],
+    [
+     "wailing_shade",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "edge_burners",
+   "owner": 1,
+   "at": [
+    0.45,
+    0.46
+   ],
+   "units": [
+    [
+     "thorn_skulker",
+     4
+    ],
+    [
+     "barkhide_warden",
+     2
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "cerrid",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.46
+   ],
+   "hero": {
+    "class": "grovewarden",
+    "name": "Cerrid Ashbark",
+    "level": 9
+   },
+   "guard": 12
+  },
+  {
+   "id": "cerrid_guard",
+   "owner": 1,
+   "at": [
+    0.87,
+    0.52
+   ],
+   "units": [
+    [
+     "barkhide_warden",
+     5
+    ],
+    [
+     "briar_huntress",
+     3
+    ],
+    [
+     "thorn_skulker",
+     4
+    ],
+    [
+     "rootbinder",
+     1
+    ],
+    [
+     "gloomwing_strix",
+     1
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "briar_guard",
+   "owner": 1,
+   "at": [
+    0.63,
+    0.27
+   ],
+   "units": [
+    [
+     "barkhide_warden",
+     3
+    ],
+    [
+     "briar_huntress",
+     2
+    ],
+    [
+     "thorn_skulker",
+     3
+    ]
+   ],
+   "guard": 10
+  },
+  {
+   "id": "elder_guard",
+   "owner": 1,
+   "at": [
+    0.63,
+    0.73
+   ],
+   "units": [
+    [
+     "barkhide_warden",
+     3
+    ],
+    [
+     "briar_huntress",
+     2
+    ],
+    [
+     "thorn_skulker",
+     3
+    ]
+   ],
+   "guard": 10
+  },
+  {
+   "id": "charnel_gift",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.14,
+    0.62
+   ],
+   "units": [
+    [
+     "gravecrawler",
+     3
+    ]
+   ]
+  },
+  {
+   "id": "burners_north",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.62,
+    0.1
+   ],
+   "units": [
+    [
+     "thorn_skulker",
+     4
+    ],
+    [
+     "barkhide_warden",
+     2
+    ]
+   ],
+   "attack": "rotmere"
+  },
+  {
+   "id": "burners_south",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.62,
+    0.9
+   ],
+   "units": [
+    [
+     "thorn_skulker",
+     3
+    ],
+    [
+     "briar_huntress",
+     1
+    ],
+    [
+     "barkhide_warden",
+     1
+    ]
+   ],
+   "attack": "rotmere"
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "Smoke on the fen edge. They're burning my graves before the dead are cold in them.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Father Corvin Mire"
+   },
+   "say": "The Covenant thinks the rot is ours, Regent. I'm not sure they're wrong.",
+   "who": "corvin"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "Rot in the Roots",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Take the Covenant camps at Briarwatch and Elderfall",
+     "done": {
+      "all": [
+       {
+        "held": "briarwatch"
+       },
+       {
+        "held": "elderfall"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 500
+      }
+     ]
+    },
+    {
+     "text": "Drive Cerrid Ashbark back: take Ashbark Camp or break his warband",
+     "done": {
+      "any": [
+       {
+        "held": "ashbark"
+       },
+       {
+        "not": {
+         "holds": [
+          1,
+          1
+         ]
+        }
+       },
+       {
+        "dead": "cerrid_guard"
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 800
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "stone": {
+   "title": "The Stone in the Roots",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Take the stone circle between the Covenant camps",
+     "done": {
+      "cleared": "root_stone"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 300
+    }
+   ]
+  },
+  "aelith": {
+   "title": "The Last Grove",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Answer the druid Aelith Moss",
+     "done": {
+      "flag": "aelith_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 150
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "aelith": {
+   "nodes": {
+    "start": {
+     "text": "Stop, Regent. I am Aelith Moss. I don't speak for Cerrid. I speak for the grove he is trying to save.",
+     "next": "b"
+    },
+    "b": {
+     "text": "Your rot follows your dead, and your dead are walking north. There is one grove left in the Elderwold, Heartwood. If the rot reaches its roots, we lose more than trees.",
+     "next": "c"
+    },
+    "c": {
+     "text": "Swear the rot stays out of Heartwood, and my people will stop carrying Cerrid's torches. He will have to burn your graves himself.",
+     "choices": [
+      {
+       "text": "I swear it. The rot stays out of Heartwood.",
+       "do": [
+        {
+         "flag": "aelith_decided"
+        },
+        {
+         "flag": "rot_pact"
+        }
+       ],
+       "next": "pact"
+      },
+      {
+       "text": "The rot goes where the dead go. I can't promise you a forest.",
+       "do": [
+        {
+         "flag": "aelith_decided"
+        }
+       ],
+       "next": "no"
+      }
+     ]
+    },
+    "pact": {
+     "text": "Then my people go home. Cerrid's own band will still fight you. That's between the two of you."
+    },
+    "no": {
+     "text": "Honest. Then the torches stay lit."
+    }
+   }
+  },
+  "aelith_after": {
+   "nodes": {
+    "start": {
+     "text": "The roots remember everything, Regent. Even promises made by the dead."
+    }
+   }
+  },
+  "gall": {
+   "nodes": {
+    "start": {
+     "text": "Regent. The Charnel House is full of druid dead from the burnings. Good stock. Wiry. What shall I make of them?",
+     "choices": [
+      {
+       "text": "Crawlers. Send them to the front.",
+       "do": [
+        {
+         "flag": "gall_decided"
+        },
+        {
+         "spawn": "charnel_gift"
+        }
+       ],
+       "next": "crawl"
+      },
+      {
+       "text": "Bone and sinew for the dwellings.",
+       "do": [
+        {
+         "flag": "gall_decided"
+        },
+        {
+         "res": {
+          "wood": 200,
+          "ore": 150
+         }
+        }
+       ],
+       "next": "bone"
+      }
+     ]
+    },
+    "crawl": {
+     "text": "Three of them, Regent. They still smell of smoke."
+    },
+    "bone": {
+     "text": "Bone and sinew. Nothing wasted, Regent. Nothing ever wasted."
+    }
+   }
+  },
+  "gall_after": {
+   "nodes": {
+    "start": {
+     "text": "The pits are busy, Regent. Busier every day."
+    }
+   }
+  },
+  "cerrid_parley": {
+   "nodes": {
+    "start": {
+     "who": "cerrid",
+     "text": "Rot-queen. Everything your dead walk on dies. The grass, the roots, the water. Do you even see it?",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "I see a druid burning graves. Those were people, Cerrid.",
+     "next": "c"
+    },
+    "c": {
+     "who": "cerrid",
+     "text": "Those were people. Now they're kindling. Torches!"
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "ashbark",
+      "r": 26
+     },
+     {
+      "alive": "cerrid"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "cerrid_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "aelith",
+      "r": 10
+     },
+     {
+      "not": {
+       "flag": "aelith_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "aelith",
+     "npc": "aelith"
+    },
+    {
+     "start_quest": "aelith"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 5
+   },
+   "do": [
+    {
+     "start_quest": "stone"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 40
+   },
+   "do": [
+    {
+     "say": "Wailing shades at tier 4. They fly; the briars can't hold them.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "held": "briarwatch"
+   },
+   "do": [
+    {
+     "say": "Briarwatch is ours.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "held": "elderfall"
+   },
+   "do": [
+    {
+     "say": "Elderfall is ours.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "root_stone"
+   },
+   "do": [
+    {
+     "flag": "saw_carvings"
+    },
+    {
+     "say": "A stone, wrapped in roots, carved into the rock. Somebody wanted it remembered.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "companion": "Father Corvin Mire"
+     },
+     {
+      "cleared": "root_stone"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Look at the roots in the carving, Regent. They're not growing round the stone. They're holding it down.",
+     "who": "corvin"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "dead": "cerrid_guard"
+     },
+     {
+      "alive": "cerrid"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Cerrid's running for the trees. Let him run.",
+     "who": "hero"
+    },
+    {
+     "leave": "cerrid",
+     "to": [
+      0.99,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "cerrid"
+     },
+     {
+      "not": {
+       "alive": "cerrid"
+      }
+     },
+     {
+      "not": {
+       "dead": "cerrid_guard"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Cerrid is down. His band won't last without him.",
+     "who": "hero"
+    },
+    {
+     "xp": 300
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 180
+     },
+     {
+      "holds": [
+       1,
+       3
+      ]
+     },
+     {
+      "not": {
+       "flag": "rot_pact"
+      }
+     }
+    ]
+   },
+   "repeat": 120,
+   "do": [
+    {
+     "spawn": "burners_north"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 240
+     },
+     {
+      "holds": [
+       1,
+       3
+      ]
+     },
+     {
+      "not": {
+       "flag": "rot_pact"
+      }
+     }
+    ]
+   },
+   "repeat": 120,
+   "do": [
+    {
+     "spawn": "burners_south"
+    }
+   ]
+  }
+ ]
+}

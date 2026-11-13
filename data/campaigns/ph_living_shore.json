@@ -1,0 +1,1085 @@
+{
+ "id": "ph_living_shore",
+ "title": "The Living Shore",
+ "kind": "hero",
+ "seed": 5303,
+ "intro": [
+  "The fens are full. North of them lie the Concord's marches: farms, mills and warm bodies, and graveyards that have never been asked what they want. Father Corvin Mire, once a lantern-priest of the Concord, now a Blightcaller, comes to the Regent's court with a list of the villages that buried his flock without rites.",
+  "Saltmarch, the Concord town on the shore of the fen, is held by a lantern brother, Tamsin Hale. Captain Ilse Marrow's levies hold the shore road in front of it. Corvin says there is another way, through a drowned chapel, if you don't mind who sings there.",
+  "Cross into the marches, get past the shore road one way or the other, and take Saltmarch."
+ ],
+ "outro": [
+  {
+   "if": {
+    "flag": "flock_raised"
+   },
+   "text": [
+    "The town is yours and its graveyard empties into your ranks. Corvin walks among the Millbridge dead, calling each of them by name. Orrin stands a long time in front of the chapel, reading the names on the wall. One of them is his own.",
+    "Far out on the shore, Corvin's scouts report shapes standing in the surf at dusk, watching the town burn. By morning there is nothing on the sand but deep, clawed prints walking back into the sea."
+   ]
+  },
+  {
+   "text": [
+    "The town is yours and its graveyard empties into your ranks. Orrin stands a long time in front of the chapel, reading the names on the wall. One of them is his own.",
+    "Far out on the shore, Corvin's scouts report shapes standing in the surf at dusk, watching the town burn. By morning there is nothing on the sand but deep, clawed prints walking back into the sea."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "hollow"
+  },
+  {
+   "faction": "concord"
+  },
+  {
+   "faction": "hollow"
+  }
+ ],
+ "speakers": {
+  "orrin": "Sir Orrin Wren",
+  "corvin": "Father Corvin Mire",
+  "rotwing": "The Rotwing"
+ },
+ "hero": {
+  "at": [
+   0.07,
+   0.62
+  ]
+ },
+ "hero_boost": {
+  "hp": 300,
+  "damage_pct": 0.6
+ },
+ "checkpoint": "gate_shrine",
+ "map": {
+  "name": "The Living Shore",
+  "size": [
+   176,
+   112
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "meadow",
+  "border": "mountains",
+  "features": {
+   "lakes": [
+    {
+     "at": [
+      0.84,
+      0.88
+     ],
+     "r": 0.12
+    },
+    {
+     "at": [
+      0.96,
+      0.6
+     ],
+     "r": 0.07
+    }
+   ],
+   "woods": [
+    {
+     "at": [
+      0.2,
+      0.12
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.46,
+      0.1
+     ],
+     "r": 0.06
+    },
+    {
+     "at": [
+      0.3,
+      0.86
+     ],
+     "r": 0.07
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.62,
+       0.0
+      ],
+      [
+       0.62,
+       0.24
+      ]
+     ],
+     "w": 5
+    },
+    {
+     "pts": [
+      [
+       0.62,
+       0.46
+      ],
+      [
+       0.64,
+       0.66
+      ]
+     ],
+     "w": 5
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "sallowgate",
+    "at": [
+     0.06,
+     0.6
+    ],
+    "size": "town",
+    "owner": 0,
+    "name": "Sallowgate",
+    "biome": "swamp"
+   },
+   {
+    "id": "millbridge",
+    "at": [
+     0.34,
+     0.3
+    ],
+    "size": "hamlet",
+    "name": "Millbridge",
+    "nodes": 0
+   },
+   {
+    "id": "shore_road",
+    "at": [
+     0.6,
+     0.35
+    ],
+    "size": "waystone",
+    "name": "The Shore Road"
+   },
+   {
+    "id": "sunken",
+    "at": [
+     0.6,
+     0.82
+    ],
+    "size": "waystone",
+    "name": "The Sunken Chapel",
+    "biome": "swamp"
+   },
+   {
+    "id": "saltmarch",
+    "at": [
+     0.86,
+     0.36
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Saltmarch",
+    "nodes": 0
+   }
+  ],
+  "sites": [
+   {
+    "id": "gate_shrine",
+    "at": [
+     0.11,
+     0.44
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "pedlar",
+    "at": [
+     0.24,
+     0.66
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "millbridge_yard",
+    "at": [
+     0.42,
+     0.2
+    ],
+    "kind": "lair",
+    "tier": 1,
+    "set": "small_graves",
+    "guards": [
+     [
+      "pike_militia",
+      3
+     ],
+     [
+      "lightbearer",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "witch_rocks",
+    "at": [
+     0.44,
+     0.62
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "stone_circle",
+    "guards": [
+     [
+      "salt_witch",
+      1
+     ],
+     [
+      "crag_slinger",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "harpy_cliff",
+    "at": [
+     0.76,
+     0.1
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "watch_ruin",
+    "guards": [
+     [
+      "road_cutthroat",
+      3
+     ],
+     [
+      "crag_slinger",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "shore_chapel",
+    "at": [
+     0.76,
+     0.52
+    ],
+    "kind": "shrine"
+   }
+  ],
+  "links": [
+   [
+    "sallowgate",
+    "gate_shrine",
+    "trail"
+   ],
+   [
+    "sallowgate",
+    "pedlar",
+    "road"
+   ],
+   [
+    "sallowgate",
+    "millbridge",
+    "road"
+   ],
+   [
+    "millbridge",
+    "millbridge_yard",
+    "trail"
+   ],
+   [
+    "pedlar",
+    "witch_rocks",
+    "trail"
+   ],
+   [
+    "millbridge",
+    "shore_road",
+    "road"
+   ],
+   [
+    "witch_rocks",
+    "sunken",
+    "trail"
+   ],
+   [
+    "shore_road",
+    "saltmarch",
+    "road"
+   ],
+   [
+    "sunken",
+    "shore_chapel",
+    "trail"
+   ],
+   [
+    "shore_chapel",
+    "saltmarch",
+    "road"
+   ],
+   [
+    "saltmarch",
+    "harpy_cliff",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 6,
+   "rocks": 5,
+   "ponds": 3
+  }
+ },
+ "npcs": [
+  {
+   "id": "corvin",
+   "name": "Father Corvin Mire",
+   "look": "hero_blightcaller",
+   "at": [
+    0.12,
+    0.58
+   ],
+   "if": {
+    "not": {
+     "companion": "Father Corvin Mire"
+    }
+   },
+   "talk": [
+    {
+     "dialogue": "corvin_join",
+     "mark": "!"
+    }
+   ]
+  },
+  {
+   "id": "watcher",
+   "name": "A Shape in the Surf",
+   "look": "fm_brine_spear",
+   "at": [
+    0.9,
+    0.74
+   ],
+   "facing": 3.1,
+   "talk": [
+    {
+     "dialogue": "watcher"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "bridge_watch",
+   "owner": 1,
+   "at": [
+    0.36,
+    0.36
+   ],
+   "units": [
+    [
+     "pike_militia",
+     4
+    ],
+    [
+     "longbowman",
+     2
+    ]
+   ],
+   "guard": 8
+  },
+  {
+   "id": "ilse",
+   "owner": 1,
+   "at": [
+    0.61,
+    0.32
+   ],
+   "hero": {
+    "class": "ranger",
+    "name": "Captain Ilse Marrow",
+    "level": 5
+   },
+   "guard": 10
+  },
+  {
+   "id": "ilse_levies",
+   "owner": 1,
+   "at": [
+    0.6,
+    0.37
+   ],
+   "units": [
+    [
+     "pike_militia",
+     4
+    ],
+    [
+     "longbowman",
+     2
+    ],
+    [
+     "lancer",
+     1
+    ]
+   ],
+   "guard": 10
+  },
+  {
+   "id": "cantor",
+   "owner": 2,
+   "at": [
+    0.6,
+    0.84
+   ],
+   "hero": {
+    "class": "blightcaller",
+    "name": "The Drowned Cantor",
+    "level": 5
+   },
+   "guard": 9
+  },
+  {
+   "id": "choir",
+   "owner": 2,
+   "at": [
+    0.58,
+    0.8
+   ],
+   "units": [
+    [
+     "shambler",
+     4
+    ],
+    [
+     "marrow_archer",
+     2
+    ],
+    [
+     "corpse_light",
+     1
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "tamsin",
+   "owner": 1,
+   "at": [
+    0.87,
+    0.32
+   ],
+   "hero": {
+    "class": "knight",
+    "name": "Brother Tamsin Hale",
+    "level": 6
+   },
+   "guard": 12
+  },
+  {
+   "id": "tamsin_guard",
+   "owner": 1,
+   "at": [
+    0.86,
+    0.4
+   ],
+   "units": [
+    [
+     "pike_militia",
+     3
+    ],
+    [
+     "longbowman",
+     2
+    ],
+    [
+     "shieldwarden",
+     1
+    ],
+    [
+     "lightbearer",
+     1
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "flock",
+   "owner": "wild",
+   "passive": true,
+   "spawn": false,
+   "at": [
+    0.42,
+    0.24
+   ],
+   "units": [
+    [
+     "shambler",
+     4
+    ]
+   ]
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "if": {
+    "companion": "Father Corvin Mire"
+   },
+   "flag": "corvin_joined"
+  },
+  {
+   "say": "The living have been warm for long enough. Let's see what the marches keep in their graveyards.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "living_protected"
+   },
+   "say": "Mossgate sent bread to the court, my lady. Bread, to the dead. I didn't know where to put it.",
+   "who": "orrin"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "The Living Shore",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Hear what Father Corvin Mire wants",
+     "done": {
+      "flag": "corvin_joined"
+     },
+     "do": [
+      {
+       "xp": 100
+      }
+     ]
+    },
+    {
+     "text": "Break the Concord watch at Millbridge",
+     "done": {
+      "dead": "bridge_watch"
+     },
+     "do": [
+      {
+       "xp": 200
+      }
+     ]
+    },
+    {
+     "text": "Get past the shore road: beat Captain Ilse Marrow's levies, or go through the Sunken Chapel",
+     "done": {
+      "any": [
+       {
+        "all": [
+         {
+          "dead": "ilse"
+         },
+         {
+          "dead": "ilse_levies"
+         }
+        ]
+       },
+       {
+        "flag": "chapel_passed"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 300
+      }
+     ]
+    },
+    {
+     "text": "Take Saltmarch: bring down Brother Tamsin Hale and his guard",
+     "done": {
+      "all": [
+       {
+        "dead": "tamsin"
+       },
+       {
+        "dead": "tamsin_guard"
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 700
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "list": {
+   "title": "Corvin's List",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Drive the grave-wardens out of the Millbridge churchyard",
+     "done": {
+      "cleared": "millbridge_yard"
+     }
+    },
+    {
+     "text": "Decide what becomes of Corvin's flock",
+     "done": {
+      "flag": "flock_decided"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 300
+    },
+    {
+     "item": {
+      "rarity": "magic",
+      "slot": "charm",
+      "level": 6
+     }
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "corvin_join": {
+   "nodes": {
+    "start": {
+     "who": "corvin",
+     "text": "Regent. Corvin Mire. I kept a lamp in the fen villages for twenty years, until the lamp stopped answering. Then I kept something else.",
+     "next": "b"
+    },
+    "b": {
+     "who": "corvin",
+     "text": "When my flock died of the fen-cough, the Concord buried them in a pit at Millbridge. No rites, no names, lime on top. I have a list. Millbridge is first on it.",
+     "next": "c"
+    },
+    "c": {
+     "who": "orrin",
+     "text": "A lantern-priest who turned. I didn't think there were any left who could still surprise me.",
+     "choices": [
+      {
+       "text": "Walk with me, Father. We'll start with your list.",
+       "do": [
+        {
+         "flag": "corvin_joined"
+        },
+        {
+         "flag": "corvin_list"
+        },
+        {
+         "join": "corvin"
+        },
+        {
+         "start_quest": "list"
+        }
+       ],
+       "next": "list"
+      },
+      {
+       "text": "Walk with me. Your list waits until the shore is mine.",
+       "do": [
+        {
+         "flag": "corvin_joined"
+        },
+        {
+         "join": "corvin"
+        }
+       ],
+       "next": "wait"
+      }
+     ]
+    },
+    "list": {
+     "who": "corvin",
+     "text": "Thank you, Regent. They've waited long enough."
+    },
+    "wait": {
+     "who": "corvin",
+     "text": "As you say. They've waited this long."
+    }
+   }
+  },
+  "flock": {
+   "nodes": {
+    "start": {
+     "who": "corvin",
+     "text": "Here. Under the lime. Forty-one of them. I can hear them, Regent. They want to come up.",
+     "next": "b"
+    },
+    "b": {
+     "who": "orrin",
+     "text": "Or they want to be left alone, Father. You don't know which. Neither does she.",
+     "choices": [
+      {
+       "text": "Raise them, Corvin. Let them walk with the one who remembers their names.",
+       "do": [
+        {
+         "flag": "flock_decided"
+        },
+        {
+         "flag": "flock_raised"
+        },
+        {
+         "spawn": "flock"
+        },
+        {
+         "join": "flock"
+        }
+       ],
+       "next": "raise"
+      },
+      {
+       "text": "Give them their rites, here, and let them lie.",
+       "do": [
+        {
+         "flag": "flock_decided"
+        },
+        {
+         "flag": "flock_rested"
+        },
+        {
+         "xp": 200
+        }
+       ],
+       "next": "rest"
+      }
+     ]
+    },
+    "raise": {
+     "who": "corvin",
+     "text": "Up, children. Up. It's me. It's only me."
+    },
+    "rest": {
+     "who": "corvin",
+     "text": "...Rites, then. I still know the words. I didn't think I'd say them again."
+    }
+   }
+  },
+  "cantor": {
+   "nodes": {
+    "start": {
+     "who": "cantor",
+     "text": "Regent of Sallowmere. My choir has sung in this chapel since the fen drowned it. We do not kneel. We do not march. We sing.",
+     "next": "b"
+    },
+    "b": {
+     "who": "corvin",
+     "text": "He'll let us through his chapel if you let him keep it, Regent. Or he won't let us through at all.",
+     "choices": [
+      {
+       "text": "Keep your chapel, Cantor. We are only passing.",
+       "do": [
+        {
+         "flag": "chapel_passed"
+        },
+        {
+         "flag": "cantor_spared"
+        },
+        {
+         "leave": "choir",
+         "to": [
+          0.66,
+          0.98
+         ]
+        },
+        {
+         "leave": "cantor",
+         "to": [
+          0.66,
+          0.98
+         ]
+        }
+       ],
+       "next": "pass"
+      },
+      {
+       "text": "Everything under the fen kneels to me. Your choir too.",
+       "do": [
+        {
+         "flag": "cantor_fight"
+        },
+        {
+         "attack": "choir",
+         "to": "hero"
+        },
+        {
+         "attack": "cantor",
+         "to": "hero"
+        }
+       ],
+       "next": "fight"
+      }
+     ]
+    },
+    "pass": {
+     "who": "cantor",
+     "text": "Then pass, and be quiet in the nave."
+    },
+    "fight": {
+     "who": "cantor",
+     "text": "Sing, children. Sing her down."
+    }
+   }
+  },
+  "ilse_parley": {
+   "nodes": {
+    "start": {
+     "who": "ilse",
+     "text": "Shore levies, hold! That's no raider, that's their queen. Brother Tamsin said she'd come herself.",
+     "next": "b"
+    },
+    "b": {
+     "who": "ilse",
+     "text": "Nobody passes the shore road, Regent. Nobody. Not while I've a single bow left."
+    }
+   }
+  },
+  "tamsin_parley": {
+   "nodes": {
+    "start": {
+     "who": "tamsin",
+     "text": "Corvin. I knew you, once. You kept the Millbridge lamp. You kept it well.",
+     "next": "b"
+    },
+    "b": {
+     "who": "corvin",
+     "text": "And you buried my flock in lime, Tamsin.",
+     "next": "c"
+    },
+    "c": {
+     "who": "tamsin",
+     "text": "I did. Lamps up! Burn them!"
+    }
+   }
+  },
+  "watcher": {
+   "nodes": {
+    "start": {
+     "text": "..."
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "corvin",
+      "r": 8
+     },
+     {
+      "not": {
+       "flag": "corvin_joined"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "corvin_join",
+     "npc": "corvin"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "cleared": "millbridge_yard"
+     },
+     {
+      "near": "millbridge_yard",
+      "r": 10
+     },
+     {
+      "quest": "list",
+      "is": "active"
+     },
+     {
+      "not": {
+       "flag": "flock_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "flock"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "sunken",
+      "r": 14
+     },
+     {
+      "alive": "cantor"
+     },
+     {
+      "not": {
+       "flag": "cantor_fight"
+      }
+     },
+     {
+      "not": {
+       "flag": "chapel_passed"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "cantor"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "flag": "cantor_fight"
+     },
+     {
+      "dead": "cantor"
+     },
+     {
+      "dead": "choir"
+     }
+    ]
+   },
+   "do": [
+    {
+     "flag": "chapel_passed"
+    },
+    {
+     "say": "The choir is quiet. The chapel road is open.",
+     "who": "corvin"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "ilse",
+      "r": 16
+     },
+     {
+      "alive": "ilse"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "ilse_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "saltmarch",
+      "r": 20
+     },
+     {
+      "alive": "tamsin"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "tamsin_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "bridge_watch"
+   },
+   "do": [
+    {
+     "say": "Millbridge is quiet. The shore road is east.",
+     "who": "orrin"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "ilse"
+     },
+     {
+      "not": {
+       "alive": "ilse"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Their captain is down.",
+     "who": "orrin"
+    },
+    {
+     "xp": 150
+    }
+   ]
+  },
+  {
+   "when": {
+    "near": "watcher",
+    "r": 14
+   },
+   "do": [
+    {
+     "flag": "saw_watchers"
+    },
+    {
+     "say": "Orrin. Something in the surf. Standing there, watching us.",
+     "who": "hero"
+    },
+    {
+     "leave": "watcher",
+     "to": [
+      0.99,
+      0.98
+     ]
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "dead": "tamsin"
+     },
+     {
+      "dead": "tamsin_guard"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "There's a wall of names in their chapel, my lady. The Concord's honoured dead.",
+     "who": "orrin"
+    }
+   ]
+  }
+ ]
+}

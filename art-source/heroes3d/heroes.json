@@ -1,0 +1,293 @@
+{
+ "_doc": "Warbound 3D heroes (tools/assets/tripo_heroes.py): Tripo model + Mixamo biped rig from hero-ref/<id>.png.",
+ "heroes": {
+  "knight": {
+   "image": "hero-ref/knight.png",
+   "faction": "concord",
+   "role": "guardian",
+   "model_task": "dc70887c-4e27-4243-90c5-383163be7d6f",
+   "model": "assets/source/heroes3d/knight/knight_model.glb",
+   "rig_task": "ba99eaca-a39f-4b38-b00a-250dd9f002d2",
+   "rigged": "assets/source/heroes3d/knight/knight_rigged.glb"
+  },
+  "ranger": {
+   "image": "hero-ref/ranger.png",
+   "faction": "concord",
+   "role": "ranger",
+   "model_task": "d623a9bf-e657-4302-b861-1279e39a5ea2",
+   "model": "assets/source/heroes3d/ranger/ranger_model.glb",
+   "rig_task": "968751be-f4e9-467c-87c5-cc2fa872ad75",
+   "rigged": "assets/source/heroes3d/ranger/ranger_rigged.glb"
+  },
+  "oracle": {
+   "image": "hero-ref/oracle.png",
+   "faction": "concord",
+   "role": "mender",
+   "model_task": "cf2146ac-871a-4936-9338-49762bde9766",
+   "model": "assets/source/heroes3d/oracle/oracle_model.glb",
+   "rig_task": "e9c80109-2e91-4874-a24c-b3ccd75d8e3b",
+   "rigged": "assets/source/heroes3d/oracle/oracle_rigged.glb"
+  },
+  "templar": {
+   "image": "hero-ref/templar.png",
+   "faction": "concord",
+   "role": "warrior",
+   "model_task": "b75d6dbc-815c-494f-b8e7-8e94ef0ec331",
+   "model": "assets/source/heroes3d/templar/templar_model.glb",
+   "rig_task": "e9a0f644-1caf-4204-be1c-9a394a5e7547",
+   "rigged": "assets/source/heroes3d/templar/templar_rigged.glb"
+  },
+  "warlord": {
+   "image": "hero-ref/warlord.png",
+   "faction": "ashen",
+   "role": "warrior",
+   "model_task": "78d60ff7-1f2f-4cf4-a818-a35d6a0a28a1",
+   "model": "assets/source/heroes3d/warlord/warlord_model.glb",
+   "rig_task": "4f86537a-b425-46f0-8064-914b699e4d66",
+   "rigged": "assets/source/heroes3d/warlord/warlord_rigged.glb"
+  },
+  "warlock": {
+   "image": "hero-ref/warlock.png",
+   "faction": "ashen",
+   "role": "mystic",
+   "model_task": "6bba1304-9e33-4158-ba68-59696926a7eb",
+   "model": "assets/source/heroes3d/warlock/warlock_model.glb",
+   "rig_task": "fe989080-dfe4-449b-9627-bdc026497f97",
+   "rigged": "assets/source/heroes3d/warlock/warlock_rigged.glb"
+  },
+  "tormentor": {
+   "image": "hero-ref/tormentor.png",
+   "faction": "ashen",
+   "role": "summoner",
+   "model_task": "a28391bb-f672-4c78-b2a8-1ef3a4850c69",
+   "model": "assets/source/heroes3d/tormentor/tormentor_model.glb",
+   "rig_task": "72b18be8-0446-43fc-be09-5cabd9d11687",
+   "rigged": "assets/source/heroes3d/tormentor/tormentor_rigged.glb"
+  },
+  "brandguard": {
+   "image": "hero-ref/brandguard.png",
+   "faction": "ashen",
+   "role": "guardian",
+   "model_task": "30508cd7-71f0-4220-b580-644b76d1f20d",
+   "model": "assets/source/heroes3d/brandguard/brandguard_model.glb",
+   "rig_task": "9a2a4489-eaea-4b9a-895d-c44316d3d5e3",
+   "rigged": "assets/source/heroes3d/brandguard/brandguard_rigged.glb"
+  },
+  "necromancer": {
+   "image": "hero-ref/necromancer.png",
+   "faction": "hollow",
+   "role": "summoner",
+   "model_task": "f0b963a2-7ec2-4606-8255-f76efe8277d9",
+   "model": "assets/source/heroes3d/necromancer/necromancer_model.glb",
+   "rig_task": "7f35e402-b45b-4bdb-8428-b6da865def50",
+   "rigged": "assets/source/heroes3d/necromancer/necromancer_rigged.glb"
+  },
+  "gravewarden": {
+   "image": "hero-ref/gravewarden.png",
+   "faction": "hollow",
+   "role": "guardian",
+   "model_task": "52f5f644-9d78-4dd8-8181-a627bc9ac18e",
+   "model": "assets/source/heroes3d/gravewarden/gravewarden_model.glb",
+   "rig_task": "d27eecf4-5eb4-4480-9323-eec51dc6d71f",
+   "rigged": "assets/source/heroes3d/gravewarden/gravewarden_rigged.glb"
+  },
+  "blightcaller": {
+   "image": "hero-ref/blightcaller.png",
+   "faction": "hollow",
+   "role": "mystic",
+   "model_task": "8b90d306-89ac-4202-99b9-3771d9129f56",
+   "model": "assets/source/heroes3d/blightcaller/blightcaller_model.glb",
+   "rig_task": "0e5248a7-12ae-4ac1-85c1-ca7563dfe46f",
+   "rigged": "assets/source/heroes3d/blightcaller/blightcaller_rigged.glb"
+  },
+  "barrow_lord": {
+   "image": "hero-ref/barrow_lord.png",
+   "faction": "hollow",
+   "role": "warrior",
+   "model_task": "0230a311-0f40-4fac-8f17-d1931c1697f4",
+   "model": "assets/source/heroes3d/barrow_lord/barrow_lord_model.glb",
+   "rig_task": "2c98887d-9ad9-4938-a25b-dc4390ef43e6",
+   "rigged": "assets/source/heroes3d/barrow_lord/barrow_lord_rigged.glb"
+  },
+  "grovewarden": {
+   "image": "hero-ref/grovewarden.png",
+   "faction": "thornwood",
+   "role": "guardian",
+   "model_task": "8aa48054-ed24-4fe2-8e35-e16acb20295c",
+   "model": "assets/source/heroes3d/grovewarden/grovewarden_model.glb",
+   "rig_task": "5f81a92b-ee2e-4b6e-9468-9dcdca089316",
+   "rigged": "assets/source/heroes3d/grovewarden/grovewarden_rigged.glb"
+  },
+  "huntmaster": {
+   "image": "hero-ref/huntmaster.png",
+   "faction": "thornwood",
+   "role": "ranger",
+   "model_task": "0219cf63-87e1-410e-b7f7-c94a72a7f9fd",
+   "model": "assets/source/heroes3d/huntmaster/huntmaster_model.glb",
+   "rig_task": "584ba7a3-8c05-4974-b2e1-df06c7bdfd6a",
+   "rigged": "assets/source/heroes3d/huntmaster/huntmaster_rigged.glb"
+  },
+  "thornspeaker": {
+   "image": "hero-ref/thornspeaker.png",
+   "faction": "thornwood",
+   "role": "mender",
+   "model_task": "b16a4b23-8e7c-4e99-9741-c78bba10c581",
+   "model": "assets/source/heroes3d/thornspeaker/thornspeaker_model.glb",
+   "rig_task": "197075d2-89a0-4244-9dce-08734e21bd87",
+   "rigged": "assets/source/heroes3d/thornspeaker/thornspeaker_rigged.glb"
+  },
+  "beastcaller": {
+   "image": "hero-ref/beastcaller.png",
+   "faction": "thornwood",
+   "role": "summoner",
+   "model_task": "9f89a777-77a4-4f4c-8373-8a9269f945fa",
+   "model": "assets/source/heroes3d/beastcaller/beastcaller_model.glb",
+   "rig_task": "8bdb56ae-2d3d-4111-9095-02ed7acfdd8b",
+   "rigged": "assets/source/heroes3d/beastcaller/beastcaller_rigged.glb"
+  },
+  "artificer": {
+   "image": "hero-ref/artificer.png",
+   "faction": "forge",
+   "role": "summoner",
+   "model_task": "0a3347d7-15f6-4aec-ae02-b88a6a253eae",
+   "model": "assets/source/heroes3d/artificer/artificer_model.glb",
+   "rig_task": "d9b05211-9767-43f9-a847-575747b0f898",
+   "rigged": "assets/source/heroes3d/artificer/artificer_rigged.glb"
+  },
+  "ironmarshal": {
+   "image": "hero-ref/ironmarshal.png",
+   "faction": "forge",
+   "role": "guardian",
+   "model_task": "f6da2d46-ad31-4221-81d8-947eb24af104",
+   "model": "assets/source/heroes3d/ironmarshal/ironmarshal_model.glb",
+   "rig_task": "b4516160-8d9a-4367-be44-448b58bc85aa",
+   "rigged": "assets/source/heroes3d/ironmarshal/ironmarshal_rigged.glb"
+  },
+  "runesmith": {
+   "image": "hero-ref/runesmith.png",
+   "faction": "forge",
+   "role": "mystic",
+   "model_task": "ed05dfa1-aec3-44fb-b9e2-d1a79ffc7ed4",
+   "model": "assets/source/heroes3d/runesmith/runesmith_model.glb",
+   "rig_task": "d1055489-8eb2-4580-af0e-ac5b4330ae26",
+   "rigged": "assets/source/heroes3d/runesmith/runesmith_rigged.glb"
+  },
+  "anvilbreaker": {
+   "image": "hero-ref/anvilbreaker.png",
+   "faction": "forge",
+   "role": "warrior",
+   "model_task": "906e24f5-488d-4a73-b5e8-adcc6168dc24",
+   "model": "assets/source/heroes3d/anvilbreaker/anvilbreaker_model.glb",
+   "rig_task": "8784e35d-cdcb-40ac-a73e-f38ed1586701",
+   "rigged": "assets/source/heroes3d/anvilbreaker/anvilbreaker_rigged.glb"
+  },
+  "thane": {
+   "image": "hero-ref/thane.png",
+   "faction": "frostmarch",
+   "role": "warrior",
+   "model_task": "4529ad48-8b84-4d54-8da5-5ef190e49392",
+   "model": "assets/source/heroes3d/thane/thane_model.glb",
+   "rig_task": "0ab2c1e7-5dbf-4b85-bdad-7bcc0f0639e3",
+   "rigged": "assets/source/heroes3d/thane/thane_rigged.glb"
+  },
+  "reaver": {
+   "image": "hero-ref/reaver.png",
+   "faction": "frostmarch",
+   "role": "ranger",
+   "model_task": "dd19498a-5bdd-404d-8cfe-86faab880170",
+   "model": "assets/source/heroes3d/reaver/reaver_model.glb",
+   "rig_task": "2d20ca69-2c5a-4933-92cb-d6b8e11ebfea",
+   "rigged": "assets/source/heroes3d/reaver/reaver_rigged.glb"
+  },
+  "frostcaller": {
+   "image": "hero-ref/frostcaller.png",
+   "faction": "frostmarch",
+   "role": "mystic",
+   "model_task": "ffc04314-be18-4aff-89fa-7b3c1728a5de",
+   "model": "assets/source/heroes3d/frostcaller/frostcaller_model.glb",
+   "rig_task": "b6ce88ce-8c0d-4833-a124-dae633b9d2c2",
+   "rigged": "assets/source/heroes3d/frostcaller/frostcaller_rigged.glb"
+  },
+  "hearthkeeper": {
+   "image": "hero-ref/hearthkeeper.png",
+   "faction": "frostmarch",
+   "role": "mender",
+   "model_task": "a21f1218-4b35-4969-91ed-432cfc1764c0",
+   "model": "assets/source/heroes3d/hearthkeeper/hearthkeeper_model.glb",
+   "rig_task": "49a2f077-5b71-41d0-942b-600e331e2116",
+   "rigged": "assets/source/heroes3d/hearthkeeper/hearthkeeper_rigged.glb"
+  },
+  "de_dreadmarshal": {
+   "image": "hero-ref/de_dreadmarshal.png",
+   "faction": "darkelf",
+   "role": "warrior",
+   "model_task": "3a578800-46e1-464f-bc7a-e4c371029cb3",
+   "model": "assets/source/heroes3d/de_dreadmarshal/de_dreadmarshal_model.glb",
+   "rig_task": "73b1a367-3a2f-41d7-8b56-fff351b6d058",
+   "rigged": "assets/source/heroes3d/de_dreadmarshal/de_dreadmarshal_rigged.glb"
+  },
+  "de_veilseer": {
+   "image": "hero-ref/de_veilseer.png",
+   "faction": "darkelf",
+   "role": "mystic",
+   "model_task": "0be06ac6-c563-4b4e-bbe3-12fff2a0134d",
+   "model": "assets/source/heroes3d/de_veilseer/de_veilseer_model.glb",
+   "rig_task": "3837d1d6-ca3e-4dc8-836c-1f42ac88e3c7",
+   "rigged": "assets/source/heroes3d/de_veilseer/de_veilseer_rigged.glb"
+  },
+  "de_nightstalker": {
+   "image": "hero-ref/de_nightstalker.png",
+   "faction": "darkelf",
+   "role": "ranger",
+   "model_task": "3021ea55-ad98-482f-853b-53476acd5d17",
+   "model": "assets/source/heroes3d/de_nightstalker/de_nightstalker_model.glb",
+   "rig_task": "3daa7859-98db-408f-a68f-e9b18aeb220f",
+   "rigged": "assets/source/heroes3d/de_nightstalker/de_nightstalker_rigged.glb"
+  },
+  "broodbinder": {
+   "image": "hero-ref/broodbinder.png",
+   "faction": "darkelf",
+   "role": "summoner",
+   "model_task": "8122ce67-ea52-471c-bbc0-b38b438f1905",
+   "model": "assets/source/heroes3d/broodbinder/broodbinder_model.glb",
+   "rig_task": "35dce2d8-48d9-4617-939a-d4554c049217",
+   "rigged": "assets/source/heroes3d/broodbinder/broodbinder_rigged.glb"
+  },
+  "fm_tidemarshal": {
+   "image": "hero-ref/fm_tidemarshal.png",
+   "faction": "fishmen",
+   "role": "guardian",
+   "model_task": "ed7b3055-a3f6-44e2-915e-70549ec2da0c",
+   "model": "assets/source/heroes3d/fm_tidemarshal/fm_tidemarshal_model.glb",
+   "rig_task": "968a98a8-27cd-4e08-b936-f01e1f707319",
+   "rigged": "assets/source/heroes3d/fm_tidemarshal/fm_tidemarshal_rigged.glb"
+  },
+  "fm_deep_oracle": {
+   "image": "hero-ref/fm_deep_oracle.png",
+   "faction": "fishmen",
+   "role": "mender",
+   "model_task": "6a874ad9-e37c-4796-a807-21c9acc619a6",
+   "model": "assets/source/heroes3d/fm_deep_oracle/fm_deep_oracle_model.glb",
+   "rig_task": "d0de8721-5831-428c-acce-b695c3bccf30",
+   "rigged": "assets/source/heroes3d/fm_deep_oracle/fm_deep_oracle_rigged.glb"
+  },
+  "fm_reef_hunter": {
+   "image": "hero-ref/fm_reef_hunter.png",
+   "faction": "fishmen",
+   "role": "ranger",
+   "model_task": "9afc622d-3f45-4956-b12a-9d1af7eac8b1",
+   "model": "assets/source/heroes3d/fm_reef_hunter/fm_reef_hunter_model.glb",
+   "rig_task": "ec7495c1-0c66-459d-954f-5bda5a6a420d",
+   "rigged": "assets/source/heroes3d/fm_reef_hunter/fm_reef_hunter_rigged.glb"
+  },
+  "brine_champion": {
+   "image": "hero-ref/brine_champion.png",
+   "faction": "fishmen",
+   "role": "warrior",
+   "model_task": "b80d4670-3f29-4dbc-8b7e-6b048438134a",
+   "model": "assets/source/heroes3d/brine_champion/brine_champion_model.glb",
+   "rig_task": "a18f9b42-b301-495b-9d4c-0e9cc7336864",
+   "rigged": "assets/source/heroes3d/brine_champion/brine_champion_rigged.glb"
+  }
+ }
+}

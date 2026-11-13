@@ -1,0 +1,322 @@
+[
+  {
+    "id": "knight",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Knight, a guardian hero of the Concord faction. Bearded veteran knight in a dented open-faced steel kettle helm, scarred plate armour over mail, a navy-blue surcoat with a gold tower emblem, short navy cape to mid-back. Colours: worn steel, navy blue, tarnished gold. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/knight.png",
+    "file": "knight.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "34e096357cd7f2d8596d1b7339d390ef33ae15aa2f2860fd283baf98b751a97c"
+  },
+  {
+    "id": "ranger",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Ranger, a ranger hero of the Concord faction. Grim bearded scout in a deep moss-green hood, a ragged brown leather cloak cut short at the hip, leather and mail over a dark tunic, a quiver of arrows on the back (no bow), bracers and soft boots. Colours: moss green, mud brown, dull iron. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/ranger.png",
+    "file": "ranger.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "d880075d9e11325382c9fa26d4d297f7b2d15b30b96e1cc45cd9195967674f37"
+  },
+  {
+    "id": "oracle",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Oracle, a mender hero of the Concord faction. Pale woman with golden glowing eyes in a cream-white hood and robe embroidered with gold lantern motifs, a navy and steel breastplate under it, the robe shortened to above the knee over fitted dark trousers and boots, a small brass lantern hanging at the belt. Colours: cream white, navy, gold. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/oracle.png",
+    "file": "oracle.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "9f836cec3cc8059a72d634bad1dd82030d7697fa9b2b4dd0e00ec30861793e64"
+  },
+  {
+    "id": "templar",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Templar, a warrior hero of the Concord faction. NEW CLASS. A tall, broad Concord holy warrior who fights with a two-handed sword: a closed great-helm with a narrow cross-shaped visor and a small gold lantern crest, heavy scarred steel plate, a white tabard with a navy border and the gold tower emblem cut short at mid-thigh, a navy sash, chain skirt, plated boots. Grim and battered, not shiny. Colours: steel, off-white, navy blue, tarnished gold.",
+    "reference": null,
+    "file": "templar.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "ac6f41d0b2b3c061ed7cf97b2360e58a25a5e6b40e30419775a5076410cbffef"
+  },
+  {
+    "id": "warlord",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Warlord, a warrior hero of the Ashen faction. Huge brutal demon-touched warlord in blood-red spiked plate with ram-like horns on the helm, a skull trophy at the chest, scorched red cloth tatters at the waist ending above the knee. Colours: rust red, black iron, bone. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/warlord.png",
+    "file": "warlord.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "f23ad212d0b5696f83c22650ef7f3ff9328537afd61e38eeabca750760953ca7"
+  },
+  {
+    "id": "warlock",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Warlock, a mystic hero of the Ashen faction. Bearded pact-caster with two great curled horns growing through a ragged grey-brown hood, a tattered layered robe glowing with faint ember-orange runes, cut above the knee over dark wrapped trousers. Colours: ash grey, smoke brown, ember orange glow on the runes only. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/warlock.png",
+    "file": "warlock.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "f7984f8a8082a34c30c105aee06cb130de8a8e33de7a2f22bccc8aeabeeee966"
+  },
+  {
+    "id": "tormentor",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Tormentor, a summoner hero of the Ashen faction. Hulking masked torturer with a barred iron face-cage under a dark brown hood, one huge bare scarred arm, leather straps and hooks, a stained leather apron ending above the knee. Colours: dark leather brown, black iron, raw red skin. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/tormentor.png",
+    "file": "tormentor.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "eaaadab45452013045779573ac49437737b8e8b7f4fd592d436bb1e0ec9d2c38"
+  },
+  {
+    "id": "brandguard",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Brandguard, a guardian hero of the Ashen faction. NEW CLASS. A massive shield-bearer of the Ashen Host: thick black-iron plate glowing with ember-orange seams like cooling slag, a heavy helm with two short forward horns and a slit visor, a chain-and-hook belt, scorched red cloth panels at the waist ending above the knee, very broad shoulders. Brutal and inhuman, not a knight. Colours: black iron, ember orange seams, dried-blood red.",
+    "reference": null,
+    "file": "brandguard.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "4e067b97f80eee9752ee3cdd4ec06da05dea44dbcc708a9bf37c68c296cfeee7"
+  },
+  {
+    "id": "necromancer",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Necromancer, a summoner hero of the Hollow faction. Skeletal grave-scholar with a skull face and a long white beard under a deep violet hood, layered violet and grey robes cut above the knee over bone-wrapped legs, a coiled bronze brooch. Colours: faded violet, bone white, tarnished bronze. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/necromancer.png",
+    "file": "necromancer.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "6d38ba7b091531b35c68870b1e14d1ebfeda64a8fdd18be27266e5970b22ceb0"
+  },
+  {
+    "id": "gravewarden",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Gravewarden, a guardian hero of the Hollow faction. Deathless sentinel in a closed great-helm topped by a spiked iron crown, corroded bronze-grey plate, a dark violet scarf and short cloth at the waist ending above the knee. Colours: corroded bronze, dark violet, grave grey. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/gravewarden.png",
+    "file": "gravewarden.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "b98887960eae3d8f14e28e4c24c80d62a06733cea0c7bac7fb6adb5f009b2c0c"
+  },
+  {
+    "id": "blightcaller",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Blightcaller, a mystic hero of the Hollow faction. Plague-priest in a long beaked plague-doctor mask under a rotting green hood, layered mossy rags, glass vials of yellow-green fluid on the belt, rags cut above the knee over wrapped legs. Colours: rot green, bile yellow, dirty leather. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/blightcaller.png",
+    "file": "blightcaller.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "e925146cbb57ea2fec1e01e0b75ccfc2a9eca98f02d944fce564e5cee274870f"
+  },
+  {
+    "id": "barrow_lord",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Barrow Lord, a warrior hero of the Hollow faction. NEW CLASS. A risen ancient warrior-king who fights with a great axe: a gaunt dead face with sunken glowing pale-violet eyes under an old open bronze crown-helm, ancient corroded bronze scale armour over a ribcage that shows through gaps, a torn violet burial shroud as a short cape to mid-back, bone-and-bronze greaves. Colours: green-tarnished bronze, bone, faded violet.",
+    "reference": null,
+    "file": "barrow_lord.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "92c82da0ddc5f006f1ad0e59b3e1b1040e19cb6a806631150359a730ec140942"
+  },
+  {
+    "id": "grovewarden",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Grovewarden, a guardian hero of the Thornwood faction. Keeper of the old groves: bark-skinned gaunt warden in armour of grown wood and moss, a bramble crown. Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/grovewarden.png",
+    "file": "grovewarden.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "d04b1eedc01493fa218d4a3e66d469d80c0407e0bf96903efa3cfb1aa213e9aa"
+  },
+  {
+    "id": "huntmaster",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Huntmaster, a ranger hero of the Thornwood faction. Volley captain of the deep wood: lean bark-skinned hunter in leaf-and-leather armour, a quiver on the back (no bow). Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/huntmaster.png",
+    "file": "huntmaster.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "0f94df20da7987e1bbcf2b4bb3ee4292dd1bb72c29f504d663d96a0cc30c0c59"
+  },
+  {
+    "id": "thornspeaker",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Thornspeaker, a mender hero of the Thornwood faction. Druid voice of the green in robes of leaves and bark, cut above the knee. Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/thornspeaker.png",
+    "file": "thornspeaker.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "0c2fc0966e4dd97a51c63de7564ad6476265c531c5d05d228d10069da16c1381"
+  },
+  {
+    "id": "beastcaller",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Beastcaller, a summoner hero of the Thornwood faction. NEW CLASS. A gaunt bark-skinned forest shaman who calls beasts: a wolf-skull headdress with antlers over a face of grey bark, a mantle of dark fur and moss on the shoulders, bone and claw charms on cords at the chest, a leather and woven-root kilt ending above the knee, bare bark-textured arms with green glowing rune scars. Colours: bark grey-brown, moss green, bone, faint green glow on the scars only.",
+    "reference": null,
+    "file": "beastcaller.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "bf5ab2a1e07ac8c5ea7ff1e4492c8130e106753b7e742b500bfd5239b5810c2e"
+  },
+  {
+    "id": "artificer",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Artificer, a summoner hero of the Forge faction. Soot-black deep-folk engineer with goggles, a leather apron and tool harness, riveted bracers. Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/artificer.png",
+    "file": "artificer.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "cd9522b8bb79d94a8eb8f11244ec385a6ccdbab3f776f5e2b2b639ce3af0b4a4"
+  },
+  {
+    "id": "ironmarshal",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Ironmarshal, a guardian hero of the Forge faction. Siege commander of the deep folk in heavy riveted plate. Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/ironmarshal.png",
+    "file": "ironmarshal.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "21d41e7c5c0c704a87d286587baaef79e8e90ed7a4a370b0ea55e61a38af94a1"
+  },
+  {
+    "id": "runesmith",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Runesmith, a mystic hero of the Forge faction. Engraver of power-runes: deep-folk smith with glowing rune-etched armour pieces. Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/runesmith.png",
+    "file": "runesmith.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "71198463327b9fc4cc0dc963e0dca80a0ed17c0be0e8319033e37de17ce374be"
+  },
+  {
+    "id": "anvilbreaker",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Anvilbreaker, a warrior hero of the Forge faction. NEW CLASS. A short, very broad soot-black deep-folk smith-warrior who fights with a two-handed hammer: a thick braided black beard with iron rings, a heavy riveted iron helm with a glowing orange slit visor, a scorched leather smith's apron over chain mail, huge riveted iron gauntlets and boots, a coal-glow furnace plate on the chest. Colours: soot black, dark iron, brass rivets, orange furnace glow.",
+    "reference": null,
+    "file": "anvilbreaker.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "f053b779470fcc939f4af0d85a710a398298d3a1caf51f03c786e601b93b2e43"
+  },
+  {
+    "id": "thane",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Thane, a warrior hero of the Frostmarch faction. Bearded hold-lord in a dented steel nasal helm with a huge white fur mantle on the shoulders, mail and leather, a short fur-trimmed kilt above the knee. Colours: steel, white and grey fur, dark leather. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/thane.png",
+    "file": "thane.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "9ebaa6a9aa6a9f7e94a2c2a3640b18774f1537e5fd820d8826ae916b636f780d"
+  },
+  {
+    "id": "reaver",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Reaver, a ranger hero of the Frostmarch faction. Fast northern raider who throws axes: fur and leather, a belt of throwing axes is NOT drawn (empty belt loops only). Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/reaver.png",
+    "file": "reaver.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "a6194bb33c0038b557f892b030863f4f33a196a84d0928b8f21cd5d82e903a60"
+  },
+  {
+    "id": "frostcaller",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Frostcaller, a mystic hero of the Frostmarch faction. Rime-witch of the north in frost-white furs and pale blue cloth, cut above the knee. Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/frostcaller.png",
+    "file": "frostcaller.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "251b774718c8b1fb6dd58d33f1011c8e1f3a5b1df5e791bcacd6cbff94ce5d1a"
+  },
+  {
+    "id": "hearthkeeper",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Hearthkeeper, a mender hero of the Frostmarch faction. NEW CLASS. A stern grey-haired northern clan healer, a woman of about fifty with braided hair tied tight to the head and a band of bronze around the brow, a heavy white-and-grey fur mantle, a dark red wool dress over leather, cut above the knee over fur-wrapped boots, bronze amulets and small bundles of dried herbs at the belt. Colours: white and grey fur, dark red wool, bronze.",
+    "reference": null,
+    "file": "hearthkeeper.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "df9515dd94ca11d879b7dccc4d54e4ecf1680620576c73603e516c435a3f5908"
+  },
+  {
+    "id": "de_dreadmarshal",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Dreadmarshal, a warrior hero of the Dark elves faction. Armoured dark elf commander in dark lacquered plate. ON FOOT: the portrait shows him on a cave lizard; leave the lizard out entirely. Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/de_dreadmarshal.png",
+    "file": "de_dreadmarshal.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "3795b323144aea601a5a68869bc0f602a2ccaf98445387f1f56a83cafc5e50ed"
+  },
+  {
+    "id": "de_veilseer",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Veilseer, a mystic hero of the Dark elves faction. Hooded dark elf sorceress with long pale hair tied back, deep violet hood and layered robe cut above the knee. ON FOOT, no lizard. Colours: deep violet, black, silver. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/de_veilseer.png",
+    "file": "de_veilseer.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "a48ff2a3ab56646ea27a627985dc444afe40ccead9dfadda275118ad29600f09"
+  },
+  {
+    "id": "de_nightstalker",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Nightstalker, a ranger hero of the Dark elves faction. Masked dark elf scout in fitted black leather. ON FOOT, no lizard, no crossbow in hand. Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/de_nightstalker.png",
+    "file": "de_nightstalker.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "eb14507226a5c0e7611a5b5073dc2d877c4dff42820ce2372c59f9da42c7da2a"
+  },
+  {
+    "id": "broodbinder",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Broodbinder, a summoner hero of the Dark elves faction. NEW CLASS. A slender dark elf beast-binder who commands cave lizards: pale grey skin, long silver-white hair tied in a high tail, a violet-lacquered half-mask over the lower face, a cape of black lizard hide with small spines along its edge, cut to mid-back, fitted black scale armour, a coiled whip hanging at the hip (not held), violet sash ending above the knee. Colours: black, deep violet, pale grey skin, silver.",
+    "reference": null,
+    "file": "broodbinder.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "b37bbfddb6b5bfcea9234e6e17dbdb6c87ce5cffc23df7cf04538a6f36a923f5"
+  },
+  {
+    "id": "fm_tidemarshal",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Tidemarshal, a guardian hero of the Fishmen faction. Gilled fish-man commander with a finned crest, armour of coral-encrusted shell plates. ON FOOT on two legs, no crab mount. Colours: sea green, coral pink, shell bronze. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/fm_tidemarshal.png",
+    "file": "fm_tidemarshal.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "2f39dae3398063dbffd1dc755cd484185824c85709cff2bebc8c7f777511f0ff"
+  },
+  {
+    "id": "fm_deep_oracle",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Deep Oracle, a mender hero of the Fishmen faction. Robed anglerfish oracle with a small glowing lure on the brow, shell and pearl ornaments, robe cut above the knee. ON FOOT on two legs, no mount. Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/fm_deep_oracle.png",
+    "file": "fm_deep_oracle.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "502b85459dcaf4a6966eb0bef99bfa1ea86eba77aaf992d77cd0f54e0cfb46ee"
+  },
+  {
+    "id": "fm_reef_hunter",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Reef Hunter, a ranger hero of the Fishmen faction. Lean fish-man harpoon scout in light shell and net armour. ON FOOT on two legs, no crab, no harpoon in hand. Follow the attached portrait. Keep the face, helmet or hood, armour, colours and emblems of the attached portrait; invent the rest of the body to match it.",
+    "reference": "assets/hero_portraits/classes/fm_reef_hunter.png",
+    "file": "fm_reef_hunter.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "e04bc6a6a1f5acf51c80e4db1d1c033024a867d1e43a4e49608d45675d2986c6"
+  },
+  {
+    "id": "brine_champion",
+    "kind": "hero",
+    "prompt": "Clean 3D-model reference image for a dark fantasy strategy game hero. One character only, full body from head to feet with a small margin. Plain flat light grey background, no ground, no shadow, no text, no scenery, no smoke, sparks, magic or particles floating free. Even soft lighting, matte painted look in the same gritty dark-fantasy painting style as the attached portrait (if one is attached), realistic adult proportions, not chibi, not cartoon. Square image, 1024 x 1024.\n\nPose: three-quarter front view, facing slightly right. Standing upright in a relaxed A-pose: feet apart at shoulder width, legs straight and clearly separated, both arms hanging down and held about 35 degrees away from the torso with a clear gap between each arm and the body. BOTH HANDS EMPTY: no weapon, no shield, no staff, no book, no lantern; hands as loose relaxed fists. Nothing hangs over the legs: any cape, cloak, robe or tabard ends above the knees and stays behind or beside the legs, not between them. No long loose hair, ribbons or chains hanging free. On foot, no mount.\n\nSubject: Brine Champion, a warrior hero of the Fishmen faction. NEW CLASS. A huge, heavily muscled shark-headed fish-man who fights with a two-handed weapon: a wide shark mouth full of teeth, grey-blue rough skin with gill slits on the neck, heavy armour of barnacle-crusted bronze plates and big shell pauldrons, a net-and-kelp kilt ending above the knee, webbed clawed feet. Colours: storm grey-blue, tarnished sea-bronze, dark kelp green, bone-white teeth.",
+    "reference": null,
+    "file": "brine_champion.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "736cd3e21b3f866947f6045ce9e2bdaf7074e0ebf6e8deba3e6d29a323398f29"
+  }
+]

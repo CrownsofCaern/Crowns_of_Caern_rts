@@ -1,0 +1,1405 @@
+{
+ "id": "ll_lanterns",
+ "title": "Lanterns in the Fen",
+ "kind": "hero",
+ "seed": 4303,
+ "intro": [
+  "South of the barrows the land gives up and goes to water. The fen road runs on boards and old causeways through the reeds, past Stilt Market and drowned Brackwater, to Fenlight, a lantern-town that has kept a light burning against the marsh for three hundred years.",
+  "The light still burns. It burns green now. The Hollow hold Fenlight, and the man who holds it for them was a lantern-priest once: Father Corvin Mire. His lanterns hang along the fen road, and wherever they shine the dead climb out of the mud.",
+  "Sister Edda Vey of the lantern temples is waiting at the Lantern House north of the crossing. She knew Corvin. Find her, put out his lanterns, and take Fenlight."
+ ],
+ "outro": [
+  {
+   "if": {
+    "all": [
+     {
+      "flag": "edda_joined"
+     },
+     {
+      "flag": "heard_leak"
+     }
+    ]
+   },
+   "text": [
+    "Fenlight's lantern burns yellow again by nightfall. Edda sits up with Corvin's lamp in her lap and reads the ash in it the way the temples taught them both.",
+    "She goes pale. \"He was right about one thing,\" she says. \"It isn't something waking.\" She tips the ash into the water and watches it sink. \"Something is leaking.\""
+   ]
+  },
+  {
+   "if": {
+    "flag": "edda_joined"
+   },
+   "text": [
+    "Fenlight's lantern burns yellow again by nightfall. Edda sits up with Corvin's lamp in her lap and reads the ash in it the way the temples taught them both.",
+    "\"Not something waking,\" she says at last, very quietly. \"Something leaking. And we are standing on the lid.\""
+   ]
+  },
+  {
+   "text": [
+    "Fenlight's lantern burns yellow again by nightfall. A rider takes Corvin's lamp north to the Lantern House, as Sister Edda asked.",
+    "Her answer comes back two days later, in a hand that shakes: \"Not something waking. Something leaking. Come back to the Lantern House before you go any further south.\""
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "concord"
+  },
+  {
+   "faction": "hollow"
+  }
+ ],
+ "hero": {
+  "at": [
+   0.07,
+   0.56
+  ]
+ },
+ "hero_boost": {
+  "hp": 300,
+  "damage_pct": 0.6
+ },
+ "checkpoint": "lantern_shrine",
+ "map": {
+  "name": "Lanterns in the Fen",
+  "size": [
+   176,
+   112
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "swamp",
+  "border": "mountains",
+  "features": {
+   "lakes": [
+    {
+     "at": [
+      0.47,
+      0.6
+     ],
+     "r": 0.07
+    },
+    {
+     "at": [
+      0.74,
+      0.76
+     ],
+     "r": 0.09
+    },
+    {
+     "at": [
+      0.28,
+      0.12
+     ],
+     "r": 0.07
+    },
+    {
+     "at": [
+      0.84,
+      0.16
+     ],
+     "r": 0.07
+    }
+   ],
+   "woods": [
+    {
+     "at": [
+      0.12,
+      0.82
+     ],
+     "r": 0.09
+    },
+    {
+     "at": [
+      0.52,
+      0.14
+     ],
+     "r": 0.08
+    },
+    {
+     "at": [
+      0.68,
+      0.92
+     ],
+     "r": 0.06
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.0,
+       0.72
+      ],
+      [
+       0.08,
+       0.7
+      ]
+     ],
+     "w": 4
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "crossing",
+    "at": [
+     0.06,
+     0.5
+    ],
+    "size": "waystone",
+    "owner": 0,
+    "name": "Reedmere Crossing"
+   },
+   {
+    "id": "lantern_house",
+    "at": [
+     0.2,
+     0.28
+    ],
+    "size": "hamlet",
+    "owner": 0,
+    "name": "The Lantern House",
+    "nodes": 0
+   },
+   {
+    "id": "stilt_market",
+    "at": [
+     0.33,
+     0.56
+    ],
+    "size": "hamlet",
+    "name": "Stilt Market",
+    "nodes": 0,
+    "biome": "swamp"
+   },
+   {
+    "id": "brackwater",
+    "at": [
+     0.5,
+     0.82
+    ],
+    "size": "hamlet",
+    "owner": 1,
+    "name": "Brackwater",
+    "nodes": 0,
+    "biome": "swamp"
+   },
+   {
+    "id": "fenlight",
+    "at": [
+     0.9,
+     0.5
+    ],
+    "size": "town",
+    "owner": 1,
+    "name": "Fenlight",
+    "biome": "swamp"
+   }
+  ],
+  "sites": [
+   {
+    "id": "lantern_shrine",
+    "at": [
+     0.14,
+     0.22
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "eel_peddler",
+    "at": [
+     0.37,
+     0.65
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "reed_chapel",
+    "at": [
+     0.63,
+     0.62
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "bog_den",
+    "at": [
+     0.25,
+     0.84
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "small_ruin",
+    "guards": [
+     [
+      "bog_lurker",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "drowned_chapel",
+    "at": [
+     0.62,
+     0.86
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "drowned_chapel",
+    "guards": [
+     [
+      "marsh_hag",
+      1
+     ],
+     [
+      "bog_lurker",
+      1
+     ],
+     [
+      "shambler",
+      3
+     ]
+    ]
+   },
+   {
+    "id": "lantern_west",
+    "at": [
+     0.44,
+     0.36
+    ],
+    "kind": "lair",
+    "tier": 1,
+    "set": "obelisk",
+    "guards": [
+     [
+      "shambler",
+      4
+     ],
+     [
+      "marrow_archer",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "lantern_mid",
+    "at": [
+     0.6,
+     0.48
+    ],
+    "kind": "lair",
+    "tier": 1,
+    "set": "obelisk",
+    "guards": [
+     [
+      "shambler",
+      3
+     ],
+     [
+      "marrow_archer",
+      2
+     ],
+     [
+      "gravecrawler",
+      1
+     ]
+    ]
+   },
+   {
+    "id": "lantern_east",
+    "at": [
+     0.73,
+     0.3
+    ],
+    "kind": "lair",
+    "tier": 2,
+    "set": "obelisk",
+    "guards": [
+     [
+      "gravecrawler",
+      2
+     ],
+     [
+      "marrow_archer",
+      2
+     ],
+     [
+      "marsh_hag",
+      1
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "crossing",
+    "lantern_house",
+    "road"
+   ],
+   [
+    "crossing",
+    "stilt_market",
+    "road"
+   ],
+   [
+    "lantern_house",
+    "lantern_shrine",
+    "trail"
+   ],
+   [
+    "stilt_market",
+    "eel_peddler",
+    "road"
+   ],
+   [
+    "stilt_market",
+    "bog_den",
+    "trail"
+   ],
+   [
+    "stilt_market",
+    "lantern_west",
+    "road"
+   ],
+   [
+    "stilt_market",
+    "brackwater",
+    "trail"
+   ],
+   [
+    "brackwater",
+    "drowned_chapel",
+    "trail"
+   ],
+   [
+    "lantern_west",
+    "lantern_mid",
+    "road"
+   ],
+   [
+    "lantern_mid",
+    "reed_chapel",
+    "trail"
+   ],
+   [
+    "reed_chapel",
+    "brackwater",
+    "trail"
+   ],
+   [
+    "lantern_mid",
+    "lantern_east",
+    "trail"
+   ],
+   [
+    "lantern_mid",
+    "fenlight",
+    "road"
+   ],
+   [
+    "lantern_east",
+    "fenlight",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 6,
+   "rocks": 4,
+   "ponds": 5
+  }
+ },
+ "npcs": [
+  {
+   "id": "edda",
+   "name": "Sister Edda Vey",
+   "look": "hero_oracle",
+   "at": [
+    0.21,
+    0.33
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "edda_met"
+      }
+     },
+     "dialogue": "edda_meet",
+     "mark": "!"
+    },
+    {
+     "dialogue": "edda_stays"
+    }
+   ]
+  },
+  {
+   "id": "jory",
+   "name": "Headman Jory Teal",
+   "look": "npc_elder",
+   "at": [
+    0.31,
+    0.52
+   ],
+   "talk": [
+    {
+     "if": {
+      "quest": "eels",
+      "is": "new"
+     },
+     "dialogue": "jory_ask",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "step": [
+       "eels",
+       1
+      ]
+     },
+     "dialogue": "jory_back",
+     "mark": "?"
+    },
+    {
+     "dialogue": "jory_idle"
+    }
+   ]
+  },
+  {
+   "id": "ama",
+   "name": "Goodwife Ama",
+   "look": "npc_woman",
+   "at": [
+    0.1,
+    0.45
+   ],
+   "if": {
+    "flag": "refugees_taken"
+   },
+   "talk": [
+    {
+     "if": {
+      "quest": "walked",
+      "is": "new"
+     },
+     "dialogue": "ama_ask",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "step": [
+       "walked",
+       2
+      ]
+     },
+     "dialogue": "ama_back",
+     "mark": "?"
+    },
+    {
+     "dialogue": "ama_idle"
+    }
+   ]
+  },
+  {
+   "id": "hester",
+   "name": "Hester Reed",
+   "look": "lost_pilgrims",
+   "at": [
+    0.35,
+    0.5
+   ],
+   "if": {
+    "not": {
+     "flag": "refugees_taken"
+    }
+   },
+   "talk": [
+    {
+     "if": {
+      "quest": "walked",
+      "is": "new"
+     },
+     "dialogue": "hester_ask",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "step": [
+       "walked",
+       2
+      ]
+     },
+     "dialogue": "hester_back",
+     "mark": "?"
+    },
+    {
+     "dialogue": "hester_idle"
+    }
+   ]
+  },
+  {
+   "id": "tam",
+   "name": "Old Tam Reed",
+   "look": "npc_elder",
+   "at": [
+    0.59,
+    0.8
+   ],
+   "facing": 1.0,
+   "talk": [
+    {
+     "if": {
+      "all": [
+       {
+        "cleared": "drowned_chapel"
+       },
+       {
+        "not": {
+         "flag": "tam_decided"
+        }
+       }
+      ]
+     },
+     "dialogue": "tam",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "not": {
+       "cleared": "drowned_chapel"
+      }
+     },
+     "dialogue": "tam_held"
+    },
+    {
+     "dialogue": "tam_idle"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "walked_away",
+   "owner": "wild",
+   "passive": true,
+   "at": [
+    0.57,
+    0.78
+   ],
+   "units": [
+    [
+     "lost_pilgrims",
+     3
+    ]
+   ]
+  },
+  {
+   "id": "reed_dead",
+   "owner": 1,
+   "at": [
+    0.4,
+    0.46
+   ],
+   "units": [
+    [
+     "shambler",
+     4
+    ]
+   ],
+   "guard": 7
+  },
+  {
+   "id": "mud_dead",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.55,
+    0.56
+   ],
+   "units": [
+    [
+     "shambler",
+     4
+    ],
+    [
+     "gravecrawler",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "causeway_watch",
+   "owner": 1,
+   "at": [
+    0.78,
+    0.52
+   ],
+   "units": [
+    [
+     "marrow_archer",
+     3
+    ],
+    [
+     "gravecrawler",
+     1
+    ]
+   ],
+   "guard": 8
+  },
+  {
+   "id": "corvin",
+   "owner": 1,
+   "at": [
+    0.89,
+    0.5
+   ],
+   "hero": {
+    "class": "blightcaller",
+    "name": "Father Corvin Mire",
+    "level": 6
+   },
+   "guard": 12
+  },
+  {
+   "id": "corvin_guard",
+   "owner": 1,
+   "at": [
+    0.87,
+    0.5
+   ],
+   "units": [
+    [
+     "shambler",
+     6
+    ],
+    [
+     "marrow_archer",
+     3
+    ],
+    [
+     "gravecrawler",
+     1
+    ],
+    [
+     "marsh_hag",
+     1
+    ]
+   ],
+   "guard": 12
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "if": {
+    "flag": "learned_corvin"
+   },
+   "say": "Grue named him at Mournfield. Father Corvin Mire. Let's see what kind of priest he is.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "not": {
+     "flag": "learned_corvin"
+    }
+   },
+   "say": "Green lanterns on the fen road. Somebody wants the dead to find their way.",
+   "who": "hero"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "Lanterns in the Fen",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Find Sister Edda Vey at the Lantern House",
+     "done": {
+      "flag": "edda_met"
+     },
+     "do": [
+      {
+       "xp": 100
+      }
+     ]
+    },
+    {
+     "text": "Put out Corvin's three lanterns on the fen road",
+     "done": {
+      "all": [
+       {
+        "cleared": "lantern_west"
+       },
+       {
+        "cleared": "lantern_mid"
+       },
+       {
+        "cleared": "lantern_east"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 300
+      }
+     ]
+    },
+    {
+     "text": "Take Fenlight: defeat Father Corvin Mire",
+     "done": {
+      "all": [
+       {
+        "dead": "corvin"
+       },
+       {
+        "dead": "corvin_guard"
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 700
+    },
+    {
+     "win": true
+    }
+   ]
+  },
+  "eels": {
+   "title": "Teeth in the Reeds",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Kill the bog lurkers in the south reeds",
+     "done": {
+      "cleared": "bog_den"
+     }
+    },
+    {
+     "text": "Tell Headman Jory the reeds are safe",
+     "done": {
+      "flag": "jory_done"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 250
+    }
+   ]
+  },
+  "walked": {
+   "title": "The Walked-Away",
+   "kind": "side",
+   "steps": [
+    {
+     "text": "Free the Brackwater folk held at the drowned chapel",
+     "done": {
+      "cleared": "drowned_chapel"
+     }
+    },
+    {
+     "text": "Talk to Old Tam Reed",
+     "done": {
+      "flag": "tam_decided"
+     }
+    },
+    {
+     "text": "Tell the Brackwater folk what became of their people",
+     "done": {
+      "flag": "walked_told"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 300
+    },
+    {
+     "if": {
+      "flag": "folk_saved"
+     },
+     "item": {
+      "rarity": "rare",
+      "slot": "charm",
+      "level": 4
+     }
+    },
+    {
+     "if": {
+      "flag": "folk_home"
+     },
+     "potion": "health",
+     "n": 2
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "edda_meet": {
+   "nodes": {
+    "start": {
+     "text": "Sir Aldous. I've watched the fen road for three nights from this porch. Every night another lantern is lit, and every lantern is one of ours.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Yours?",
+     "next": "c"
+    },
+    "c": {
+     "text": "The temples' lanterns. The blue flame burns near the dead to warn the living. Corvin has turned them green, so they call the dead instead. He was my teacher. He taught me to light them.",
+     "next": "d"
+    },
+    "d": {
+     "text": "Feel the boards under you. They're warm. The temples say the ground is waking, my lord. I think it's worse than that. Let me walk with you and I'll show you.",
+     "choices": [
+      {
+       "text": "Then walk with us, sister. We'll need your lamp.",
+       "do": [
+        {
+         "flag": "edda_met"
+        },
+        {
+         "flag": "edda_joined"
+        },
+        {
+         "join": "edda"
+        }
+       ],
+       "next": "join"
+      },
+      {
+       "text": "Stay with the temple. If we fall, someone has to warn Highmere.",
+       "do": [
+        {
+         "flag": "edda_met"
+        },
+        {
+         "flag": "edda_stays"
+        }
+       ],
+       "next": "stay"
+      }
+     ]
+    },
+    "join": {
+     "text": "Then put the lanterns out one by one, and keep me close when we reach Fenlight. I want to speak to him before you kill him."
+    },
+    "stay": {
+     "text": "As you say. Take the temple's blessing, then: the little shrine by the reeds keeps it. And if you find Corvin... bring me his lamp.",
+     "do": [
+      {
+       "potion": "mana",
+       "n": 2
+      }
+     ]
+    }
+   }
+  },
+  "edda_stays": {
+   "nodes": {
+    "start": {
+     "text": "The lamp burns blue tonight, my lord. The dead are close. Keep to the boards."
+    }
+   }
+  },
+  "jory_ask": {
+   "nodes": {
+    "start": {
+     "who": "jory",
+     "text": "A knight! Do knights eat eels? Never mind. My lord, something big lives in the south reeds now. Took two boats and the men in them.",
+     "next": "b"
+    },
+    "b": {
+     "text": "Since the green lights came the bog lurkers come up from the deep pools. Kill them, and Stilt Market will remember it.",
+     "choices": [
+      {
+       "text": "I'll deal with them.",
+       "do": [
+        {
+         "start_quest": "eels"
+        }
+       ]
+      },
+      {
+       "text": "The dead first. Then your eels."
+      }
+     ]
+    }
+   }
+  },
+  "jory_back": {
+   "nodes": {
+    "start": {
+     "text": "Gone? Both of them? Gods, my lord, I'll put your name on a boat. What does the market owe you?",
+     "choices": [
+      {
+       "text": "Nothing. Feed the Brackwater folk who come in.",
+       "do": [
+        {
+         "flag": "jory_done"
+        },
+        {
+         "flag": "jory_free"
+        },
+        {
+         "potion": "health",
+         "n": 2
+        }
+       ],
+       "next": "free"
+      },
+      {
+       "text": "You promised a reward. I'll take it.",
+       "do": [
+        {
+         "flag": "jory_done"
+        },
+        {
+         "flag": "jory_paid"
+        },
+        {
+         "marks": 90
+        }
+       ],
+       "next": "paid"
+      }
+     ]
+    },
+    "free": {
+     "text": "A knight who works for eels and soup. Take these, at least. My wife brews them, they taste of bog."
+    },
+    "paid": {
+     "text": "Fair's fair. Ninety marks, my lord. That's a season of eels."
+    }
+   }
+  },
+  "jory_idle": {
+   "nodes": {
+    "start": {
+     "text": "Boats are going out again. Slowly."
+    }
+   }
+  },
+  "ama_ask": {
+   "nodes": {
+    "start": {
+     "text": "My lord Wren. You took us in at Waymeet. Now I'm asking for more. The rest of Brackwater was walked south, into the fen. Some of them may still be breathing.",
+     "next": "b"
+    },
+    "b": {
+     "text": "The old drowned chapel past the village. That's where the green light was. Please.",
+     "choices": [
+      {
+       "text": "I'll find them.",
+       "do": [
+        {
+         "start_quest": "walked"
+        }
+       ]
+      },
+      {
+       "text": "I can't promise you anything, Ama.",
+       "do": [
+        {
+         "start_quest": "walked"
+        }
+       ],
+       "next": "c"
+      }
+     ]
+    },
+    "c": {
+     "text": "I know. Look anyway."
+    }
+   }
+  },
+  "ama_back": {
+   "nodes": {
+    "start": {
+     "text": "You went. You actually went. Tell me, my lord.",
+     "next": "tell"
+    },
+    "tell": {
+     "who": "hero",
+     "text": "I'll tell you everything, Ama. Sit down.",
+     "do": [
+      {
+       "flag": "walked_told"
+      }
+     ]
+    }
+   }
+  },
+  "ama_idle": {
+   "nodes": {
+    "start": {
+     "text": "Greyhold feeds us. We won't forget it."
+    }
+   }
+  },
+  "hester_ask": {
+   "nodes": {
+    "start": {
+     "text": "You're the knight from Greyhold? I'm Hester, from Brackwater. What's left of it. I hid in the eel traps when they came.",
+     "next": "b"
+    },
+    "b": {
+     "text": "They walked everyone south to the drowned chapel. In rows, singing. My father was singing. Please, my lord.",
+     "choices": [
+      {
+       "text": "I'll go to the chapel.",
+       "do": [
+        {
+         "start_quest": "walked"
+        }
+       ]
+      },
+      {
+       "text": "If they were singing, Hester, they're gone.",
+       "do": [
+        {
+         "start_quest": "walked"
+        }
+       ],
+       "next": "c"
+      }
+     ]
+    },
+    "c": {
+     "text": "Then go and make sure. I can't."
+    }
+   }
+  },
+  "hester_back": {
+   "nodes": {
+    "start": {
+     "text": "My lord? Did you... was my father there?",
+     "next": "tell"
+    },
+    "tell": {
+     "who": "hero",
+     "text": "He was there, Hester. Listen.",
+     "do": [
+      {
+       "flag": "walked_told"
+      }
+     ]
+    }
+   }
+  },
+  "hester_idle": {
+   "nodes": {
+    "start": {
+     "text": "I'm learning to sell eels. Jory says I'm terrible at it."
+    }
+   }
+  },
+  "tam_held": {
+   "nodes": {
+    "start": {
+     "text": "...the light... the light wants us to walk... don't let it see you..."
+    }
+   }
+  },
+  "tam": {
+   "nodes": {
+    "start": {
+     "text": "The light's gone out. I can think again. My lord, we're cold. We've been cold for days and the cold is in our hands. Look at my hands.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Grey to the wrist. The fen dead had the same.",
+     "choices": [
+      {
+       "text": "Edda, can your lamp do anything for them?",
+       "if": {
+        "companion": "Sister Edda Vey"
+       },
+       "do": [
+        {
+         "flag": "tam_decided"
+        },
+        {
+         "flag": "folk_saved"
+        },
+        {
+         "leave": "walked_away",
+         "to": "stilt_market"
+        },
+        {
+         "leave": "tam",
+         "to": "stilt_market"
+        },
+        {
+         "xp": 150
+        }
+       ],
+       "next": "saved"
+      },
+      {
+       "text": "Walk to Stilt Market. Keep to the boards and don't stop.",
+       "do": [
+        {
+         "flag": "tam_decided"
+        },
+        {
+         "flag": "folk_home"
+        },
+        {
+         "leave": "walked_away",
+         "to": "stilt_market"
+        },
+        {
+         "leave": "tam",
+         "to": "stilt_market"
+        }
+       ],
+       "next": "home"
+      },
+      {
+       "text": "There's nothing left to save. Rest now, Tam.",
+       "do": [
+        {
+         "flag": "tam_decided"
+        },
+        {
+         "flag": "folk_rested"
+        },
+        {
+         "remove": "walked_away"
+        },
+        {
+         "remove": "tam"
+        }
+       ],
+       "next": "rest"
+      }
+     ]
+    },
+    "saved": {
+     "text": "Warm. That's warm. Thank you, sister. Thank you, my lord. Take this, it's Brackwater's luck. It never did us any good, maybe it'll do you some."
+    },
+    "home": {
+     "text": "The boards. Yes. Come on, all of you. Don't look at the water."
+    },
+    "rest": {
+     "who": "hero",
+     "text": "It was quick. It was the kindest thing left in this fen."
+    }
+   }
+  },
+  "tam_idle": {
+   "nodes": {
+    "start": {
+     "text": "We'll walk on. Slowly."
+    }
+   }
+  },
+  "corvin_parley": {
+   "nodes": {
+    "start": {
+     "who": "corvin",
+     "text": "Wren. You put out my lanterns. All that work, and you blew them out like birthday candles.",
+     "next": "b"
+    },
+    "b": {
+     "who": "corvin",
+     "text": "Do you know what a lantern-priest is for, my lord? We sit by the fen and watch the lights. For three hundred years we watched. And this summer the ground started breathing.",
+     "choices": [
+      {
+       "text": "What is under the fen, Corvin?",
+       "do": [
+        {
+         "flag": "heard_leak"
+        }
+       ],
+       "next": "leak"
+      },
+      {
+       "text": "Corvin. It's Edda.",
+       "if": {
+        "companion": "Sister Edda Vey"
+       },
+       "next": "edda"
+      },
+      {
+       "text": "Enough. Stand and fight.",
+       "next": "end"
+      }
+     ]
+    },
+    "leak": {
+     "who": "corvin",
+     "text": "Not under. Through. There are cracks down there older than your crown, and something is coming up through them like water through a hull. The dead feel it first. I only gave them lanterns to walk by.",
+     "next": "end"
+    },
+    "edda": {
+     "who": "corvin",
+     "text": "Little Edda. Still lighting blue lamps to frighten the dark? Go home, child. There is nothing to warn anyone about any more. It's already here.",
+     "do": [
+      {
+       "flag": "edda_spoke"
+      }
+     ],
+     "next": "end"
+    },
+    "end": {
+     "who": "corvin",
+     "text": "Come, then. Let's see how long a knight burns."
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "edda",
+      "r": 7
+     },
+     {
+      "not": {
+       "flag": "edda_met"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "edda_meet",
+     "npc": "edda"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "fenlight",
+      "r": 24
+     },
+     {
+      "alive": "corvin"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "corvin_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "near": "lantern_mid",
+    "r": 14
+   },
+   "do": [
+    {
+     "spawn": "mud_dead"
+    },
+    {
+     "attack": "mud_dead",
+     "to": "hero"
+    },
+    {
+     "say": "The mud is moving. Back to back!",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "lantern_west"
+   },
+   "do": [
+    {
+     "say": "One lantern out. The reeds go dark behind it.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "lantern_mid"
+   },
+   "do": [
+    {
+     "say": "Two. Fenlight will have seen that.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "lantern_east"
+   },
+   "do": [
+    {
+     "say": "The last lantern is out. Now the town.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "flag": "edda_joined"
+     },
+     {
+      "cleared": "lantern_west"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Feel that? The boards cooled when it went out. The lanterns aren't only calling them. They're feeding on the warmth.",
+     "who": "edda"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "corvin"
+     },
+     {
+      "not": {
+       "alive": "corvin"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Corvin is down. His lamp is still lit. Green.",
+     "who": "hero"
+    },
+    {
+     "xp": 200
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "drowned_chapel"
+   },
+   "do": [
+    {
+     "say": "The chapel's light is out. The Brackwater folk are still standing in the water.",
+     "who": "hero"
+    }
+   ]
+  }
+ ]
+}

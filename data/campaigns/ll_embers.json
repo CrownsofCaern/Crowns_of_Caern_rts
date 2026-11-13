@@ -1,0 +1,1107 @@
+{
+ "id": "ll_embers",
+ "title": "Into the Embers",
+ "kind": "war",
+ "seed": 5010,
+ "max_tier": 8,
+ "ai": "normal",
+ "intro": [
+  "Cindermaw sits on the lip of the Wound, behind a ridge with two passes. Skarn Ashborn holds it with everything the Host has left, and Pyrehold guards its southern flank. Beyond them both, the gate stands open.",
+  "Tier 8 is open: every unit the Concord has is yours. Whoever you helped on the long road may remember it now.",
+  "Force a pass, take Pyrehold and Cindermaw, then hold the gate as your great-grandfather did."
+ ],
+ "outro": [
+  {
+   "if": {
+    "any": [
+     {
+      "flag": "hrodna_fed"
+     },
+     {
+      "flag": "paid_debt"
+     },
+     {
+      "flag": "heartwood_oath"
+     }
+    ]
+   },
+   "text": [
+    "Aldous Wren stands where Orrin stood a hundred years ago, and the gate does not close. It cannot be closed by soldiers alone.",
+    "But there are northern axes on the ridge beside the Concord's pikes this time, and that is new. The Concord will have to ask the peoples it wronged, and this time it will have to pay. Some of them, at least, have already answered."
+   ]
+  },
+  {
+   "text": [
+    "Aldous Wren stands where Orrin stood a hundred years ago, and the gate does not close. It cannot be closed by soldiers alone.",
+    "The Concord will have to ask the peoples it wronged, and this time it will have to pay."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "concord"
+  },
+  {
+   "faction": "ashen"
+  }
+ ],
+ "speakers": {
+  "edda": "Sister Edda Vey",
+  "maelis": "Maelis Thorne"
+ },
+ "hero": {
+  "at": [
+   0.12,
+   0.52
+  ]
+ },
+ "map": {
+  "name": "Into the Embers",
+  "size": [
+   192,
+   128
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "ashland",
+  "border": "mountains",
+  "features": {
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.52,
+       0.0
+      ],
+      [
+       0.5,
+       0.16
+      ]
+     ],
+     "w": 6
+    },
+    {
+     "pts": [
+      [
+       0.5,
+       0.3
+      ],
+      [
+       0.52,
+       0.5
+      ],
+      [
+       0.5,
+       0.7
+      ]
+     ],
+     "w": 7
+    },
+    {
+     "pts": [
+      [
+       0.5,
+       0.84
+      ],
+      [
+       0.52,
+       1.0
+      ]
+     ],
+     "w": 6
+    }
+   ],
+   "lakes": [
+    {
+     "at": [
+      0.96,
+      0.82
+     ],
+     "r": 0.06
+    },
+    {
+     "at": [
+      0.24,
+      0.5
+     ],
+     "r": 0.04
+    }
+   ],
+   "woods": [
+    {
+     "at": [
+      0.06,
+      0.16
+     ],
+     "r": 0.05
+    },
+    {
+     "at": [
+      0.06,
+      0.86
+     ],
+     "r": 0.05
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "siege_camp",
+    "at": [
+     0.07,
+     0.5
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 0,
+    "name": "Siege Camp",
+    "biome": "meadow"
+   },
+   {
+    "id": "slag_hamlet",
+    "at": [
+     0.28,
+     0.28
+    ],
+    "size": "hamlet",
+    "name": "Slagwick"
+   },
+   {
+    "id": "ember_farm",
+    "at": [
+     0.28,
+     0.74
+    ],
+    "size": "farmstead",
+    "name": "Ember Farm"
+   },
+   {
+    "id": "north_pass",
+    "at": [
+     0.5,
+     0.23
+    ],
+    "size": "waystone",
+    "name": "North Pass"
+   },
+   {
+    "id": "south_pass",
+    "at": [
+     0.5,
+     0.77
+    ],
+    "size": "waystone",
+    "name": "South Pass"
+   },
+   {
+    "id": "pyrehold",
+    "at": [
+     0.7,
+     0.76
+    ],
+    "size": "town",
+    "owner": 1,
+    "name": "Pyrehold"
+   },
+   {
+    "id": "cindermaw",
+    "at": [
+     0.8,
+     0.3
+    ],
+    "size": "town",
+    "home": true,
+    "owner": 1,
+    "name": "Cindermaw"
+   },
+   {
+    "id": "gate",
+    "at": [
+     0.94,
+     0.52
+    ],
+    "size": "waystone",
+    "name": "The Gate"
+   }
+  ],
+  "sites": [
+   {
+    "id": "field_chapel",
+    "at": [
+     0.12,
+     0.34
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "sutler",
+    "at": [
+     0.16,
+     0.66
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "burnt_watch",
+    "at": [
+     0.36,
+     0.08
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "lone_tower",
+    "guards": [
+     [
+      "ogre_mauler",
+      2
+     ],
+     [
+      "ashscale_basilisk",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "maw_pit",
+    "at": [
+     0.66,
+     0.5
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "cinder_gate",
+    "keeper": 1,
+    "guards": [
+     [
+      "pyre_titan",
+      1
+     ],
+     [
+      "flayer",
+      3
+     ],
+     [
+      "brimstone_hurler",
+      2
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "siege_camp",
+    "field_chapel",
+    "trail"
+   ],
+   [
+    "siege_camp",
+    "sutler",
+    "road"
+   ],
+   [
+    "siege_camp",
+    "slag_hamlet",
+    "road"
+   ],
+   [
+    "siege_camp",
+    "ember_farm",
+    "road"
+   ],
+   [
+    "slag_hamlet",
+    "burnt_watch",
+    "trail"
+   ],
+   [
+    "slag_hamlet",
+    "north_pass",
+    "road"
+   ],
+   [
+    "ember_farm",
+    "south_pass",
+    "road"
+   ],
+   [
+    "north_pass",
+    "cindermaw",
+    "road"
+   ],
+   [
+    "south_pass",
+    "pyrehold",
+    "road"
+   ],
+   [
+    "north_pass",
+    "maw_pit",
+    "trail"
+   ],
+   [
+    "south_pass",
+    "maw_pit",
+    "trail"
+   ],
+   [
+    "pyrehold",
+    "maw_pit",
+    "trail"
+   ],
+   [
+    "cindermaw",
+    "maw_pit",
+    "trail"
+   ],
+   [
+    "cindermaw",
+    "gate",
+    "road"
+   ],
+   [
+    "pyrehold",
+    "gate",
+    "road"
+   ]
+  ],
+  "scatter": {
+   "woods": 1,
+   "rocks": 10,
+   "ponds": 1
+  }
+ },
+ "npcs": [],
+ "groups": [
+  {
+   "id": "levy",
+   "owner": 0,
+   "at": [
+    0.14,
+    0.54
+   ],
+   "units": [
+    [
+     "pike_militia",
+     10
+    ],
+    [
+     "longbowman",
+     10
+    ],
+    [
+     "shieldwarden",
+     4
+    ],
+    [
+     "lancer",
+     6
+    ],
+    [
+     "lightbearer",
+     2
+    ],
+    [
+     "sunhawk_rider",
+     2
+    ],
+    [
+     "bastion_colossus",
+     2
+    ],
+    [
+     "iron_margrave",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "margrave_lances",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.12,
+    0.46
+   ],
+   "units": [
+    [
+     "iron_margrave",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "grimfell_axes",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.12,
+    0.38
+   ],
+   "units": [
+    [
+     "clan_raider",
+     6
+    ],
+    [
+     "oathless_berserker",
+     3
+    ],
+    [
+     "rimeback_aurochs",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "forge_battery",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.12,
+    0.6
+   ],
+   "units": [
+    [
+     "thunder_bombard",
+     2
+    ],
+    [
+     "anvil_guard",
+     3
+    ]
+   ]
+  },
+  {
+   "id": "covenant_bows",
+   "owner": 0,
+   "spawn": false,
+   "at": [
+    0.12,
+    0.66
+   ],
+   "units": [
+    [
+     "briar_huntress",
+     5
+    ]
+   ]
+  },
+  {
+   "id": "north_guard",
+   "owner": 1,
+   "at": [
+    0.52,
+    0.24
+   ],
+   "units": [
+    [
+     "scorchhound",
+     4
+    ],
+    [
+     "flayer",
+     2
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "south_guard",
+   "owner": 1,
+   "at": [
+    0.52,
+    0.76
+   ],
+   "units": [
+    [
+     "scorchhound",
+     4
+    ],
+    [
+     "flayer",
+     2
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ]
+   ],
+   "guard": 9
+  },
+  {
+   "id": "pyre_guard",
+   "owner": 1,
+   "at": [
+    0.7,
+    0.72
+   ],
+   "units": [
+    [
+     "flayer",
+     3
+    ],
+    [
+     "pyre_titan",
+     1
+    ],
+    [
+     "brimstone_hurler",
+     3
+    ],
+    [
+     "cinderling",
+     6
+    ]
+   ],
+   "guard": 10
+  },
+  {
+   "id": "skarn",
+   "owner": 1,
+   "at": [
+    0.79,
+    0.26
+   ],
+   "hero": {
+    "class": "tormentor",
+    "name": "Skarn Ashborn",
+    "level": 18
+   },
+   "guard": 12
+  },
+  {
+   "id": "skarn_guard",
+   "owner": 1,
+   "at": [
+    0.78,
+    0.3
+   ],
+   "units": [
+    [
+     "flayer",
+     3
+    ],
+    [
+     "pyre_titan",
+     1
+    ],
+    [
+     "ash_witch",
+     1
+    ],
+    [
+     "cinder_maw",
+     1
+    ],
+    [
+     "brimstone_hurler",
+     3
+    ],
+    [
+     "cinderling",
+     6
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "ash_wave",
+   "owner": 1,
+   "spawn": false,
+   "waves": true,
+   "at": [
+    0.74,
+    0.4
+   ],
+   "units": [
+    [
+     "cinderling",
+     8
+    ],
+    [
+     "scorchhound",
+     3
+    ],
+    [
+     "flayer",
+     2
+    ]
+   ],
+   "attack": "siege_camp"
+  },
+  {
+   "id": "gate_wave_1",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.99,
+    0.52
+   ],
+   "units": [
+    [
+     "cinderling",
+     10
+    ],
+    [
+     "scorchhound",
+     4
+    ]
+   ],
+   "attack": "gate"
+  },
+  {
+   "id": "gate_wave_2",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.99,
+    0.52
+   ],
+   "units": [
+    [
+     "flayer",
+     4
+    ],
+    [
+     "brimstone_hurler",
+     3
+    ],
+    [
+     "pyre_titan",
+     1
+    ]
+   ],
+   "attack": "gate"
+  },
+  {
+   "id": "gate_wave_3",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.99,
+    0.52
+   ],
+   "units": [
+    [
+     "cinder_maw",
+     1
+    ],
+    [
+     "flayer",
+     4
+    ],
+    [
+     "ash_witch",
+     2
+    ],
+    [
+     "scorchhound",
+     4
+    ]
+   ],
+   "attack": "gate"
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "There it is. The gate Orrin held.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "margraves_ride"
+   },
+   "spawn": "margrave_lances"
+  },
+  {
+   "if": {
+    "flag": "margraves_ride"
+   },
+   "say": "The Iron Reserve rides with you to the end, Wren. As promised.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "hrodna_fed"
+   },
+   "spawn": "grimfell_axes"
+  },
+  {
+   "if": {
+    "flag": "hrodna_fed"
+   },
+   "say": "Northern axes on the west road! Clan Grimfell came. Hrodna remembered the grain.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "flag": "paid_debt"
+   },
+   "spawn": "forge_battery"
+  },
+  {
+   "if": {
+    "flag": "paid_debt"
+   },
+   "say": "Forge bombards, with a rune I know on the barrels. Hessa Brand sent them. A first payment, she says, on the other side's account.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "all": [
+     {
+      "flag": "heartwood_oath"
+     },
+     {
+      "not": {
+       "flag": "oathbreaker"
+      }
+     }
+    ]
+   },
+   "spawn": "covenant_bows"
+  },
+  {
+   "if": {
+    "all": [
+     {
+      "flag": "heartwood_oath"
+     },
+     {
+      "not": {
+       "flag": "oathbreaker"
+      }
+     }
+    ]
+   },
+   "say": "Covenant bows. Aelith kept her word because I kept mine.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Sister Edda Vey"
+   },
+   "say": "The lamp won't burn at all here, my lord. Not blue, not green. Nothing.",
+   "who": "edda"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "Into the Embers",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Force one of the two passes",
+     "done": {
+      "any": [
+       {
+        "dead": "north_guard"
+       },
+       {
+        "dead": "south_guard"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 600
+      }
+     ]
+    },
+    {
+     "text": "Take Pyrehold and Cindermaw",
+     "done": {
+      "any": [
+       {
+        "all": [
+         {
+          "held": "pyrehold"
+         },
+         {
+          "held": "cindermaw"
+         }
+        ]
+       },
+       {
+        "not": {
+         "holds": [
+          1,
+          1
+         ]
+        }
+       },
+       {
+        "all": [
+         {
+          "dead": "skarn"
+         },
+         {
+          "dead": "skarn_guard"
+         },
+         {
+          "held": "pyrehold"
+         }
+        ]
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 1200
+      }
+     ]
+    },
+    {
+     "text": "Hold the gate as Orrin did: beat back what comes out of the Wound",
+     "done": {
+      "dead": "gate_wave_3"
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 2000
+    },
+    {
+     "win": true
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "skarn_parley": {
+   "nodes": {
+    "start": {
+     "who": "skarn",
+     "text": "A Wren. Again. The last one stood in that gate until the stone came down on him. Do you know what he said, at the end?",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Tell me.",
+     "next": "c"
+    },
+    "c": {
+     "who": "skarn",
+     "text": "Nothing. He was too busy. Let's see if you are."
+    }
+   }
+  },
+  "gate": {
+   "nodes": {
+    "start": {
+     "who": "hero",
+     "text": "Here. This is where he stood.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Form on me! Shields to the front, bows behind, nobody runs! They come out of that hole, they die in this one!"
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "cindermaw",
+      "r": 24
+     },
+     {
+      "alive": "skarn"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "skarn_parley"
+    }
+   ]
+  },
+  {
+   "when": {
+    "time": 40
+   },
+   "do": [
+    {
+     "say": "Every banner the Concord has, my lord. Margraves, colossi, sunhawks. Use them.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "north_guard"
+   },
+   "do": [
+    {
+     "say": "The north pass is ours. Cindermaw is up the road.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "south_guard"
+   },
+   "do": [
+    {
+     "say": "The south pass is ours. Pyrehold first.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "spawned": "skarn"
+     },
+     {
+      "not": {
+       "alive": "skarn"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Skarn Ashborn is dead!",
+     "who": "hero"
+    },
+    {
+     "xp": 600
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "step": [
+       "main",
+       2
+      ]
+     },
+     {
+      "near": "gate",
+      "r": 16
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "gate"
+    },
+    {
+     "spawn": "gate_wave_1"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "step": [
+       "main",
+       2
+      ]
+     },
+     {
+      "not": {
+       "near": "gate",
+       "r": 16
+      }
+     },
+     {
+      "not": {
+       "spawned": "gate_wave_1"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Both towns are ours. Now the gate. Bring everyone.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "gate_wave_1"
+   },
+   "do": [
+    {
+     "spawn": "gate_wave_2"
+    },
+    {
+     "say": "More of them! Hold!",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "gate_wave_2"
+   },
+   "do": [
+    {
+     "spawn": "gate_wave_3"
+    },
+    {
+     "say": "That's a maw. That's a cinder maw. Hold, damn you, HOLD!",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "companion": "Sister Edda Vey"
+     },
+     {
+      "dead": "gate_wave_2"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "The lamp's lit, my lord. Blue. Just blue. I think that's all it can do now.",
+     "who": "edda"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "time": 180
+     },
+     {
+      "holds": [
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   "repeat": 150,
+   "do": [
+    {
+     "spawn": "ash_wave"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,931 @@
+{
+ "id": "ph_leviathan",
+ "title": "The Leviathan Stirs",
+ "kind": "hero",
+ "seed": 5909,
+ "intro": [
+  "Skarn Ashborn himself has come down into the Barrow Below. The court cannot match the Host fire for fire, so the Regent reaches for the oldest thing in the fen: a winged colossus that drowned in the mire before the five peoples had names, and has been rotting there ever since.",
+  "A thing that old needs three things to rise: a heart, a name and a bell to call it. The heart is under the mire, the name is in a fen-witch's head, and the bell hangs at the Mire Gate, where Skarn's raiders have camped.",
+  "Raise the rotwing leviathan and break Skarn's host."
+ ],
+ "outro": [
+  {
+   "text": [
+    "Skarn pulls back into the deepest tunnels, where the Host has made its own towns out of the old tombs. The leviathan circles above the fen under the red sky.",
+    "Ysmay watches it and begins to speak of crowns."
+   ]
+  }
+ ],
+ "players": [
+  {
+   "faction": "hollow"
+  },
+  {
+   "faction": "ashen"
+  }
+ ],
+ "speakers": {
+  "orrin": "Sir Orrin Wren",
+  "corvin": "Father Corvin Mire",
+  "rotwing": "The Rotwing"
+ },
+ "hero": {
+  "at": [
+   0.07,
+   0.5
+  ]
+ },
+ "hero_boost": {
+  "hp": 600,
+  "damage_pct": 0.9
+ },
+ "checkpoint": "court_shrine",
+ "map": {
+  "name": "The Leviathan Stirs",
+  "size": [
+   176,
+   112
+  ],
+  "symmetry": "none",
+  "jitter": 0,
+  "base": "swamp",
+  "border": "mountains",
+  "features": {
+   "lakes": [
+    {
+     "at": [
+      0.42,
+      0.8
+     ],
+     "r": 0.09
+    },
+    {
+     "at": [
+      0.2,
+      0.24
+     ],
+     "r": 0.05
+    },
+    {
+     "at": [
+      0.7,
+      0.84
+     ],
+     "r": 0.06
+    }
+   ],
+   "woods": [
+    {
+     "at": [
+      0.36,
+      0.08
+     ],
+     "r": 0.07
+    },
+    {
+     "at": [
+      0.12,
+      0.86
+     ],
+     "r": 0.07
+    }
+   ],
+   "ridges": [
+    {
+     "pts": [
+      [
+       0.72,
+       0.2
+      ],
+      [
+       0.76,
+       0.36
+      ]
+     ],
+     "w": 4
+    },
+    {
+     "pts": [
+      [
+       0.72,
+       0.64
+      ],
+      [
+       0.76,
+       0.56
+      ]
+     ],
+     "w": 4
+    }
+   ]
+  },
+  "zones": [
+   {
+    "id": "court_edge",
+    "at": [
+     0.06,
+     0.5
+    ],
+    "size": "waystone",
+    "owner": 0,
+    "name": "The Court's Edge"
+   },
+   {
+    "id": "sedge_hut",
+    "at": [
+     0.3,
+     0.2
+    ],
+    "size": "farmstead",
+    "name": "Sedge's Hut",
+    "nodes": 0
+   },
+   {
+    "id": "mire",
+    "at": [
+     0.44,
+     0.64
+    ],
+    "size": "waystone",
+    "name": "The Leviathan Mire"
+   },
+   {
+    "id": "mire_gate",
+    "at": [
+     0.6,
+     0.38
+    ],
+    "size": "waystone",
+    "name": "The Mire Gate"
+   },
+   {
+    "id": "forge_pit",
+    "at": [
+     0.88,
+     0.5
+    ],
+    "size": "village",
+    "owner": 1,
+    "name": "Skarn's Forge-Pit",
+    "biome": "ashland",
+    "nodes": 0
+   }
+  ],
+  "sites": [
+   {
+    "id": "court_shrine",
+    "at": [
+     0.1,
+     0.34
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "bone_trader",
+    "at": [
+     0.18,
+     0.66
+    ],
+    "kind": "merchant"
+   },
+   {
+    "id": "gate_shrine",
+    "at": [
+     0.54,
+     0.24
+    ],
+    "kind": "shrine"
+   },
+   {
+    "id": "sunken_heart",
+    "at": [
+     0.56,
+     0.88
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "drowned_chapel",
+    "guards": [
+     [
+      "bog_serpent",
+      1
+     ],
+     [
+      "bog_lurker",
+      2
+     ]
+    ]
+   },
+   {
+    "id": "wyvern_crag",
+    "at": [
+     0.5,
+     0.08
+    ],
+    "kind": "lair",
+    "tier": 3,
+    "set": "watch_ruin",
+    "guards": [
+     [
+      "venom_wyvern",
+      1
+     ],
+     [
+      "crag_slinger",
+      3
+     ]
+    ]
+   }
+  ],
+  "links": [
+   [
+    "court_edge",
+    "court_shrine",
+    "trail"
+   ],
+   [
+    "court_edge",
+    "bone_trader",
+    "road"
+   ],
+   [
+    "court_edge",
+    "sedge_hut",
+    "trail"
+   ],
+   [
+    "court_edge",
+    "mire",
+    "road"
+   ],
+   [
+    "sedge_hut",
+    "wyvern_crag",
+    "trail"
+   ],
+   [
+    "mire",
+    "sunken_heart",
+    "trail"
+   ],
+   [
+    "mire",
+    "mire_gate",
+    "road"
+   ],
+   [
+    "sedge_hut",
+    "gate_shrine",
+    "trail"
+   ],
+   [
+    "gate_shrine",
+    "mire_gate",
+    "trail"
+   ],
+   [
+    "mire_gate",
+    "forge_pit",
+    "road"
+   ],
+   [
+    "sunken_heart",
+    "forge_pit",
+    "trail"
+   ]
+  ],
+  "scatter": {
+   "woods": 4,
+   "rocks": 6,
+   "ponds": 5
+  }
+ },
+ "npcs": [
+  {
+   "id": "sedge",
+   "name": "Granny Sedge",
+   "look": "marsh_hag",
+   "at": [
+    0.31,
+    0.24
+   ],
+   "talk": [
+    {
+     "if": {
+      "not": {
+       "flag": "sedge_decided"
+      }
+     },
+     "dialogue": "sedge",
+     "mark": "!"
+    },
+    {
+     "dialogue": "sedge_after"
+    }
+   ]
+  },
+  {
+   "id": "leviathan",
+   "name": "The Rotwing",
+   "look": "rotwing_leviathan",
+   "at": [
+    0.42,
+    0.7
+   ],
+   "facing": 0.0,
+   "talk": [
+    {
+     "if": {
+      "all": [
+       {
+        "flag": "has_heart"
+       },
+       {
+        "flag": "has_name"
+       },
+       {
+        "flag": "has_bell"
+       },
+       {
+        "not": {
+         "flag": "leviathan_raised"
+        }
+       }
+      ]
+     },
+     "dialogue": "raise",
+     "mark": "!"
+    },
+    {
+     "if": {
+      "not": {
+       "flag": "leviathan_raised"
+      }
+     },
+     "dialogue": "leviathan_asleep"
+    }
+   ]
+  },
+  {
+   "id": "skarn",
+   "name": "Skarn Ashborn",
+   "look": "hero_tormentor",
+   "at": [
+    0.91,
+    0.44
+   ],
+   "facing": 3.1,
+   "talk": [
+    {
+     "dialogue": "skarn_idle"
+    }
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "id": "scouts",
+   "owner": 1,
+   "at": [
+    0.3,
+    0.5
+   ],
+   "units": [
+    [
+     "scorchhound",
+     4
+    ],
+    [
+     "cinderling",
+     4
+    ]
+   ],
+   "guard": 8
+  },
+  {
+   "id": "gate_raiders",
+   "owner": 1,
+   "at": [
+    0.61,
+    0.42
+   ],
+   "units": [
+    [
+     "cinderling",
+     6
+    ],
+    [
+     "scorchhound",
+     3
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ],
+    [
+     "flayer",
+     1
+    ]
+   ],
+   "guard": 10
+  },
+  {
+   "id": "skarn_host",
+   "owner": 1,
+   "at": [
+    0.84,
+    0.5
+   ],
+   "units": [
+    [
+     "cinderling",
+     8
+    ],
+    [
+     "scorchhound",
+     3
+    ],
+    [
+     "brimstone_hurler",
+     3
+    ],
+    [
+     "flayer",
+     1
+    ],
+    [
+     "ash_witch",
+     1
+    ],
+    [
+     "pyre_titan",
+     1
+    ],
+    [
+     "gorgewing",
+     1
+    ]
+   ],
+   "guard": 12
+  },
+  {
+   "id": "forge_guard",
+   "owner": 1,
+   "at": [
+    0.88,
+    0.58
+   ],
+   "units": [
+    [
+     "cinderling",
+     6
+    ],
+    [
+     "brimstone_hurler",
+     2
+    ],
+    [
+     "scorchhound",
+     2
+    ],
+    [
+     "pyre_titan",
+     1
+    ]
+   ],
+   "guard": 11
+  },
+  {
+   "id": "mire_ambush",
+   "owner": 1,
+   "spawn": false,
+   "at": [
+    0.56,
+    0.66
+   ],
+   "units": [
+    [
+     "gorgewing",
+     1
+    ],
+    [
+     "scorchhound",
+     4
+    ],
+    [
+     "cinderling",
+     4
+    ]
+   ]
+  }
+ ],
+ "start": [
+  {
+   "start_quest": "main"
+  },
+  {
+   "say": "Under that water is the oldest thing in my fen. Older than me. Older than the Concord. Let's wake it.",
+   "who": "hero"
+  },
+  {
+   "if": {
+    "companion": "Sir Orrin Wren"
+   },
+   "say": "My lady, are you sure? Some things drowned because somebody drowned them.",
+   "who": "orrin"
+  }
+ ],
+ "quests": {
+  "main": {
+   "title": "The Leviathan Stirs",
+   "kind": "main",
+   "steps": [
+    {
+     "text": "Drive Skarn's scouts off the causeway",
+     "done": {
+      "dead": "scouts"
+     },
+     "do": [
+      {
+       "xp": 400
+      }
+     ]
+    },
+    {
+     "text": "Find the three things the raising needs: the heart in the sunken chapel, the name from Granny Sedge, the bell at the Mire Gate",
+     "done": {
+      "all": [
+       {
+        "flag": "has_heart"
+       },
+       {
+        "flag": "has_name"
+       },
+       {
+        "flag": "has_bell"
+       }
+      ]
+     },
+     "do": [
+      {
+       "xp": 800
+      }
+     ]
+    },
+    {
+     "text": "Raise the rotwing leviathan in the mire",
+     "done": {
+      "flag": "leviathan_raised"
+     },
+     "do": [
+      {
+       "xp": 500
+      }
+     ]
+    },
+    {
+     "text": "Break Skarn's host and the forge guard at the Forge-Pit",
+     "done": {
+      "all": [
+       {
+        "dead": "skarn_host"
+       },
+       {
+        "dead": "forge_guard"
+       }
+      ]
+     }
+    }
+   ],
+   "reward": [
+    {
+     "xp": 1500
+    },
+    {
+     "item": {
+      "rarity": "rare",
+      "slot": "weapon",
+      "level": 22
+     }
+    },
+    {
+     "win": true
+    }
+   ]
+  }
+ },
+ "dialogues": {
+  "sedge": {
+   "nodes": {
+    "start": {
+     "text": "The dead queen, at my door. I've been waiting. You want the name of the thing in the mire. Every fool with a crown wants that name, sooner or later.",
+     "next": "b"
+    },
+    "b": {
+     "text": "I'll give it. Names cost, though. What will you give old Sedge?",
+     "choices": [
+      {
+       "text": "Mossgate is under my hand. Its people bring you peat every winter, and they will go on doing it.",
+       "if": {
+        "flag": "living_protected"
+       },
+       "do": [
+        {
+         "flag": "sedge_decided"
+        },
+        {
+         "flag": "has_name"
+        }
+       ],
+       "next": "mossgate"
+      },
+      {
+       "text": "A hundred marks of grave-silver.",
+       "if": {
+        "marks": 100
+       },
+       "do": [
+        {
+         "flag": "sedge_decided"
+        },
+        {
+         "flag": "has_name"
+        },
+        {
+         "marks": -100
+        }
+       ],
+       "next": "paid"
+      },
+      {
+       "text": "Your life, if you don't give it to me.",
+       "do": [
+        {
+         "flag": "sedge_decided"
+        },
+        {
+         "flag": "has_name"
+        },
+        {
+         "flag": "sedge_cursed"
+        }
+       ],
+       "next": "threat"
+      }
+     ]
+    },
+    "mossgate": {
+     "text": "Ha! The Mossgate peat. I know it. Warm as a loaf. All right, dead queen. Lean close. Its name is Ruvh. Say it into the water, not to the air."
+    },
+    "paid": {
+     "text": "Silver from graves. Good. Lean close. Its name is Ruvh. Say it into the water, not to the air."
+    },
+    "threat": {
+     "text": "Threats, from a corpse. Fine. Ruvh. That's its name. And I hope it eats you first."
+    }
+   }
+  },
+  "sedge_after": {
+   "nodes": {
+    "start": {
+     "text": "Into the water, dead queen. Not to the air."
+    }
+   }
+  },
+  "leviathan_asleep": {
+   "nodes": {
+    "start": {
+     "who": "hero",
+     "text": "Bones the size of a barn, and water running out of its eyes. Not yet. It needs a heart, a name and a bell."
+    }
+   }
+  },
+  "raise": {
+   "nodes": {
+    "start": {
+     "who": "hero",
+     "text": "Heart. Name. Bell. Ruvh. Ruvh, under the water. You drowned before anyone could hate you. Get up, and I'll give you something to hate.",
+     "next": "b"
+    },
+    "b": {
+     "text": "...",
+     "do": [
+      {
+       "flag": "leviathan_raised"
+      },
+      {
+       "join": "leviathan"
+      }
+     ],
+     "next": "c"
+    },
+    "c": {
+     "who": "hero",
+     "text": "There. There it is. Now, Skarn."
+    }
+   }
+  },
+  "skarn_idle": {
+   "nodes": {
+    "start": {
+     "text": "Come closer, corpse-queen."
+    }
+   }
+  },
+  "skarn_parley": {
+   "nodes": {
+    "start": {
+     "who": "skarn",
+     "text": "So you're the one burning my diggers. The queen of the leftovers. I expected something bigger.",
+     "next": "b"
+    },
+    "b": {
+     "who": "hero",
+     "text": "Look up, Skarn.",
+     "next": "c"
+    },
+    "c": {
+     "who": "skarn",
+     "text": "...Huh. That is bigger. Host! Hold the pit!"
+    }
+   }
+  }
+ },
+ "triggers": [
+  {
+   "when": {
+    "all": [
+     {
+      "near": "sedge",
+      "r": 8
+     },
+     {
+      "not": {
+       "flag": "sedge_decided"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "sedge",
+     "npc": "sedge"
+    }
+   ]
+  },
+  {
+   "when": {
+    "cleared": "sunken_heart"
+   },
+   "do": [
+    {
+     "flag": "has_heart"
+    },
+    {
+     "say": "The heart. Black and still beating, slow as a tide.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "dead": "gate_raiders"
+   },
+   "do": [
+    {
+     "flag": "has_bell"
+    },
+    {
+     "say": "The bone bell from the Mire Gate. It's cold, even here.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "flag": "has_heart"
+     },
+     {
+      "flag": "has_name"
+     },
+     {
+      "flag": "has_bell"
+     },
+     {
+      "not": {
+       "flag": "leviathan_raised"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Heart, name and bell. Back to the mire.",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "mire",
+      "r": 12
+     },
+     {
+      "any": [
+       {
+        "flag": "has_heart"
+       },
+       {
+        "flag": "has_bell"
+       }
+      ]
+     },
+     {
+      "not": {
+       "spawned": "mire_ambush"
+      }
+     }
+    ]
+   },
+   "do": [
+    {
+     "spawn": "mire_ambush"
+    },
+    {
+     "attack": "mire_ambush",
+     "to": "hero"
+    },
+    {
+     "say": "They followed us to the mire. Hold them off the bones!",
+     "who": "hero"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "flag": "leviathan_raised"
+     },
+     {
+      "companion": "Father Corvin Mire"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Three hundred years I preached against things like that, Regent. I was wrong about almost all of it.",
+     "who": "corvin"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "near": "forge_pit",
+      "r": 22
+     },
+     {
+      "flag": "leviathan_raised"
+     }
+    ]
+   },
+   "do": [
+    {
+     "dialogue": "skarn_parley",
+     "npc": "skarn"
+    }
+   ]
+  },
+  {
+   "when": {
+    "all": [
+     {
+      "dead": "skarn_host"
+     },
+     {
+      "dead": "forge_guard"
+     }
+    ]
+   },
+   "do": [
+    {
+     "say": "Fall back! Into the deep tunnels! All of you!",
+     "who": "skarn"
+    },
+    {
+     "leave": "skarn",
+     "to": [
+      0.99,
+      0.5
+     ]
+    }
+   ]
+  }
+ ]
+}
