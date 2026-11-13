@@ -1,0 +1,86 @@
+name: Release builds
+
+# Builds the Windows, macOS and Linux archives and attaches them to a GitHub
+# release.
+# - Publishing a release (or pre-release): builds the release's tag and
+#   uploads the archives to that release.
+# - Manual run ("Run workflow"): builds the chosen branch (normally main) and
+#   uploads the archives to the release whose tag you enter. Use this for a
+#   release whose tag predates this workflow.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag of the existing release to attach the builds to (e.g. v1.0.0pre)"
+        required: true
+
+concurrency:
+  group: release-${{ github.event.release.tag_name || inputs.tag }}
+  cancel-in-progress: true
+
+env:
+  GODOT_VERSION: 4.5.1
+
+jobs:
+  build:
+    name: Desktop builds
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    env:
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'release' && github.event.release.tag_name || github.ref }}
+
+      - name: Check the release exists
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null
+
+      - name: Cache Godot and export templates
+        id: godot-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/godot
+            ~/.local/share/godot/export_templates
+          key: godot-${{ env.GODOT_VERSION }}-linux-x86_64-desktop-templates
+
+      - name: Download Godot ${{ env.GODOT_VERSION }} and export templates
+        if: steps.godot-cache.outputs.cache-hit != 'true'
+        run: |
+          base="https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable"
+          mkdir -p ~/godot
+          curl -fsSL --retry 4 -o /tmp/godot.zip "$base/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
+          unzip -q /tmp/godot.zip -d ~/godot
+          mv ~/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 ~/godot/godot
+          chmod +x ~/godot/godot
+          curl -fsSL --retry 4 -o /tmp/templates.tpz "$base/Godot_v${GODOT_VERSION}-stable_export_templates.tpz"
+          dest=~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+          mkdir -p "$dest"
+          unzip -q -j /tmp/templates.tpz -d "$dest" \
+            'templates/version.txt' 'templates/linux_*.x86_64' 'templates/windows_*_x86_64*.exe' 'templates/macos.zip'
+          rm /tmp/templates.tpz /tmp/godot.zip
+          ls -lh "$dest"
+
+      - name: Put Godot on PATH
+        run: |
+          echo "$HOME/godot" >> "$GITHUB_PATH"
+          "$HOME/godot/godot" --headless --version
+
+      - name: Build archives
+        run: tools/release/package.sh "$TAG" "$RUNNER_TEMP/release"
+
+      - name: Attach to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd "$RUNNER_TEMP/release"
+          gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber \
+            ./*.zip ./*.tar.gz SHA256SUMS.txt
